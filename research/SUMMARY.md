@@ -2,6 +2,8 @@
 
 Research, not legal or tax advice. Source ids like [PL27] map to `SOURCES.md`.
 
+> **Update (2026-10-10, after this report):** the operator's wife is Taiwanese and will help review posts. This changes sections iv and viii: the reviewer cost assumed below may be ~NT$0 in cash (her time is the cost), which could make 3 pilots feasible, and she may be able to hold the business registration. Her weekly hours and niche familiarity are not yet known, so the 2-pilot figure stands until they are. See DECISIONS.md.
+
 > **Evidence limit — read first.** The research agents hit a shared 200-call web-search budget early, and page fetches failed (DNS errors, proxy 403s). No primary page (law.moj.gov.tw, ftc.gov.tw, platform help centres, LINE Creators) was opened. Facts are search-summary level and capped at "medium" confidence; most statute details are marked unverified. A search for Taiwan reviewer rates was also refused, so the reviewer cost below is an **assumption**. Treat this as a first pass that needs a re-run with web access restored (see recommendation 9 below) before anything legal or financial relies on it.
 
 ## Headline
