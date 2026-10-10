@@ -549,7 +549,7 @@ HSV saturation, contrast ratios (WCAG relative luminance) and colour distances (
 | Stone `#A29CA2` | 規格 ash `#A3A9A7` | 7.4 | Different enough |
 | Rain shell `#7F6A6D` (was `#6A6470`) | 里程 slate `#626669` | 11.1 (was 6.8) | Resolved with the shell change above |
 | Fog `#CFC9CE` | 里程 slate tint (now `#DFE2E1`, was `#C3C8C9`) | see 里程 4.5 (was 4.7) | Fills only; 里程 changed its card ground and tint in the Phase 3 integration pass (new ground `#CFD2D0`); re-run the pair if either file changes again |
-| Skin `#DBC7B4` | Putty `#CFC6B4` (方寸, 接話, 歲歲) | 4.5 | Near; skin tones |
+| Skin `#DBC7B4` | Putty `#CFC6B4` (方寸, 歲歲) | 4.5 | Near; skin tones |
 
 ### 4.6 Art medium and production layers
 

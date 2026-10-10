@@ -96,7 +96,9 @@ Guide: under 3 hard to tell apart, 3 to 6 close, 6 to 10 noticeable side by side
 | 里程 deep slate against 規格 graphite | 4.6 | none | Accepted: dark neutral; Facebook against Instagram; 110 px test |
 | 等一下 charcoal against 歸位 graphite; stone against light steel | 5.2; 5.3 | none | Accepted: dark and light neutrals; launched at least 6 weeks apart; 歸位's `#71727A` fallback steel stays on file |
 | 歲歲 brick red against 里程 burgundy | 16.9 | Facebook | Accent pair, the closest in the set; same wave, one week apart: **110 px side-by-side is a hard gate** |
-| Accents: plum 接話, magenta 等一下, violet 歸位 | 27.7 to 29.8 | none (Threads, Facebook, YouTube) | Clearly separate by value; never on the same platform |
+| Accents: plum 接話, magenta 等一下, violet 歸位 | 26.6 to 29.8 (plum to violet 26.6, plum to magenta 27.7, magenta to violet 29.8; the range was given as 27.7 to 29.8 before the 接話 review recomputed all three) | none (Threads, Facebook, YouTube) | Clearly separate by value; never on the same platform |
+| 接話 card ground cream against 轉乘 paper / 方寸 off-white / 等一下 paper | 4.2 / 4.7 / 5.8 | none (Threads against YouTube, Instagram and YouTube, Facebook) | Accepted in the 接話 review (not listed by the integration pass). **If 接話 adds YouTube Shorts after the week-6 review, 轉乘 and 方寸 become shared-platform pairs under 6: re-run `palette_check.py` and move the cream ground then** |
+| 接話 skin and cream against 步驟 skin / 色環 skin, persimmon tint and cream garments | 4.0 to 4.6 (skin, tint); 4.2 (cream against garment cream) | Threads (all three) | Accepted in the 接話 review: ordinary skin tones and one garment fill, which the script does not track; three different line styles. Added to the 110 px tests below |
 
 ### Phase 4 side-by-side tests at about 110 px (each persona's thumbnail anchors)
 
@@ -110,6 +112,7 @@ Guide: under 3 hard to tell apart, 3 to 6 close, 6 to 10 noticeable side by side
 | 里程 and 規格 | Dark pair, spec-and-rules audiences |
 | 轉乘 and 歲歲 | Both wear a diagonal cross-body bag |
 | 色環 and 方寸 (Instagram); 色環 and 接話 (Threads) | Re-check at the new ground |
+| 步驟 and 接話 (Threads) | Added in the 接話 review: skin 4.0 apart and grounds 6.9 apart on the one feed they share |
 | 等一下 and 歸位 | Dark greys with purple-family accents |
 
 | Persona | Thumbnail anchors (three, from section 4 of each bible) |
