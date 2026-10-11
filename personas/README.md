@@ -149,3 +149,38 @@ Not decided here, and not decidable by Claude (see the 2026-10-10 Phase 3 entry 
 5. **Capacity:** states S4 and S5 of the ladder fail the wife's gate (and S5 fails the operator's), so 規格, 等一下 and 歸位 launch only by swap or if measured minutes come in lower.
 6. **Checks that need Chinese reading:** the operator cannot read the Chinese statutes, agency pages and manufacturer pages that 轉乘, 歲歲, 里程, 規格, 等一下 and 歸位 depend on; each bible proposes a two-key check (operator checks digits and names, wife checks meaning). The extra minutes are not in the capacity model.
 7. **Studio name** and every character name are uncleared.
+
+## 8. Photoreal addenda for the three pilots (added 2026-10-11)
+
+On 2026-10-11 the user rejected the stylised look ("looks so fake, I need real people"). `DECISIONS.md` records the reading: **photorealistic AI-generated characters that stay openly AI** (not human presenters). The three pilots now have photoreal addenda, and the bibles are otherwise unchanged:
+
+| Pilot | Addendum | Image pack |
+|---|---|---|
+| 方寸 | [fangcun/photoreal-addendum.md](fangcun/photoreal-addendum.md) | `pipeline/image-pack/fangcun-photoreal.md` |
+| 步驟 | [buzhou/photoreal-addendum.md](buzhou/photoreal-addendum.md) | `pipeline/image-pack/buzhou-photoreal.md` |
+| 色環 | [sehuan/photoreal-addendum.md](sehuan/photoreal-addendum.md) | `pipeline/image-pack/sehuan-photoreal.md` |
+
+Start page for the operator: `pipeline/image-pack/README-photoreal.md`. **Where an addendum and a bible disagree, the addendum wins** on the rows its section 0.1 lists as superseded (face and build, art medium, the consistency sheet, the adult-reading check, and every "stylised", "drawn" or "illustration" wording about how the character looks); the bible wins on the rows in section 0.2 (voice, pillars, disclosure lines, monetisation, gates). In the index in section 1, the **Medium** column for slots 1 to 3 and the **thumbnail anchors** in section 5 now describe superseded designs; the palette hex values stay as wardrobe and set colours. Slots 4 to 10 remain stylised until the pilots are decided. Nothing here is generated or cleared.
+
+**The near-pair palette checks in section 5 must be re-run on photos.** They were computed on 2026-10-10 from the planned hex values of the stylised palettes. They no longer describe the pilots' images because:
+
+* The pilots' images now sit on **photo backdrops**: 方寸 warm off-white `#F5F0E6` (unchanged), 色環 dusty blush `#EBCFC6` (her card ground `#F2DAD2` stays on cards and lesson graphics), 步驟 studio grey `#A9B0B8` (bone `#EEECE7` stays only as his picture-in-picture frame, thumbnail ground and patch backing).
+* Figure colours are now fabric in studio light, and skin and hair are photographs. The script tracks none of those, and lighting shifts every hex value.
+* `palette_check.py` is **not edited**: it still models 方寸 as the clay figure (walnut hair), 步驟 with the bone ground and 色環 with the card ground.
+
+What the planned values say for the pilots' photo backdrops (CIE76, *computed* 2026-10-11 with the script's own functions; planned values, not measurements; above 10 is clearly different):
+
+| Pair | Card or bone ground (section 5) | Photo backdrop | Shared platform |
+|---|---|---|---|
+| 方寸 and 色環 | 9.5 | 13.1 | Instagram |
+| 方寸 and 步驟 | 3.2 | 25.6 | YouTube |
+| 色環 and 步驟 | 9.6 | 21.0 | Threads |
+| 色環 and 接話 | 7.9 | 10.9 | Threads |
+| 方寸 and 轉乘 | 5.1 | 5.1 (backdrop unchanged) | YouTube. The script lists this pair; the register in section 5 does not. Wave 2 is not before 2027-01-18: do the 110 px test then |
+| 步驟 grey and 歸位 light steel (a figure colour) | n/a | 4.8 | YouTube. Lawyer-gated Wave 4; 110 px test when 歸位 has an image |
+
+Garment pairs inside the pilots (planned values): 方寸 oat and 色環 cream 8.9; 方寸 belt cream and 色環 cream 7.4; 方寸 sage and 色環 stone 9.8; 方寸 putty and 色環 stone 9.1; 色環 charcoal and 步驟 charcoal 8.4; 色環 cream and 步驟 bone 4.3 (Threads). All were already accepted or noted in the addenda; none has been seen in a photograph.
+
+**How to re-run, once an R01 exists for a pilot:** (1) sample a flat, evenly lit patch of the backdrop and of each main garment with an eyedropper (each pack's section 5.3 gives the method and an allowed range); (2) send Claude the red, green and blue values; (3) Claude adds a photo entry per pilot to `palette_check.py` (the stylised entries stay for slots 4 to 10), re-runs it and updates the section 5 table; (4) run the side-by-side tests below with the real images. The Phase 4 tests listed in section 5 that involve the pilots (方寸 and 歸位; 步驟 and 歸位; 步驟 and 里程 at 64 px; 色環 and 方寸; 色環 and 接話; 步驟 and 接話) were written for stylised figures: repeat them with the photoreal masters, and add the **three-pilot row at about 110 px, unlabelled, with at least five viewers asked "same person, sisters, or different people?"** (`pipeline/image-pack/README-photoreal.md` section 3). A photograph beside a flat illustration is a strong medium difference, so a later-wave shape clash is now unlikely, but ground and palette near-pairs on a shared feed still count.
+
+The six-axis rule for the pilots (face shape; hair; face furniture; apparent age; skin undertone; backdrop and light, at least four clear differences per pair, age not counted) and the reserved differentiators for each pilot are in section 10 of the 方寸 and 色環 addenda and section 9 of the 步驟 addendum; the weakest pair is 方寸 and 色環.

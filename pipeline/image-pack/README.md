@@ -1,4 +1,6 @@
-# Image packs: start here
+# Image packs: start here (stylised packs, superseded)
+
+> **Superseded for the look on 2026-10-11.** You rejected the stylised look ("looks so fake, I need real people"), and `DECISIONS.md` records the new direction: photorealistic AI-generated characters that stay openly AI. **Start with [README-photoreal.md](README-photoreal.md)** and the three photoreal packs (`fangcun-photoreal.md`, `buzhou-photoreal.md`, `sehuan-photoreal.md`). This page and the clay, vector and brush-line packs below are kept as a record. The rules in sections 4 and 5 (uploads, no text in the picture, licence, saving and logging) and the colour idea in section 8 still carry over; the prompts, the look and the "stylised is not a loophole" reasoning in section 6 do not (photoreal raises the disclosure stakes, see README-photoreal.md section 7).
 
 Written 2026-10-11 for the operator (English only). Your wife reviews language and culture. Nothing has been generated yet: no reference image exists, and no pilot character is cleared for public use. Everything the packs say about what Gemini and ChatGPT can do is a **hypothesis**, so check the current screen and copy model names exactly as the app shows them. All zh-TW wording is an AI draft for the wife to correct.
 
