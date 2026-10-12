@@ -494,9 +494,8 @@ def build_short_head3(step, preview):
         out.append(numeral(MX0 + r, cy, n, r, WALNUT if on else OAT, GROUND if on else WALNUT, 42))
         if on:
             out.append(T(MX0 + 2 * r + 26, cy + 0.36 * 76, hd, 76, CHAR, 700))
-        else:   # not revealed yet: outlined, still legible
-            out.append(T(MX0 + 2 * r + 26, cy + 0.36 * 76, hd, 76, "none", 700,
-                         extra=' stroke="%s" stroke-width="3" stroke-linejoin="round"' % WALNUT))
+        else:   # not revealed yet: same size, lighter weight and walnut (solid fill: an outline-only glyph is not legible)
+            out.append(T(MX0 + 2 * r + 26, cy + 0.36 * 76, hd, 76, WALNUT, 400))
     out.append(slot(SLOT_HEAD, preview))
     lines = STRINGS["short_three"]
     out.append(body_lines(lines))
@@ -557,7 +556,7 @@ def assemble(frame, preview):
            'xml:lang="zh-Hant-TW" font-family="%s">' % (W, H, W, H, FONT),
            '<title>方寸 先量再買 %s</title>' % frame["id"],
            '<rect id="ground" width="%d" height="%d" fill="%s"/>' % (W, H, GROUND),
-           body, badge("char" if kind == "char" else "diagram"), "</svg>"]
+           body.replace("><", ">\n<"), badge("char" if kind == "char" else "diagram").replace("><", ">\n<"), "</svg>"]
     svg = "\n".join(doc) + "\n"
     ET.fromstring(svg.split("?>", 1)[1])      # well-formedness check
     return svg, spec, kind

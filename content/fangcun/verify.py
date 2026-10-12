@@ -21,6 +21,10 @@ arithmetic of calendar section 8 is asserted; the 30-day table in calendar secti
 weeks 1 to 4, no deferred post scheduled); a Reel or Short whose only hold was D6 must carry the D6 conditions in
 review.notes and no HOLD or BLOCKED marker; a non-AI diagram asset must name its route (Claude-drawn SVG or
 human-built). None of this approves anything.
+
+Update of 2026-10-12 (diagram frames, master C): a media item may leave PENDING only if it is a NOT AI-GENERATED,
+Claude-drawn diagram frame whose PNG exists under assets/fangcun/diagrams/, whose SVG source sits beside it and whose
+files have rows in assets/provenance.csv (`diagram_png_problem`). Photoreal-character entries stay PENDING.
 """
 import datetime
 import glob
@@ -133,6 +137,35 @@ def check_against_calendar(label, d):
         err("%s: caption_zh differs from the calendar block" % label)
 
 
+def diagram_png_problem(m):
+    """None if media item m may leave PENDING: only a Claude-drawn diagram frame (decision D3) with an existing PNG under
+    assets/fangcun/diagrams/, the SVG source beside it, and a row in assets/provenance.csv. Photoreal-character and other
+    AI-generated entries must stay PENDING until a human has the approved image. Returns the reason otherwise."""
+    path, sp = m.get("path", ""), m.get("shot_prompt", "")
+    if not (sp.startswith("NOT AI-GENERATED") and "DRAWN BY CLAUDE AS SVG" in sp):
+        return "only a NOT AI-GENERATED, Claude-drawn item may leave PENDING"
+    if not (path.startswith("assets/fangcun/diagrams/") and path.endswith(".png")):
+        return "path must be a .png under assets/fangcun/diagrams/"
+    if not os.path.isfile(os.path.join(ROOT, path)):
+        return "file not found: " + path
+    base = path[:-len(".png")]
+    if base.endswith("_preview"):
+        base = base[:-len("_preview")]
+    if not os.path.isfile(os.path.join(ROOT, base + ".svg")):
+        return "SVG source not found: " + base + ".svg"
+    prov = os.path.join(ROOT, "assets", "provenance.csv")
+    try:
+        with open(prov, encoding="utf-8") as fh:
+            logged = fh.read()
+    except OSError:
+        return "assets/provenance.csv not readable"
+    if path not in logged or (base + ".svg") not in logged:
+        return "no provenance row for the PNG and its SVG"
+    if "approved" in path.lower():
+        return "path must not claim approval"
+    return None
+
+
 def check_json():
     required = ["id", "persona", "platform", "format", "scheduled_date", "pillar", "hook_zh", "caption_zh",
                 "caption_gloss_en", "hashtags", "on_screen_label_zh", "ai_label_flag", "sponsorship_flag",
@@ -180,8 +213,12 @@ def check_json():
         if not os.path.isfile(os.path.join(os.path.dirname(f), "media", ".gitkeep")):
             warn("%s: media/.gitkeep missing" % label)
         for m in d.get("media", []):
-            if set(m) != {"path", "description", "shot_prompt"} or m["path"] != "PENDING":
-                err("%s: media item must have path PENDING, description, shot_prompt" % label)
+            if set(m) != {"path", "description", "shot_prompt"}:
+                err("%s: media item must have exactly path, description, shot_prompt" % label)
+            elif m["path"] != "PENDING":
+                why = diagram_png_problem(m)
+                if why:
+                    err("%s: media path must stay PENDING unless it is a Claude-drawn diagram PNG (%s)" % (label, why))
         for s in d.get("sources", []):
             if set(s) != {"claim", "url", "date"}:
                 err("%s: source item keys" % label)

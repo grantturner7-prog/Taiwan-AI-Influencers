@@ -1,0 +1,396 @@
+{
+ "generator": "pipeline/art/fangcun_A.py",
+ "version": "v0.1",
+ "frames": [
+  {
+   "id": "P01_s01_cover",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 1 (cover)",
+   "media_index": 4,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s01_cover.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s01_cover_preview.png",
+   "slot": {
+    "asset": "A1",
+    "golden": "R01",
+    "x": 694,
+    "y": 258,
+    "w": 284,
+    "h": 355,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "cover: hook title, A1 panel, mini plan, the three things to compute"
+  },
+  {
+   "id": "P01_s02_who",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 2 (who I am)",
+   "media_index": 5,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s02_who.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s02_who_preview.png",
+   "slot": {
+    "asset": "A1",
+    "golden": "R01",
+    "x": 102,
+    "y": 420,
+    "w": 520,
+    "h": 650,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "identity lines, A1 panel, post-added arrow to the belt"
+  },
+  {
+   "id": "P01_s03_rules",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 3 (the account's rules)",
+   "media_index": 6,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s03_rules.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s03_rules_preview.png",
+   "slot": {
+    "asset": "A3",
+    "golden": "E09",
+    "x": 728,
+    "y": 149,
+    "w": 250,
+    "h": 250,
+    "r": 22,
+    "aspect": "1:1"
+   },
+   "note": "four rule lines, A3 small panel"
+  },
+  {
+   "id": "P01_s04_room",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 4 (the example room)",
+   "media_index": 7,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s04_room.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s04_room_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 920,
+    "w": 268,
+    "h": 335,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "Room 0 plan with dimensions 1 to 3, A2 panel"
+  },
+  {
+   "id": "P01_s05_step1",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 5 (step 1)",
+   "media_index": 8,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s05_step1.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s05_step1_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 920,
+    "w": 268,
+    "h": 335,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "walkway 300 - 150 - 55 = 95, A2 panel"
+  },
+  {
+   "id": "P01_s06_step2",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 6 (step 2)",
+   "media_index": 9,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s06_step2.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s06_step2_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 920,
+    "w": 268,
+    "h": 335,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "door open 95 - 60 = 35, A2 panel"
+  },
+  {
+   "id": "P01_s07_whatif",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 7 (change one number)",
+   "media_index": 10,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s07_whatif.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s07_whatif_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 985,
+    "w": 216,
+    "h": 270,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "two plans, bed 150 and bed 120, A2 panel"
+  },
+  {
+   "id": "P01_s08_worksheet",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 8 (your turn)",
+   "media_index": 11,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜示意圖",
+   "svg": "assets/fangcun/diagrams/A/P01_s08_worksheet.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s08_worksheet_preview.png",
+   "slot": null,
+   "note": "blank worksheet, no character panel"
+  },
+  {
+   "id": "P01_s09_stamp",
+   "post": "fangcun-2026-11-16-01",
+   "scene": "slide 9 (source stamp)",
+   "media_index": 12,
+   "size": [
+    1080,
+    1350
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P01_s09_stamp.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P01_s09_stamp_preview.png",
+   "slot": {
+    "asset": "A4",
+    "golden": "E10",
+    "x": 728,
+    "y": 149,
+    "w": 250,
+    "h": 250,
+    "r": 22,
+    "aspect": "1:1"
+   },
+   "note": "出處章 stamp, save prompt, A4 small panel"
+  },
+  {
+   "id": "P02_f1_hook",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 1 0:00-0:03",
+   "media_index": 3,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f1_hook.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f1_hook_preview.png",
+   "slot": {
+    "asset": "A1",
+    "golden": "R01",
+    "x": 210,
+    "y": 474,
+    "w": 600,
+    "h": 750,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "hook card, A1 still at the top"
+  },
+  {
+   "id": "P02_f2_intro",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 2 0:03-0:08",
+   "media_index": 4,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f2_intro.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f2_intro_preview.png",
+   "slot": {
+    "asset": "A1",
+    "golden": "R01",
+    "x": 210,
+    "y": 474,
+    "w": 600,
+    "h": 750,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "identity captions, A1 still"
+  },
+  {
+   "id": "P02_f3_rules",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 3 0:08-0:12",
+   "media_index": 5,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f3_rules.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f3_rules_preview.png",
+   "slot": {
+    "asset": "A1",
+    "golden": "R01",
+    "x": 210,
+    "y": 474,
+    "w": 600,
+    "h": 750,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "S09 replacement captions, A1 still"
+  },
+  {
+   "id": "P02_f4_room",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 4 0:12-0:16",
+   "media_index": 6,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f4_room.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f4_room_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 1048,
+    "w": 250,
+    "h": 312,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "Room 0 plan with labels 1 to 3, A2 still"
+  },
+  {
+   "id": "P02_f5_step1",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 5 0:16-0:21",
+   "media_index": 7,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f5_step1.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f5_step1_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 1048,
+    "w": 250,
+    "h": 312,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "walkway 300 - 150 - 55 = 95, gap highlighted, A2 still"
+  },
+  {
+   "id": "P02_f6_step2",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 6 0:21-0:26",
+   "media_index": 8,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f6_step2.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f6_step2_preview.png",
+   "slot": {
+    "asset": "A2",
+    "golden": "R13",
+    "x": 102,
+    "y": 1048,
+    "w": 250,
+    "h": 312,
+    "r": 22,
+    "aspect": "4:5"
+   },
+   "note": "leaf open, 95 - 60 = 35, A2 still"
+  },
+  {
+   "id": "P02_f7_closing",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 7 0:26-0:31",
+   "media_index": 9,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜示意圖",
+   "svg": "assets/fangcun/diagrams/A/P02_f7_closing.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f7_closing_preview.png",
+   "slot": null,
+   "note": "closing caption S08, no character panel"
+  },
+  {
+   "id": "P02_f8_endcard",
+   "post": "fangcun-2026-11-17-01",
+   "scene": "scene 8 0:31-0:34",
+   "media_index": 10,
+   "size": [
+    1080,
+    1920
+   ],
+   "badge": "AI 生成｜虛擬角色",
+   "svg": "assets/fangcun/diagrams/A/P02_f8_endcard.svg",
+   "preview_png": "assets/fangcun/diagrams/A/P02_f8_endcard_preview.png",
+   "slot": {
+    "asset": "A4",
+    "golden": "E10",
+    "x": 340,
+    "y": 480,
+    "w": 400,
+    "h": 400,
+    "r": 22,
+    "aspect": "1:1"
+   },
+   "note": "end card: stamp, save prompt, A4 still"
+  }
+ ]
+}
