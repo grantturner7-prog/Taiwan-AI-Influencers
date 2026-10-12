@@ -1,0 +1,4 @@
+# A filled tracking sheet and do-not-contact sheet hold real business contacts and replies: keep them out of git.
+filled/
+exports/
+__pycache__/

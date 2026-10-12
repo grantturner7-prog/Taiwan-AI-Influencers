@@ -1,0 +1,10 @@
+entity_name,name_en,list_id,group_note,reason,reason_detail,date_added,added_by,removal_requires
+591 房屋交易網,591,H32,,hold_lawyer,Rental platform: decline unless a lawyer clears it (decline-list C29; bible 9.2),2026-10-12,drafted by Claude from the list; confirm,both of you
+樂屋網,Rakuya,H33,,hold_lawyer,Rental platform: decline unless a lawyer clears it (decline-list C29; bible 9.2),2026-10-12,drafted by Claude from the list; confirm,both of you
+好房網,Housefun,H34,"永慶房屋集團, search summary",hold_lawyer,Rental platform: decline unless a lawyer clears it (decline-list C29; bible 9.2),2026-10-12,drafted by Claude from the list; confirm,both of you
+信義房屋,Sinyi Realty,H35,,declined_category,"Property sales, mortgage and investment adjacency (decline-list C20; Ground rule 6)",2026-10-12,drafted by Claude from the list; confirm,both of you
+永慶房屋,Yung Ching Realty,H36,"永慶房屋集團, search summary",declined_category,"Property sales, mortgage and investment adjacency (decline-list C20; Ground rule 6)",2026-10-12,drafted by Claude from the list; confirm,both of you
+住商不動產,(English name not confirmed),H37,,declined_category,"Property sales, mortgage and investment adjacency (decline-list C20; Ground rule 6)",2026-10-12,drafted by Claude from the list; confirm,both of you
+台灣房屋,Taiwan Realty,H38,,declined_category,"Property sales, mortgage and investment adjacency (decline-list C20; Ground rule 6)",2026-10-12,drafted by Claude from the list; confirm,both of you
+有巢氏房屋,U-Trust Realty,H39,,declined_category,"Property sales, mortgage and investment adjacency (decline-list C20; Ground rule 6)",2026-10-12,drafted by Claude from the list; confirm,both of you
+中信房屋,(English name not confirmed),H40,,declined_category,"Property sales, mortgage and investment adjacency (decline-list C20; Ground rule 6)",2026-10-12,drafted by Claude from the list; confirm,both of you

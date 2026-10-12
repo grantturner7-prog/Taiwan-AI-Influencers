@@ -1,0 +1,177 @@
+# assumptions.csv - the single input table for model.py (standard library only).
+# Columns: key, unit, low, mid, high, status, source, note
+# status: sourced = taken from a project file (source column says which, with that file's own confidence label)
+#         computed = arithmetic on sourced values
+#         assumption = the studio's own planning figure; logic in the note; NOT market data
+#         hypothetical = equals a Phase 1 hypothetical axis value (research/monetisation.md 6.2 or 6.3); NOT market data
+#         placeholder = NO source exists; a stand-in so the model can run; [TO FILL WHEN REAL] with a real quote
+#         excluded = fixed at zero by rule
+# Edit a value here, then run: python3 model.py docs --write   (refreshes the generated tables in the two .md files)
+# Persona slugs: fangcun = 方寸 (home organisation), buzhou = 步驟 (AI tools), sehuan = 色環 (outfit logic and colour).
+# Nothing in this file is a forecast or a promise. No Taiwan market price was found for any route (research/monetisation.md section 0).
+key,unit,low,mid,high,status,source,note
+#
+# --- A. Horizon and capacity
+model.months,count,12,12,12,assumption,"task statement (12-month scenarios)","Horizon. M0 is the pre-launch month (registration and set-up costs). M1 to M12 are the model months."
+model.start_year,year,2026,2026,2026,assumption,"strategy/portfolio.md 2A (indicative W0 = 2026-11-16)","M1 is the month of the first persona post. W0 is only a label and is flagged unlikely (launch/README.md D7). If it slips, every month label shifts by the same amount."
+model.start_month,month,11,11,11,assumption,"strategy/portfolio.md 2A","Month number of M1 (11 = November 2026). Then M0 = 2026-10 and M12 = 2027-10."
+cap.op_hours_month_total,hours,26,26,26,computed,"DECISIONS.md Q2: 6 h per week x 52 / 12","The operator's total hours per month."
+cap.op_hours_revenue_month,hours,4,7.5,16,assumption,"strategy/portfolio.md 5.3: the admin and brand-contact line is 60 min/week (about 4.3 h/month) and the rework reserve is 60 to 110 min/week (about 4.3 to 7.9 h/month); ops/risk-register.md PPL-1; portfolio 5.6","Hours per month the operator can give to revenue work (B2B, samples, sponsored posts, products, stickers, link upkeep). Low = the admin line only. Mid = the admin line plus about half the rework reserve (7.5 h is 29% of operator time). High = the admin line plus the whole reserve plus posting cuts (16 h is 62%), possible only if posting is cut (portfolio 5.6). Planned load leaves little slack (PPL-1), so mid and high take hours from the personas."
+cap.wife_hours_revenue_month,hours,5,8,12,assumption,"strategy/portfolio.md 5.3: headroom to the 510-minute gate is 108 min/week, about 7.8 h/month","The wife's hours per month available to review revenue work. Her time is not a cash cost."
+#
+# --- B. Rate-card formula (hours x hourly value + tool cost + margin)
+rate.op_hourly,NT$/h,600,600,600,assumption,"research/SUMMARY.md iv: Phase 1 hypothetical reviewer axis NT$300 / 500 / 800 per hour","Assumed hourly value of the operator's production, QA and client time. No wage or freelancer rate was found. Replace after 3+ real quotes (G1, G11)."
+rate.wife_hourly,NT$/h,500,500,500,assumption,"research/SUMMARY.md iv: same hypothetical axis, middle value","Assumed hourly value of the wife's native zh-TW review time. Not paid in cash."
+rate.margin,fraction,0.25,0.25,0.25,assumption,"stated logic","Added to cost: covers rework beyond the included rounds, unpaid scoping and sales time, tool price changes and a contribution to the shared tools budget. Not a profit claim."
+rate.round_to,NT$,100,100,100,assumption,"stated logic","Asks are rounded UP to this step."
+rate.cost_per_try,NT$,8.6,8.6,8.6,sourced,"pipeline/tools.md section 5 (Gemini Pro-class with two paid reference inputs, about US$0.268 at NT$32 per US$); SOURCES.md PT3 (low to medium)","Image-API cost of one generation try. Secondary list prices, not checked against an invoice. The commercial-use terms are unread (HUMAN_TODO 33), so no client work may start."
+rate.revision_fraction,fraction,0.20,0.20,0.20,assumption,"stated logic","Share of a set redone in each revision round."
+rate.rounds_included,count,2,2,2,assumption,"content/sehuan/b2b-pitch.md B5 (two rounds of changes)","Revision rounds included in every price."
+rate.turnaround_hours_per_week,hours,1.5,1.5,1.5,assumption,"cap.op_hours_revenue_month: 4 to 7.5 h a month is about 0.9 to 1.7 h a week; 1.5 chosen","Operator hours per week that a client job can get. Sets the quoted turnaround."
+rate.turnaround_buffer_weeks,weeks,1,1,1,assumption,"stated logic","Added for the client's approval windows."
+rate.round_fixed_op_min,minutes,20,20,20,assumption,"stated logic","Operator minutes of handling (messages, re-export, re-check) added to every EXTRA revision round."
+rate.round_fixed_wife_min,minutes,10,10,10,assumption,"stated logic","Wife minutes of handling added to every EXTRA revision round."
+rate.paid_media_op_min,minutes,120,120,120,assumption,"strategy/portfolio.md 1.4; research/legal.md Q8","Operator minutes to set up the platform AI-disclosure control, the paid-partnership tag and the written boost terms when a client wants to boost a post. Compliance handling, not a rights fee."
+rate.paid_media_wife_min,minutes,30,30,30,assumption,"stated logic","Wife minutes to read the boosted creative and labels."
+#
+# --- C. Offer parameters (minutes per job and per unit; units per package)
+# B1 lookbook stills set (fashion; 色環 is the showroom). A unit is one still. Brand-supplied product photos only.
+offer.B1.fixed_op_min,minutes,150,150,150,assumption,"stated logic: scoping 45 + brief and source slip 45 + client messages 30 + delivery and invoice 30","Operator minutes that do not depend on set size."
+offer.B1.fixed_wife_min,minutes,75,75,75,assumption,"stated logic: client correspondence 45 + final label read 30","Wife minutes that do not depend on set size."
+offer.B1.unit_op_min,minutes,45,45,45,assumption,"stated logic: about 6 tries, 200% garment-fidelity check, typeset label, provenance row","Operator minutes per still."
+offer.B1.unit_wife_min,minutes,10,10,10,assumption,"strategy/portfolio.md 5.1 (10 min per master)","Wife minutes per still."
+offer.B1.tries,count,6,6,6,assumption,"stated logic (fidelity-heavy)","Image-API tries per kept still."
+offer.B1.s_units,units,3,3,3,assumption,"content/sehuan/b2b-pitch.md B2 (up to three stills)","Stills in the small package."
+offer.B1.m_units,units,8,8,8,assumption,"stated logic (two or three products)","Stills in the medium package."
+# B2 room-render set (home; 方寸 is the showroom). A unit is one dimension-accurate 示意 diagram, drawn as vector (decision D3), with the client's published dimensions. Photoreal product-in-room is NOT offered.
+offer.B2.fixed_op_min,minutes,150,150,150,assumption,"stated logic as B1","Operator fixed minutes."
+offer.B2.fixed_wife_min,minutes,75,75,75,assumption,"stated logic as B1","Wife fixed minutes."
+offer.B2.unit_op_min,minutes,40,40,40,assumption,"stated logic: arithmetic check against the client's dimension sheet, labels, export","Operator minutes per diagram."
+offer.B2.unit_wife_min,minutes,10,10,10,assumption,"strategy/portfolio.md 5.1","Wife minutes per diagram (zh-TW labels and 示意圖 badge)."
+offer.B2.tries,count,1,1,1,assumption,"stated logic (character panel reused from the golden set)","Image-API tries per diagram."
+offer.B2.s_units,units,3,3,3,assumption,"stated logic","Diagrams in the small package."
+offer.B2.m_units,units,8,8,8,assumption,"stated logic","Diagrams in the medium package."
+# B3 explainer stills set (software and SMEs; 步驟 is the showroom). A unit is one explainer card: character picture-in-picture plus a dated screen capture supplied or recorded by the operator. Video is NOT offered.
+offer.B3.fixed_op_min,minutes,150,150,150,assumption,"stated logic as B1","Operator fixed minutes."
+offer.B3.fixed_wife_min,minutes,75,75,75,assumption,"stated logic as B1","Wife fixed minutes."
+offer.B3.unit_op_min,minutes,50,50,50,assumption,"strategy/portfolio.md 5.1 (N7 extra 20 min per master) plus card build","Operator minutes per card (capture, claims check against the source slip, 測試條件 label)."
+offer.B3.unit_wife_min,minutes,12,12,12,assumption,"strategy/portfolio.md 5.1","Wife minutes per card."
+offer.B3.tries,count,3,3,3,assumption,"stated logic","Image-API tries per card."
+offer.B3.s_units,units,5,5,5,assumption,"stated logic (one carousel)","Cards in the small package."
+offer.B3.m_units,units,12,12,12,assumption,"stated logic","Cards in the medium package."
+# SP sponsored post on one persona account: one master (carousel of up to 6 slides, or a still-based Short) plus one platform variant.
+offer.SP.fixed_op_min,minutes,120,120,120,assumption,"stated logic: brief, contract, brand permission and paid-partnership tag, post-live check, invoice","Operator fixed minutes."
+offer.SP.fixed_wife_min,minutes,60,60,60,assumption,"stated logic","Wife fixed minutes."
+offer.SP.unit_op_min,minutes,90,90,90,assumption,"stated logic: claims check against the brand's source slip, labels, four-place disclosure check","Operator minutes per master."
+offer.SP.unit_wife_min,minutes,25,25,25,assumption,"strategy/portfolio.md 5.1 (10 min per master) plus brand rounds","Wife minutes per master."
+offer.SP.tries,count,3,3,3,assumption,"stated logic","Image-API tries."
+offer.SP.units,units,1,1,1,assumption,"stated logic","Masters per package."
+offer.SP.report_op_min.t0,minutes,0,0,0,assumption,"stated logic","Post-campaign report minutes, tier 0 (no audience): none, no numbers exist to report."
+offer.SP.report_op_min.t1,minutes,30,30,30,assumption,"stated logic","Tier 1: platform insights screenshots plus a one-page note, only real numbers."
+offer.SP.report_op_min.t2,minutes,60,60,60,assumption,"stated logic","Tier 2: 14-day insights report."
+offer.SP.report_op_min.t3,minutes,90,90,90,assumption,"stated logic","Tier 3: 14-day insights report plus a call."
+#
+# --- D. Own digital products (one pack per pilot)
+prod.P1.op_h,hours,8,8,8,assumption,"stated logic","Operator hours to make the 方寸 printable checklist and template pack."
+prod.P1.wife_h,hours,3,3,3,assumption,"stated logic","Wife hours to review it."
+prod.P2.op_h,hours,8,8,8,assumption,"stated logic","Operator hours to make the 步驟 template and prompt pack."
+prod.P2.wife_h,hours,3,3,3,assumption,"stated logic","Wife hours to review it."
+prod.P3.op_h,hours,10,10,10,assumption,"stated logic","Operator hours to make the 色環 colour guide (wheel, chip cards)."
+prod.P3.wife_h,hours,4,4,4,assumption,"stated logic","Wife hours to review it."
+prod.tries,count,12,12,12,assumption,"stated logic","Image-API tries per pack."
+prod.payback_units,units,40,40,40,assumption,"stated logic","Sales at which a pack has repaid its hours at the assumed hourly values plus margin. Sets the proposed list price. Not a demand estimate."
+prod.fee_rate,fraction,0.15,0.15,0.15,placeholder,"none: marketplace and payment fee rates were not found [TO FILL WHEN REAL]","Share of each product sale lost to marketplace and payment fees."
+prod.round_to,NT$,10,10,10,assumption,"stated logic","List prices are rounded UP to this step."
+#
+# --- E. Scenario inputs (12 months). The low scenario is the world in which the week-8 checkpoint shows no signal and the studio stops spending hours.
+# B2B creative (studio level; the persona is the showroom, tagged for tracking only)
+b2b.fangcun.s_jobs,jobs,0,1,2,assumption,"strategy/portfolio.md H6; Phase 1 hypothetical 3 / 8 jobs","Paid small jobs, room-render set (B2)."
+b2b.fangcun.m_jobs,jobs,0,0,1,assumption,"as above","Paid medium jobs, room-render set (B2)."
+b2b.buzhou.s_jobs,jobs,0,1,2,assumption,"strategy/portfolio.md H6","Paid small jobs, explainer stills set (B3)."
+b2b.buzhou.m_jobs,jobs,0,0,1,assumption,"as above","Paid medium jobs, explainer stills set (B3)."
+b2b.sehuan.s_jobs,jobs,0,1,1,assumption,"strategy/portfolio.md H5 (about five warm fashion contacts)","Paid small jobs, lookbook stills set (B1)."
+b2b.sehuan.m_jobs,jobs,0,0,2,assumption,"as above","Paid medium jobs, lookbook stills set (B1)."
+b2b.first_paid_month,month,8,6,4,assumption,"research/monetisation.md 3.7 (1 to 3 months after registration) and strategy/portfolio.md 6.4","First model month with a paid job delivered. Needs registration, the recorded tool licence, the lawyer's paid-gate answers and a free sample first."
+b2b.last_month,month,12,12,12,assumption,"stated logic","Jobs are spread evenly from the first paid month to this month."
+b2b.realisation,fraction,0.6,0.8,0.9,assumption,"stated logic","Share of the proposed price actually realised after negotiation. No market evidence; recalibrate with 3+ quotes."
+b2b.samples,count,1,3,5,assumption,"strategy/portfolio.md 6.4 (at least 1 free scoped sample by week 8) and H5 (five warm contacts); H6 (a sample or enquiry for N9 and N7)","Free private samples, small size, one per month, cycling 色環, 方寸, 步驟. They cost hours and image tries and earn nothing. High has more paid jobs than samples because it includes repeat clients."
+b2b.sample_first_month,month,2,2,2,assumption,"strategy/portfolio.md 6.4","Month of the first sample; one per month after."
+b2b.lag,months,1,1,1,assumption,"stated logic","Months from delivery to cash. Payment terms are not agreed."
+b2b.outreach_contacts,count,5,25,60,assumption,"strategy/portfolio.md H5 (5 warm contacts) plus the Phase 8 outreach lists","Brands or agencies approached. Used only to show the implied conversion."
+# Sponsored posts 業配
+sp.fangcun.deals,deals,0,0,1,assumption,"research/monetisation.md 6.3 (0 / 1 / 4 deals)","Sponsored posts on 方寸."
+sp.buzhou.deals,deals,0,0,1,assumption,"as above","Sponsored posts on 步驟."
+sp.sehuan.deals,deals,0,1,2,assumption,"as above","Sponsored posts on 色環."
+sp.tier,tier,0,1,1,assumption,"research/monetisation.md 3.1","Audience tier of the account at the time of the deal (0 to 3). No persona is assumed above tier 1 within 12 months."
+sp.first_month,month,8,8,6,assumption,"research/monetisation.md 2 (3 to 6+ months)","First sponsored post month."
+sp.realisation,fraction,0.6,0.8,0.9,assumption,"stated logic","Share of the proposed price realised."
+sp.reach_premium,NT$,0,0,0,placeholder,"none: no Taiwan reach-based rate was found [TO FILL WHEN REAL]","Reach component added to the production price per deal. Zero until 3+ real quotes exist."
+sp.lag,months,1,1,1,assumption,"stated logic","Months from posting to cash."
+# Affiliate (the same funnel for each persona; no evidence on relative reach, so equal weights)
+aff.first_month,month,2,2,2,assumption,"research/monetisation.md 5 (apply before the first post)","First month a link is live on the link page."
+aff.ramp_months,months,8,8,8,assumption,"stated logic","Months to reach the steady-state monthly impressions (linear)."
+aff.impressions.fangcun,count/month,3000,25000,150000,assumption,"none: no Taiwan reach benchmark exists","Steady-state monthly impressions across the persona's platforms. A hypothesis, not a forecast."
+aff.impressions.buzhou,count/month,3000,25000,150000,assumption,"none","As above."
+aff.impressions.sehuan,count/month,3000,25000,150000,assumption,"none","As above."
+aff.weight.fangcun,factor,1,1,1,assumption,"none: no evidence on relative reach","Multiplier on the persona's impressions."
+aff.weight.buzhou,factor,1,1,1,assumption,"none","As above."
+aff.weight.sehuan,factor,1,1,1,assumption,"none","As above."
+aff.click_rate,fraction,0.003,0.007,0.010,assumption,"research/monetisation.md 6.2 used 1% of impressions as its hypothetical value","Share of impressions that click through to a tracked affiliate link. High equals the Phase 1 hypothetical 1%; low and mid are lower. Link-in-bio flows typically lose more (unverified)."
+aff.click_to_order,fraction,0.01,0.02,0.02,assumption,"research/monetisation.md 6.2 used 2% click-to-order","Share of link clicks that become an order. Mid and high equal the Phase 1 hypothetical 2%."
+aff.aov,NT$,500,500,500,hypothetical,"research/monetisation.md 6.2 (average order NT$500)","Average order value. Hypothetical axis value."
+aff.commission,fraction,0.02,0.05,0.08,hypothetical,"research/monetisation.md 6.2 (commission 2% / 5% / 8%)","Commission rate. No Taiwan programme terms were found (G3, G4)."
+aff.admin_op_min_month,minutes,30,30,30,assumption,"stated logic","Operator minutes a month for link upkeep and disclosure checks, from the first live month."
+aff.lag,months,2,2,2,assumption,"none: payout threshold and schedule not found","Months from sale to payout."
+# Own digital products
+prod.fangcun.made,flag,0,1,1,assumption,"stated logic","1 = the pack is made. Low = the checkpoint shows no signal and the hours are not spent."
+prod.buzhou.made,flag,0,1,1,assumption,"as above","As above."
+prod.sehuan.made,flag,0,1,1,assumption,"as above","As above."
+prod.fangcun.units,units/year,0,5,25,assumption,"research/monetisation.md 6.3 (NT$0 / 2,000 / 10,000 a year)","Units sold in the 12 months, spread evenly from the first sale month. Expected values, not a draw."
+prod.buzhou.units,units/year,0,2,10,assumption,"as above","As above."
+prod.sehuan.units,units/year,0,5,25,assumption,"as above","As above."
+prod.first_sale_month,month,6,5,4,assumption,"research/monetisation.md 2 (1 to 3 months to list) and the 記帳士 gate","First month of sales."
+prod.lag,months,1,1,1,assumption,"none: marketplace payout terms not found","Months from sale to cash."
+# LINE stickers (photoreal-face sets are untested; revisit after the week-8 review)
+stk.fangcun.sets,sets,0,0,1,assumption,"personas/fangcun/photoreal-addendum.md 12.3 item 5","Sticker sets listed for 方寸."
+stk.buzhou.sets,sets,0,0,0,assumption,"personas/buzhou/bible.md 9.1 (weak, not planned)","Sticker sets for 步驟: none in any scenario."
+stk.sehuan.sets,sets,0,1,1,assumption,"personas/sehuan/bible.md 9.1 (weak to medium, later)","Sticker sets listed for 色環."
+stk.sales_per_set_month,sales,0,10,25,assumption,"research/monetisation.md 6.3 (NT$0 / 2,000 / 10,000 a year)","Sales per set per month from the list month. Sticker earnings of unknown creators in Taiwan: not found."
+stk.first_month,month,8,7,6,assumption,"research/monetisation.md 3.3 (1 to 2 months to list) and the week-8 review","First month with sales."
+stk.creator_share,NT$/sale,12,12,12,hypothetical,"research/monetisation.md 6.2 (creator share NT$8 / 12 / 16 per sale; U1: about half of net sales, unverified)","Net amount to the studio per sale. Price tiers and payout threshold not found (G5)."
+stk.set_op_h,hours,12,12,12,assumption,"stated logic","Operator hours to make and submit one set."
+stk.set_wife_h,hours,3,3,3,assumption,"stated logic","Wife hours to review one set."
+stk.set_tries,count,40,40,40,assumption,"stated logic (about 16 stickers at 2 to 3 tries)","Image-API tries per set."
+stk.lag,months,3,3,3,assumption,"none: payout calendar not found","Months from sale to payout."
+# Routes fixed at zero
+excl.platform_payouts,NT$,0,0,0,excluded,"research/monetisation.md 3.5 and 5 (planned at NT$0 in year 1)","YouTube Partner Programme thresholds are out of reach in year 1 [S17]."
+excl.licensing,NT$,0,0,0,excluded,"research/monetisation.md 3.6 (9 to 18+ months; low in year 1)","Spokes-character licensing: discuss only; no price; nothing modelled."
+#
+# --- F. Costs
+tools.budget,NT$/month,5000,5000,5000,sourced,"DECISIONS.md Q1 (NT$5,000 to 10,000 a month, tools only)","Base-case monthly tools budget. The NT$10,000 headroom is run as a variant."
+tools.early_fraction,fraction,0.6,0.6,0.6,assumption,"strategy/portfolio.md 7 (stay below the cap in months 1 to 3)","Share of the budget spent in the early months."
+tools.early_months,months,3,3,3,assumption,"strategy/portfolio.md 7","Number of early months."
+tools.m0,NT$,0,0,0,assumption,"stated logic","Tools spend in M0 (no persona live)."
+cost.scale,factor,1,1,1,assumption,"stated logic","Multiplier on all placeholder compliance costs below. Used by the sensitivity table."
+cost.registration,NT$,10000,10000,10000,placeholder,"none: registration fees not found [TO FILL WHEN REAL]","One-time: business registration (HUMAN_TODO 4). NOT a quote."
+cost.registration.month,month,0,0,0,assumption,"DECISIONS.md Q5 (about 2 weeks)","Month paid."
+cost.bookkeeper_setup,NT$,3000,3000,3000,placeholder,"none: 記帳士 fees not found [TO FILL WHEN REAL]","One-time: bookkeeper set-up. NOT a quote."
+cost.bookkeeper_setup.month,month,0,0,0,assumption,"stated logic","Month paid."
+cost.lawyer_launch,NT$,10000,10000,10000,placeholder,"none: lawyer fees not found [TO FILL WHEN REAL]","One-time: launch-gate consult (research/legal.md section 12). NOT a quote."
+cost.lawyer_launch.month,month,0,0,0,assumption,"HUMAN_TODO 9","Month paid."
+cost.lawyer_contract,NT$,8000,8000,8000,placeholder,"none [TO FILL WHEN REAL]","One-time: contract template review (legal.md Q24). NOT a quote."
+cost.lawyer_contract.month,month,3,3,3,assumption,"stated logic (before the first paid deal)","Month paid."
+cost.trademark,NT$,10000,10000,10000,placeholder,"none: TIPO fees not found [TO FILL WHEN REAL]","One-time: trade mark filing for the studio name (legal.md Q18). NOT a quote."
+cost.trademark.month,month,3,3,3,assumption,"legal.md Q18 is tagged Later","Month paid."
+cost.bookkeeper_monthly,NT$/month,1500,1500,1500,placeholder,"none [TO FILL WHEN REAL]","Recurring bookkeeping once registered, from M1. NOT a quote."
+#
+# --- G. Phase 1 hypothesis (research/monetisation.md 6.3). Replayed unchanged to reconcile with the NT$0 to about NT$200,000 range.
+phase1.b2b_jobs,jobs,0,3,8,sourced,"research/monetisation.md 6.3 (hypothetical cells)","Phase 1 B2B jobs."
+phase1.b2b_price,NT$,4000,8000,15000,sourced,"research/monetisation.md 6.2 and 6.3 (hypothetical axis)","Phase 1 price per B2B job."
+phase1.sp_deals,deals,0,1,4,sourced,"research/monetisation.md 6.3","Phase 1 sponsored deals."
+phase1.sp_price,NT$,3000,5000,8000,sourced,"research/monetisation.md 6.2 and 6.3 (hypothetical axis)","Phase 1 fee per deal."
+phase1.affiliate,NT$,1000,5000,30000,sourced,"research/monetisation.md 6.3","Phase 1 affiliate commissions."
+phase1.stickers,NT$,0,2000,10000,sourced,"research/monetisation.md 6.3","Phase 1 sticker income."
+phase1.products,NT$,0,2000,10000,sourced,"research/monetisation.md 6.3","Phase 1 own-product income."
+phase1.licensing,NT$,0,0,0,sourced,"research/monetisation.md 6.3","Phase 1 licensing (excluded)."
+phase1.payouts,NT$,0,0,0,sourced,"research/monetisation.md 6.3","Phase 1 platform payouts (excluded)."
+phase1.spend_cap,NT$,60000,60000,60000,sourced,"research/monetisation.md 6.1 A1 (12 x NT$5,000)","Phase 1 twelve-month spend at the cap."

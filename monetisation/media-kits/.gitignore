@@ -1,0 +1,4 @@
+# Filled working copies hold real numbers (and later perhaps brand names); exports are what is sent.
+filled/
+exports/
+__pycache__/
