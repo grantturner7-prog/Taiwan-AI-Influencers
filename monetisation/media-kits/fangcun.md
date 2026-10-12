@@ -50,7 +50,7 @@
 >
 > | Mode | When | Keep | Replace or delete |
 > |---|---|---|---|
-> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 8, 11 and 12 | Delete the real-example slots in section 9 that are still empty. Replace the whole of section 10 with the paragraph below |
+> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 8, 11 and 12 | Delete the portrait row in section 1 and the real-example rows in section 9 while they are empty. In section 9 replace each price row with 'quoted per scope' (依範圍報價) or delete it. Replace the whole of section 10 with the paragraph below. Fill or delete every placeholder in sections 11 and 12 |
 > | **2. With data** | Real insights exist and screenshots are saved | All sections | Every 【待填】 is filled from a dated screenshot, or the row is deleted. Never leave a placeholder in a sent copy |
 >
 > **Section 10 replacement text for mode 1** (zh-TW draft / English):
@@ -79,9 +79,9 @@
 > | Where | Statement that is true today | Edit it when |
 > |---|---|---|
 > | Header and section 2 | 'No account, no follower, no audience data yet' and the 'where things stand' paragraph | First send after the accounts are live |
-> | Section 4.2 and section 9 | 'None has been done', 'not past work', the empty real-example slots | First real collaboration or first real published example |
+> | Section 4.2 and section 9 | 'None has been done', 'not past work', the empty real-example slots; the 'Needed first' column stands for gates 2, 3, 4 and 8 in A1 (rewrite it as they close) | First real collaboration or first real published example |
 > | Section 5 | 'No post exists yet' (standard, not a track record) | Once posts are published: replace with a dated statement of what the account actually does |
-> | Section 8 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
+> | Section 8 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person; the statement that diagrams and lesson graphics are made with AI assistance and a person checks each one (decision D3 of 2026-10-12: the diagram layer is drawn as SVG by Claude) | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
 > | Section 10 | The whole section | Switch from mode 1 to mode 2 and back; refresh at least monthly while the kit is in use |
 > | Section 11 | 'No public price list' | When a rate card is made public |
 > | Section 12 | Every placeholder | At registration, at mailbox creation, at handle choice |
@@ -154,13 +154,13 @@
 
 | 繁體中文（草稿，待太太審閱） | English (for the operator) |
 |---|---|
-| 下表的每一項都「尚未開放」：目前沒有任何一項做過，也沒有任何一項有案例。每一項都要先通過附錄 A1 的關卡。 | Every row below is NOT YET OFFERED: none has been done and none has a case. Each must first pass the gates in A1. |
+| 下表的每一項都「尚未開放」：目前沒有任何一項做過，也沒有任何一項有案例。每一項都要等工作室完成登記、合約範本與必要的法律確認後，才會開始接案。 | Every row below is NOT YET OFFERED: none has been done and none has a case. Each opens only once the studio is registered, a contract template exists and the necessary legal confirmations are in. |
 
 | 形式 / Format | 內容（繁體中文） | What it is (English) | 開放前必須先有 / Needed first |
 |---|---|---|---|
-| P1 業配說明貼文 / Sponsored explainer | 以品牌提供的官方尺寸與規格為基礎，說明商品能放進哪些空間、如何核對尺寸。角色沒有使用過商品，內容僅就公開規格說明。 | A post built on the brand's published dimensions and specifications, explaining which spaces the product could fit and how to check the size. The character has not used the product; the content explains public specifications only. | Gates 2, 3, 4, 8 in A1 (registration, lawyer answers, image-tool terms, contract). Briefs that ask for first-hand experience are declined |
-| P2 示意圖創作（B2B）/ Illustrative diagram creative | 為品牌自己的頻道製作商品在空間中的示意圖與配置對照：示意圖由工作室自行繪製，商品以依公開尺寸繪製的比例方塊呈現；品牌提供的商品照片只放在旁邊的獨立畫格，不合成進房間。角色也在旁邊的獨立畫格中，不在房間裡，也不拿著商品。 | Illustrative product-in-space diagrams and layout comparisons for the brand's own channels. The diagram is drawn by the studio; the product appears as a to-scale block drawn from published dimensions, while the brand's own photo sits in a separate panel and is never composited into the room. The character also stays in a separate framed panel, never inside the room and never holding the product. | Gates 2, 3, 4, 8; a written scope; the brand supplies dimensions and photos with a usage licence. No photoreal generated room or product-in-room render is offered (photoreal addendum 5.5) |
-| P3 尺寸核對表與檢查清單 / Size-check sheet and checklist | 把品牌公開的尺寸資料做成可收藏的核對表或買前檢查清單，附出處與資料日期。 | A saveable size-check sheet or measure-before-you-buy checklist made from the brand's published dimensions, with source and data date. | Gates 2, 3, 8; the brand warrants the dimensions in writing. Whether a general move-in or measuring checklist drifts into legal advice is a lawyer question (HUMAN_TODO 27) |
+| P1 業配說明貼文 / Sponsored explainer | 以品牌提供的官方尺寸與規格為基礎，說明商品能放進哪些空間、如何核對尺寸。角色沒有使用過商品，內容僅就公開規格說明。 | A post built on the brand's published dimensions and specifications, explaining which spaces the product could fit and how to check the size. The character has not used the product; the content explains public specifications only. | Business registration, a lawyer's confirmations, recorded image-tool terms and a contract template. Briefs that ask for first-hand experience are declined |
+| P2 示意圖創作（B2B）/ Illustrative diagram creative | 為品牌自己的頻道製作商品在空間中的示意圖與配置對照：示意圖由工作室自行繪製，商品以依公開尺寸繪製的比例方塊呈現；品牌提供的商品照片只放在旁邊的獨立畫格，不合成進房間。角色也在旁邊的獨立畫格中，不在房間裡，也不拿著商品。 | Illustrative product-in-space diagrams and layout comparisons for the brand's own channels. The diagram is drawn by the studio; the product appears as a to-scale block drawn from published dimensions, while the brand's own photo sits in a separate panel and is never composited into the room. The character also stays in a separate framed panel, never inside the room and never holding the product. | The same four items; a written scope; the brand supplies dimensions and photos with a usage licence. No photoreal generated room or product-in-room render is offered |
+| P3 尺寸核對表與檢查清單 / Size-check sheet and checklist | 把品牌公開的尺寸資料做成可收藏的核對表或買前檢查清單，附出處與資料日期。 | A saveable size-check sheet or measure-before-you-buy checklist made from the brand's published dimensions, with source and data date. | Registration, a lawyer's confirmations and a contract template; the brand warrants the dimensions in writing. Whether a general move-in or measuring checklist could amount to legal advice is still to be confirmed with a lawyer |
 
 
 ### 4.3 不提供 / Not offered
@@ -187,7 +187,7 @@
 |---|---|---|
 | 簡介與名稱欄 / Bio and name field | 名稱欄：「方寸｜AI 虛擬角色」<br>簡介第一行：「AI 虛擬角色｜方寸｜收納與小空間尺寸說明｜明說角色工作室 創作與營運」<br>簡介第二行：「圖像為 AI 生成，非真人。角色沒有住過任何房子，也沒有用過任何商品，只整理尺寸與公開資料。」 | Name field: 方寸 / AI virtual character.<br>Bio line 1: AI virtual character / 方寸 / storage and small-space dimensions, explained / created and run by 明說角色工作室.<br>Bio line 2: Images are AI-generated, not a real person. The character has never lived in any home or used any product; it only organises dimensions and public data. |
 | 貼文第一行 / First caption line | Instagram：「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「方寸」發布，圖為示意。」<br>YouTube 說明欄第一行：「【AI 虛擬角色】本影片由 AI 生成的虛擬角色「方寸」發布，畫面為示意。」 | Instagram: AI virtual character. This post is by the AI-generated virtual character 方寸; the images are illustrations.<br>YouTube description, line 1: the same for the video; the picture is an illustration. |
-| 畫面標示 / On-screen badge | 每張圖與每個影片畫面都有固定位置的標示：出現角色時為「AI 生成｜虛擬角色」，只有示意圖或房間圖時為「AI 生成｜示意圖」。標示由人在後製加上，位置留有邊距，方形裁切也切不掉。 | Every image and every video frame carries a fixed-position badge: 'AI-generated / virtual character' when the character appears, 'AI-generated / illustration' on diagram or room slides. A person adds it in editing and it sits inside the margins so a square crop cannot remove it. |
+| 畫面標示 / On-screen badge | 每張圖與每個影片畫面都有固定位置的標示：出現角色時為「AI 生成｜虛擬角色」，只有示意圖或房間圖時為「AI 生成｜示意圖」。標示在後製加上，位置留有邊距，方形裁切也切不掉。 | Every image and every video frame carries a fixed-position badge: 'AI-generated / virtual character' when the character appears, 'AI-generated / illustration' on diagram or room slides. It is added in editing and sits inside the margins so a square crop cannot remove it. |
 | 平台標籤 / Platform label | 每則貼文都由人手動開啟平台的 AI 內容標籤；若平台在台灣提供帳號層級的 AI 標籤，也會開啟。YouTube 的「已更改或合成內容」一律選「是」。〔未查證〕 | The platform's AI-content label is switched on by hand for every post, and the account-level AI label too if the platform offers one in Taiwan. YouTube's altered-or-synthetic question is always answered yes. (Unverified.) |
 | 數字與日期 / Numbers and dates | 有出處的數字標示「資料日期：YYYY/MM/DD」；沒有出處的數字標示「示意數字」；與尺寸有關的頁面加註「請以現場丈量為準」。 | Sourced numbers carry 'data date: YYYY/MM/DD'; unsourced numbers are marked 示意數字; fit and clearance slides add 'go by an on-site measurement'. |
 
@@ -329,14 +329,14 @@
 | 每則貼文在發布前，都由真人審閱並核准：一位母語審閱者檢查繁體中文用語、語氣與文化禁忌；一位營運者核對事實、數字、出處、圖像品質與標示。［D8］ | Every post is reviewed and approved by people before it is published: a native reviewer checks Traditional Chinese wording, tone and cultural taboos; an operator checks facts, numbers, sources, image quality and labels. [D8] |
 | 文字草稿由 AI 協助起草；沒有任何貼文在未經真人核准前發布。 | Text drafts are written with AI assistance. No post goes out without a person's approval. |
 | 每張影像都有來源紀錄（工具、日期、提示詞、人工編修），並檢查是否神似任何真人；製作角色時不使用任何真人照片作為參考。［D8］ | Every image has a provenance record (tool, date, prompt, human edits) and is checked for resemblance to real people. No photograph of a real person is used as a reference when making the character. [D8] |
-| 畫面上的中文與數字由人在後製排版，不由影像生成工具產生，並由審閱者逐字檢查。 | On-image Chinese text and numbers are typeset by a person in editing, never generated, and checked character by character by the reviewer. |
+| 畫面上的中文、數字、標示與圖解版面都在後製加上，不由影像生成工具產生；示意圖與圖解以 AI 協助製作，每一張都由真人逐字核對後才發布。 | On-image Chinese text, numbers, badges and diagram layouts are added in editing and never produced by an image generator. Diagrams and lesson graphics are made with AI assistance, and a person checks each one character by character before it is published. |
 | 只使用平台官方的發布與排程功能。不購買追蹤者或互動，不使用機器人留言，不參加互動群組。 | Official platform publishing and scheduling tools only. No bought followers or engagement, no bot comments, no engagement pods. |
 | 合作流程（擬定，尚未實際執行過）：書面範圍（交付物、修改次數、核准人、時程）→ 品牌提供素材與可查證的資料 → 初稿 → 品牌書面核准 → 發布前核對標示 → 發布並留存紀錄。 | Collaboration flow (proposed; never yet run): written scope (deliverables, revision rounds, approver, timing) -> brand supplies materials and verifiable facts -> draft -> brand's written approval -> label check before publishing -> publish and keep the record. |
 | 發現錯誤時，會在貼文上公開更正（附「【更正】」與日期），必要時下架。 | When an error is found it is corrected openly on the post (with a dated 【更正】 line) and, if needed, the post is taken down. |
 | 同一品牌不會在同一週出現在工作室的兩個角色上。 | The same brand does not appear on two of the studio's characters in the same week. |
 | 目前不使用自動回覆；若日後使用，每則都會標明是自動回覆。 | No automated replies are used at present. If any are added later, each one will say it is automated. |
 | 尺寸、規格與算式都附出處、型號與查閱日期；不確定的尺寸向品牌確認，不自行推測。 | Dimensions, specifications and arithmetic carry a source, model and date; an uncertain dimension is checked with the brand, never guessed. |
-| 房間與配置圖是工作室自行繪製的示意圖，不是生成的實景照片；所有房間圖都標示「示意圖」。 | Room and layout pictures are diagrams drawn by the studio, not generated photographs of real places; every room picture is labelled as an illustration. |
+| 房間與配置圖是工作室以 AI 協助繪製的向量示意圖，不是影像生成工具產生的實景照片；所有房間圖都標示「示意圖」。 | Room and layout pictures are vector diagrams drawn by the studio with AI assistance, not photographs of real places made by an image generator; every room picture is labelled as an illustration. |
 | 租約、押金、房東與電氣、瓦斯、結構、承重問題一律回到合約、產品說明書或專業人員，工作室不提供建議。 | Lease, deposit, landlord, electrical, gas, structural and load questions always go back to the contract, the manufacturer's manual or a licensed professional; the studio gives no advice on them. |
 
 
@@ -357,7 +357,7 @@
 | 品牌需提供（合作版）/ Brand supplies (collaboration version) | 商品型號、官方尺寸與規格頁面、商品照片與使用授權、品牌想引用的文字及其依據。 | Product model, official dimension and specification pages, product photos with a usage licence, and any text the brand wants quoted with its basis. |
 | 工作室製作 / Studio makes | 封面提問、標示為示意的房間圖、算式步驟、以示意數字或品牌提供數字完成的算例、空白算式、出處與揭露頁、替代文字。 | Cover question, a labelled illustrative room diagram, the arithmetic steps, a worked example with illustrative or brand-supplied numbers, a blank formula, a sources and disclosure slide, and alt text. |
 | 標示 / Labels | AI 生成｜虛擬角色或示意圖；示意數字；資料日期；請以現場丈量為準；合作版另加【業配】或【合作內容】。 | AI-generated / virtual character or illustration; illustrative number; data date; 'go by an on-site measurement'; a collaboration version adds 【業配】 or 【合作內容】. |
-| 核准 / Approvals | 太太審閱繁體中文；營運者核對數字、出處與影像品質；兩人都核准後才發布。 | The wife reviews the Chinese; the operator checks numbers, sources and image quality; the post is published only after both approve. |
+| 核准 / Approvals | 母語審閱者審閱繁體中文；營運者核對數字、出處與影像品質；兩人都核准後才發布。 | The native reviewer reviews the Chinese; the operator checks numbers, sources and image quality; the post is published only after both approve. |
 | 核准（合作版）/ Approvals (collaboration version) | 除了上述兩項，品牌須以書面核准每一張圖與每一句文案後才發布。 | In addition to the above, the brand approves every image and caption line in writing before anything is published. |
 | 真實範例 / Real example | 【待填：已發布貼文連結與日期；若為合作內容，須有品牌書面同意才可列出】 | [TO FILL WHEN REAL: link and date of a real published post; for client work, only with the brand's written permission] |
 | 報價 / Price | 【待填：依範圍報價，見第 11 節】 | [TO FILL WHEN REAL: quoted per scope, see section 11; no price is given here] |
@@ -372,7 +372,7 @@
 | 品牌需提供（合作版）/ Brand supplies (collaboration version) | 要放進配置的商品尺寸與照片、使用授權。 | Dimensions and photos of the products to place in the layouts, and a usage licence. |
 | 工作室製作 / Studio makes | 房間示意圖（工作室繪製）、每種配置的比例方塊、走道數字表、出處與揭露頁；品牌照片只放在獨立畫格。 | A room diagram drawn by the studio, to-scale blocks for each layout, a table of walkway numbers, and a sources and disclosure slide; brand photos appear only in a separate panel. |
 | 標示 / Labels | 同上。房間一律標示為示意，不是實景。 | As above. The room is always labelled as an illustration, not a real place. |
-| 核准 / Approvals | 太太審閱繁體中文；營運者核對數字、出處與影像品質；兩人都核准後才發布。 | The wife reviews the Chinese; the operator checks numbers, sources and image quality; the post is published only after both approve. |
+| 核准 / Approvals | 母語審閱者審閱繁體中文；營運者核對數字、出處與影像品質；兩人都核准後才發布。 | The native reviewer reviews the Chinese; the operator checks numbers, sources and image quality; the post is published only after both approve. |
 | 核准（合作版）/ Approvals (collaboration version) | 除了上述兩項，品牌須以書面核准每一張圖與每一句文案後才發布。 | In addition to the above, the brand approves every image and caption line in writing before anything is published. |
 | 真實範例 / Real example | 【待填：已發布貼文連結與日期；若為合作內容，須有品牌書面同意才可列出】 | [TO FILL WHEN REAL: link and date of a real published post; for client work, only with the brand's written permission] |
 | 報價 / Price | 【待填：依範圍報價，見第 11 節】 | [TO FILL WHEN REAL: quoted per scope, see section 11; no price is given here] |
@@ -415,7 +415,7 @@
 | 分享數中位數 / Median shares per post | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 留言數中位數 / Median comments per post | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 互動率中位數（工作室定義）/ Median ER (studio definition) | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
-| 連結頁點擊 / Link-page clicks (counter not yet chosen, portfolio.md 6.1) | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
+| 連結頁點擊 / Link-page clicks (no click counter yet: write 'not tracked') | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 帳號狀態：期間內的違規警告或限制 / Account standing: strikes or restrictions in the period | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | AI 標籤：期間內有開啟平台 AI 標籤的貼文數／全部貼文數 / Posts with the platform AI label on / all posts | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 
@@ -593,3 +593,4 @@
 > 5. No rate card or contract template exists yet. Section 11 says 'quoted per scope'; when the Phase 8 rate card exists, record its file name and version in section 11 and in the README.
 > 6. The corrections wording in section 8 avoids a time limit on purpose: the internal take-down time limit (portfolio.md 6.2) is not stated publicly until the lawyer has answered (launch/README.md D8; HUMAN_TODO 37). Keep it out of every sent copy and out of the contract wording quoted to brands.
 > 7. Ask the 記帳士 whether the studio can accept any payment, even a gifted item, before registration is complete (legal.md Q17). Until answered, accept nothing.
+> 8. Review 2026-10-12: the process statements in section 8 and the badge row in section 5 no longer say that a person typesets text and labels or that the diagrams are hand-drawn, because decision D3 (2026-10-12) has Claude draw the diagram layer as SVG. They now say text and labels are added in editing and that diagrams are made with AI assistance and checked by a person. The wife and the operator should confirm that this is how the work is really done.

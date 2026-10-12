@@ -37,9 +37,9 @@ Files in this folder: [README.md](README.md) (index and counts) · target lists 
 
 ## 3. Order of work and weekly time
 
-**Order.** Wave 0: the operator's warm contacts, verbally (before the gates; see section 1). Wave 1: the P1 rows, fashion first (F01 to F07), then AI tools (A01 to A08, which includes the three agencies to ask for rate sheets), then home (H01 to H03). Wave 2: P2 rows after Wave 1 is answered or closed. P3 rows only if the first two waves leave capacity; they are large or multinational and unlikely to answer. HOLD and SKIP rows are never contacted. The fashion order follows the research (B2B fashion is the best-supported studio route); the AI-tools agencies are early because the checkpoint needs three written rate quotes.
+**Order.** Wave 0: the operator's warm contacts, verbally (before the gates; see section 1). Wave 1: the P1 rows of each list, fashion first, then AI tools (whose P1 rows include the three agencies to ask for rate sheets), then home. Wave 2: P2 rows after Wave 1 is answered or closed. P3 rows only if the first two waves leave capacity; they are large or multinational and unlikely to answer. HOLD and SKIP rows are never contacted. The fashion order follows the research (B2B fashion is the best-supported studio route); the AI-tools agencies are early because the checkpoint needs three written rate quotes.
 
-**If fewer than 3 rate sheets or quotes have arrived by week 6,** widen the ask to the P2 agencies in the AI-tools list (貝立德, 台北數位集團, 藍眼科技, TenMax, AD2, CreatorDB) and also record the **public** prices of 3 to 5 Taiwan AI-creative studios or freelancers (HUMAN_TODO 11), which need no outreach.
+**If fewer than 3 rate sheets or quotes have arrived by week 6,** widen the ask to the P2 agencies in the AI-tools list (台北數位集團, 藍眼科技, TenMax, AD2, CreatorDB; 貝立德 is reported to be a Dentsu group agency, so it shares one thread with 台灣電通 and is a weak candidate) and also record the **public** prices of 3 to 5 Taiwan AI-creative studios or freelancers (HUMAN_TODO 11), which need no outreach.
 
 **Volume and time (assumptions, to be measured).**
 
@@ -62,7 +62,7 @@ If replies pile up, stop sending new first contacts until they are answered. If 
 | after 90 days | Contact again **once** only if something materially new exists (for example a brand-approved sample that may be named, or a real audience figure from the platform's own insights), never with the same text | new text, the wife's read |
 | any reply | Answer within 2 business days (section 7) | T4, T5, T6 or a custom reply |
 
-**Timing cautions (from `research/culture.md`, computed or recalled, unverified):** retail and e-commerce marketing teams are busiest around 雙11 (Wed 2026-11-11), the autumn 週年慶 and year-end, and again before 農曆新年 (初一 Sat 2027-02-06, 除夕 Fri 2027-02-05; check the official holiday calendar); expect slow answers in those weeks and do not chase. The 2027 ghost month (2027-08-02 to 2027-08-31) is a sensitive period; do not push new deals in it. Election day (recalled as Sat 2026-11-28, unverified): send nothing political-adjacent; outreach itself is not affected, but do not send that week to media outlets.
+**Timing cautions (from `research/culture.md`, computed or recalled, unverified):** retail and e-commerce marketing teams are busiest around 雙11 (Wed 2026-11-11), the autumn 週年慶 and year-end, and again before 農曆新年 (初一 Sat 2027-02-06, 除夕 Fri 2027-02-05; check the official holiday calendar); expect slow answers in those weeks and do not chase. The 2027 ghost month (2027-08-02 to 2027-08-31) is a sensitive period; do not push new deals in it. Election week (polling day recalled as Sat 2026-11-28, unverified): media outlets will be busy, so do not chase them that week; the outreach messages themselves contain nothing political.
 
 ## 5. Do-not-contact rules
 
@@ -148,7 +148,7 @@ The working copy is a private CSV kept **outside git** (copy [tracking-template.
 
 **Practices adopted regardless of what the law turns out to require** (they are cheap and honest):
 
-1. One-to-one, written and sent by a person; no mail-merge tool, no sequence software, no auto-reply, no scraping, no purchased list, no tracking pixel, no link shortener, no attachment in a first message.
+1. One-to-one, personalised, reviewed and sent by a person; no mail-merge tool, no sequence software, no auto-reply, no scraping, no purchased list, no tracking pixel, no link shortener, no attachment in a first message.
 2. Only the recipient's own **published business-inquiry route**; never a personal address; never a guessed address.
 3. The sender and the studio are identified truthfully; the subject says what the message is; the message says how the address was found.
 4. A **one-step, free opt-out in the first message** (reply 「不需要」), honoured at once, recorded on the do-not-contact sheet, confirmed by T5.

@@ -94,18 +94,18 @@ The operator has about five warm fashion contacts (`strategy/portfolio.md` hypot
 1. **Warm contacts are approached by the operator in person or by phone first, not by email.** Before the gates in the playbook close, the only thing the operator may say is the private, verbal version in `content/sehuan/b2b-pitch.md` A3 (the studio is exploring disclosed virtual-presenter creative, nothing exists yet, a free scoped sample is being planned, no price). No character name, no handle, no image.
 2. **What to ask a warm contact** (b2b-pitch A5): which one or two products; product-only photographs with a written usage licence; whether they accept content that says in the picture and the caption that it is an AI-generated illustration; who approves; and whether a private sample (posted nowhere) is the right first step. Also ask for **one introduction** to a brand or agency on this list.
 3. **If a warm contact works at, or can introduce, a brand on this list,** write that in the row's `warm_route_note` (CSV) and move the row up to P1. A warm introduction replaces the cold template; use T4 (reply to interest) wording as a guide, not T1.
-4. **The weak point of this list, stated plainly.** The entities most likely to answer a two-person studio are small independent labels, and I cannot name them with confidence: the rows above are mostly well-known names (many large, several multinational). Small labels are best found by the operator and wife browsing Instagram and Pinkoi, then adding rows to the CSV (priority P1, `basis` = "found by the studio on <date>") after the five-minute verification above. Do not mass-contact designers found on Pinkoi.
+4. **The weak point of this list, stated plainly.** The entities most likely to answer a two-person studio are small independent labels, and I cannot name them with confidence: the rows below are mostly well-known names (many large, several multinational). Small labels are best found by the operator and wife browsing Instagram and Pinkoi, then adding rows to the CSV (priority P1, `basis` = "found by the studio on <date>") after the five-minute verification above. Do not mass-contact designers found on Pinkoi.
 5. **Lead with face-free options.** A photoreal virtual-model try-on (虛擬試穿示意) is ON HOLD until the lawyer answers (rate card section 0 item 5; b2b-pitch A2 gate 3). The first sample offered to a fashion contact is a colour-story board or a flat-lay lookbook layout built from the brand's own product photos (b2b-pitch A4 options 1 and 2).
 6. **Cosmetic and skin products are declined** even where a publisher or department store sells them (Ground rule 6; `personas/sehuan/bible.md` 9.2). The full category list is [decline-list.md](../decline-list.md) section 2 (C01 to C33): check each brief against it, not only the row's flags.
 """,
     "ai-tools": """## How to use this list
 
 1. **Who is on it.** Software vendors with a Taiwan presence (Taiwan-founded SaaS first, multinationals last), SME-service software, Taiwan digital, creative and performance agencies, tech media and course or events platforms. The showroom persona is 步驟, but the studio sells **stills only**: explainer cards with a dated screen capture and a 「測試條件」 line. **Video, voice and lip-sync are not offered** (rate card section 3.3; decision D6).
-2. **Agencies are two different asks.** (a) As a small production supplier (white-label or referral), and (b) optionally, a request for a public rate sheet and tier definitions, which the revenue checkpoint needs (at least 3 written rate quotes by week 8; `portfolio.md` 6.4; monetisation gaps G1, G2, G11). Be honest in the message that the studio is gathering reference prices as a new small studio (template T2 has the optional paragraph).
+2. **Agencies are two different asks.** (a) As a small production supplier (white-label or referral), and (b) optionally, a request for a public rate sheet and tier definitions, which the revenue checkpoint needs (at least 3 written rate quotes by week 8; `strategy/portfolio.md` 6.4; monetisation gaps G1, G2, G11). Be honest in the message that the studio is gathering reference prices as a new small studio (template T2 has the optional paragraph).
 3. **Vendors and the competitor rule.** Do not open threads with two direct competitors in the same quarter without telling the operator first; if any sponsored post ever happens, the same-brand-same-ISO-week ledger applies (`personas/buzhou/bible.md` 9.4 item 11).
 4. **Screenshots of a vendor's product are the vendor's material.** Ask for written permission before using its screens or logo in anything shown outside the studio (bible 9.3: no generated logos; client-supplied assets with a written licence).
 5. **Decline early:** loan apps, trading, forex, crypto and betting bots, AI fortune-telling, face-swap or voice-cloning tools, AI companions, AI-detector evasion, and anything that wants the character to say it used the product (`personas/buzhou/bible.md` 9.2; [decline-list.md](../decline-list.md) C05 to C15). Mainland-origin AI tools are not covered by default (decline-list C31, the user's decision). None of the entities below is in those categories as far as is known, but the category of each brief is checked every time.
-6. **Where this list is thin.** Boutique Taiwan agencies and small SaaS start-ups are the likeliest repliers and the part I can name least confidently; add them from the operator's own knowledge after verification. A few agency names (貝立德, 台北數位集團, 藍眼科技, 艾迪英特) rest only on a thin search summary and are marked `medium`.
+6. **Where this list is thin.** Boutique Taiwan agencies and small SaaS start-ups are the likeliest repliers and the part I can name least confidently; add them from the operator's own knowledge after verification. Agency names such as 台北數位集團 and 藍眼科技 rest on company-reported search summaries (second check 2026-10-12, not opened pages). 貝立德 was found to belong to the Dentsu group (one thread with 台灣電通, weak candidate); AD2 sits under the TNL Mediagene group.
 """,
     "home": """## How to use this list
 
@@ -123,17 +123,38 @@ def esc(s: str) -> str:
     return s.replace("|", "/").replace("\n", " ").strip()
 
 
+def shared_texts(rows, field, prefix):
+    """Texts that repeat (3 or more rows) get a short code so the page stays readable; the CSV keeps the full text."""
+    c = Counter(r[field] for r in rows)
+    codes = {}
+    for r in rows:
+        t = r[field]
+        if c[t] >= 3 and t not in codes:
+            codes[t] = f"{prefix}{len(codes) + 1}"
+    return codes
+
+
 def render_table(rows, code):
-    out = ["| ID | Name (zh-TW / English) | Type | Why it fits; lead with | Route | Compliance flags | Pri | Status |",
-           "| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |"]
+    lead_codes = shared_texts(rows, "lead_with", "LD")
+    flag_codes = shared_texts(rows, "compliance_flags", "FL")
+    out = []
+    if lead_codes or flag_codes:
+        out += ["**Shared texts** (a code stands for the full text below wherever it appears in the table; the CSV has the full text in every row).", "",
+                "| Code | Text |", "| :-- | :-- |"]
+        for t, k in list(lead_codes.items()) + list(flag_codes.items()):
+            out.append(f"| {k} | {esc(t)} |")
+        out.append("")
+    out += ["| ID | Name (zh-TW / English) | Type | Why it fits; lead with | Route | Compliance flags | Pri | Status |",
+            "| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |"]
     for r in rows:
         route = ROUTE_CODES.get(r["contact_route"], "see CSV")
         name = f"**{esc(r['name_zh'])}**<br>{esc(r['name_en'])}<br>conf: {r['existence_confidence']}"
         if r["also_in"]:
             name += f"; also: {r['also_in']}"
         typ = f"{r['type']}<br>{esc(r['subtype'])}"
-        why = f"{esc(r['why_it_fits'])}<br>**Lead:** {esc(r['lead_with'])}"
-        flags = esc(r["compliance_flags"])
+        lead = lead_codes.get(r["lead_with"]) or esc(r["lead_with"])
+        why = f"{esc(r['why_it_fits'])}<br>**Lead:** {lead}"
+        flags = flag_codes.get(r["compliance_flags"]) or esc(r["compliance_flags"])
         if r["group_note"]:
             flags += f"<br>**Group:** {esc(r['group_note'])}"
         out.append(f"| {r['id']} | {name} | {typ} | {why} | {route} | {flags} | {r['priority']} | {r['status']} |")

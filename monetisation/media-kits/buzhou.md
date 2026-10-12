@@ -50,7 +50,7 @@
 >
 > | Mode | When | Keep | Replace or delete |
 > |---|---|---|---|
-> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 8, 11 and 12 | Delete the real-example slots in section 9 that are still empty. Replace the whole of section 10 with the paragraph below |
+> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 8, 11 and 12 | Delete the portrait row in section 1 and the real-example rows in section 9 while they are empty. In section 9 replace each price row with 'quoted per scope' (依範圍報價) or delete it. Replace the whole of section 10 with the paragraph below. Fill or delete every placeholder in sections 11 and 12 |
 > | **2. With data** | Real insights exist and screenshots are saved | All sections | Every 【待填】 is filled from a dated screenshot, or the row is deleted. Never leave a placeholder in a sent copy |
 >
 > **Section 10 replacement text for mode 1** (zh-TW draft / English):
@@ -79,9 +79,9 @@
 > | Where | Statement that is true today | Edit it when |
 > |---|---|---|
 > | Header and section 2 | 'No account, no follower, no audience data yet' and the 'where things stand' paragraph | First send after the accounts are live |
-> | Section 4.2 and section 9 | 'None has been done', 'not past work', the empty real-example slots | First real collaboration or first real published example |
+> | Section 4.2 and section 9 | 'None has been done', 'not past work', the empty real-example slots; the 'Needed first' column stands for gates 2, 3, 4 and 8 in A1 (rewrite it as they close) | First real collaboration or first real published example |
 > | Section 5 | 'No post exists yet' (standard, not a track record) | Once posts are published: replace with a dated statement of what the account actually does |
-> | Section 8 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
+> | Section 8 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person; the statement that diagrams and lesson graphics are made with AI assistance and a person checks each one (decision D3 of 2026-10-12: the diagram layer is drawn as SVG by Claude) | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
 > | Section 10 | The whole section | Switch from mode 1 to mode 2 and back; refresh at least monthly while the kit is in use |
 > | Section 11 | 'No public price list' | When a rate card is made public |
 > | Section 12 | Every placeholder | At registration, at mailbox creation, at handle choice |
@@ -155,13 +155,13 @@
 
 | 繁體中文（草稿，待太太審閱） | English (for the operator) |
 |---|---|
-| 下表的每一項都「尚未開放」：目前沒有任何一項做過，也沒有任何一項有案例。每一項都要先通過附錄 A1 的關卡。 | Every row below is NOT YET OFFERED: none has been done and none has a case. Each must first pass the gates in A1. |
+| 下表的每一項都「尚未開放」：目前沒有任何一項做過，也沒有任何一項有案例。每一項都要等工作室完成登記、合約範本與必要的法律確認後，才會開始接案。 | Every row below is NOT YET OFFERED: none has been done and none has a case. Each opens only once the studio is registered, a contract template exists and the necessary legal confirmations are in. |
 
 | 形式 / Format | 內容（繁體中文） | What it is (English) | 開放前必須先有 / Needed first |
 |---|---|---|---|
-| S1 業配功能說明短片 / Sponsored feature explainer | 廠商提供功能事實與出處，由工作室真人依這些資料錄製示範，步驟在角落說明。內容只說明公開功能，沒有評價、評分或「我覺得好用」。 | The vendor supplies feature facts with sources; a person at the studio records the demonstration from that material and 步驟 explains from the corner. Public functions only: no opinion, rating or 'I found it useful'. | Gates 2, 3, 4, 8 in A1. The vendor's terms for recording and demonstrating the tool are checked first. Briefs that ask for first-hand experience are declined |
-| S2 廠商提供方案或額度 / Vendor-supplied plan or credit | 廠商提供示範用的方案或額度；影片與貼文標示【廠商提供】並開啟平台合作標示工具。仍然沒有評價，也沒有使用心得。 | The vendor supplies a plan or credit for the recording. The video and post carry 【廠商提供】 and the platform's partnership tool. Still no opinion and no review. | Gates 2, 3, 8; an account supplied by a vendor still counts as a material connection and is disclosed |
-| S3 說明圖卡組（B2B）/ Explainer card set | 為軟體廠商或台灣中小企業自己的頻道，製作功能或流程的說明圖卡：角色以小視窗人像出現在有日期的螢幕截圖旁，畫面標示工具、版本、方案與日期。對客戶目前只做靜態圖卡，不做影片：錄製與剪輯的時間有限，臉部動畫與合成語音也尚未開放。 | Explainer cards for a software product or process on the vendor's or SME's own channels: the character appears as a small portrait beside a dated screen capture, with tool, version, plan and date shown. For clients, stills only at present, no video: recording and editing time is limited, and face animation and synthetic voice are not open. | Gates 2, 3, 4, 8; a written scope with revision rounds; the client supplies verifiable facts. The screen capture is supplied by the client or recorded by the operator |
+| S1 業配功能說明短片 / Sponsored feature explainer | 廠商提供功能事實與出處，由工作室真人依這些資料錄製示範，步驟在角落說明。內容只說明公開功能，沒有評價、評分或「我覺得好用」。 | The vendor supplies feature facts with sources; a person at the studio records the demonstration from that material and 步驟 explains from the corner. Public functions only: no opinion, rating or 'I found it useful'. | Business registration, a lawyer's confirmations, recorded image-tool terms and a contract template. The vendor's terms for recording and demonstrating the tool are checked first. Briefs that ask for first-hand experience are declined |
+| S2 廠商提供方案或額度 / Vendor-supplied plan or credit | 廠商提供示範用的方案或額度；影片與貼文標示【廠商提供】並開啟平台合作標示工具。仍然沒有評價，也沒有使用心得。 | The vendor supplies a plan or credit for the recording. The video and post carry 【廠商提供】 and the platform's partnership tool. Still no opinion and no review. | Registration, a lawyer's confirmations and a contract template; a plan or account supplied by a vendor is treated by the studio as a material connection and is disclosed |
+| S3 說明圖卡組（B2B）/ Explainer card set | 為軟體廠商或台灣中小企業自己的頻道，製作功能或流程的說明圖卡：角色以小視窗人像出現在有日期的螢幕截圖旁，畫面標示工具、版本、方案與日期。對客戶目前只做靜態圖卡，不做影片：錄製與剪輯的時間有限，臉部動畫與合成語音也尚未開放。 | Explainer cards for a software product or process on the vendor's or SME's own channels: the character appears as a small portrait beside a dated screen capture, with tool, version, plan and date shown. For clients, stills only at present, no video: recording and editing time is limited, and face animation and synthetic voice are not open. | The same four items as S1; a written scope with revision rounds; the client supplies verifiable facts. The screen capture is supplied by the client or recorded by a person at the studio |
 
 
 ### 4.3 不提供 / Not offered
@@ -187,9 +187,9 @@
 | 位置 / Place | 原文（繁體中文草稿） | English meaning |
 |---|---|---|
 | 簡介與名稱欄 / Bio and name field | 名稱欄：「步驟｜AI 虛擬角色」<br>簡介第一行：「AI 虛擬角色｜步驟｜AI 工具功能對照與提示詞範本，附資料日期｜螢幕錄影由工作室真人操作｜明說角色工作室 創作與營運」<br>簡介第二行：「角色為 AI 生成，非真人。角色本身沒有使用過任何工具，不是工具廠商的官方帳號。」 | Name field: 步驟 / AI virtual character.<br>Bio line 1: AI virtual character / 步驟 / AI-tool feature comparisons and prompt templates, with data dates / screen recordings operated by a person at the studio / created and run by 明說角色工作室.<br>Bio line 2: The character is AI-generated, not a real person. The character itself has never used any tool and is not an official account of a tool vendor. |
-| YouTube 頻道說明 / YouTube channel description | 「【AI 虛擬角色】步驟是由 AI 生成的虛擬角色，不是真人，由明說角色工作室創作與營運。角色本身沒有使用過任何工具；影片中的螢幕錄影由工作室真人操作，並標示工具、版本、方案與錄製日期。……本頻道與影片中提到的工具廠商無隸屬關係；若有業配、廠商提供的方案或分潤連結，會在影片與說明欄清楚標示。不提供投資、醫療、法律或賺錢相關的建議。」 | AI virtual character: 步驟 is an AI-generated virtual character, not a real person, created and run by 明說角色工作室. The character itself has never used any tool; the screen recordings are operated by a person at the studio and show tool, version, plan and date. ... The channel has no affiliation with the vendors it mentions; any sponsored post, vendor-supplied plan or affiliate link is clearly marked in the video and description. No investment, medical, legal or make-money advice. (Abridged; the full text is in the persona bible, section 8.1.) |
+| YouTube 頻道說明 / YouTube channel description | 「【AI 虛擬角色】步驟是由 AI 生成的虛擬角色，不是真人，由明說角色工作室創作與營運。角色本身沒有使用過任何工具；影片中的螢幕錄影由工作室真人操作，並標示工具、版本、方案與錄製日期。……本頻道與影片中提到的工具廠商無隸屬關係；若有業配、廠商提供的方案或分潤連結，會在影片與說明欄清楚標示。不提供投資、醫療、法律或賺錢相關的建議。」 | AI virtual character: 步驟 is an AI-generated virtual character, not a real person, created and run by 明說角色工作室. The character itself has never used any tool; the screen recordings are operated by a person at the studio and show tool, version, plan and date. ... The channel has no affiliation with the vendors it mentions; any sponsored post, vendor-supplied plan or affiliate link is clearly marked in the video and description. No investment, medical, legal or make-money advice. (Abridged here.) |
 | 貼文第一行 / First caption line | YouTube 說明欄第一行：「【AI 虛擬角色】本片由 AI 生成的虛擬角色「步驟」說明；螢幕錄影由工作室真人操作。資料日期：{YYYY/MM/DD}。」<br>Threads（有圖）：「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布。圖像為 AI 生成，並非真人。」<br>Threads（純文字）：「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布。」 | YouTube description, line 1: AI virtual character: this video is explained by the AI-generated virtual character 步驟; the screen recording is operated by a person at the studio; data date.<br>Threads (with image): this post is by the AI-generated virtual character 步驟; the image is AI-generated and is not a real person.<br>Threads (text only): the same without the image sentence. |
-| 畫面標示 / On-screen badges and labels | 每張出現角色的圖與每個影片畫面都有固定位置的「AI 生成｜虛擬角色」，只有圖表時為「AI 生成｜示意圖」。錄影上固定顯示「錄製條件：{工具}｜{版本}｜{方案}｜{YYYY/MM/DD}　由工作室真人操作錄製」與「資料來源：{官方頁面名稱}｜{YYYY/MM/DD}」；示範輸出旁標示「示範輸出，不代表每次相同」。標示由人在後製加上。 | Every image showing the character and every video frame carries a fixed-position 'AI-generated / virtual character' badge ('AI-generated / illustration' on chart-only frames). Recordings show a fixed 'recording conditions' line and a 'source' line, and any AI output is marked 'demo output, not the same every time'. A person adds all of them in editing. |
+| 畫面標示 / On-screen badges and labels | 每張出現角色的圖與每個影片畫面都有固定位置的「AI 生成｜虛擬角色」，只有圖表時為「AI 生成｜示意圖」。錄影上固定顯示「錄製條件：{工具}｜{版本}｜{方案}｜{YYYY/MM/DD}　由工作室真人操作錄製」與「資料來源：{官方頁面名稱}｜{YYYY/MM/DD}」；示範輸出旁標示「示範輸出，不代表每次相同」。標示在後製加上。 | Every image showing the character and every video frame carries a fixed-position 'AI-generated / virtual character' badge ('AI-generated / illustration' on chart-only frames). Recordings show a fixed 'recording conditions' line and a 'source' line, and any AI output is marked 'demo output, not the same every time'. All of them are added in editing. |
 | 平台標籤 / Platform label | 每則貼文都由人手動開啟平台的 AI 內容標籤；若平台在台灣提供帳號層級的 AI 標籤，也會開啟。YouTube 的「已更改或合成內容」一律選「是」。〔未查證〕 | The platform's AI-content label is switched on by hand for every post, and the account-level AI label too if offered in Taiwan. YouTube's altered-or-synthetic question is always answered yes. (Unverified.) |
 
 
@@ -334,7 +334,7 @@
 | 每則貼文在發布前，都由真人審閱並核准：一位母語審閱者檢查繁體中文用語、語氣與文化禁忌；一位營運者核對事實、數字、出處、圖像品質與標示。［D8］ | Every post is reviewed and approved by people before it is published: a native reviewer checks Traditional Chinese wording, tone and cultural taboos; an operator checks facts, numbers, sources, image quality and labels. [D8] |
 | 文字草稿由 AI 協助起草；沒有任何貼文在未經真人核准前發布。 | Text drafts are written with AI assistance. No post goes out without a person's approval. |
 | 每張影像都有來源紀錄（工具、日期、提示詞、人工編修），並檢查是否神似任何真人；製作角色時不使用任何真人照片作為參考。［D8］ | Every image has a provenance record (tool, date, prompt, human edits) and is checked for resemblance to real people. No photograph of a real person is used as a reference when making the character. [D8] |
-| 畫面上的中文與數字由人在後製排版，不由影像生成工具產生，並由審閱者逐字檢查。 | On-image Chinese text and numbers are typeset by a person in editing, never generated, and checked character by character by the reviewer. |
+| 畫面上的中文、數字、標示與圖解版面都在後製加上，不由影像生成工具產生；示意圖與圖解以 AI 協助製作，每一張都由真人逐字核對後才發布。 | On-image Chinese text, numbers, badges and diagram layouts are added in editing and never produced by an image generator. Diagrams and lesson graphics are made with AI assistance, and a person checks each one character by character before it is published. |
 | 只使用平台官方的發布與排程功能。不購買追蹤者或互動，不使用機器人留言，不參加互動群組。 | Official platform publishing and scheduling tools only. No bought followers or engagement, no bot comments, no engagement pods. |
 | 合作流程（擬定，尚未實際執行過）：書面範圍（交付物、修改次數、核准人、時程）→ 品牌提供素材與可查證的資料 → 初稿 → 品牌書面核准 → 發布前核對標示 → 發布並留存紀錄。 | Collaboration flow (proposed; never yet run): written scope (deliverables, revision rounds, approver, timing) -> brand supplies materials and verifiable facts -> draft -> brand's written approval -> label check before publishing -> publish and keep the record. |
 | 發現錯誤時，會在貼文上公開更正（附「【更正】」與日期），必要時下架。 | When an error is found it is corrected openly on the post (with a dated 【更正】 line) and, if needed, the post is taken down. |
@@ -364,7 +364,7 @@
 | 品牌需提供（合作版）/ Vendor supplies (collaboration version) | 功能名稱、官方文件頁面與可引用的句子、示範用方案或額度、錄製時的版本資訊。 | The feature name, official documentation page and quotable lines, a plan or credit for the demonstration, and the version information at recording time. |
 | 工作室製作 / Studio makes | 螢幕錄影（真人操作）、角落小視窗人像、字幕、錄製條件與資料來源標示、說明欄揭露與來源。 | The screen recording (person-operated), the corner portrait, captions, the recording-conditions and source labels, and the description with disclosure and sources. |
 | 標示 / Labels | AI 生成｜虛擬角色；錄製條件；資料來源；示範輸出，不代表每次相同；合作版另加【業配】或【廠商提供】。 | AI-generated / virtual character; recording conditions; source; demo output varies; a collaboration version adds 【業配】 or 【廠商提供】. |
-| 核准 / Approvals | 太太審閱繁體中文；營運者核對工具、版本、方案、日期與官方出處，並確認錄製當天該功能存在；兩人都核准後才發布。 | The wife reviews the Chinese; the operator checks tool, version, plan, date and official source and confirms the feature exists on the recording date; the post is published only after both approve. |
+| 核准 / Approvals | 母語審閱者審閱繁體中文；營運者核對工具、版本、方案、日期與官方出處，並確認錄製當天該功能存在；兩人都核准後才發布。 | The native reviewer reviews the Chinese; the operator checks tool, version, plan, date and official source and confirms the feature exists on the recording date; the post is published only after both approve. |
 | 核准（合作版）/ Approvals (collaboration version) | 除了上述兩項，廠商須以書面核准內容與事實依據後才發布。 | In addition to the above, the vendor approves the content and its factual basis in writing before anything is published. |
 | 真實範例 / Real example | 【待填：已發布貼文連結與日期；若為合作內容，須有品牌書面同意才可列出】 | [TO FILL WHEN REAL: link and date of a real published post; for client work, only with the brand's written permission] |
 | 報價 / Price | 【待填：依範圍報價，見第 11 節】 | [TO FILL WHEN REAL: quoted per scope, see section 11; no price is given here] |
@@ -377,9 +377,9 @@
 |---|---|---|
 | 交付物 / What it is | 一張由廠商官方頁面整理的方案、用量上限或資料處理說明對照表，註明截至日期，可做成 Short 圖表與 Threads 文字表。 | A comparison table of plans, usage limits or data-handling statements taken from the vendors' own pages, dated, as a Short graphic and a Threads text table. |
 | 品牌需提供（合作版）/ Vendor supplies (collaboration version) | 官方方案與限制頁面、價格幣別與計費週期、稅金說明。 | Official plan and limits pages, the currency and billing period, and the tax statement. |
-| 工作室製作 / Studio makes | 對照表（人工排版）、資料截圖或存檔、來源與日期標示、替代文字。 | The table (typeset by a person), screenshots or archive files of the sources, source and date labels, and alt text. |
+| 工作室製作 / Studio makes | 對照表（工作室製作的版面）、資料截圖或存檔、來源與日期標示、替代文字。 | The table (a layout made by the studio), screenshots or archive files of the sources, source and date labels, and alt text. |
 | 標示 / Labels | AI 生成｜示意圖或虛擬角色；資料來源；截至日期；合作版另加合作標示。 | AI-generated / illustration or virtual character; source; as-of date; a collaboration version adds the partnership label. |
-| 核准 / Approvals | 太太審閱繁體中文；營運者核對工具、版本、方案、日期與官方出處，並確認錄製當天該功能存在；兩人都核准後才發布。 | The wife reviews the Chinese; the operator checks tool, version, plan, date and official source and confirms the feature exists on the recording date; the post is published only after both approve. |
+| 核准 / Approvals | 母語審閱者審閱繁體中文；營運者核對工具、版本、方案、日期與官方出處，並確認錄製當天該功能存在；兩人都核准後才發布。 | The native reviewer reviews the Chinese; the operator checks tool, version, plan, date and official source and confirms the feature exists on the recording date; the post is published only after both approve. |
 | 核准（合作版）/ Approvals (collaboration version) | 除了上述兩項，廠商須以書面核准內容與事實依據後才發布。 | In addition to the above, the vendor approves the content and its factual basis in writing before anything is published. |
 | 真實範例 / Real example | 【待填：已發布貼文連結與日期；若為合作內容，須有品牌書面同意才可列出】 | [TO FILL WHEN REAL: link and date of a real published post; for client work, only with the brand's written permission] |
 | 報價 / Price | 【待填：依範圍報價，見第 11 節】 | [TO FILL WHEN REAL: quoted per scope, see section 11; no price is given here] |
@@ -422,7 +422,7 @@
 | 分享數中位數 / Median shares per post | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 留言數中位數 / Median comments per post | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 互動率中位數（工作室定義）/ Median ER (studio definition) | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
-| 連結頁點擊 / Link-page clicks (counter not yet chosen, portfolio.md 6.1) | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
+| 連結頁點擊 / Link-page clicks (no click counter yet: write 'not tracked') | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 帳號狀態：期間內的違規警告或限制 / Account standing: strikes or restrictions in the period | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | AI 標籤：期間內有開啟平台 AI 標籤的貼文數／全部貼文數 / Posts with the platform AI label on / all posts | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 
@@ -504,8 +504,8 @@
 |---|---|
 | AI 揭露不可移除：品牌同意本簡介第 5 節的揭露方式，不會要求隱藏或縮小。 | AI disclosure cannot be removed: the brand accepts the disclosure described in section 5 and will not ask for it to be hidden or shrunk. |
 | 無見證：角色未使用過商品，雙方都不要求、也不發布使用心得、效果或成效說法。 | No testimonial: the character has not used the product, and neither side asks for or publishes experience, effect or result claims. |
-| 資料與宣稱：品牌以書面提供尺寸、規格、認證與其他宣稱的依據，並保證其正確；工作室可拒絕未附依據的宣稱。 | Facts and claims: the brand supplies the basis for dimensions, specifications, certifications and any other claim in writing and warrants it; the studio may refuse an unsupported claim. |
-| 素材：只使用品牌自己的商品照片與授權文字；不由影像生成工具「補」商品細節。 | Materials: the brand's own product photos and licensed text only; no product detail is invented by an image tool. |
+| 資料與宣稱：廠商以書面提供功能、方案、用量限制、認證與其他宣稱的依據，並保證其正確；工作室可拒絕未附依據的宣稱。 | Facts and claims: the vendor supplies the basis for features, plans, usage limits, certifications and any other claim in writing and warrants it; the studio may refuse an unsupported claim. |
+| 素材：只使用廠商自己的畫面、截圖與授權文字，或由工作室真人操作錄製的畫面；不由影像生成工具「補」介面或功能細節。 | Materials: the vendor's own screens, screenshots and licensed text, or screens recorded by a person at the studio; no interface or feature detail is invented by an image tool. |
 | 更正與下架：發現錯誤時，品牌同意配合更正或下架（時限於合約約定）。 | Corrections and takedown: the brand agrees to cooperate in correcting or removing a post when an error is found (timing set in the contract). |
 | 智慧財產：角色、名稱與設計屬於工作室；品牌取得約定範圍、期間與地區的使用授權；不得以這些素材訓練模型；工作室不保證純 AI 生成的內容受著作權保護。 | Intellectual property: the character, name and designs stay with the studio; the brand receives a licence for an agreed scope, term and territory; no model training on the assets; the studio does not warrant that purely AI-generated output is protected by copyright. |
 | 肖像：工作室說明臉孔的來源與檢查方式；不接受要求神似任何真人的委託。 | Likeness: the studio explains how the face was made and checked; requests for a resemblance to any real person are refused. |
@@ -601,3 +601,5 @@
 > 5. The order of the AI line and the commercial tag differs between the three bibles (launch/README.md section 7 item 6). This kit states no order publicly; fix one studio rule before the first sponsored post.
 > 6. No rate card or contract template exists yet. Section 11 says 'quoted per scope'; record the Phase 8 rate card's file name and version there when it exists.
 > 7. N7 tripwires (portfolio.md 6.2) mean any income or side-hustle line, or any request for viewers' personal data, in a sponsored brief is declined, not rewritten.
+> 8. The YouTube channel description in section 5 is abridged with 「……」. Paste the full approved text from `launch/personas/buzhou.md` before sending (`check_kits.py --filled` warns while 「……」 remains).
+> 9. Review 2026-10-12: the process statements in section 8 and the badge row in section 5 no longer say that a person typesets text and labels, because decision D3 (2026-10-12) has Claude draw the diagram layer as SVG. They now say text and labels are added in editing and diagrams are made with AI assistance and checked by a person. The wife and the operator should confirm that this is how the work is really done, and whether the AI-assisted diagram work needs its own sentence in the bible.

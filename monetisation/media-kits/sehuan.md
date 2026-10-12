@@ -50,7 +50,7 @@
 >
 > | Mode | When | Keep | Replace or delete |
 > |---|---|---|---|
-> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 8, 11 and 12 | Delete the real-example slots in section 9 that are still empty. Replace the whole of section 10 with the paragraph below |
+> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 8, 11 and 12 | Delete the portrait row in section 1 and the real-example rows in section 9 while they are empty. In section 9 replace each price row with 'quoted per scope' (依範圍報價) or delete it. Replace the whole of section 10 with the paragraph below. Fill or delete every placeholder in sections 11 and 12 |
 > | **2. With data** | Real insights exist and screenshots are saved | All sections | Every 【待填】 is filled from a dated screenshot, or the row is deleted. Never leave a placeholder in a sent copy |
 >
 > **Section 10 replacement text for mode 1** (zh-TW draft / English):
@@ -79,9 +79,9 @@
 > | Where | Statement that is true today | Edit it when |
 > |---|---|---|
 > | Header and section 2 | 'No account, no follower, no audience data yet' and the 'where things stand' paragraph | First send after the accounts are live |
-> | Section 4.2 and section 9 | 'None has been done', 'not past work', the empty real-example slots | First real collaboration or first real published example |
+> | Section 4.2 and section 9 | 'None has been done', 'not past work', the empty real-example slots; the 'Needed first' column stands for gates 2, 3, 4 and 8 in A1 (rewrite it as they close) | First real collaboration or first real published example |
 > | Section 5 | 'No post exists yet' (standard, not a track record) | Once posts are published: replace with a dated statement of what the account actually does |
-> | Section 8 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
+> | Section 8 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person; the statement that diagrams and lesson graphics are made with AI assistance and a person checks each one (decision D3 of 2026-10-12: the diagram layer is drawn as SVG by Claude) | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
 > | Section 10 | The whole section | Switch from mode 1 to mode 2 and back; refresh at least monthly while the kit is in use |
 > | Section 11 | 'No public price list' | When a rate card is made public |
 > | Section 12 | Every placeholder | At registration, at mailbox creation, at handle choice |
@@ -156,13 +156,13 @@
 
 | 繁體中文（草稿，待太太審閱） | English (for the operator) |
 |---|---|
-| 下表的每一項都「尚未開放」：目前沒有任何一項做過，也沒有任何一項有案例。每一項都要先通過附錄 A1 的關卡。 | Every row below is NOT YET OFFERED: none has been done and none has a case. Each must first pass the gates in A1. |
+| 下表的每一項都「尚未開放」：目前沒有任何一項做過，也沒有任何一項有案例。每一項都要等工作室完成登記、合約範本與必要的法律確認後，才會開始接案。 | Every row below is NOT YET OFFERED: none has been done and none has a case. Each opens only once the studio is registered, a contract template exists and the necessary legal confirmations are in. |
 
 | 形式 / Format | 內容（繁體中文） | What it is (English) | 開放前必須先有 / Needed first |
 |---|---|---|---|
-| C1 配色故事板 / Colour-story board | 以品牌自己的商品照片，搭配色環圖與六三一比例條，製作標示為「搭配示意」的圖板。不需要角色的臉。色環圖與比例條由工作室繪製。 | A board that sets the brand's own product photos beside a colour wheel and a 6:3:1 proportion bar, labelled 搭配示意. It does not need the character's face. The wheel and the bar are drawn by the studio. | Gates 2, 3, 8 in A1; a written usage licence for the photos. Unproven: no brand has been asked |
-| C2 平面圖或人台 lookbook 版面 / Flat-lay or dress-form lookbook layout | 把品牌的商品照片（平拍、無人形模特或衣架照）排成附說明文字的 lookbook 版面，文字採工作室的口吻，顏色一律以品牌提供的資訊為準。 | The brand's product-only photos (flat lay, ghost mannequin or hanger) laid out as a lookbook page with captions in the studio's voice; colours always go by the brand's own information. | Gates 2, 3, 8; product-only photos with a usage licence; the brand's official colour names and size chart text |
-| C3 業配說明貼文 / Sponsored explainer | 品牌提供商品照片與規格，內容僅就公開資訊說明，沒有意見、評分、合不合身或舒適度說法。 | The brand supplies product photos and specifications; the content explains public information only, with no opinion, rating, fit or comfort wording. | Gates 2, 3, 4, 8. Briefs that ask for first-hand experience are declined |
+| C1 配色故事板 / Colour-story board | 以品牌自己的商品照片，搭配色環圖與六三一比例條，製作標示為「搭配示意」的圖板。不需要角色的臉。色環圖與比例條由工作室繪製。 | A board that sets the brand's own product photos beside a colour wheel and a 6:3:1 proportion bar, labelled 搭配示意. It does not need the character's face. The wheel and the bar are drawn by the studio. | Registration, a lawyer's confirmations and a contract template; a written usage licence for the photos. Unproven: no brand has been asked |
+| C2 平面圖或人台 lookbook 版面 / Flat-lay or dress-form lookbook layout | 把品牌的商品照片（平拍、無人形模特或衣架照）排成附說明文字的 lookbook 版面，文字採工作室的口吻，顏色一律以品牌提供的資訊為準。 | The brand's product-only photos (flat lay, ghost mannequin or hanger) laid out as a lookbook page with captions in the studio's voice; colours always go by the brand's own information. | The same three items; product-only photos with a usage licence; the brand's official colour names and size chart text |
+| C3 業配說明貼文 / Sponsored explainer | 品牌提供商品照片與規格，內容僅就公開資訊說明，沒有意見、評分、合不合身或舒適度說法。 | The brand supplies product photos and specifications; the content explains public information only, with no opinion, rating, fit or comfort wording. | Registration, a lawyer's confirmations, recorded image-tool terms and a contract template. Briefs that ask for first-hand experience are declined |
 | C4 虛擬試穿示意 / Labelled virtual try-on stills | 【暫停，不提供】角色以 AI 生成影像「穿著」品牌服飾的示意圖。律師尚未回答這類標示為示意的創作是否可能誤導、服飾外觀由誰負責，以及公開刊登的免費示範是否屬廣告，因此目前不提供。 | ON HOLD, NOT OFFERED. Stills of the character 'wearing' a brand's garment, labelled as an AI illustration. The lawyer has not yet said whether such labelled creative can mislead, who carries responsibility for garment accuracy, or whether a free sample posted publicly is an advertisement. | ON HOLD until the lawyer answers (HUMAN_TODO 27, 37), image-tool terms are recorded (HUMAN_TODO 33) and the brand approves each image. Delete this row from a sent copy |
 
 
@@ -191,9 +191,9 @@
 | 位置 / Place | 原文（繁體中文草稿） | English meaning |
 |---|---|---|
 | 簡介與名稱欄 / Bio and name field | 名稱欄：「色環｜AI 虛擬角色」<br>Instagram 簡介第一行：「AI 虛擬角色｜色環｜配色、穿搭公式與台灣氣候疊穿說明｜圖為搭配示意，角色未穿著商品｜明說角色工作室 創作與營運」<br>Instagram 簡介第二行：「圖像為 AI 生成，非真人。不是造型師或色彩顧問，不評斷身材與膚色。」<br>Threads 簡介：「AI 虛擬角色｜色環｜配色與穿搭邏輯說明｜圖為搭配示意｜明說角色工作室 創作與營運」 | Name field: 色環 / AI virtual character.<br>Instagram bio line 1: AI virtual character / 色環 / colour, outfit formulas and Taiwan-climate layering, explained / pictures are styling illustrations, the character is not wearing products / created and run by 明說角色工作室.<br>Instagram bio line 2: Images are AI-generated, not a real person. Not a stylist or colour consultant; does not judge body shape or skin tone.<br>Threads bio: the shorter equivalent. |
-| 置頂說明 / Pinned 'About' text | 「【AI 虛擬角色】色環是由 AI 生成的虛擬角色，不是真人，由明說角色工作室創作與營運。角色沒有衣櫃，也沒有穿過、試過或買過任何商品。……圖片皆為搭配示意；尺寸、材質與顏色請以品牌官方資訊為準。若有業配、廠商提供的商品或分潤連結，會在貼文第一行標示。色環不是造型師或色彩顧問，不評斷身材與膚色，也不接受個人照片。」 | AI virtual character: 色環 is an AI-generated virtual character, not a real person, created and run by 明說角色工作室. The character has no wardrobe and has never worn, tried or bought any product. ... Pictures are styling illustrations; size, material and colour go by the brand's official information. Any sponsored post, supplied item or affiliate link is marked on the first line. Not a stylist or colour consultant; no judging of body or skin; no personal photos accepted. (Abridged; full text in the persona bible, section 8.1.) |
+| 置頂說明 / Pinned 'About' text | 「【AI 虛擬角色】色環是由 AI 生成的虛擬角色，不是真人，由明說角色工作室創作與營運。角色沒有衣櫃，也沒有穿過、試過或買過任何商品。……圖片皆為搭配示意；尺寸、材質與顏色請以品牌官方資訊為準。若有業配、廠商提供的商品或分潤連結，會在貼文第一行標示。色環不是造型師或色彩顧問，不評斷身材與膚色，也不接受個人照片。」 | AI virtual character: 色環 is an AI-generated virtual character, not a real person, created and run by 明說角色工作室. The character has no wardrobe and has never worn, tried or bought any product. ... Pictures are styling illustrations; size, material and colour go by the brand's official information. Any sponsored post, supplied item or affiliate link is marked on the first line. Not a stylist or colour consultant; no judging of body or skin; no personal photos accepted. (Abridged here.) |
 | 貼文第一行 / First caption line | 有出現角色的貼文：「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖像為 AI 生成，並非真人。」<br>只有服裝平面圖與人台的教學圖：「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖為搭配示意。」<br>Threads 純文字：「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布。」 | Posts that show the character: this post is by the AI-generated virtual character 色環; the image is AI-generated and is not a real person.<br>Lesson slides of flats and the dress form only: the pictures are styling illustrations.<br>Threads text only: the same without the picture sentence. |
-| 畫面標示 / On-screen badges | 出現角色的圖：固定位置的「AI 生成｜虛擬角色」；只有教學圖時：「AI 生成」；每張搭配圖加「搭配示意」；場景圖加「示意圖」。標示由人在後製加上，位置留有邊距，方形裁切也切不掉。顏色較多的圖加註「螢幕有色差，實際顏色以品牌官方資訊為準。」 | Images that show the character carry a fixed-position 'AI-generated / virtual character' badge; lesson-only slides carry 'AI-generated'; every outfit slide adds 搭配示意 and every scene picture adds 示意圖. A person adds all of them in editing, inside the margins so a square crop cannot remove them. Colour-heavy slides add 'screens shift colour; the actual colour goes by the brand's official information'. |
+| 畫面標示 / On-screen badges | 出現角色的圖：固定位置的「AI 生成｜虛擬角色」；只有教學圖時：「AI 生成」；每張搭配圖加「搭配示意」；場景圖加「示意圖」。標示在後製加上，位置留有邊距，方形裁切也切不掉。顏色較多的圖加註「螢幕有色差，實際顏色以品牌官方資訊為準。」 | Images that show the character carry a fixed-position 'AI-generated / virtual character' badge; lesson-only slides carry 'AI-generated'; every outfit slide adds 搭配示意 and every scene picture adds 示意圖. All of them are added in editing, inside the margins so a square crop cannot remove them. Colour-heavy slides add 'screens shift colour; the actual colour goes by the brand's official information'. |
 | 平台標籤 / Platform label | 每則貼文都由人手動開啟平台的 AI 內容標籤；若平台在台灣提供帳號層級的 AI 標籤，也會開啟。〔未查證〕 | The platform's AI-content label is switched on by hand for every post, and the account-level AI label too if offered in Taiwan. (Unverified.) |
 
 
@@ -303,7 +303,7 @@
 |---|---|
 | 服飾與配件品牌、願意提供商品專拍照（平拍、無人形模特或衣架照）與書面使用授權的品牌。 | Apparel and accessory brands that can supply product-only photos (flat lay, ghost mannequin or hanger) with a written usage licence. |
 | 品牌須提供官方的顏色名稱、成分標示與尺寸表文字，工作室才能原文引用；顏色一律以品牌提供的資訊為準。 | The brand supplies its official colour names, composition text and size chart so the studio can quote them exactly; colour always goes by the brand's own information. |
-| 自家帳號最初約八週不點名品牌；與品牌的合作最快也在八週檢討後、且附錄 A1 的關卡都關閉後才會開始。 | The account names no brand for roughly the first eight weeks; a collaboration can start only after the week-8 review and once every gate in A1 is closed. |
+| 自家帳號最初約八週不點名品牌；與品牌的合作最快也在八週檢討後、且工作室登記、合約範本與必要的法律確認都完成後才會開始。 | The account names no brand for roughly the first eight weeks; a collaboration can start only after the week-8 review and once registration, a contract template and the necessary legal confirmations are in place. |
 
 
 ### 7.3 看到這些需求，我們會改寫或婉拒 / Briefs we rewrite or decline
@@ -344,17 +344,17 @@
 | 每則貼文在發布前，都由真人審閱並核准：一位母語審閱者檢查繁體中文用語、語氣與文化禁忌；一位營運者核對事實、數字、出處、圖像品質與標示。［D8］ | Every post is reviewed and approved by people before it is published: a native reviewer checks Traditional Chinese wording, tone and cultural taboos; an operator checks facts, numbers, sources, image quality and labels. [D8] |
 | 文字草稿由 AI 協助起草；沒有任何貼文在未經真人核准前發布。 | Text drafts are written with AI assistance. No post goes out without a person's approval. |
 | 每張影像都有來源紀錄（工具、日期、提示詞、人工編修），並檢查是否神似任何真人；製作角色時不使用任何真人照片作為參考。［D8］ | Every image has a provenance record (tool, date, prompt, human edits) and is checked for resemblance to real people. No photograph of a real person is used as a reference when making the character. [D8] |
-| 畫面上的中文與數字由人在後製排版，不由影像生成工具產生，並由審閱者逐字檢查。 | On-image Chinese text and numbers are typeset by a person in editing, never generated, and checked character by character by the reviewer. |
+| 畫面上的中文、數字、標示與圖解版面都在後製加上，不由影像生成工具產生；示意圖與圖解以 AI 協助製作，每一張都由真人逐字核對後才發布。 | On-image Chinese text, numbers, badges and diagram layouts are added in editing and never produced by an image generator. Diagrams and lesson graphics are made with AI assistance, and a person checks each one character by character before it is published. |
 | 只使用平台官方的發布與排程功能。不購買追蹤者或互動，不使用機器人留言，不參加互動群組。 | Official platform publishing and scheduling tools only. No bought followers or engagement, no bot comments, no engagement pods. |
 | 合作流程（擬定，尚未實際執行過）：書面範圍（交付物、修改次數、核准人、時程）→ 品牌提供素材與可查證的資料 → 初稿 → 品牌書面核准 → 發布前核對標示 → 發布並留存紀錄。 | Collaboration flow (proposed; never yet run): written scope (deliverables, revision rounds, approver, timing) -> brand supplies materials and verifiable facts -> draft -> brand's written approval -> label check before publishing -> publish and keep the record. |
 | 發現錯誤時，會在貼文上公開更正（附「【更正】」與日期），必要時下架。 | When an error is found it is corrected openly on the post (with a dated 【更正】 line) and, if needed, the post is taken down. |
 | 同一品牌不會在同一週出現在工作室的兩個角色上。 | The same brand does not appear on two of the studio's characters in the same week. |
 | 目前不使用自動回覆；若日後使用，每則都會標明是自動回覆。 | No automated replies are used at present. If any are added later, each one will say it is automated. |
-| 配色由人在編輯軟體中以色碼填色，顏色不由影像生成工具決定；教學用的服裝平面圖、人台與色環圖由工作室製作。 | Colours are filled by a person in an editor using hex codes and are never chosen by an image generator; the garment flats, dress form and colour-wheel diagrams used in lessons are made by the studio. |
+| 配色以色碼指定，顏色不由影像生成工具決定；教學用的服裝平面圖、人台與色環圖由工作室以 AI 協助製作，並經真人核對。 | Colours are set with hex codes and are never chosen by an image generator; the garment flats, dress form and colour-wheel diagrams used in lessons are made by the studio with AI assistance and checked by a person. |
 | 角色影像取自經核准的角色影像庫，不為每則貼文重新生成臉孔。 | Character images come from an approved image set; a new face is never generated for each post. |
 | 每個氣候數字附城市、月份、統計類型與資料來源日期；使用氣候平均值，不使用過期的預報。 | Every climate number carries city, month, statistic type and source date; climate normals are preferred, and no stale forecast is used. |
 | 顏色在不同螢幕上會有色差，因此顏色重點的圖一律加註色差提醒；教學顏色來自色碼，不來自角色照片。 | Colour shifts between screens, so colour-heavy slides always carry a colour-variance note; lesson colours come from hex codes, never from a photo of the character. |
-| 發布前會檢查配色的聯想：政黨陣營、彩虹、喪服與宗教的觀感，由太太審閱。 | Before publishing, the palette is checked for unwanted associations (party camps, rainbow, mourning wear, religion) by the wife. |
+| 發布前會檢查配色的聯想：政黨陣營、彩虹、喪服與宗教的觀感，由母語審閱者審閱。 | Before publishing, the palette is checked for unwanted associations (party camps, rainbow, mourning wear, religion) by the native reviewer. |
 
 
 ## 9. 交付物範例 / Deliverable examples
@@ -374,7 +374,7 @@
 | 品牌需提供（合作版）/ Brand supplies (collaboration version) | 商品專拍照與使用授權、官方顏色名稱、成分標示與尺寸表文字。 | Product-only photos with a usage licence, the official colour names, composition text and size chart. |
 | 工作室製作 / Studio makes | 規則頁、兩個放在服裝平面圖或人台上的示範、轉一格頁、來源與日期頁、色差提醒、替代文字。 | The rule slide, two examples on garment flats or the dress form, a 'turn the wheel one step' slide, a sources and date slide, a colour-variance note and alt text. |
 | 標示 / Labels | AI 生成｜虛擬角色或 AI 生成；搭配示意；螢幕有色差的提醒；合作版另加【業配】或【合作內容】。 | AI-generated / virtual character or AI-generated; 搭配示意; the colour-variance note; a collaboration version adds 【業配】 or 【合作內容】. |
-| 核准 / Approvals | 太太審閱繁體中文與顏色觀感；營運者核對色碼、資料來源與日期；兩人都核准後才發布。 | The wife reviews the Chinese and the colour read; the operator checks hex values, sources and dates; the post is published only after both approve. |
+| 核准 / Approvals | 母語審閱者審閱繁體中文與顏色觀感；營運者核對色碼、資料來源與日期；兩人都核准後才發布。 | The native reviewer reviews the Chinese and the colour read; the operator checks hex values, sources and dates; the post is published only after both approve. |
 | 核准（合作版）/ Approvals (collaboration version) | 除了上述兩項，品牌須以書面核准每一張圖與每一句文案、並確認商品外觀、顏色與尺寸資訊正確後才發布。 | In addition to the above, the brand approves every image and caption line in writing and confirms that the garment's look, colour and size information are correct before anything is published. |
 | 真實範例 / Real example | 【待填：已發布貼文連結與日期；若為合作內容，須有品牌書面同意才可列出】 | [TO FILL WHEN REAL: link and date of a real published post; for client work, only with the brand's written permission] |
 | 報價 / Price | 【待填：依範圍報價，見第 11 節】 | [TO FILL WHEN REAL: quoted per scope, see section 11; no price is given here] |
@@ -389,7 +389,7 @@
 | 品牌需提供（合作版）/ Brand supplies (collaboration version) | （自家內容不需要。合作版若要放品牌商品：商品專拍照與使用授權。） | (Not needed for own content. In a collaboration version that shows a brand product: product-only photos with a usage licence.) |
 | 工作室製作 / Studio makes | 三層順序圖（標示為工作室的整理框架，不是標準）、資料面板、配色比例示意、來源頁。 | A three-layer order diagram (labelled as the studio's framework, not a standard), the data panel, a colour-proportion illustration and a sources slide. |
 | 標示 / Labels | 搭配示意；氣象資料來源行（「僅供搭配示意，非天氣預報」）；AI 揭露；合作版另加合作標示。 | 搭配示意; the weather-data source line ('for styling illustration only, not a forecast'); AI disclosure; a collaboration version adds the partnership label. |
-| 核准 / Approvals | 太太審閱繁體中文與顏色觀感；營運者核對色碼、資料來源與日期；兩人都核准後才發布。 | The wife reviews the Chinese and the colour read; the operator checks hex values, sources and dates; the post is published only after both approve. |
+| 核准 / Approvals | 母語審閱者審閱繁體中文與顏色觀感；營運者核對色碼、資料來源與日期；兩人都核准後才發布。 | The native reviewer reviews the Chinese and the colour read; the operator checks hex values, sources and dates; the post is published only after both approve. |
 | 核准（合作版）/ Approvals (collaboration version) | 除了上述兩項，品牌須以書面核准每一張圖與每一句文案、並確認商品外觀、顏色與尺寸資訊正確後才發布。 | In addition to the above, the brand approves every image and caption line in writing and confirms that the garment's look, colour and size information are correct before anything is published. |
 | 真實範例 / Real example | 【待填：已發布貼文連結與日期；若為合作內容，須有品牌書面同意才可列出】 | [TO FILL WHEN REAL: link and date of a real published post; for client work, only with the brand's written permission] |
 | 報價 / Price | 【待填：依範圍報價，見第 11 節】 | [TO FILL WHEN REAL: quoted per scope, see section 11; no price is given here] |
@@ -432,7 +432,7 @@
 | 分享數中位數 / Median shares per post | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 留言數中位數 / Median comments per post | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 互動率中位數（工作室定義）/ Median ER (studio definition) | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
-| 連結頁點擊 / Link-page clicks (counter not yet chosen, portfolio.md 6.1) | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
+| 連結頁點擊 / Link-page clicks (no click counter yet: write 'not tracked') | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | 帳號狀態：期間內的違規警告或限制 / Account standing: strikes or restrictions in the period | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 | AI 標籤：期間內有開啟平台 AI 標籤的貼文數／全部貼文數 / Posts with the platform AI label on / all posts | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] | 【待填】 [TO FILL WHEN REAL] |
 
@@ -613,3 +613,5 @@
 > 5. The week-1-to-8 rule (no real brand named or shown; no gifted garments) is the bible's choice C5 and is stated in sections 4 and 7 as the start-up position; confirm you want brands to read it.
 > 6. No rate card or contract template exists yet. Section 11 says 'quoted per scope'; record the Phase 8 rate card's file name and version there when it exists.
 > 7. The recalled polling day (2026-11-28, unverified) and the election-window colour rules are deliberately not mentioned in this kit.
+> 8. The pinned 'About' text in section 5 is abridged with 「……」. Paste the full approved text from `launch/personas/sehuan.md` before sending (`check_kits.py --filled` warns while 「……」 remains).
+> 9. Review 2026-10-12: the process statements in section 8 (text, badges and colours) no longer say that a person fills colours or typesets text, because decision D3 (2026-10-12) has Claude draw the lesson graphics as SVG. They now say that lesson graphics are made with AI assistance and checked by a person. The wife and the operator should confirm that this is how the work is really done.

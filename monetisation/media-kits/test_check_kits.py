@@ -111,6 +111,21 @@ class FilledMode(unittest.TestCase):
     def test_clean_copy_passes(self):
         self.assertEqual(self.run_filled("# 方寸｜合作簡介\n\n| 欄位 | 內容 |\n|---|---|\n| 追蹤者 | 見截圖 |\n"), [])
 
+    def test_internal_wording_that_survives_the_deletions_is_caught(self):
+        leaks = {
+            "draft column header": "| 繁體中文（草稿，待太太審閱） | English |",
+            "operator header": "| 繁體中文 | English (for the operator) |",
+            "status line": "草稿 v0.1 DRAFT v0.1（2026-10-12）",
+            "wife as reviewer": "太太審閱繁體中文",
+            "wife in English": "The wife reviews the Chinese",
+            "repo reference": "see HUMAN_TODO 27 or legal.md Q8",
+            "gate number": "Gates 2, 3, 4, 8 in A1",
+            "appendix": "每一項都要先通過附錄 A1 的關卡",
+        }
+        for label, line in leaks.items():
+            with self.subTest(case=label):
+                self.assertTrue(self.run_filled(f"{line}\n"), f"{label} was not caught")
+
     def test_each_marker_is_caught(self):
         for marker in ("【待填：x】", "[TO FILL WHEN REAL: x]", "OPERATOR ONLY", "［D8］", "[D8]", "［待確認］", "[C2]", "## Part A", "## 附錄 C"):
             with self.subTest(marker=marker):

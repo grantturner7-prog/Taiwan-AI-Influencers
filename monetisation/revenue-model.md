@@ -446,7 +446,7 @@ Reading the table: the levers that move the 12-month result are the **number of 
 
 ## 12. No outcome is promised
 
-Nothing in this file is a prediction that any revenue will arrive. The honest finding is the width of the range: from about nothing, to some tens of thousands, to at the very most (on these assumptions, with more than half of the operator's year spent) a figure that only roughly covers the tools spend plus the placeholder compliance costs. The model's use is to size spend and effort before they are committed: keep to the NT$5,000 cap, stay below it in the first three months, treat B2B creative as the only route that can matter in year 1, do not budget platform payouts, licensing or sticker income, and let the week-8 and month-6 checkpoints decide whether to continue.
+Nothing in this file is a prediction that any revenue will arrive. The honest finding is the width of the range: from about nothing, to some tens of thousands, to, in the high scenario (on these assumptions, with more than half of the operator's year spent), a figure that only roughly covers the tools spend plus the placeholder compliance costs. The high scenario is not a ceiling: the Phase 1 range runs higher (to about NT$200,000), which section 2 shows would take about 17 jobs and roughly half of the operator's year. The model's use is to size spend and effort before they are committed: keep to the NT$5,000 cap, stay below it in the first three months, treat B2B creative as the route that matters most in year 1 on these assumptions (it is the largest line in the middle and high scenarios), do not budget platform payouts, licensing or sticker income, and let the week-8 and month-6 checkpoints decide whether to continue.
 
 ---
 
@@ -538,11 +538,11 @@ python3 -m unittest -v test_model
 
 | Key | Unit | Low | Mid | High | Status | Source or logic |
 | :--- | :--- | ---: | ---: | ---: | :--- | :--- |
-| `rate.op_hourly` | NT$/h | 600 | 600 | 600 | assumption | research/SUMMARY.md iv: Phase 1 hypothetical reviewer axis NT$300 / 500 / 800 per hour. Assumed hourly value of the operator's production, QA and client time. No wage or freelancer rate was found. Replace after 3+ real quotes (G1, G11). |
+| `rate.op_hourly` | NT$/h | 600 | 600 | 600 | assumption | stated logic, chosen between the Phase 1 hypothetical axis points NT$500 and NT$800 per hour (research/SUMMARY.md iv); 600 is not itself an axis value, and that axis priced native zh-TW review, not production. Assumed hourly value of the operator's production, QA and client time. No wage or freelancer rate was found. Replace after 3+ real quotes (G1, G11). |
 | `rate.wife_hourly` | NT$/h | 500 | 500 | 500 | assumption | research/SUMMARY.md iv: same hypothetical axis, middle value. Assumed hourly value of the wife's native zh-TW review time. Not paid in cash. |
 | `rate.margin` | fraction | 0.25 | 0.25 | 0.25 | assumption | stated logic. Added to cost: covers rework beyond the included rounds, unpaid scoping and sales time, tool price changes and a contribution to the shared tools budget. Not a profit claim. |
 | `rate.round_to` | NT$ | 100 | 100 | 100 | assumption | stated logic. Asks are rounded UP to this step. |
-| `rate.cost_per_try` | NT$ | 8.6 | 8.6 | 8.6 | sourced | pipeline/tools.md section 5 (Gemini Pro-class with two paid reference inputs, about US$0.268 at NT$32 per US$); SOURCES.md PT3 (low to medium). Image-API cost of one generation try. Secondary list prices, not checked against an invoice. The commercial-use terms are unread (HUMAN_TODO 33), so no client work may start. |
+| `rate.cost_per_try` | NT$ | 8.6 | 8.6 | 8.6 | sourced | pipeline/tools.md section 5 (Gemini Pro-class with two paid reference inputs, about US$0.268 at NT$32 per US$; tools.md itself calls the 0.268 a one-source guess); SOURCES.md PT3 (low to medium). Image-API cost of one generation try. Secondary list prices, not checked against an invoice. The commercial-use terms are unread (HUMAN_TODO 33), so no client work may start. |
 | `rate.revision_fraction` | fraction | 0.2 | 0.2 | 0.2 | assumption | stated logic. Share of a set redone in each revision round. |
 | `rate.rounds_included` | count | 2 | 2 | 2 | assumption | content/sehuan/b2b-pitch.md B5 (two rounds of changes). Revision rounds included in every price. |
 | `rate.turnaround_hours_per_week` | hours | 1.5 | 1.5 | 1.5 | assumption | cap.op_hours_revenue_month: 4 to 7.5 h a month is about 0.9 to 1.7 h a week; 1.5 chosen. Operator hours per week that a client job can get. Sets the quoted turnaround. |

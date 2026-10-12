@@ -17,7 +17,8 @@ Template mode (default) checks, for fangcun.md, buzhou.md, sehuan.md and studio.
      (operator boxes are skipped for the pronoun check because they quote the rule)
   7. references: backticked repo paths resolve
 Filled mode (--filled FILE) checks that a working copy is ready to send: no placeholder, no OPERATOR ONLY box, no appendix, no
-[D8] or [C2] marker and no unfilled {brace} slot remains. It cannot tell whether a number is true: the wife and operator still check
+[D8] or [C2] marker and no unfilled {brace} slot remains; and no leak of internal wording that survives deleting Part A and the boxes
+(draft or "for the operator" headers, "v0.1", the wife named as reviewer, repo file names, HUMAN_TODO numbers, gate numbers, "A1"). It cannot tell whether a number is true: the wife and operator still check
 every figure against its screenshot (README.md section 4).
 
 Exit code 1 if any ERROR. WARN and INFO are for a human to read.
@@ -233,6 +234,24 @@ def check_filled(path: Path):
         for n, ln in enumerate(text.splitlines(), 1):
             if needle in ln:
                 err(f"{name}:{n}: {what} remains: {ln.strip()[:80]}")
+    # Draft headers and internal references survive the deletion of Part A, the boxes and appendix C unless they are edited by hand.
+    # A brand must not see "待太太審閱", "for the operator", "DRAFT v0.1", a repo file name, a gate number or the reviewer's role.
+    leaks = [
+        (r"太太|[Tt]he wife\b", "the wife / reviewer's role named in brand-facing text (say 母語審閱者 / native reviewer)"),
+        (r"for the operator|v0\.1|DRAFT", "a draft or operator-only header (edit the column headers and the status line after the wife's read)"),
+        (r"繁體中文[（(]?草稿", "a 'zh-TW draft' column header"),
+        (r"HUMAN_TODO|legal\.md|portfolio\.md|DECISIONS|rate-card\.md|research/|launch/|analytics/|bible|photoreal addendum|addendum",
+         "an internal repo reference"),
+        (r"附錄|[Aa]ppendix|\bGates? ?\d|\bA1\b", "a reference to Part A / appendix / a gate number, which the sent copy no longer has"),
+    ]
+    for n, ln in enumerate(text.splitlines(), 1):
+        for pat, what in leaks:
+            m = re.search(pat, ln)
+            if m:
+                err(f"{name}:{n}: {what}: 「{m.group(0)}」 in {ln.strip()[:70]}")
+    for n, ln in enumerate(text.splitlines(), 1):
+        if "……" in ln:
+            warn(f"{name}:{n}: an abridged passage (……) remains; paste the full approved text from launch/personas/<slug>.md: {ln.strip()[:70]}")
     for n, ln in enumerate(text.splitlines(), 1):
         if re.search(r"\{[^}\n]{1,20}\}", ln) and not re.search(r"\{(廠商|品牌|角色名|工具|版本|方案|額度|YYYY/MM/DD|官方頁面名稱|內容|vendor|brand|name|tool)", ln):
             warn(f"{name}:{n}: a {{brace}} slot remains: {ln.strip()[:80]}")

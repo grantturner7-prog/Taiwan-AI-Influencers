@@ -29,7 +29,7 @@ Labels used: **sourced** (from a project file, with its own confidence label); *
 **Price = (operator hours x operator hourly value + wife hours x wife hourly value + image-tool cost) x (1 + margin), rounded up to the next NT$100.**
 
 - **Hours** = fixed minutes (scoping, brief and source slip, client messages, delivery and invoice) + per-unit minutes x units x (1 + included revision rounds x share of a set redone per round). The minutes are in `assumptions.csv`, keys `offer.*`; they are estimates and are replaced by measured minutes after the first sample (portfolio H8).
-- **Hourly values** are an assumed opportunity value of the couple's time, not a wage and not a market rate. They sit inside the Phase 1 hypothetical reviewer axis of NT$300 / 500 / 800 an hour (`research/SUMMARY.md` iv). The wife's time is **not paid in cash** (DECISIONS: reviewer is the wife, no cash budget); it is priced so the arithmetic shows what the work is worth, and the revenue model reports cash separately.
+- **Hourly values** are an assumed opportunity value of the couple's time, not a wage and not a market rate. They lie within the range of the Phase 1 hypothetical reviewer axis of NT$300 / 500 / 800 an hour (`research/SUMMARY.md` iv); NT$600 is not itself an axis value, and that axis priced native zh-TW review, not production, so it is a borrowed scale, not evidence. The wife's time is **not paid in cash** (DECISIONS: reviewer is the wife, no cash budget); it is priced so the arithmetic shows what the work is worth, and the revenue model reports cash separately.
 - **Image-tool cost** = tries x cost per try x unit-works. The cost per try is from `pipeline/tools.md` section 5 (secondary list prices, low to medium confidence, not checked against an invoice).
 - **Margin** covers rework beyond the included rounds, unpaid scoping and sales time, tool price changes and a contribution to the shared tools budget. It is not a profit claim.
 - **Floor** = hours at the assumed values + tool cost, no margin.
@@ -39,11 +39,11 @@ Labels used: **sourced** (from a project file, with its own confidence label); *
 <!-- BEGIN GENERATED:rate-params -->
 | Parameter | Value | Status | Source or logic |
 | :--- | ---: | :--- | :--- |
-| Operator hourly value (NT$/h) | 600 | assumption | research/SUMMARY.md iv: Phase 1 hypothetical reviewer axis NT$300 / 500 / 800 per hour |
+| Operator hourly value (NT$/h) | 600 | assumption | stated logic, chosen between the Phase 1 hypothetical axis points NT$500 and NT$800 per hour (research/SUMMARY.md iv); 600 is not itself an axis value, and that axis priced native zh-TW review, not production |
 | Wife hourly value (NT$/h) | 500 | assumption | research/SUMMARY.md iv: same hypothetical axis, middle value |
 | Margin on cost | 0.25 | assumption | stated logic |
 | Asks rounded up to (NT$) | 100 | assumption | stated logic |
-| Image-API cost of one try (NT$) | 8.6 | sourced | pipeline/tools.md section 5 (Gemini Pro-class with two paid reference inputs, about US$0.268 at NT$32 per US$); SOURCES.md PT3 (low to medium) |
+| Image-API cost of one try (NT$) | 8.6 | sourced | pipeline/tools.md section 5 (Gemini Pro-class with two paid reference inputs, about US$0.268 at NT$32 per US$; tools.md itself calls the 0.268 a one-source guess); SOURCES.md PT3 (low to medium) |
 | Share of a set redone per revision round | 0.2 | assumption | stated logic |
 | Revision rounds included | 2 | assumption | content/sehuan/b2b-pitch.md B5 (two rounds of changes) |
 | Operator hours per week a client job can get | 1.5 | assumption | cap.op_hours_revenue_month: 4 to 7.5 h a month is about 0.9 to 1.7 h a week; 1.5 chosen |
@@ -397,3 +397,16 @@ A written quote names: the registered seller `[TO FILL WHEN REAL]`; the package 
 5. Read the LINE Creators Market terms and the affiliate programmes' terms (G3 to G5).
 6. Decide whether the face-free B1 options (colour-story board, flat-lay lookbook) are tested before the lawyer answers on try-on.
 7. Confirm the wife is comfortable with her hours being priced in the table (not paid in cash) and with the reading of 「見證」, 「業配」 and 「加強推廣」.
+
+---
+
+## 8. Review log (independent review, 2026-10-12)
+
+Checked: ground rules and hard rules line by line; every Phase 1 citation (S1, S3 to S5, S7, S11, S13, S17, S19, S21 to S24, S27, S28, U1, U2, U5, G-numbers) against `research/monetisation.md`; HUMAN_TODO and `research/legal.md` question numbers; `portfolio.md` 1.4 disclosure strings and 5.x capacity figures; all asks, floors, product prices, sticker break-even, the middle-scenario B2B and sponsored revenue and the NT$59,000 placeholder total recomputed independently; `python3 -m unittest test_model` (103 pass) and `python3 model.py docs --check` (in sync). No invented client, follower, result, contact, URL or registration number found; named platforms and agencies are well known and carry the verify flag; Phase 1's unverified third agency is not named; forbidden categories and the no-testimonial rule are present in sections 2 and 3; no outcome is promised; the zh-TW lines are Traditional with Taiwan vocabulary (no mainland terms or Simplified forms found).
+
+Fixed in place:
+1. Hourly value wording (section 1 and `rate.op_hourly`): NT$600 was described as sitting on the Phase 1 axis; it is between axis points NT$500 and NT$800, and the axis priced native zh-TW review, not production. Now stated as a borrowed scale, not evidence.
+2. `rate.cost_per_try`: the source note now carries pipeline/tools.md's own label, "one-source guess", so "sourced" is not read as a verified price.
+3. `revenue-model.md` section 12: "at the very most" for the high scenario was an overclaim (the Phase 1 range runs to about NT$200,000); reworded, and B2B changed from "the only route that can matter" to "the route that matters most on these assumptions". Generated tables refreshed (`docs --write`); tests still pass.
+
+Not fixed, for the humans: the author summary's counts (139 rows, 113 assumption) are stale, the files say 141 and 115 and are internally consistent; every number remains an internal ask until 3+ real quotes exist; the wife must rule on the section 6 strings (the platform's own Chinese name for the paid-partnership tag, 「付費合作」 versus the in-app wording, should be copied from a live Taiwan account screen).

@@ -50,7 +50,7 @@
 >
 > | Mode | When | Keep | Replace or delete |
 > |---|---|---|---|
-> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 7, 9 and 10 | Delete any row in section 2 whose character is not live. Replace the whole of section 8 with the paragraph below |
+> | **1. Pre-data** (the only honest option at launch) | The account has fewer than about six weeks of real insights (portfolio.md 6.1 scores weeks 3 to 6 and needs 8 organic posts per platform) | Sections 1 to 7, 9 and 10 | Delete any row in section 2 whose character is not live and the placeholder rows in sections 1 and 3. Replace the whole of section 8 with the paragraph below. Fill or delete every placeholder in sections 9 and 10 |
 > | **2. With data** | Real insights exist and screenshots are saved | All sections | Every 【待填】 is filled from a dated screenshot, or the row is deleted. Never leave a placeholder in a sent copy |
 >
 > **Section 8 replacement text for mode 1** (zh-TW draft / English):
@@ -82,7 +82,7 @@
 > | Section 2 | The directory of characters and their placeholders | Every send: list only characters that are live, with real handles |
 > | Section 3 | 'NOT YET OFFERED', 'none has been done'; 'no ads or boosting on the studio's own accounts' | First real collaboration; if the studio ever places or handles ads |
 > | Section 4 | 'No post exists yet' (standard, not a track record) | Once posts are published: replace with a dated statement of what the accounts actually do |
-> | Section 7 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
+> | Section 7 | 'Collaboration flow (proposed; never yet run)'; 'No automated replies are used at present'; the D8 statement that every post is reviewed by a person; the statement that diagrams and lesson graphics are made with AI assistance and a person checks each one (decision D3 of 2026-10-12) | First collaboration; any change to automated replies; if per-post approval is relaxed after the week-8 review (DECISIONS.md) |
 > | Section 8 | The whole section | Switch from mode 1 to mode 2 and back; refresh at least monthly while the kit is in use |
 > | Section 9 | 'No public price list' | When a rate card is made public |
 > | Section 10 | Every placeholder | At registration, at mailbox creation, at handle choice |
@@ -133,13 +133,13 @@
 
 | 繁體中文（草稿，待太太審閱） | English (for the operator) |
 |---|---|
-| 下表每一項都「尚未開放」：目前沒有任何一項做過，也沒有案例。每一項都要先通過附錄 A1 的關卡。細節與條件在各角色簡介的第 4 節。 | Every row is NOT YET OFFERED: none has been done and none has a case. Each must first pass the gates in A1. Details and conditions are in section 4 of each character kit. |
+| 下表每一項都「尚未開放」：目前沒有任何一項做過，也沒有案例。每一項都要等工作室完成登記、合約範本與必要的法律確認後，才會開始接案。細節與條件在各角色簡介的第 4 節。 | Every row is NOT YET OFFERED: none has been done and none has a case. Each opens only once the studio is registered, a contract template exists and the necessary legal confirmations are in. Details and conditions are in section 4 of each character kit. |
 
 | 合作 / Collaboration | 內容（繁體中文） | What it is (English) | 備註 / Notes |
 |---|---|---|---|
 | 角色帳號上的業配說明貼文 | 由品牌提供事實與出處，在角色帳號上以說明、比較、示範的方式呈現。沒有使用心得，沒有評價。 | A sponsored explainer on a character's account, built from facts and sources the brand supplies. Explains, compares and demonstrates; no testimonial and no review. | Disclosed with the paid-content line plus the platform tool. Briefs that need first-hand experience are declined |
 | 為品牌自己的頻道製作創作 | 示意圖與核對表（方寸）、功能說明圖卡組（步驟）、配色故事板與 lookbook 版面（色環）。對客戶目前只做靜態圖與圖卡。 | Creative for the brand's own channels: diagrams and size-check sheets (方寸), explainer card sets (步驟), colour-story boards and lookbook layouts (色環). For clients, stills and cards only at present. | Delivered with written labelling instructions for the AI label and the paid-content label. Scope, revision rounds and approvals in writing |
-| 目前不做 | 替自己的帳號投放廣告或加強推廣貼文；為客戶製作影片；臉部動畫、配音與口型同步；使用心得與體驗文。 | Not done at present: placing ads or boosting posts on the studio's own accounts; video for clients; face animation, voice and lip-sync; testimonials and first-hand experience posts. | No ad budget and no verified advertiser account exist. If a brand boosts a collaboration post, the platform's AI-disclosure control must be on; the rate card prices that handling as an add-on, and the underlying duty is not yet understood (legal.md Q8) |
+| 目前不做 | 替自己的帳號投放廣告或加強推廣貼文；為客戶製作影片；臉部動畫、配音與口型同步；使用心得與體驗文。 | Not done at present: placing ads or boosting posts on the studio's own accounts; video for clients; face animation, voice and lip-sync; testimonials and first-hand experience posts. | If a brand boosts a collaboration post, the platform's AI-disclosure control must be on, and this is agreed in writing |
 
 | 繁體中文（草稿，待太太審閱） | English (for the operator) |
 |---|---|
@@ -159,7 +159,7 @@
 |---|---|---|
 | 簡介 / Bio | 「AI 虛擬角色｜{角色名}｜{一句話職責}｜明說角色工作室 創作與營運」，名稱欄寫「{角色名}｜AI 虛擬角色」。 | 'AI virtual character / {name} / {one-line job} / created and run by 明說角色工作室', and the name field reads '{name} / AI virtual character'. |
 | 貼文第一行 / First caption line | 「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「{角色名}」發布，……」。各角色的實際用語見其簡介第 5 節。 | 'AI virtual character: this post is by the AI-generated virtual character {name} ...'. The exact wording per character is in section 5 of its kit. |
-| 畫面標示 / On-screen badge | 每張圖與每個影片畫面都有固定位置的標示（「AI 生成｜虛擬角色」或「AI 生成｜示意圖」），由人在後製加上。 | A fixed-position badge on every image and every video frame ('AI-generated / virtual character' or 'AI-generated / illustration'), added by a person in editing. |
+| 畫面標示 / On-screen badge | 每張圖與每個影片畫面都有固定位置的標示（「AI 生成｜虛擬角色」或「AI 生成｜示意圖」），在後製加上。 | A fixed-position badge on every image and every video frame ('AI-generated / virtual character' or 'AI-generated / illustration'), added in editing. |
 | 平台標籤 / Platform label | 每則貼文由人手動開啟平台的 AI 內容標籤；若平台在台灣提供帳號層級的 AI 標籤，也會開啟。〔未查證〕 | The platform's AI-content label is switched on by hand for every post, and the account-level AI label too if offered in Taiwan. (Unverified.) |
 | 合作內容 / Paid and supplied content | 「【業配】…」「【合作內容】…」「【廠商提供】…」「【含分潤連結】…」放在貼文第一行或緊接 AI 揭露句，並開啟平台的付費合作標示工具。平台工具不取代貼文中的文字標示。 | 'Paid', 'collaboration content', 'supplied by the brand' and 'affiliate link' lines sit on the first line or right after the AI line, and the platform's paid-partnership tool is switched on. The platform tool never replaces the written line. |
 
@@ -242,7 +242,7 @@
 | 每則貼文在發布前，都由真人審閱並核准：一位母語審閱者檢查繁體中文用語、語氣與文化禁忌；一位營運者核對事實、數字、出處、圖像品質與標示。［D8］ | Every post is reviewed and approved by people before it is published: a native reviewer checks Traditional Chinese wording, tone and cultural taboos; an operator checks facts, numbers, sources, image quality and labels. [D8] |
 | 文字草稿由 AI 協助起草；沒有任何貼文在未經真人核准前發布。 | Text drafts are written with AI assistance. No post goes out without a person's approval. |
 | 每張影像都有來源紀錄（工具、日期、提示詞、人工編修），並檢查是否神似任何真人；製作角色時不使用任何真人照片作為參考。［D8］ | Every image has a provenance record (tool, date, prompt, human edits) and is checked for resemblance to real people. No photograph of a real person is used as a reference when making the character. [D8] |
-| 畫面上的中文與數字由人在後製排版，不由影像生成工具產生，並由審閱者逐字檢查。 | On-image Chinese text and numbers are typeset by a person in editing, never generated, and checked character by character by the reviewer. |
+| 畫面上的中文、數字、標示與圖解版面都在後製加上，不由影像生成工具產生；示意圖與圖解以 AI 協助製作，每一張都由真人逐字核對後才發布。 | On-image Chinese text, numbers, badges and diagram layouts are added in editing and never produced by an image generator. Diagrams and lesson graphics are made with AI assistance, and a person checks each one character by character before it is published. |
 | 只使用平台官方的發布與排程功能。不購買追蹤者或互動，不使用機器人留言，不參加互動群組。 | Official platform publishing and scheduling tools only. No bought followers or engagement, no bot comments, no engagement pods. |
 | 合作流程（擬定，尚未實際執行過）：書面範圍（交付物、修改次數、核准人、時程）→ 品牌提供素材與可查證的資料 → 初稿 → 品牌書面核准 → 發布前核對標示 → 發布並留存紀錄。 | Collaboration flow (proposed; never yet run): written scope (deliverables, revision rounds, approver, timing) -> brand supplies materials and verifiable facts -> draft -> brand's written approval -> label check before publishing -> publish and keep the record. |
 | 發現錯誤時，會在貼文上公開更正（附「【更正】」與日期），必要時下架。 | When an error is found it is corrected openly on the post (with a dated 【更正】 line) and, if needed, the post is taken down. |
@@ -389,3 +389,4 @@
 > 4. No rate card, one-page offer or contract template exists yet. Record their file names and versions in sections 3 and 9 when they exist.
 > 5. Section 3 says no ads or boosting on the studio's own accounts, while the rate card (monetisation/rate-card.md section 3.9) prices paid-media handling for a delivered piece as an add-on. The two fit only if the studio never places the ad itself. If that changes, the AI-person ad-disclosure duty and advertiser verification need lawyer and 記帳士 answers first.
 > 6. Section 2 must be re-checked on every send: a character is listed only if it is live, with a real handle.
+> 7. Review 2026-10-12: section 7 no longer says a person typesets on-image text and badges, because decision D3 (2026-10-12) has Claude draw the diagram layer as SVG. It now says that diagrams are made with AI assistance and checked by a person. Confirm that this is how the work is really done.

@@ -151,7 +151,7 @@ No amount, percentage or number of days appears in this section: they are `[TO F
 | G1 | Fee | All | The fee in NT$ from the written quote, itemised by deliverable and by add-on. The quote follows the rate card once its rates are recalibrated against 3+ real quotes (RC 5) `[TO FILL WHEN REAL]` | RC 1, 5, 6 | No | [ ] |
 | G2 | Tax and invoice | All | Only the registered business invoices: uniform invoice (統一發票) or another type; tax included or excluded stated; withholding (扣繳) and the 二代健保 supplementary premium may apply to some payments (recalled, unverified) | RC 2; LG 7.2 | 記帳士: Q15, Q17 | [ ] |
 | G3 | Deposit and schedule | All | Work starts after the deposit and complete materials (**assumption**); deposit share and balance timing `[TO FILL WHEN REAL]` | RC 2 | No | [ ] |
-| G4 | Payment due date | All | `[TO FILL WHEN REAL: days from invoice or delivery]`. The revenue model assumes cash about a month after delivery (assumption, `revenue-model.md`); a client's own 60 to 90 day terms would stretch the studio's cash and are a red flag (section 4) | RC 2 | No | [ ] |
+| G4 | Payment due date | All | `[TO FILL WHEN REAL: days from invoice or delivery]`. The revenue model assumes cash about a month after delivery (assumption, `revenue-model.md`); a client's own much longer payment terms would stretch the studio's cash and are a red flag (section 4) | RC 2 | No | [ ] |
 | G5 | Late payment | All | Reminder; pause of work and of the licence until paid; interest or a fee as the lawyer advises. No rate is quoted here because none is verified | RC 2 | Yes: NEW-2 | [ ] |
 | G6 | Third-party costs | B | Included in the price unless the client asks for a licensed font, stock item or paid asset; those are approved in advance and itemised | RC 1 | No | [ ] |
 | G7 | Cancellation | All | If the client cancels: work done to date and the deposit `[TO FILL WHEN REAL]`. If the studio stops for a Ground rule reason: the unearned part is refunded `[TO FILL WHEN REAL]` | BIB 9.4 (termination item) | Yes: NEW-2 | [ ] |
@@ -227,7 +227,7 @@ If a brand sends its own contract, screen it against this table before reading a
 | The client posts or replies as the character, uses its own staff or friends to lift the post, or runs bots | Fake popularity; automation rule | H7, H8 | Decline |
 | A non-disparagement or confidentiality clause that stops the studio publishing a correction | Corrections must stay possible | C10, H1 | Carve out corrections and take-downs |
 | Lead forms, selfies, measurements or a giveaway collecting data inside the content | PDPA exposure | I1 | Decline or move to the client's own site |
-| Payment 60 to 90 days after delivery, or 'pay when paid' | The studio's cash is thin | G4 | Counter with the studio's terms `[TO FILL WHEN REAL]` |
+| Payment much later than the one month after delivery that the revenue model assumes, or 'pay when paid' | The studio's cash is thin | G4 | Counter with the studio's terms `[TO FILL WHEN REAL]` |
 | Law or venue outside Taiwan, or a venue far from the registrant | Cost and risk of a small dispute | K6, K7 | Lawyer |
 | Gifted goods with an expectation of positive coverage | A material connection and a testimonial in disguise | C6, D1 | Decline or accept only as 【廠商提供】 with no obligation |
 | A required face, voice or styling resembling a named person | Likeness | D12, F12 | Decline |
