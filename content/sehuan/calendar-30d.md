@@ -70,7 +70,7 @@ Nothing in this calendar can be published until the launch gates in `personas/se
 
 ## 2. Cadence, days and times
 
-From `portfolio.md` 5.2 and bible 6, **as changed by decision OPS-D1** (`DECISIONS.md` 2026-10-12; `ops/weekly-routine.md`): the pilots are held at **12 approvals a week combined through the first 8 weeks**, which is 2 posts per platform per pilot. 色環 therefore posts **2 Instagram + 2 Threads a week (4 approvals, 2 masters) in every week**; the portfolio's 3 + 3 from week 3 is not used. The step up to 3 + 3 is made only after logged minutes show room (`ops/weekly-routine.md`), and then the deferred masters in section 6.1 are restored first. One master feeds one Instagram post and one Threads post: production counts once and approvals twice (`portfolio.md` 5.1).
+From `portfolio.md` 5.2 and bible 6, **as changed by decision OPS-D1** (`DECISIONS.md` 2026-10-12; `ops/weekly-routine.md`): the pilots are held at **12 approvals a week combined through the first 8 weeks**, which is 2 posts per platform per pilot. 色環 therefore posts **2 Instagram + 2 Threads a week (4 approvals, 2 masters) in every week**; the portfolio's 3 + 3 from week 3 is not used. The step up to 3 + 3 is made only after logged minutes show room, and `ops/weekly-routine.md` 2.4 plans none before the week-8 review (Thu 2027-01-14); the deferred masters in section 6.1 are then restored first. One master feeds one Instagram post and one Threads post: production counts once and approvals twice (`portfolio.md` 5.1).
 
 | Week | Dates | Instagram (20:30) | Threads (18:00) | Approvals | Masters |
 |---|---|---|---|---|---|
@@ -675,7 +675,7 @@ This table holds the ten outlined posts that stay in the 30 days. P09, P10, P19 
 
 ### 6.1 Deferred by OPS-D1 (P09, P10, P19, P20; masters M5 and M10)
 
-**The decision.** OPS-D1, adopted for the user on 2026-10-12 (`DECISIONS.md`; `ops/weekly-routine.md` section 2), holds the three pilots at 12 approvals a week combined through the first 8 weeks, which is 4 a week for 色環 (2 Instagram + 2 Threads). Weeks 3 and 4 therefore lose one master each: 4 of the 22 slots (2 Instagram, 2 Threads). The choice of which masters is Claude's, is reversible, and is for the operator and the wife to overrule. A deferred post is not deleted: its outline stays here, it has no queue folder, its hook row in `hook-library.md` is marked, and nothing about it is scheduled or approved.
+**The decision.** OPS-D1, adopted for the user on 2026-10-12 (`DECISIONS.md`; `ops/weekly-routine.md` section 2.4), holds the three pilots at 12 approvals a week combined through the first 8 weeks, which is 4 a week for 色環 (2 Instagram + 2 Threads). Weeks 3 and 4 therefore lose one master each: 4 of the 22 slots (2 Instagram, 2 Threads). The choice of which masters is Claude's, is reversible, and is for the operator and the wife to overrule. A deferred post is not deleted: its outline stays here, it has no queue folder, its hook row in `hook-library.md` is marked, and nothing about it is scheduled or approved.
 
 **How the two were chosen** (*assumption*; no engagement data exists, so this is judgement, not a finding):
 
@@ -696,7 +696,7 @@ The alternative that was weighed: cut M7 (色差) instead of M5. It keeps a sour
 
 **Effects.** (1) The 30 days hold 18 posts, not 22 (sections 2 and 3). (2) The account is silent Fri 11-27 to Tue 12-01 (section 2). (3) Nothing is scheduled on 雙12 or the day before. (4) Gate 17 (the text-only first line) is needed for P04 and P12 only. (5) The Series A table in `series.md` loses the "same family by lightness" episode, and M9 becomes 轉一格 #03.
 
-**Restore order**, if logged minutes show room (`ops/weekly-routine.md` ramp rule): **M5 first, M10 second.** A restored post keeps its ID and weekday, takes a queue folder named for its date, is drafted to the depth of section 5 and goes through the same review; nothing here pre-approves it. If it is restored, `verify.py` must be edited so the 30-day table may hold it again.
+**Restore order**, if logged minutes show room (the ramp rule of `ops/weekly-routine.md` 2.4, which plans no step up before the week-8 review on Thu 2027-01-14): **M5 first, M10 second.** A restored post keeps its ID and weekday and moves by whole weeks if its November or December date has passed, takes a queue folder named for its new date, is drafted to the depth of section 5 and goes through the same review; nothing here pre-approves it. If it is restored, `verify.py` must be edited so the 30-day table may hold it again.
 
 ---
 
