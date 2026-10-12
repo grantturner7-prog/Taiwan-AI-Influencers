@@ -492,7 +492,11 @@ def build_short_head3(step, preview):
         on = n <= step
         r = 34
         out.append(numeral(MX0 + r, cy, n, r, WALNUT if on else OAT, GROUND if on else WALNUT, 42))
-        out.append(T(MX0 + 2 * r + 26, cy + 0.36 * 76, hd, 76, CHAR if on else PUTTY, 700))
+        if on:
+            out.append(T(MX0 + 2 * r + 26, cy + 0.36 * 76, hd, 76, CHAR, 700))
+        else:   # not revealed yet: outlined, still legible
+            out.append(T(MX0 + 2 * r + 26, cy + 0.36 * 76, hd, 76, "none", 700,
+                         extra=' stroke="%s" stroke-width="3" stroke-linejoin="round"' % WALNUT))
     out.append(slot(SLOT_HEAD, preview))
     lines = STRINGS["short_three"]
     out.append(body_lines(lines))
