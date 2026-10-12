@@ -14,6 +14,13 @@ Independent review of 2026-10-12 added: a bad or non-UTF-8 post.json is reported
 must be paste-ready (no title-field note, no braces, no placeholder); a YouTube title must sit in review.notes; the R01
 asset must carry its generation prompt; a slide or frame with a character panel must carry the 虛擬角色 badge; the
 badge inset must be the 11% / 8% rule; caption_zh must equal the caption block in calendar-30d.md.
+
+Update of 2026-10-12 (decisions D6, OPS-D1 and D3 in DECISIONS.md "recommended answers adopted"): the capacity
+arithmetic of calendar section 8 is asserted; the 30-day table in calendar section 3 must respect the OPS-D1 cadence
+(Instagram Mon and Thu, YouTube Shorts Tue and Fri, at most 2 of each a week, at least 2 Instagram posts in each of
+weeks 1 to 4, no deferred post scheduled); a Reel or Short whose only hold was D6 must carry the D6 conditions in
+review.notes and no HOLD or BLOCKED marker; a non-AI diagram asset must name its route (Claude-drawn SVG or
+human-built). None of this approves anything.
 """
 import datetime
 import glob
@@ -93,6 +100,20 @@ def check_arithmetic():
         fits[travel] = (a <= door[0] and b <= door[1]) or (b <= door[0] and a <= door[1])
     assert fits == {"w": True, "d": False, "h": True}, fits
     w0 = datetime.date(2026, 11, 16)
+    # Capacity arithmetic, calendar section 8 (decisions of 2026-10-12). The minutes are assumptions; the sums are computed.
+    assert 4 * 5 == 20 and 6 * 5 == 30 and 2 * 10 + 2 * 3 == 26 and 3 * 10 + 3 * 3 == 39
+    assert 3 * 4 == 12 and 3 * 6 == 18 and 12 * 5 == 60 and 18 * 5 == 90
+    assert 6 * 10 + 6 * 3 == 78 and 9 * 10 + 9 * 3 == 117 and 4 * 10 + 4 * 3 == 52
+    frames = {"M1": 9 + 8, "M2": 9 + 6, "M3": 1 + 6, "M4": 8 + 6}
+    assert frames == {"M1": 17, "M2": 15, "M3": 7, "M4": 14} and sum(frames.values()) == 53
+    low = {"M1": 17 + 5 + 10 + 20, "M2": 15 + 5 + 2 * 20, "M3": 7 + 5 + 20, "M4": 14 + 5 + 20}
+    high = {"M1": 34 + 10 + 20 + 30, "M2": 30 + 10 + 2 * 30, "M3": 14 + 10 + 30, "M4": 28 + 10 + 30}
+    assert low == {"M1": 52, "M2": 60, "M3": 32, "M4": 39} and high == {"M1": 94, "M2": 100, "M3": 54, "M4": 68}
+    assert sum(low.values()) == 183 and sum(high.values()) == 316 and 183 / 2 == 91.5 and 316 / 2 == 158
+    assert 150 + 65 + 50 + 90 == 355 and 195 + 75 + 65 + 120 == 455
+    assert round(53 / 4, 2) == 13.25 and 14 + 5 + 20 == 39 and 28 + 10 + 30 == 68
+    assert 2 * 39 == 78 and 2 * 68 == 136 and 78 + 20 == 98 and 136 + 30 == 166
+    assert 22 - 4 == 18 and 11 - 2 == 9 and 4 * 4 + 2 == 18
     assert w0.strftime("%a") == "Mon" and datetime.date(2026, 11, 28).strftime("%a") == "Sat"
     assert datetime.date(2026, 12, 12).strftime("%a") == "Sat" and (w0 + datetime.timedelta(days=29)).isoformat() == "2026-12-15"
 
@@ -202,6 +223,73 @@ def check_json():
     return len(files)
 
 
+DEFERRED = {"P13", "P14", "P19", "P20"}  # deferred by OPS-D1 (calendar section 6.1)
+D6_NOTE_MARKERS = ["D6", "persistent", "no animation of the face", "no synthetic voice", "AI label"]
+
+
+def check_decisions():
+    """D6 and D3, as applied to the queue drafts (decisions of 2026-10-12)."""
+    for f in sorted(glob.glob(QUEUE)):
+        label = os.path.basename(os.path.dirname(f))
+        try:
+            with open(f, encoding="utf-8") as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            continue  # check_json already reported it
+        if not isinstance(d, dict):
+            continue
+        notes = d.get("review", {}).get("notes", "")
+        held = "HOLD" in notes or "BLOCKED" in notes
+        src_blocked = any("UNVERIFIED-OPERATOR-TO-FILL" in s.get("url", "") for s in d.get("sources", []))
+        if d.get("format") in ("reel", "short"):
+            for mk in D6_NOTE_MARKERS:
+                if mk not in notes:
+                    err("%s: a Reel or Short must carry the D6 condition %r in review.notes" % (label, mk))
+            if held and not src_blocked:
+                err("%s: HOLD or BLOCKED marker left on a video post that is no longer held for another reason" % label)
+        for m in d.get("media", []):
+            sp = m.get("shot_prompt", "")
+            if sp.startswith("NOT AI-GENERATED") and "DRAWN BY CLAUDE AS SVG" not in sp and "HUMAN-BUILT" not in sp:
+                err("%s: a non-AI asset must name its route (Claude-drawn SVG or human-built)" % label)
+            if "approved" in m.get("path", "").lower():
+                err("%s: media path must stay PENDING" % label)
+
+
+def check_cadence():
+    """OPS-D1: calendar section 3 must hold 2 Instagram + 2 YouTube Shorts a week and schedule no deferred post."""
+    if not os.path.isfile(CAL_MD):
+        return 0
+    with open(CAL_MD, encoding="utf-8") as fh:
+        txt = fh.read()
+    sec = re.search(r"^## 3\. The 30 days at a glance.*?(?=^## 4\.)", txt, re.S | re.M)
+    if not sec:
+        err("calendar section 3 not found")
+        return 0
+    weeks, ids = {}, []
+    for m in re.finditer(r"^\| (\d+) \| (\d{4}-\d{2}-\d{2}) \| (\w{3}) \| (W\d) \| (.*?) \|(.*)\|$", sec.group(0), re.M):
+        _day, date, _wd, wk, posts, _notes = m.groups()
+        wd = datetime.date.fromisoformat(date).weekday()  # Mon = 0
+        for pm in re.finditer(r"(P\d\d) (IG|YT)", posts):
+            pid, plat = pm.groups()
+            ids.append(pid)
+            weeks.setdefault(wk, {"IG": [], "YT": []})[plat].append(pid)
+            if plat == "IG" and wd not in (0, 3):
+                err("%s: Instagram post on a day other than Mon or Thu (OPS-D1 cadence)" % pid)
+            if plat == "YT" and wd not in (1, 4):
+                err("%s: YouTube Short on a day other than Tue or Fri (OPS-D1 cadence)" % pid)
+    for pid in sorted(DEFERRED & set(ids)):
+        err("%s is deferred by OPS-D1 but appears in the 30-day table" % pid)
+    for wk, v in sorted(weeks.items()):
+        if len(v["IG"]) > 2 or len(v["YT"]) > 2:
+            err("%s: more than 2 Instagram or 2 YouTube posts (OPS-D1 holds 4 a week)" % wk)
+    for wk in ("W1", "W2", "W3", "W4"):
+        if len(weeks.get(wk, {}).get("IG", [])) < 2:
+            err("%s: fewer than 2 posts on the primary platform (Instagram)" % wk)
+    if len(ids) != len(set(ids)) or len(ids) != 18:
+        err("30-day table should schedule 18 distinct posts after OPS-D1, found %d" % len(ids))
+    return len(ids)
+
+
 def check_hooks():
     n = 0
     for path, pat in ((HOOKS_MD, r"^\| H\d+ \| 「(.+?)」"), (CAL_MD, r"^\| P\d\d \|.*?\| 「(.+?)」<br>")):
@@ -225,8 +313,10 @@ if __name__ == "__main__":
     except AssertionError as e:
         err("arithmetic or date assertion failed: %r" % (e,))
     n = check_json()
+    check_decisions()
+    scheduled = check_cadence()
     h = check_hooks()
-    print("queue files checked: %d; hooks checked: %d" % (n, h))
+    print("queue files checked: %d; hooks checked: %d; posts in the 30-day table: %d" % (n, h, scheduled))
     for w in warnings:
         print("WARN ", w)
     for e in errors:

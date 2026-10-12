@@ -2,6 +2,8 @@
 
 Written 2026-10-12. For the operator (English); the wife's tasks are listed in the same tables. This is the week as the two of you run it inside **6 hours (operator) plus 10 hours (wife)**. It extends the posting rhythm in [launch/schedule.md](../launch/schedule.md) section 3 and the approval flow in [portfolio.md 5.5](../strategy/portfolio.md); it does not replace them. Companion files: [risk-register.md](risk-register.md) (what to watch) and [crisis-playbook.md](crisis-playbook.md) (what to do when something happens).
 
+**Updated 2026-10-12 after the recommended answers were adopted** (`DECISIONS.md`, entry "User asked for the recommended answers"; Claude's choices on the user's behalf, each reversible, nothing approved). **OPS-D1 is adopted:** the pilots are held at 12 approvals a week combined (2 posts per platform per pilot) through the first 8 weeks, so sections 1 to 3, 10, 12 and 14 now describe the 12-approval week and the 18-approval week is the superseded plan. Two other adopted answers change the hours and the checks: **D6** (a still of the photoreal character, or a slow pan or zoom of a still, may appear inside a Reel or Short under four conditions, section 4) and **the graphics decision** (called D3 in the pilot calendars: Claude draws the diagram, lesson-graphic and overlay layers as SVG, rendered to PNG; the operator and the wife still approve every asset; Claude cannot edit video; section 2.2).
+
 **Nothing here has been run.** No account exists, no post is approved, and every minute below is an *assumption* (from [portfolio.md 5.1 and 5.3](../strategy/portfolio.md) or this author's estimate) that the first four weeks of logging will replace. W0 = Monday 2026-11-16 is an assumption that moves with the launch gates ([launch README](../launch/README.md) decision D7); every date below moves with it by whole weeks. Dates and weekdays were computed with a script on 2026-10-12. Evidence labels: *assumption*, *unverified*, *computed*.
 
 ## 1. The short version
@@ -11,14 +13,14 @@ Written 2026-10-12. For the operator (English); the wife's tasks are listed in t
 3. **Removing needs one key; adding needs two.** Either of you may pause a persona or take a post down at once (playbook section 3).
 4. **A daily five-minute notice check** (the wife, with the operator covering) is what makes the 24-hour take-down clocks possible. It is not in the capacity model.
 5. **The week has fixed points:** Monday batch, Tuesday pre-check, Wednesday wife review, Thursday final approval and scheduling, Friday trend note and the 30-minute standup, Sunday analytics. Section 3 has the day table.
-6. **The hours do not fit at 18 approvals a week once this routine's own overhead is counted** (section 2, *computed*). The proposal is to run at 12 approvals a week until logged minutes show room (decision OPS-D1).
+6. **The hours do not fit at 18 approvals a week once this routine's own overhead is counted** (section 2, *computed*), so **OPS-D1 is adopted: the pilots run at 12 approvals a week combined through the first 8 weeks**, and step up only after logged minutes show room. Even at 12 the plan is **not shown to fit** once the operator's review of Claude-drawn graphics and the assembly of Reels and Shorts are counted (section 2.2, last row).
 7. **Never cut:** the AI labels, source slips, the wife's review, sponsorship disclosure, the 24-hour clocks, moderation of political drift, the daily notice check and the live check (section 12).
 
 ## 2. Hours: what the plan has, and what it leaves out
 
 ### 2.1 What [portfolio.md 5.3](../strategy/portfolio.md) models
 
-| Operator line | Weeks 1 and 2 (12 approvals) | Weeks 3 to 8 (18 approvals) |
+| Operator line | Weeks 1 to 8 (12 approvals, adopted) | Superseded: weeks 3 to 8 at 18 approvals |
 |---|---|---|
 | Admin, brand and agency contact | 60 | 60 |
 | Analytics and weekly report | 30 | 30 |
@@ -27,7 +29,7 @@ Written 2026-10-12. For the operator (English); the wife's tasks are listed in t
 | 步驟 extras, 20 minutes per master | 40 | 60 |
 | **Planned load** | **250** | **300** |
 
-The wife's planned load is 363 and 402 minutes (draft review 10 minutes per master, second-platform variants, moderation 90, image QA 45, B2B review 60, registrant duties 60, weekly sync 30). The gates are 324 (operator) and 510 (wife), averaged over four weeks ([portfolio.md 6.4](../strategy/portfolio.md)).
+The wife's planned load is 363 minutes at 12 approvals and was 402 at 18 (draft review 10 minutes per master, second-platform variants, moderation 90, image QA 45, B2B review 60, registrant duties 60, weekly sync 30). The gates are 324 (operator) and 510 (wife), averaged over four weeks ([portfolio.md 6.4](../strategy/portfolio.md)). `launch/schedule_check.py` reproduces 250 and 363 for every week 1 to 4 of the 54 slots that remain after OPS-D1.
 
 ### 2.2 What the routine adds, and is not in 5.3
 
@@ -39,12 +41,13 @@ The wife's planned load is 363 and 402 minutes (draft review 10 minutes per mast
 | Live check, 2 minutes per post | Operator | 24 at 12 posts; 36 at 18 | [schedule.md](../launch/schedule.md) section 3, which takes it from the reserve |
 | Daily notice check, 5 minutes a day (section 8) | Wife | 35 | *Assumption* |
 | Monthly bundle, averaged (section 9) | Operator about 21; wife about 14 | 21 and 14 | 90 and 60 minutes a month divided by 4.33 (*assumption*) |
+| **Review of Claude-drawn graphics and assembly of Reels and Shorts** (the graphics decision) | Operator | **Not in any total below** | Claude now draws the diagram, lesson-graphic and overlay layers as SVG and renders them to PNG, so the operator's **build** minutes for those layers are 0 (they were the largest hidden item, HUMAN_TODO 43). Two operator times remain: **reviewing every asset** (the operator and the wife still approve each one) and **assembling every Reel and Short**, because Claude cannot edit video. *Assumption*, taken from the pilot calendars' section 8 and restated as one: about 1 to 2 minutes per slide or scene frame (about 5 minutes per overlay set for 步驟), a change round of 5 to 10 minutes per master, and 20 to 30 minutes to assemble each Reel or Short. As written on 2026-10-12 the 方寸 calendar prices it at about 78 to 166 minutes a week and the 步驟 calendar at about 60 to 105; 色環 posts no Reel or Short and its figure is in its own section 8. Together the first two are **138 to 271 minutes a week against 45 of slack** (section 2.3), so it is not shown to fit |
 
 ### 2.3 The accounting (*computed*)
 
-Operator, minutes a week against 360 available. The rework reserve [portfolio.md 5.1](../strategy/portfolio.md) assumed is 36.
+Operator, minutes a week against 360 available. The rework reserve [portfolio.md 5.1](../strategy/portfolio.md) assumed is 36. The first column is now the plan for every week through week 8 (OPS-D1); the second is the superseded 18-approval plan, kept to show why it was dropped. **Neither column contains the review of Claude-drawn graphics or the assembly of Reels and Shorts** (section 2.2, last row).
 
-| | Weeks 1 and 2, or held at 12 approvals | Weeks 3 to 8 at 18 approvals |
+| | Weeks 1 to 8 at 12 approvals (adopted) | Superseded: weeks 3 to 8 at 18 approvals |
 |---|---|---|
 | Planned (5.3) | 250 | 300 |
 | Trend session, operator share | 10 | 10 |
@@ -59,7 +62,7 @@ Operator, minutes a week against 360 available. The rework reserve [portfolio.md
 
 Wife, minutes a week against 600 available (gate 510):
 
-| | Weeks 1 and 2, or held at 12 | Weeks 3 to 8 at 18 |
+| | Weeks 1 to 8 at 12 (adopted) | Superseded: weeks 3 to 8 at 18 |
 |---|---|---|
 | Planned (5.3) | 363 | 402 |
 | Daily notice check | 35 | 35 |
@@ -67,33 +70,34 @@ Wife, minutes a week against 600 available (gate 510):
 | **Total** | **412** | **451** |
 | Slack to the 510 gate | 98 | 59 |
 
-### 2.4 What this means, and a proposal
+### 2.4 What this means, and the adopted decision (OPS-D1)
 
-* **The wife's load fits either way.** The operator's does not at 18 approvals: it is over by 17 minutes (Reading A) or 47 (Reading B) *before any rework or incident*, and the plan's 36-minute rework reserve fits only in Reading A at 12 approvals (45 minutes of slack). Set-up, the two review weeks and any incident come on top.
-* **Proposal (decision OPS-D1, default yes): hold at 12 approvals a week (2 posts per platform per persona) after week 2, and use Reading A.** Reading A means B2B and registration admin gets 30 minutes a week from the start, which is cut #2 in [portfolio.md 5.6](../strategy/portfolio.md) applied early; revenue is priority 3 and the week-8 revenue checkpoint (at least 5 warm fashion contacts approached, 1 sample delivered, 3 quotes) is therefore at risk. Say so at the week-2 standup rather than discovering it at week 8.
-* **Ramp rule (derived).** The step from 12 to 18 adds 6 approvals (30 minutes), one 步驟 master (20) and 12 live-check minutes: **62 minutes**. To land at or under the 324-minute gate, the real all-in operator total at 12 approvals must be **262 minutes or less** (324 minus 62), averaged over the last two logged weeks. At the assumed numbers it is 315, so the ramp happens only if real minutes come in well under the assumptions (for example 3 minutes an approval instead of 5). Decide it at the Friday 2026-11-20 standup, because the week-3 batch is drafted on Monday 2026-11-23 and approved on Thursday 2026-11-26. **Caveat (reviewer):** on that Friday only the pre-launch logs and four days of week 1 exist, so "the last two logged weeks" cannot be met and the ramp rule cannot honestly pass; the default at that standup is therefore hold at 12. The first date with two logged weeks is the Fri 2026-11-27 standup (week 1 complete, week 2 partial), which decides the week-4 batch drafted on Mon 2026-11-30 and approved on Thu 2026-12-03. If the ramp happens at all, it therefore starts at week 4, and weeks 3 to 6 then hold more than the 8 organic posts per platform the thresholds need.
-* **Consequences to settle if OPS-D1 is accepted:** the calendars and [schedule.md](../launch/schedule.md) section 7 show three posts per platform from week 3; about 12 of the 66 slots in weeks 3 and 4 (two per persona per week) would be dropped (*computed* roughly), and `launch/schedule_check.py` and the calendars need their slots edited. At 2 posts a week, weeks 3 to 6 give exactly 8 organic posts per platform, the minimum sample for the thresholds ([portfolio.md 6.1](../strategy/portfolio.md)), so one skipped post extends the window to week 8.
-* **Log real minutes from the first approval.** `analytics/templates/effort.csv` has the columns; the 2-minute habit per post is the cheapest data in the project.
+* **The wife's load fits either way.** The operator's does not at 18 approvals: it was over by 17 minutes (Reading A) or 47 (Reading B) *before any rework or incident*, and the plan's 36-minute rework reserve fits only in Reading A at 12 approvals (45 minutes of slack). Set-up, the two review weeks and any incident come on top.
+* **Adopted 2026-10-12 on the user's behalf (decision OPS-D1, reversible): hold the pilots at 12 approvals a week combined (2 posts per platform per pilot) through the first 8 weeks**, ramp only after measured minutes show room. **Reading A is the working assumption** (it was part of the proposal and was not decided separately): B2B and registration admin gets 30 minutes a week from the start, which is cut #2 in [portfolio.md 5.6](../strategy/portfolio.md) applied early. Revenue is priority 3 and the week-8 revenue checkpoint (at least 5 warm fashion contacts approached, 1 sample delivered, 3 quotes) is therefore at risk. Say so at the week-2 standup rather than discovering it at week 8.
+* **The hold does not by itself make the plan fit.** At 12 approvals the slack is 45 minutes a week (Reading A) and the planned load contains no review of Claude-drawn graphics and no assembly of Reels and Shorts (section 2.2, last row). The two pilots that have priced it add 138 to 271 minutes a week. What would make it fit: logged minutes showing the frame review mostly sits inside the 5-minute approval, assembly under the assumed 20 to 30 minutes, or fewer videos. Until real minutes exist, treat 12 approvals as a ceiling, not a promise, and apply the next row of section 12 the week a trigger is met.
+* **Ramp rule (derived; used at the week-8 review, not before).** The step from 12 to 18 adds 6 approvals (30 minutes), one 步驟 master (20) and 12 live-check minutes: **62 minutes**. To land at or under the 324-minute gate, the real all-in operator total at 12 approvals must be **262 minutes or less** (324 minus 62), averaged over the last two logged weeks, and that total must include the graphics review and assembly minutes. At the assumed numbers it is 315 before those minutes, so the ramp happens only if real minutes come in well under the assumptions (for example 3 minutes an approval instead of 5). The adopted decision holds through week 8: the first two-week log exists on Fri 2026-11-27, but no step up is planned before the week-8 review (Thu 2027-01-14, section 10.3 item 6), where the cadence for the next eight weeks is set from logged minutes; an earlier step up would be a new decision by the user.
+* **What was done to apply OPS-D1 (2026-10-12).** Each of the three calendars defers one master a week in weeks 3 and 4 (a post on each of its two platforms), and `launch/schedule_check.py` and [schedule.md](../launch/schedule.md) section 7 carry the same list: 12 of the 66 slots (6 in each of weeks 3 and 4, 2 per pilot per week) are deferred, leaving 54 slots, 12 approvals in each of weeks 1 to 4 and at least 2 posts a week on every pilot's primary platform. The lowest-value masters went first, by each pilot's own criteria (the weekend-timing posts for 方寸, the repeat-topic and most expensive masters for 步驟, the lowest-value pair for 色環); the full list with dates is in [schedule.md](../launch/schedule.md) section 7. Deferred posts keep their ids and return only if the ramp rule passes, with whole-week date moves. At 2 posts a week, weeks 3 to 6 give exactly 8 organic posts per platform, the minimum sample for the thresholds ([portfolio.md 6.1](../strategy/portfolio.md)), so one skipped post extends the window to week 8. [portfolio.md](../strategy/portfolio.md) 5.1 to 5.3 still plan 18 approvals from week 3 and were not edited here.
+* **Log real minutes from the first approval.** `analytics/templates/effort.csv` has the columns; the 2-minute habit per post is the cheapest data in the project. Add the minutes spent reviewing each Claude-drawn asset and assembling each video, which no template line counts yet.
 
 ## 3. The week, day by day
 
-Steady state at 18 approvals; the 12-approval version is in the last row. Minutes are per person. The operator's live checks (2 minutes per post, 36 a week at 18) are spread across the days and are not in the day totals.
+Steady state at the adopted 12 approvals a week; the superseded 18-approval version is in the last row. Minutes are per person. The operator's live checks (2 minutes per post, 24 a week at 12) are spread across the days and are not in the day totals. **The review of Claude-drawn graphics and the assembly of Reels and Shorts are not in these days either** (section 2.2, last row): they fall mostly on Monday to Wednesday and on the days before a Reel or Short is scheduled, and the first four weeks of logs should say where.
 
 | Day | Operator | Wife | Claude (drafts only; never logs in or approves) |
 |---|---|---|---|
 | **Mon** | **30.** Comment and DM review 15 (hide, tally 「是真人嗎」, send approved replies). Admin 15 (registration, lawyer, B2B, contract follow-ups; read the standing-events log) | **35.** Moderation and tone of weekend comments 30. Notice check 5 | Drafts next week's batch from the calendar and Friday's trend note; scaffolds each with `queue.py new-draft`, fills it, runs `queue.py validate`; lists everything blocked (HOLD, PENDING media, `UNVERIFIED-OPERATOR-TO-FILL`) |
-| **Tue** | **105.** Pre-check 45: open every source on the slips and record the date, recompute every number, media QA at 200% against R01, labels and flags. 步驟 recordings and claims check 60 | **35.** Registrant duties 30 (registration, 記帳士, lawyer). Notice check 5 | Fixes validation findings; prepares reply suggestions for the categories in the reply guidelines |
-| **Wed** | **30.** Comments 15. Admin 15. Any rework after the wife's `changes` verdicts (regenerate, fix text with Claude) comes from the rework reserve, not from these minutes | **167.** **Review window**: draft review 90, second-platform variants 27, Chinese on every image 45, one verdict per draft with reason codes in `review.notes`. Notice check 5 | Applies text changes; re-runs `validate` |
-| **Thu** | **45.** Final approval and scheduling: confirm `operator_facts`, a human sets `approved: true`, `queue.py approve <folder>` shows what is open, schedule with the official tool, label on by hand, log in `launch/schedule-log.csv` | **35.** Moderation 10. **Trend session 20** (section 5). Notice check 5 | Prepares the trend note draft from her notes |
+| **Tue** | **70.** Pre-check 30: open every source on the slips and record the date, recompute every number, media QA at 200% against R01, labels and flags. 步驟 recordings and claims check 40 | **35.** Registrant duties 30 (registration, 記帳士, lawyer). Notice check 5 | Fixes validation findings; prepares reply suggestions for the categories in the reply guidelines |
+| **Wed** | **30.** Comments 15. Admin 15. Any rework after the wife's `changes` verdicts (regenerate, fix text with Claude) comes from the rework reserve, not from these minutes | **128.** **Review window**: draft review 60, second-platform variants 18, Chinese on every image 45 (Claude-drawn graphics included), one verdict per draft with reason codes in `review.notes`. Notice check 5 | Applies text changes; re-runs `validate` |
+| **Thu** | **30.** Final approval and scheduling: confirm `operator_facts`, a human sets `approved: true`, `queue.py approve <folder>` shows what is open, schedule with the official tool, label on by hand, log in `launch/schedule-log.csv` | **35.** Moderation 10. **Trend session 20** (section 5). Notice check 5 | Prepares the trend note draft from her notes |
 | **Fri** | **55.** Comments 15. **Standup 30** (section 7). Trend note and decision 10 | **95.** B2B correspondence review 60. **Standup 30**. Notice check 5 | Drafts the weekly experiment from Sunday's report for the standup |
 | **Sat** | **0** (live checks for weekend posts only) | **65.** Moderation 30. Registrant duties 30. Notice check 5 | |
 | **Sun** | **55.** Comments 15. **Analytics and weekly report 30** (section 6). Account-status look 10 | **5.** Notice check only | Runs the weekly report on the imported data |
-| **Total at 18** | **320 + 36 live = 356** | **437** | |
-| **Total at 12** | **270 + 24 live = 294** (Tue 70, Thu 30) | **398** (Wed 128) | |
+| **Total at 12 (adopted)** | **270 + 24 live = 294** (Tue 70, Thu 30) | **398** (Wed 128) | |
+| *Superseded: total at 18* | *320 + 36 live = 356* (Tue 105, Thu 45) | *437* (Wed 167) | |
 
-Checks on the arithmetic: the planned lines (admin 60 = Mon 15 + Wed 15 + Fri 30 [the standup]; comments 60 = Mon, Wed, Fri, Sun 15 each; approvals 90; 步驟 60; analytics 30) sum to 300, plus the trend share 10 and status look 10 makes 320, plus 36 live checks makes 356. The wife's moderation line is 90 = Mon 30 + Thu 10 + Sat 30 + trend session 20 on Thursday.
+Checks on the arithmetic at 12: the planned lines (admin 60 = Mon 15 + Wed 15 + Fri 30 [the standup]; comments 60 = Mon, Wed, Fri, Sun 15 each; approvals 60 = Tue pre-check 30 + Thu 30; 步驟 40; analytics 30) sum to 250, plus the trend share 10 and status look 10 makes 270, plus 24 live checks makes 294. The wife's moderation line is 90 = Mon 30 + Thu 10 + Sat 30 + trend session 20 on Thursday. At the superseded 18 the same lines were approvals 90 (Tue 45 + Thu 45), 步驟 60, 300 planned, 320 with the trend share and status look, 356 with 36 live checks.
 
-**Weeks 1 and 2.** Twelve approvals (6 masters). The first batch needs two weeks of lead because the golden set and the diagram kit must exist first. Set-up (accounts, dry runs, link pages, avatars) is not in these tables; [launch README](../launch/README.md) section 4 estimates it at about 11.8 operator hours.
+**Every week through week 8.** Twelve approvals (6 masters). The first batch needs two weeks of lead because the golden set and the Claude-drawn diagram kit (reviewed and signed off by you and the wife) must exist first. Set-up (accounts, dry runs, link pages, avatars) is not in these tables; [launch README](../launch/README.md) section 4 estimates it at about 11.8 operator hours.
 
 ## 4. The approvals flow
 
@@ -102,9 +106,9 @@ Source of truth: the folder in `pipeline/review-queue/<persona>/<date>_<NN>/` ([
 | # | Step | Who | What happens | Field or command |
 |---|---|---|---|---|
 | 1 | Draft | Claude | Script, caption, hashtags, flags, shot prompts, source slip; zero ERROR and FLAG | `queue.py new-draft`, `validate`; review fields `pending`, `pending`, `false` |
-| 2 | Media | Operator | Generate in the app; log the same day; add badges and all Chinese in a design tool; set the media paths | `provenance.py add`; `qa-checklist.md` |
-| 3 | Pre-check | Operator | Open each source, recompute, QA the media, record 步驟 | notes in the folder |
-| 4 | Language review | Wife | Traditional Chinese, Taiwan vocabulary, tone, culture, taboos, every character on every image | `review.wife_language` approved or changes, reason codes V T S E R P D X C H |
+| 2 | Media | Claude (graphics); operator (stills, video) | **Claude draws** the diagram, lesson-graphic, badge and overlay layers as SVG and renders them to PNG (the graphics decision); the **operator generates** the photoreal stills in the app (Claude has no image model), logs every asset the same day, **assembles and exports** every Reel and Short (Claude cannot edit video), and sets the media paths | `provenance.py add`; `qa-checklist.md` 5 and 6.1 |
+| 3 | Pre-check | Operator | Open each source, recompute, QA the media **and review every Claude-drawn asset against the slip and the approved strings**, record 步驟; for a Reel or Short that shows the character, run `qa-checklist.md` 6.1 on the exported file | notes in the folder |
+| 4 | Language review | Wife | Traditional Chinese, Taiwan vocabulary, tone, culture, taboos, every character on every image (Claude-drawn graphics included) | `review.wife_language` approved or changes, reason codes V T S E R P D X C H |
 | 5 | Facts | Operator | After the wife's fixes | `review.operator_facts` |
 | 6 | Final approval | A human (by default the operator, who holds the approval duty under BRIEF Ground rule 9) | Only when both are approved, no media is PENDING and no HOLD or BLOCKED remains | `review.approved` true; `queue.py approve` reports and changes nothing |
 | 7 | Schedule | Operator | Official tool; AI label on by hand; paid-partnership tool if sponsored; no location tag | `launch/schedule-log.csv` |
@@ -117,6 +121,7 @@ Rules that keep it honest:
 * **Nothing is scheduled to fill a gap.** An empty slot is fine; the floor is two posts a week per live persona.
 * **A correction or statement in an incident** is a new draft with an expedited ten-minute review by both. Removing something needs no review (playbook section 3).
 * **Replies to comments** are drafted by Claude from the reply guidelines, wording reviewed by whoever sends them, and sent by a person from the official app. The operator recomputes any reply that contains a number. No automated reply, no DM automation, no bulk replies. Two reply windows a week.
+* **A Reel or Short that shows the character (D6, adopted 2026-10-12 on the user's behalf, reversible)** is scheduled only if all four hold, and both reviewers approve the exported video file, not only the frames: (1) the platform AI label is on by hand; (2) a persistent on-screen badge from the first frame to the last, 「AI 生成｜虛擬角色」 on frames that show the character and 「AI 生成｜示意圖」 on pure-diagram frames unless the wife rules that the whole video carries the first; (3) no animation of the face (no blinking, lip-sync or morphing); (4) no synthetic voice, captions or human-recorded sound only. Face animation, synthetic voice and lip-sync stay barred until a separate video addendum and review exist. The live check (step 8) re-reads these four on the live post.
 * **The 30-day minimum** counts from each persona's first post (Wed 2026-12-16 for 方寸 if W0 holds). It does not relax anything by itself; see section 10.
 
 ## 5. The weekly trend session (30 minutes, once for the studio)
@@ -204,7 +209,7 @@ W0 = Mon 2026-11-16; the three pilots start on different days ([schedule.md](../
 
 | Milestone | 方寸 (Mon 2026-11-16) | 色環 (Wed 2026-11-18) | 步驟 (Thu 2026-11-19) | Use this date |
 |---|---|---|---|---|
-| **Ramp decision** for the week-3 batch (section 2.4) | | | | Fri 2026-11-20 standup |
+| **Hold check** (OPS-D1: 12 approvals a week stands through week 8; logged minutes against section 2, graphics review and assembly included; no step up before the week-8 review unless the user decides) | | | | Every Friday standup from Fri 2026-11-20 |
 | **Baseline calibration** (week-2 posts need 7 days to mature, so this happens in week 3) | | | | Fri 2026-12-04 |
 | **Day 30** (minimum per-post approval period met; nothing relaxes by itself) | Wed 2026-12-16 | Fri 2026-12-18 | Sat 2026-12-19 | |
 | **Week-6 review** (day 42) | Mon 2026-12-28 | Wed 2026-12-30 | Thu 2026-12-31 | Thu 2026-12-31, or the first weekend after (Sat 2027-01-02) |
@@ -241,7 +246,7 @@ Notes: [portfolio.md](../strategy/portfolio.md) labels the reviews 2026-12-28 an
 3. **The studio revenue checkpoint (by week 8):** at least 5 warm fashion contacts approached, at least 1 free scoped sample delivered, at least 3 written rate quotes, affiliate and LINE Creators Market terms screenshotted. Within six months: at least one written quote or accepted sample, otherwise treat B2B as unproven and hold spend at NT$5,000 a month or below.
 4. **Per-post approval.** The user decides whether to relax it; it is not assumed. If raised, the evidence to look at is: no open standing event; at most one published error in the last six weeks; fewer than 3 of 20 drafts caught; every live check clean for four weeks. The wife's review and the AI labels stay on the never-cut list whatever is decided.
 5. **The photoreal decision checkpoint:** read PHO-1, PHO-2 and PHO-4 against the fallback triggers (HUMAN_TODO 32). The two looks are never mixed on one account.
-6. **Hours:** the logged minutes against section 2; set the cadence for the next eight weeks.
+6. **Hours and the ramp decision:** the logged minutes against section 2, including the review of Claude-drawn graphics and the assembly of Reels and Shorts; apply the ramp rule (section 2.4) to decide whether any deferred slot returns, and set the cadence for the next eight weeks. The default is to stay at 12.
 7. **Register and decisions:** re-score; record in DECISIONS.md.
 
 ## 11. Absence and holiday rules
@@ -266,12 +271,13 @@ Notes: [portfolio.md](../strategy/portfolio.md) labels the reviews 2026-12-28 an
 | 3 | B2B outreach and admin from 60 to 30 (5.6 #2). Under Reading A this is already the base | 30 operator |
 | 4 | *Added:* the 步驟 release watch and the phrasing scan every second week; keep the weekly calendar and pause check | 7 operator, 7 wife |
 | 5 | *Added:* the standup to 20 minutes (safety, numbers, decisions only); defer M6 to M8 | 10 each |
-| 6 | Each pilot's third weekly post on its weaker platform (5.6 #3). **This is the base if OPS-D1 is accepted** | about 62 operator |
+| 6 | Each pilot's third weekly post on its weaker platform (5.6 #3). **Already the base: OPS-D1 is adopted, and the third post on each platform in weeks 3 and 4 is deferred** (do not count the saving twice) | about 62 operator, already taken |
+| 6a | *Added:* fewer Reels and Shorts, or build a master's Short as a slideshow from the same frames as its carousel (the pilots' own fallbacks), to cut the assembly minutes the graphics decision leaves with the operator. Never below 2 posts a week on a pilot's primary platform | about 20 to 30 operator per video |
 | 7 | Drop the weaker platform of the weakest pilot (5.6 #4) | |
 | 8 | Move the weakest persona to 2 posts a week on one platform (5.6 #5) | |
 | 9 | Pause, never delete, the lowest-ranked persona (5.6 #6) | |
 
-**Never cut:** the AI labels and the live check of the four places; source slips; the wife's review; sponsorship disclosure; the 24-hour clocks and the daily notice check that serves them; moderation of political drift; evidence capture.
+**Never cut:** the AI labels and the live check of the four places; source slips; the wife's review; sponsorship disclosure; the 24-hour clocks and the daily notice check that serves them; moderation of political drift; evidence capture; the four D6 conditions on any video that shows the character; the operator's and the wife's approval of every Claude-drawn asset.
 
 **What starts a cut** (so it is not a feeling): the operator's all-in logged total over 360 in any week or over 324 two weeks running; the wife's over 510 two weeks running; any 24-hour clock missed; an energy score of 1 or 2 from either person two weeks running, or both at 3 or below; a published error whose root cause is "we were rushed". Apply the next row **that week**.
 
@@ -284,10 +290,10 @@ Notes: [portfolio.md](../strategy/portfolio.md) labels the reviews 2026-12-28 an
 
 ## 14. Open items and what was not checked
 
-1. **Decide OPS-D1** (hold at 12 approvals) before the week-3 batch is drafted; it changes the calendars and the schedule table.
+1. **OPS-D1 is adopted on your behalf (2026-10-12) and is reversible;** tell Claude if you want the 18-approval plan back. The calendars, [schedule.md](../launch/schedule.md) section 7 and `launch/schedule_check.py` already show the 12-approval cadence (54 slots). What is left for you: the other decisions OPS-D2 and OPS-D4 to OPS-D7 in [risk-register.md](risk-register.md) section 6 are still at their defaults and are not recorded as adopted (HUMAN_TODO 46).
 2. **Name who has the daily notice check** and the cover, at the first standup.
 3. **Find the real names of the account-status pages and the unschedule lists** in the dry runs and write them in sections 8 and the playbook.
 4. **Every minute is an assumption.** The routine is untested; the first four weeks of logs replace the numbers in section 2.
 5. **Unverified platform behaviour:** native scheduling, label settings in the schedule path, edit limits, comment controls, the Google Trends, Dcard and Threads pages, the official holiday calendar. All depend on the dry runs and the first trend sessions.
-6. **The new overhead is not in [portfolio.md 5.3](../strategy/portfolio.md) or [launch/schedule.md](../launch/schedule.md).** If OPS-D1 is accepted, those two files and `schedule_check.py` should be updated by their owners.
+6. **The new overhead is not in [portfolio.md 5.3](../strategy/portfolio.md).** [launch/schedule.md](../launch/schedule.md) and `schedule_check.py` were updated on 2026-10-12 for the 12-approval cadence and now state the overhead; `strategy/portfolio.md` 5.1 to 5.3 still plan 18 approvals from week 3 and were not edited here (it is outside this stream). The review of Claude-drawn graphics and the assembly of Reels and Shorts are in no model yet (section 2.2).
 7. **The week-6 and week-8 sessions are overtime of about 45 and 30 minutes each** (*assumption*) that the capacity model does not contain, and so is the one-off baseline calibration of about 30 extra minutes on Fri 2026-12-04 (section 10.1).

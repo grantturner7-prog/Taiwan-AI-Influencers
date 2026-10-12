@@ -1,22 +1,22 @@
 # 方寸 (fangcun) series formats: three repeatable formats
 
-**Status: DRAFT v0.1, written 2026-10-12 (Phase 5).** Every zh-TW string is an AI draft for the wife; nothing here is approved or published. The series follow the four pillars in `personas/fangcun/bible.md` section 6 and the photoreal addendum (`personas/fangcun/photoreal-addendum.md`, which wins where the two differ). The dates are the 30-day calendar's (`content/fangcun/calendar-30d.md`), where W0 = Mon 2026-11-16 is an assumption. Evidence labels: *assumption* = a planning figure to calibrate; *unverified* = not checked against a primary source; *computed* = calculated in this session.
+**Status: DRAFT v0.1, written 2026-10-12 (Phase 5).** **Updated 2026-10-12** for decisions D6, OPS-D1 and D3 (`DECISIONS.md`; calendar section 12): two masters a week through week 8, M7 and M10 deferred, diagrams drawn by Claude as SVG. Every zh-TW string is an AI draft for the wife; nothing here is approved or published. The series follow the four pillars in `personas/fangcun/bible.md` section 6 and the photoreal addendum (`personas/fangcun/photoreal-addendum.md`, which wins where the two differ). The dates are the 30-day calendar's (`content/fangcun/calendar-30d.md`), where W0 = Mon 2026-11-16 is an assumption. Evidence labels: *assumption* = a planning figure to calibrate; *unverified* = not checked against a primary source; *computed* = calculated in this session.
 
 ## 1. Why series, and what "repeatable" means here
 
-A series is a fixed **structure** with new **content** every time. The structure is what lets one operator produce four to six posts a week inside 6 hours (`portfolio.md` 5.1) and lets a viewer recognise a post in the feed. The content (the question, the numbers, the diagram, the script) is always new.
+A series is a fixed **structure** with new **content** every time. The structure is what lets one operator produce four posts a week for this persona (12 a week across the three pilots under OPS-D1) inside 6 hours (`portfolio.md` 5.1) and lets a viewer recognise a post in the feed. The content (the question, the numbers, the diagram, the script) is always new.
 
 Two platform rules make that distinction matter (both second-hand and unverified, from `research/platforms.md`):
 
 - YouTube's "inauthentic content" rule targets mass-produced, templated content such as repetitive slideshows with bulk AI voiceover (S42 there). Every Short in these series therefore has its own script, its own numbers and its own diagram; there is no synthetic voiceover; and the template is a layout, not a script.
-- Instagram excludes accounts that mostly repost others' photos or carousels from recommendation (S33 there). All 方寸 material is original (human-built diagrams, own arithmetic), so this is not the risk; the risk is one identical-looking post every day, which the three-series mix avoids.
+- Instagram excludes accounts that mostly repost others' photos or carousels from recommendation (S33 there). All 方寸 material is original (Claude-drawn SVG diagrams approved by the operator and the wife, own arithmetic), so this is not the risk; the risk is one identical-looking post every day, which the three-series mix avoids.
 
 Shared rules for all three series (from the bible and the ground rules; none is new):
 
 | # | Rule |
 |---|---|
 | 1 | Disclosure in four places on every post: bio, first caption line (the v2 line in calendar section 7.3), on-screen badge on every image and every video frame, and the platform's AI label switched on by hand. |
-| 2 | The character appears only as still images from the golden set (R01 master, R13 glance, E01 to E10 headshots, R08 framings). No animation, lip-sync or voice for the photoreal face until its own addendum exists (photoreal addendum risk K). Diagram motion is the only motion. |
+| 2 | The character appears only as still images from the golden set (R01 master, R13 glance, E01 to E10 headshots, R08 framings). In a Reel or Short she may be a still or a slow pan or zoom of a still (decision D6) with the platform AI label on, a persistent badge, no animation of the face and no synthetic voice (captions or human-recorded sound only; calendar section 7.2). Animation, lip-sync or voice for the photoreal face stay barred until its own addendum exists (photoreal addendum risk K). Diagram motion is the only other motion. |
 | 3 | Every number is either tagged 示意數字 or has a dated source on the last slide or in the description. Example numbers are invented and never described as typical or standard (bible 7.2 item 12). |
 | 4 | Every fit or clearance statement carries 「請以現場丈量為準」. |
 | 5 | One master feeds one Instagram post and one YouTube Short. Production counts once and approvals count twice (`portfolio.md` 5.1). |
@@ -30,12 +30,12 @@ To make the series recognisable and to cut diagram time, every episode reuses on
 
 | Object | Values used so far (all 示意數字) | Used in |
 |---|---|---|
-| Room (套房 plan) | 寬 300 公分 × 深 400 公分; area 12 平方公尺 = 3.63 坪 (*computed*; the 坪 conversion needs the official source in calendar P05) | P01, P05, P07, P19 |
+| Room (套房 plan) | 寬 300 公分 × 深 400 公分; area 12 平方公尺 = 3.63 坪 (*computed*; the 坪 conversion needs the official source in calendar P05) | P01, P05, P07 (P19 deferred) |
 | Bed | 寬 150 × 長 190 公分; what-if width 120 | P01, P07 |
 | Wardrobe | 寬 120 × 深 55 公分; hinged door leaf 60 公分, opened to 90 degrees | P01, P07 |
 | Room door | 淨寬 80 × 淨高 200 公分 (an invented opening, not a standard) | P09, P17 |
 | Cabinet for the door puzzle | 寬 90 × 深 50 × 高 180 公分 | P17 |
-| Desk | 寬 120 × 深 60 公分 | P19 |
+| Desk | 寬 120 × 深 60 公分 | P19 (deferred) |
 | Litre example | 50 × 30 × 20 公分 = 30,000 立方公分 = 30 公升 (*computed*) | P21 |
 
 Plan conventions (Diagram Kit v0, calendar section 7.2): top-down flat plan with an optional light isometric extrusion; thin charcoal `#3B3631` outlines; flat muted fills from oat `#E4D9C3`, putty `#CFC6B4`, walnut `#6E5440` and cream `#EFE6CF` on an off-white `#F5F0E6` ground; sage `#A9B5A0` kept to a small accent; a scale bar on every diagram frame; Taiwan details per bible 4.9 (aluminium sliding window with a grille, split air conditioner high on a wall, tile floor, shoes-off entrance) checked by the wife. If the example room ever changes, bump it to "Room 0 v2" in this table and note it in the calendar.
@@ -60,7 +60,7 @@ Plan conventions (Diagram Kit v0, calendar section 7.2): top-down flat plan with
 | 7 Blank | The formula with blanks and 「請以現場丈量為準」 | Worksheet block |
 | 8 Source stamp | 「蓋個出處章。」 plus the source line (「示意數字・沒有外部出處」 or the dated source) and the save prompt | Stamp graphic |
 
-**Reel or Short template (20 to 40 s, 9:16, captions only, no voice):** 0 to 3 s hook; the identity line 「我是方寸，AI 虛擬角色。」 only in the first Reel and the first Short of the account (it is not repeated in every video, `pipeline/qa-checklist.md` V5; the badge, the first description line and the platform label carry the disclosure); then about 6 s setup; 10 to 15 s method (one formula per beat); about 5 s closing line (S08: 「以上是示意數字。你的房間尺寸，請用捲尺量過再算。」); last 3 s end card with the stamp. Title on YouTube: 【一分鐘搞懂】 plus the question (the bracket device is a Taiwan title habit, `research/culture.md` 2.2).
+**Reel or Short template (20 to 40 s, 9:16, captions only, no synthetic voice; the D6 conditions in calendar section 7.2 apply):** 0 to 3 s hook; the identity line 「我是方寸，AI 虛擬角色。」 only in the first Reel and the first Short of the account (it is not repeated in every video, `pipeline/qa-checklist.md` V5; the badge, the first description line and the platform label carry the disclosure); then about 6 s setup; 10 to 15 s method (one formula per beat); about 5 s closing line (S08: 「以上是示意數字。你的房間尺寸，請用捲尺量過再算。」); last 3 s end card with the stamp. Title on YouTube: 【一分鐘搞懂】 plus the question (the bracket device is a Taiwan title habit, `research/culture.md` 2.2).
 
 **Source rule:** arithmetic-only episodes say so on the stamp. Any episode that states a definition (坪, litre) shows the dated source on screen, and the post is blocked until the operator has opened the source (see calendar P05).
 
@@ -98,7 +98,7 @@ Plan conventions (Diagram Kit v0, calendar section 7.2): top-down flat plan with
 |---|---|---|---|
 | #01 床和衣櫃兩種排法 | 2026-11-26, 11-27 | M4 | Written; not queued |
 | #02 玄關鞋櫃兩種擺法 | 2026-12-03, 12-04 | M6 | Outlined; wife checks the entrance |
-| #03 書桌放哪裡，動線差多少 | 2026-12-12, 12-13 | M10 | Outlined; wife rules 動線 |
+| #03 書桌放哪裡，動線差多少 | Deferred by OPS-D1 (was 2026-12-12, 12-13) | M10 | Deferred; wife rules 動線 if it returns |
 | Backlog | after day 30 | | B4 後陽台洗衣機旁曬衣空間; B5 一字型小廚房 |
 
 ## 5. Series 3: 先量再買 (Measure first, buy second) — pillar C
@@ -114,39 +114,44 @@ Plan conventions (Diagram Kit v0, calendar section 7.2): top-down flat plan with
 
 **Source rule:** items come from a maker's delivery or assembly guidance or from an official or reputable consumer checklist that the operator selects and cites (which sources exist is *unverified*; bible 11 item 10). When no single source applies, the studio-compiled label above is mandatory.
 
-**Never in this series:** lease clauses, deposits, landlord matters, brokers (bible 3.5, 9.2); brand, marketplace or logo; price, discount or "limited time"; any claim about a product's performance. A checklist for 看房 (P13) lists dimensions and fixtures only.
+**Never in this series:** lease clauses, deposits, landlord matters, brokers (bible 3.5, 9.2); brand, marketplace or logo; price, discount or "limited time"; any claim about a product's performance. A checklist for 看房 (P13, deferred by OPS-D1) lists dimensions and fixtures only.
 
 | Episode | Dates | Master | Status |
 |---|---|---|---|
 | #01 買收納櫃前五件事 | 2026-11-19, 11-20 | M2 | Written; both queued |
-| #02 看房當天記錄哪些尺寸 | 2026-12-05, 12-06 | M7 | Outlined; dimensions only, no lease items |
+| #02 看房當天記錄哪些尺寸 | Deferred by OPS-D1 (was 2026-12-05, 12-06) | M7 | Deferred; dimensions only, no lease items if it returns |
 | #03 網購家具下單前核對表 | 2026-12-07, 12-08 | M8 | Outlined; also the 雙12 (Sat 2026-12-12, *computed*) calendar hook; no sale wording |
 | Backlog | after day 30 | | C3 搬家前確認進得了門; C5 搬家日動線 (never in the 2027 ghost month, 2027-08-02 to 08-31) |
 
 ## 6. How the series fit the weekly mix
 
-The bible's default weekly mix is one master from pillar A, one from B or C, and one from C or D (bible 6.1). Weeks 1 and 2 run two masters a week, weeks 3 onward three.
+The bible's default weekly mix is one master from pillar A, one from B or C, and one from C or D (bible 6.1). Under OPS-D1 (decision of 2026-10-12) every week through week 8 runs two masters; three a week returns only after logged minutes show room.
 
 | Week | Masters (series) |
 |---|---|
 | 1 (11-16) | M1 算給你看 #01; M2 先量再買 #01 |
 | 2 (11-23) | M3 算給你看 #02; M4 兩種排法 #01 |
-| 3 (11-30) | M5 算給你看 #03; M6 兩種排法 #02; M7 先量再買 #02 |
-| 4 (12-07) | M8 先量再買 #03 (with the 雙12 hook); M9 算給你看 #04; M10 兩種排法 #03 |
+| 3 (11-30) | M5 算給你看 #03; M6 兩種排法 #02 |
+| 4 (12-07) | M8 先量再買 #03 (with the 雙12 hook); M9 算給你看 #04 |
 | 5 begins (12-14) | M11 算給你看 #05 |
+
+M7 先量再買 #02 (P13, P14) and M10 兩種排法 #03 (P19, P20) are deferred (calendar section 6.1).
 
 Pillar D (seasonal) has no series of its own: it reuses the three templates with a dated hook line, only when a calendar hook falls within about three weeks (bible 6.1). In the first 30 days the only D hook is 雙12 on P15.
 
 ## 7. Production time per episode (*assumption*, to be measured in the first 30 days)
 
+Updated 2026-10-12 for decision D3 (Claude draws the diagram layer as SVG; the operator and the wife approve every asset; Claude cannot edit video). The full model with its arithmetic is in calendar section 8.2.
+
 | Layer | First episode of a series | Later episodes |
 |---|---|---|
-| Plan and symbols (human-built, Diagram Kit v0) | 90 to 120 min once for the kit | 30 to 60 min |
-| Slides or scenes typeset with the exact zh-TW strings | 30 min | 20 to 30 min |
+| Plan, symbols, and slides or scenes with the exact zh-TW strings | Drawn by Claude as SVG and rendered to PNG: 0 operator build minutes (by hand, before D3: 90 to 120 min once for the kit plus 30 min for the slides) | Drawn by Claude: 0 (by hand, before D3: 30 to 60 min for the plan plus 20 to 30 min for the slides) |
 | Character panels | Golden-set stills reused; a new still only if a new expression is needed (about 10 to 15 min each in the generator, then the checklist) | Reuse |
+| Operator review of the Claude-drawn frames | 1 to 2 min a frame, a change round of 5 to 10 min, and a one-off sign-off of Diagram Kit v0 of 10 to 20 min | 1 to 2 min a frame and a change round of 5 to 10 min |
+| Video assembly of a Reel or Short (by the user; Claude cannot edit video) | 20 to 30 min each | 20 to 30 min each |
 | Operator pre-check (sums, plan against sums, labels) | included in the 5-minute approval budget in `portfolio.md` 5.1 (*assumption*; verification time is the known capacity risk, `portfolio.md` 5.4) | same |
 
-An opportunity for the operator: the diagram layer is flat vector, so Claude can draw it as SVG code from the approved strings (the same method used for the 步驟 v0.1 art, `DECISIONS.md` 2026-10-11), which removes typesetting time and generator text errors. The wife would still read every character. This is not done yet and needs the operator's go-ahead.
+A typical master after D3 is about 39 to 68 minutes (14 frames, one carousel or image and one Short; calendar 8.2). Before D3 a later episode was estimated at 50 to 90 minutes. Drawing the diagram layer as SVG code from the approved strings is the method used for the 步驟 v0.1 art (`DECISIONS.md` 2026-10-11); the wife still reads every character. Nothing is drawn yet, and the render machine needs a Taiwan-glyph font (calendar 7.2).
 
 ## 8. When a series changes or stops
 

@@ -2,13 +2,15 @@
 
 For the operator. **Nothing is scheduled, nothing is approved, no account exists.** This file says how posts get from the review queue to the platforms using only official tools, in what weekly rhythm, and what stops a post from going out. Tool names, menus and limits are recalled and **UNVERIFIED** (the research session could not open a primary page: `research/platforms.md` section 0); the one-time dry run in section 4 settles them on the real screens. Every zh-TW string is an AI draft for the wife. W0 = Mon 2026-11-16 is an assumption that moves with the gates (`strategy/portfolio.md` 2.5).
 
+**Updated 2026-10-12 after the recommended answers were adopted** (`DECISIONS.md`, entry "User asked for the recommended answers"; adopted on the user's behalf, each reversible, nothing approved): **OPS-D1** (the pilots are held at 12 approvals a week combined, through the first 8 weeks: 12 slots in weeks 3 and 4 are deferred, section 7), **D6** (a still of the photoreal character, or a slow pan or zoom of a still, may appear inside a Reel or Short under four conditions, section 2) and **the graphics decision** (named D3 in the pilot calendars: Claude draws the diagram, lesson-graphic and overlay layers as SVG; the operator and the wife approve every asset; Claude cannot edit video, section 3).
+
 Sources: `strategy/portfolio.md` 5.1 to 5.6 (hours, weekly rhythm, what to cut), 3.3 (studio rules), 6.2 (standing incidents); the three `content/<slug>/calendar-30d.md` files (slots), `pipeline/README.md` and `pipeline/scripts/queue.py` (review fields); `research/platforms.md` 4 (platform rules). The slot table in section 7 is produced and checked by `launch/schedule_check.py`.
 
 ## 1. Short version
 
 1. **Approval gate:** nothing is scheduled, queued or saved with a time until the draft's two review fields are both `approved` and a human has set `approved: true` (section 2).
 2. **Tools:** Instagram's own scheduler (or Meta Business Suite), Threads' own scheduler if it exists, YouTube Studio's schedule option. All official, all free. No third-party scheduler, no automation, no scraping (Ground rule 9). Whether each one can carry the AI label is checked once, in a dry run (section 4). If a scheduler cannot set the label, that post is published **by hand** (section 5).
-3. **Rhythm:** a one-week lead. Monday the batch is ready, Tuesday the operator pre-checks, Wednesday the wife reviews, Thursday the operator gives final approval and schedules the *following* week (section 3). That uses 300 of the operator's 360 minutes and 402 of the wife's 600 in steady state (*computed* from `portfolio.md` 5.3).
+3. **Rhythm:** a one-week lead. Monday the batch is ready, Tuesday the operator pre-checks, Wednesday the wife reviews, Thursday the operator gives final approval and schedules the *following* week (section 3). At the adopted 12 approvals a week that is 250 of the operator's 360 minutes and 363 of the wife's 600 in the `portfolio.md` 5.3 chain (*computed* by `schedule_check.py`), and 315 for the operator once the routine's own overhead is added (`ops/weekly-routine.md` 2.3). Neither figure contains the operator's review of Claude-drawn graphics or the assembly of Reels and Shorts (section 3, last bullets).
 4. **Pause switch:** either of you can unschedule everything in about ten minutes (section 6). Both must agree to resume.
 
 ## 2. The approval gate
@@ -25,10 +27,13 @@ A post may be scheduled, queued, saved as a timed draft, or published **only if 
 | 6 | `python3 pipeline/scripts/queue.py validate <folder>` shows 0 ERROR and 0 FLAG | Operator (Claude pre-screens) | terminal |
 | 7 | Every gate in `personas/<slug>.md` section 7 that applies to the post is closed (A1 to A13, and A14 to A16 where they exist) | Operator | those files |
 | 8 | The date is not a no-post date and no other persona posts within 60 minutes (section 6, 7) | `schedule_check.py` | terminal |
+| 9 | A Reel or Short that shows the character meets all four D6 conditions below, and both reviewers approved the **exported video file**, not only the frames | Operator, wife | `pipeline/qa-checklist.md` 6.1 |
 
 `python3 launch/schedule_check.py --list` prints `SCHEDULABLE` for a post only when rows 1 to 3 hold and no media is `PENDING` and no HOLD or BLOCKED note remains (the parts of rows 4 and 5 it can see); rows 6 to 8 are still yours to check. It **reads** the files and never changes them. `python3 pipeline/scripts/queue.py approve <folder>` prints what is still open and also changes nothing.
 
-**State today (2026-10-12), from `schedule_check.py`:** 66 slots in the 30 days; 21 have a draft (方寸 5, 步驟 8, 色環 8) in the review queue; **0 are SCHEDULABLE**. Every draft has both review fields `pending`; most media is `PENDING`; several carry a HOLD or BLOCKED note (still faces inside video; the official 坪 definition; the weather page; the size-term source).
+**D6 (adopted 2026-10-12 on the user's behalf, reversible): a still of the photoreal character, or a slow pan or zoom of a still, may appear inside a Reel or Short only if all four hold.** (1) The platform AI label is switched on by hand. (2) A persistent on-screen badge runs from the first frame to the last. Wording: D6 names 「AI 生成｜虛擬角色」; the QA checklist rule (D3 there) puts 「AI 生成｜示意圖」 on pure-diagram frames, and the pilots' calendars follow that two-wording rule, so unless the wife rules that the whole video carries the first wording, frames that show the character carry 「AI 生成｜虛擬角色」 and pure-diagram frames carry 「AI 生成｜示意圖」, and the badge never disappears. (3) No animation of the face: no blinking, lip-sync or morphing, and no effect that moves or reshapes it. (4) No synthetic voice: captions or human-recorded sound only. Face animation, synthetic voice and lip-sync stay barred until a separate video addendum and review exist. A post that was on HOLD only for D6 is now "ready for review"; it still needs both review fields and `approved: true` from humans. Posts held for other reasons (unfilled sources, the 坪 definition, vendor pages, election timing) stay held.
+
+**State today (2026-10-12), from `schedule_check.py`:** 54 slots in the 30 days (66 in the superseded plan, less the 12 deferred by OPS-D1, section 7); 21 have a draft (方寸 5, 步驟 8, 色環 8) in the review queue, all of them in weeks 1 and 2; **0 are SCHEDULABLE**. Every draft has both review fields `pending`; most media is `PENDING`; 8 carry a HOLD or BLOCKED note (the official 坪 definition for 方寸 P05; the weather page and the size-term source for 色環 P03, P07 and P08; the vendor terms and unfilled fields behind all four 步驟 Shorts). Still faces inside video are no longer a reason to hold (D6): 方寸 P02, P03 and P04 are ready for review, with both reviews still pending.
 
 **Rules that keep the gate honest**
 
@@ -40,25 +45,26 @@ A post may be scheduled, queued, saved as a timed draft, or published **only if 
 
 ## 3. Weekly rhythm that fits 6 + 10 hours
 
-One idea (a "master") feeds one post on each of a persona's two platforms: production counts once and approvals count twice (`portfolio.md` 5.1). Approvals per week: 12 in weeks 1 and 2 (2 posts per platform per persona), 18 from week 3 (3 per platform), against a planning ceiling of 22. **A one-week lead:** posts for week N+1 are approved and scheduled on Thursday of week N. The first batch needs two weeks (the golden set and the diagram kit must exist first, `calendar-30d.md` of each pilot).
+One idea (a "master") feeds one post on each of a persona's two platforms: production counts once and approvals count twice (`portfolio.md` 5.1). Approvals per week: **12 in every week through week 8** (2 posts per platform per persona; decision OPS-D1, adopted 2026-10-12 on the user's behalf, reversible), against a planning ceiling of 22. The superseded plan of 18 from week 3 (3 per platform) returns only if the ramp rule in `ops/weekly-routine.md` 2.4 passes on logged minutes; the earliest planned point to decide that is the week-8 review. Every pilot keeps at least 2 posts a week on its primary platform (`portfolio.md` 5.4). **A one-week lead:** posts for week N+1 are approved and scheduled on Thursday of week N. The first batch needs two weeks (the golden set and the diagram kit must exist first, `calendar-30d.md` of each pilot).
 
 | Day | Operator (minutes, steady state) | Wife (minutes, steady state) | What happens |
 |---|---|---|---|
 | Mon | 35 (comments 15, admin and brand contact 20) | 30 (comment moderation and tone) | Claude has the next week's batch ready: script, caption, hashtags, shot prompts, flags, source slips. Comments reviewed |
-| Tue | 105 (pre-check 45; 步驟 recordings and claims check 60) | 30 (registrant duties: registration, 記帳士, lawyer) | Operator pre-check: facts against the source slips, media QA (hands, faces, text), labels |
-| Wed | 35 (comments 15, admin 20) | 162 (draft review 90, second-platform variants 27, zh-TW QA of images 45) | **Wife's review window:** Traditional Chinese, Taiwan vocabulary, tone, taboos, every character on every image. Verdict per draft in `review.notes` with reason codes |
-| Thu | 45 (final approval and scheduling of next week's batch) | 30 (comment moderation) | Operator sets `operator_facts`, then `approved`, then schedules or queues by hand (sections 4 and 5). Logs it |
+| Tue | 70 (pre-check 30; 步驟 recordings and claims check 40) | 30 (registrant duties: registration, 記帳士, lawyer) | Operator pre-check: facts against the source slips, media QA (hands, faces, text), labels |
+| Wed | 35 (comments 15, admin 20) | 123 (draft review 60, second-platform variants 18, zh-TW QA of images 45) | **Wife's review window:** Traditional Chinese, Taiwan vocabulary, tone, taboos, every character on every image. Verdict per draft in `review.notes` with reason codes |
+| Thu | 30 (final approval and scheduling of next week's batch) | 30 (comment moderation) | Operator sets `operator_facts`, then `approved`, then schedules or queues by hand (sections 4 and 5). Logs it |
 | Fri | 35 (comments 15, admin 20) | 90 (B2B correspondence review 60, weekly sync and time log 30) | Claude's Friday trend check is ready (`content/<slug>/trend-check.md`) |
 | Sat | 0 | 60 (comment moderation 30, registrant duties 30) | Posts go out; live checks come from the reserve |
 | Sun | 45 (weekly report 30, comments 15) | 0 | Weekly report: what worked, what did not, one experiment |
-| **Total** | **300 of 360** | **402 of 600** | Operator reserve 60 minutes (rework 36 plus 24 slack); the live checks below come out of it |
+| **Total** | **250 of 360** | **363 of 600** | Operator reserve 110 minutes (rework 36 plus 74 slack); the live checks and the routine's own overhead below come out of it |
 
-Weeks 1 and 2 (12 approvals, 6 masters): operator 250 (Tue 70, Thu 30), wife 363 (Wed 123). Both totals are *computed* by `schedule_check.py` from the `portfolio.md` assumption chain and agree with `portfolio.md` 5.3. The gates are 324 (operator) and 510 (wife) averaged over four weeks.
+Every week through week 8 (12 approvals, 6 masters): operator 250 (Tue 70, Thu 30), wife 363 (Wed 123). Both totals are *computed* by `schedule_check.py` from the `portfolio.md` assumption chain and agree with `portfolio.md` 5.3 for 12 approvals. The superseded 18-approval week was 300 and 402 (Tue 105, Thu 45; Wed 162) and now appears only under `--with-deferred`. The gates are 324 (operator) and 510 (wife) averaged over four weeks.
 
 * **Minutes are assumptions** (5 minutes per approval, 10 per master for the wife, 20 for each 步驟 master). Log real minutes from week 1 and re-plan at week 3 (`portfolio.md` 5.4).
 * **Setup is extra:** account creation, link-page deployment, the dry runs and the label check are not in these 300 minutes; `README.md` section 4 estimates them.
-* **The live check after each publication** (about 2 minutes per post, assumption; 18 posts is about 36 minutes a week; section 9) comes out of the 60-minute reserve, which leaves only about 24 minutes for rework against the 36 the plan assumed. That is tight. If the reserve is used up, say so and re-plan; do not skip the check.
-* **What to cut first if hours slip** is `portfolio.md` 5.6: pause new waves, cut B2B admin to 30 minutes, drop the third weekly post on the weaker platform. Never cut the AI labels, the source slips, the wife's review, the sponsorship disclosure, the 24-hour take-down rule or the moderation of political drift.
+* **The live check after each publication** (about 2 minutes per post, assumption; 12 posts is about 24 minutes a week; section 9) comes out of the 110-minute reserve together with the routine's own overhead (trend session 10, account-status look 10, the monthly tasks averaged at 21). That leaves **45 minutes** a week (`ops/weekly-routine.md` 2.3, Reading A), which still holds the plan's 36-minute rework allowance. If the reserve is used up, say so and re-plan; do not skip the check.
+* **The graphics decision (D3 in the pilot calendars; adopted 2026-10-12 on the user's behalf, reversible): Claude draws the diagram, lesson-graphic and overlay layers as SVG and renders them to PNG** (headless Chromium), so the operator no longer spends build time on them. The operator and the wife still approve every asset, and **Claude cannot edit video**: the operator assembles and exports every Reel and Short. Two kinds of operator time therefore remain, and **neither is inside the 250 minutes above or the 315 all-in figure**. *Assumption* (the figures each pilot calendar uses in its section 8, restated as one): about 1 to 2 minutes of review per slide or scene frame, or about 5 minutes per overlay set or card; a change round of 5 to 10 minutes per master; 20 to 30 minutes to assemble each Reel or Short. The two calendars that have priced it put it at about 78 to 166 minutes a week for 方寸 and about 60 to 105 for 步驟 (as written on 2026-10-12; 色環 has no Reel or Short, and its figure is in its own section 8). Those two alone are 138 to 271 minutes against the 45 of slack. **So the plan is not shown to fit at 12 approvals either.** What would make it fit is logged minutes showing that frame review mostly sits inside the 5-minute approval, assembly under the assumed time, or fewer videos. Log real minutes from the first approval and take the next cut from `ops/weekly-routine.md` section 12.
+* **What to cut first if hours slip** is `portfolio.md` 5.6 and `ops/weekly-routine.md` section 12: pause new waves, cut B2B admin to 30 minutes; **the third weekly post on each platform is already deferred (OPS-D1)**, so the next cuts are the weaker platform of the weakest pilot and then fewer posts on one platform, never below 2 a week on a pilot's primary platform. Never cut the AI labels, the source slips, the wife's review, the sponsorship disclosure, the 24-hour take-down rule or the moderation of political drift.
 
 ## 4. How each platform is scheduled, and the one-time dry run
 
@@ -86,7 +92,7 @@ A publish card per post, done by the operator at the slot (or the wife, if she i
 
 1. Open the approved folder. Confirm `review.approved` is `true` and the file is unchanged since approval (no edit after approval; section 2).
 2. Open the platform's app on the phone that holds the account. Create the post: attach the final media files in the order of the `media` list; paste `caption_zh` exactly; paste the hashtags; add the alt text (`personas/<slug>.md` section 3.3).
-3. Set the **platform AI label** and, for a sponsored post, the **paid-partnership tool**; set no location tag; do not add any tag or mention of another persona.
+3. Set the **platform AI label** and, for a sponsored post, the **paid-partnership tool**; set no location tag; do not add any tag or mention of another persona. For a Reel or Short that shows the character (D6), also confirm on the exported file that the badge runs from the first frame to the last, the face does not move, and there is no synthetic voice (`pipeline/qa-checklist.md` 6.1).
 4. Publish (or, for YouTube, schedule through the form).
 5. Run the live check (section 9) and log it in `schedule-log.csv`.
 
@@ -110,7 +116,7 @@ A publish card per post, done by the operator at the slot (or the wife, if she i
 
 ## 7. The 30 days, merged (W0 = Mon 2026-11-16)
 
-Produced by `python3 launch/schedule_check.py --grid` from the slots in the three calendars. Times are Taiwan time. IG = Instagram, YT Short = YouTube Shorts. P01 and so on are each calendar's own post ids (方寸 and 色環 both have a P01, in separate columns); T and S are 步驟's Threads post and Short. **These are slots, not approvals.**
+Produced by `python3 launch/schedule_check.py --grid` from the slots in the three calendars, **after the OPS-D1 deferrals** (the 12 deferred slots are not in the grid and are listed under "Deferred by OPS-D1" below; `--with-deferred` adds them back). Times are Taiwan time. IG = Instagram, YT Short = YouTube Shorts. P01 and so on are each calendar's own post ids (方寸 and 色環 both have a P01, in separate columns); T and S are 步驟's Threads post and Short. **These are slots, not approvals.**
 
 **Week 1: Mon 2026-11-16 to Sun 2026-11-22**
 
@@ -140,25 +146,25 @@ Produced by `python3 launch/schedule_check.py --grid` from the slots in the thre
 
 | Day | Date | 方寸 | 步驟 | 色環 | Note |
 |---|---|---|---|---|---|
-| Mon | 2026-11-30 | 12:30 IG P09 |  | 20:30 IG P09 |  |
-| Tue | 2026-12-01 | 19:30 YT Short P10 | 08:15 Threads T5<br>21:00 YT Short S5 | 18:00 Threads P10 |  |
+| Mon | 2026-11-30 | 12:30 IG P09 |  |  |  |
+| Tue | 2026-12-01 | 19:30 YT Short P10 | 08:15 Threads T5<br>21:00 YT Short S5 |  |  |
 | Wed | 2026-12-02 |  |  | 20:30 IG P11 |  |
 | Thu | 2026-12-03 | 12:30 IG P11 | 08:15 Threads T6<br>21:00 YT Short S6 | 18:00 Threads P12 |  |
 | Fri | 2026-12-04 | 19:30 YT Short P12 |  | 20:30 IG P13 |  |
-| Sat | 2026-12-05 | 10:30 IG P13 |  | 18:00 Threads P14 |  |
-| Sun | 2026-12-06 | 19:30 YT Short P14 | 08:15 Threads T7<br>21:00 YT Short S7 |  |  |
+| Sat | 2026-12-05 |  |  | 18:00 Threads P14 |  |
+| Sun | 2026-12-06 |  |  |  |  |
 
 **Week 4: Mon 2026-12-07 to Sun 2026-12-13**
 
 | Day | Date | 方寸 | 步驟 | 色環 | Note |
 |---|---|---|---|---|---|
 | Mon | 2026-12-07 | 12:30 IG P15 |  | 20:30 IG P15 |  |
-| Tue | 2026-12-08 | 19:30 YT Short P16 | 08:15 Threads T8<br>21:00 YT Short S8 | 18:00 Threads P16 |  |
+| Tue | 2026-12-08 | 19:30 YT Short P16 |  | 18:00 Threads P16 |  |
 | Wed | 2026-12-09 |  |  | 20:30 IG P17 |  |
 | Thu | 2026-12-10 | 12:30 IG P17 | 08:15 Threads T9<br>21:00 YT Short S9 | 18:00 Threads P18 |  |
-| Fri | 2026-12-11 | 19:30 YT Short P18 |  | 20:30 IG P19 |  |
-| Sat | 2026-12-12 | 10:30 IG P19 |  | 18:00 Threads P20 | 雙12: no price, discount or sale wording |
-| Sun | 2026-12-13 | 19:30 YT Short P20 | 08:15 Threads T10<br>21:00 YT Short S10 |  |  |
+| Fri | 2026-12-11 | 19:30 YT Short P18 |  |  |  |
+| Sat | 2026-12-12 |  |  |  | 雙12: no price, discount or sale wording |
+| Sun | 2026-12-13 |  | 08:15 Threads T10<br>21:00 YT Short S10 |  |  |
 
 **Week 5: Mon 2026-12-14 to Sun 2026-12-20**
 
@@ -167,7 +173,17 @@ Produced by `python3 launch/schedule_check.py --grid` from the slots in the thre
 | Mon | 2026-12-14 | 12:30 IG P21 |  | 20:30 IG P21 |  |
 | Tue | 2026-12-15 | 19:30 YT Short P22 | 08:15 Threads T11<br>21:00 YT Short S11 | 18:00 Threads P22 |  |
 
-**Totals:** 66 slots (22 per persona): 12 approvals in each of weeks 1 and 2, 18 in each of weeks 3 and 4, 6 in the part of week 5. The closest two personas are 60 minutes apart (Fri 2026-11-20, 方寸 Short 19:30 and 色環 Instagram 20:30); no two personas share a clock hour on any date (`schedule_check.py` checks every date).
+**Totals:** 54 slots (18 per persona): 12 approvals in each of weeks 1 to 4, 6 in the part of week 5 (the superseded plan had 66 slots and 18 approvals in each of weeks 3 and 4). Every pilot keeps 2 posts a week on its primary platform in each of weeks 1 to 4 (方寸 Instagram, 步驟 YouTube Shorts, 色環 Instagram); week 5 is only two days long. The closest two personas are 60 minutes apart (Fri 2026-11-20, 方寸 Short 19:30 and 色環 Instagram 20:30; also Fri 2026-12-04); no two personas share a clock hour on any date (`schedule_check.py` checks every date).
+
+**Deferred by OPS-D1 (12 slots, not scheduled).** The slots keep their calendar ids; nothing is renumbered, and no deferred slot has a review-queue folder. They are listed here so the cut is checkable against the three calendars; `launch/schedule_check.py` holds the same list in `DEFERRED`.
+
+| Pilot | Deferred slots (original date and time) | Master | Why it went first (from that pilot's own calendar) |
+|---|---|---|---|
+| 方寸 | P13 Sat 2026-12-05 10:30 Instagram, P14 Sun 2026-12-06 19:30 Short; P19 Sat 2026-12-12 10:30 Instagram, P20 Sun 2026-12-13 19:30 Short | M7, M10 | The weekend third posts exist for the weekend-timing test, not for a series or the pillar mix; both masters lean on an open wife ruling; removing a whole master keeps every Instagram post paired with its Short. Instagram keeps Mon and Thu |
+| 步驟 | T7 and S7 Sun 2026-12-06 08:15 and 21:00; T8 and S8 Tue 2026-12-08 08:15 and 21:00 | M7, M8 | M7 repeats M5's topic in the same week and waits on an unanswered comparative-advertising question; M8 is the most expensive recording and edit of the outlines and carries a calendar and time-zone risk. Two Shorts a week remain on YouTube |
+| 色環 | P09 Mon 2026-11-30 20:30 Instagram, P10 Tue 2026-12-01 18:00 Threads; P19 Fri 2026-12-11 20:30 Instagram, P20 Sat 2026-12-12 18:00 Threads | M5, M10 | Chosen by the 色環 calendar as the lowest-value pair (its section 6.1). Instagram keeps two posts a week |
+
+A deferred slot returns only if the ramp rule passes (`ops/weekly-routine.md` 2.4), with new dates moved by whole weeks, or goes to that pilot's backlog. Cutting 6 slots in each of weeks 3 and 4 is 12 in all, as `ops/weekly-routine.md` 2.4 planned (*computed*: 66 less 12 is 54).
 
 **What was reconciled, and what is left for you** (the three calendars were written in parallel):
 
@@ -175,11 +191,11 @@ Produced by `python3 launch/schedule_check.py --grid` from the slots in the thre
 |---|---|---|
 | 1 | Launch days | 方寸 Mon 11-16, 色環 Wed 11-18, 步驟 Thu 11-19: three different days, no coordinated launch (`portfolio.md` 3.3 item 6) |
 | 2 | Clock hours | At least 60 minutes between any two personas' posts, checked by script. 步驟 owns 08:15 and 21:00; 方寸 12:30, 19:30 and (Saturdays) 10:30; 色環 18:00 and 20:30 |
-| 3 | Same-day pairs on YouTube | On Tue 12-01, 12-08 and 12-15 and Sun 12-06 and 12-13 a 方寸 Short (19:30) and a 步驟 Short (21:00) go out 90 minutes apart on two different channels. Allowed by the studio rule; it is also the evening peak for both |
-| 4 | Thursday | Four posts across three personas: 步驟 Threads 08:15, 方寸 Instagram 12:30, 色環 Threads 18:00, 步驟 Short 21:00 |
-| 5 | **Decision D5: the quiet block** | 色環's calendar keeps Fri 11-27 to Sun 11-29 quiet around the recalled polling day. 方寸 has a Short on Fri 11-27 19:30 (P08), and 步驟 has posts on Sun 11-29 (T4 08:15, S4 21:00). `portfolio.md` bars only the polling day itself. **Recommendation:** keep them as written (each calendar already applies its own precautions: no sale wording on Black Friday, a neutral topic the day after) and hide political comments; or choose the stricter reading and unschedule those three, which saves moderation time that weekend. Your call (`README.md` section 5) |
-| 6 | 雙12 (Sat 2026-12-12, computed) | 方寸 and 色環 post as normal with no price, discount or sale wording; 步驟 posts nothing that day. Different judgements, both inside the rules |
-| 7 | Review-queue dates | The queue folders are named by date. If W0 moves, ask Claude to re-date the drafts: `python3 launch/schedule_check.py --w0 <new Monday>` shows the new dates, and the folders and `scheduled_date` fields must follow |
+| 3 | Same-day pairs on YouTube | After OPS-D1 only on Tue 2026-12-01 and Tue 2026-12-15 does a 方寸 Short (19:30) and a 步驟 Short (21:00) go out 90 minutes apart on two different channels (before the cut it was also Tue 12-08 and Sun 12-06 and 12-13). Allowed by the studio rule; it is also the evening peak for both |
+| 4 | Busiest days | Four posts on Thu 11-19, Thu 11-26, Tue 12-01, Thu 12-03, Thu 12-10 and Tue 12-15. On a Thursday: 步驟 Threads 08:15, 方寸 Instagram 12:30, 色環 Threads 18:00, 步驟 Short 21:00 |
+| 5 | **Decision D5: the quiet block** | 色環's calendar keeps Fri 11-27 to Sun 11-29 quiet around the recalled polling day. 方寸 has a Short on Fri 11-27 19:30 (P08), and 步驟 has posts on Sun 11-29 (T4 08:15, S4 21:00). `portfolio.md` bars only the polling day itself. **Adopted 2026-10-12 on the user's behalf (reversible): keep them as written** (each calendar already applies its own precautions: no sale wording on Black Friday, a neutral topic the day after) **and hide political comments.** The stricter reading (unschedule those three, which also saves moderation time that weekend) stays available (`README.md` section 5). The polling date itself is still to be confirmed (`HUMAN_TODO.md` L8) |
+| 6 | 雙12 (Sat 2026-12-12, computed) | After OPS-D1 no pilot has a slot on the day (方寸 P19 and P20 and 色環 P20 are deferred; 步驟 never posted that day). The Friday 方寸 Short (P18) and the Sunday 步驟 posts (T10, S10) sit either side: no price, discount or sale wording in them. If a deferred weekend slot ever returns, the same rule applies |
+| 7 | Review-queue dates | The queue folders are named by date; all 21 drafts are in weeks 1 and 2, so the OPS-D1 deferrals touch no folder. If W0 moves, ask Claude to re-date the drafts: `python3 launch/schedule_check.py --w0 <new Monday>` shows the new dates, and the folders and `scheduled_date` fields must follow |
 
 ## 8. Countdown to W0 (all dates move with W0; the order does not)
 
@@ -189,6 +205,7 @@ Produced by `python3 launch/schedule_check.py --grid` from the slots in the thre
 | By Mon 2026-10-26 | Wife's reading test; TIPO and 經濟部 searches; handle checks (A1 to A3) | Wife, operator |
 | By Mon 2026-11-02 | Avatars approved with the age-guess, look-alike and near-pair tests; licence terms recorded; mailbox, vault and two-factor decided; every string approved by the wife (A4 to A7) | Operator, wife |
 | Mon 2026-11-02 to Wed 2026-11-04 | Accounts created, dry runs done, label check done (`personas/<slug>.md` section 8) | Operator |
+| By Mon 2026-11-02 | The Claude-drawn graphics for batch 1 exist as SVG and PNG (the graphics decision: Diagram Kit v0, lesson kit and overlay layers) and the operator and wife have reviewed and signed them off; a Taiwan-glyph font is installed on the render machine (the 步驟 calendar found WenQuanYi Zen Hei and no Noto Sans TC on 2026-10-12). Claude cannot generate the photoreal stills or edit video: the stills come from the golden sets and the operator assembles the Reels and Shorts | Claude draws; operator, wife review |
 | Mon 2026-11-02 | Batch 1 (the posts of week 1) is ready; this is a week early because of the first-batch rule | Claude, then the human steps of section 3 |
 | Thu 2026-11-05 | Batch 1 approved and scheduled (target). Latest: Thu 2026-11-12 | Operator |
 | Thu 2026-11-12 | Batch 2 (the posts of week 2) approved and scheduled | Operator |
@@ -227,6 +244,8 @@ A shifted plan will run into new dates: 冬至 (Tue 2026-12-22), 聖誕 and 行�
 * Whether Threads accepts scheduled posts, and in which app.
 * The exact limit on Shorts length and the safe zones (`HUMAN_TODO.md` 25).
 * All minute values (assumptions from `portfolio.md` 5.1 and 5.3).
-* Decision D5 (the quiet block) and decision D6 (still faces inside video: 3 of 方寸's 5 drafts and every 步驟 Short are on HOLD for it).
+* Decisions D5 (the quiet block), D6 (a still of the character inside a Reel or Short, under four conditions) and OPS-D1 (12 approvals a week) are **adopted on the user's behalf, 2026-10-12, and reversible**; none of them is a platform or legal finding. D6 has not been checked with the lawyer (`HUMAN_TODO.md` 37) or against the platforms' own screens, and the wife has not yet ruled on the badge wording in video.
+* Whether the operator's review of Claude-drawn graphics and the assembly of Reels and Shorts fit in the hours (section 3, the graphics decision): not modelled, not shown to fit.
 * Whether per-post approval is relaxed after day 30: not assumed.
+* The cadence after week 8: the hold at 12 is adopted through week 8 only; whether to step up is decided from logged minutes at the week-8 review (`ops/weekly-routine.md` 2.4 and 10.3).
 

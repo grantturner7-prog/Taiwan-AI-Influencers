@@ -1,12 +1,20 @@
 # 色環 (sehuan) 30-day content calendar
 
-**Status: DRAFT v0.1, written 2026-10-12 (Phase 5, content).** Pilot persona, slot 3, niche FAS1 fashion (outfit logic, colour, climate styling). Platforms: Instagram (primary) and Threads. The 30 days run from **W0 = Mon 2026-11-16 (an assumption) to Tue 2026-12-15**. Weeks 1 and 2 are fully written; weeks 3 and 4 and days 29 and 30 are outlined.
+**Status: DRAFT v0.2 (v0.1 written 2026-10-12, Phase 5, content; v0.2 updated the same day for three decisions).** Pilot persona, slot 3, niche FAS1 fashion (outfit logic, colour, climate styling). Platforms: Instagram (primary) and Threads. The 30 days run from **W0 = Mon 2026-11-16 (an assumption) to Tue 2026-12-15**. Weeks 1 and 2 are fully written; weeks 3 and 4 and days 29 and 30 are outlined.
 
-**What this file is not.** No image, video or voice exists. Every media item is PENDING and carries its generation prompt (AI-generated character images) or a build spec (human-built lesson graphics). Every zh-TW string is an AI draft for the wife to review, with an English gloss beside it because the operator does not read Chinese. Nothing is approved. No account, handle or studio name has been cleared. **No brand-paid, gifted, affiliate or client content appears anywhere in the 30 days** (the business is not registered, HUMAN_TODO 4 and 7; the lawyer has not answered; the image tools' commercial terms are unread, HUMAN_TODO 33), and no real brand, product or logo is named or shown (bible choice C5). This file contains no engagement data and no invented source; anything marked DEMO is format only.
+**What changed in v0.2 (`DECISIONS.md`, 2026-10-12, "recommended answers adopted"; each decision is Claude's choice on the user's behalf and reversible).**
 
-**Reading order.** Section 0 (conventions), 1 (what moves the dates), 2 (cadence), 3 (the 30 days at a glance), 4 (holiday and taboo check), 5 (weeks 1 and 2 in full), 6 (weeks 3 and 4 outlined), 7 (shared blocks: assets, Lesson Kit, labels, checklist), 8 (effort and capacity), 9 (open items for the human), 10 (checks run).
+1. **OPS-D1: hold at 12 approvals a week across the three pilots through week 8.** 色環 keeps 4 approvals a week (2 Instagram + 2 Threads) in every week, not 6 in weeks 3 and 4. Two whole masters leave the 30 days: **M5 (P09 and P10) and M10 (P19 and P20)**, chosen as the lowest-value pair (section 6.1). The 30 days now hold **18 posts (9 Instagram, 9 Threads) from 9 masters**, not 22 and 11. The IDs P01 to P22 are kept so folder names, hook rows and the sibling schedule do not move.
+2. **D6: a still photoreal face may appear in a Reel or Short with conditions** (gate 15 is closed; section 0 and 7.3). No 色環 draft was on hold for this reason and none is scheduled, so no post changes status.
+3. **D3: Claude draws the diagram and lesson-graphic layer as SVG and renders it to PNG** (section 7.2). The operator's build time falls away; the operator's and the wife's review of every asset stays (section 8).
 
-**Sources of authority.** `BRIEF.md` section 3 (ground rules) and 5 (language); `DECISIONS.md` (latest entries win, especially 2026-10-11 and 2026-10-12: photoreal AI characters that stay openly AI); `strategy/portfolio.md` (cadence 5.2, capacity 5, thresholds 6); `personas/sehuan/bible.md` (voice, pillars, disclosure, checklists); `personas/sehuan/photoreal-addendum.md` (the character's look; it supersedes the bible's visual sections); `pipeline/image-pack/sehuan-photoreal.md` (character lock and golden-set prompts); `research/culture.md` (calendar and taboos). Where this file departs from the bible's indicative plan (bible 6.5) the departure is listed in section 3.
+Nothing is approved by any of this.
+
+**What this file is not.** No image, video or voice exists. Every media item is PENDING and carries its generation prompt (AI-generated character images) or a build spec (lesson graphics drawn by Claude as SVG, decision D3). Every zh-TW string is an AI draft for the wife to review, with an English gloss beside it because the operator does not read Chinese. Nothing is approved. No account, handle or studio name has been cleared. **No brand-paid, gifted, affiliate or client content appears anywhere in the 30 days** (the business is not registered, HUMAN_TODO 4 and 7; the lawyer has not answered; the image tools' commercial terms are unread, HUMAN_TODO 33), and no real brand, product or logo is named or shown (bible choice C5). This file contains no engagement data and no invented source; anything marked DEMO is format only.
+
+**Reading order.** Section 0 (conventions), 1 (what moves the dates), 2 (cadence), 3 (the 30 days at a glance), 4 (holiday and taboo check), 5 (weeks 1 and 2 in full), 6 (weeks 3 and 4 outlined; 6.1 the posts deferred by OPS-D1), 7 (shared blocks: assets, Lesson Kit, labels, checklist), 8 (effort and capacity), 9 (open items for the human), 10 (checks run).
+
+**Sources of authority.** `BRIEF.md` section 3 (ground rules) and 5 (language); `DECISIONS.md` (latest entries win, especially 2026-10-11 and 2026-10-12: photoreal AI characters that stay openly AI, and the 2026-10-12 "recommended answers adopted" entry with D6, D3 and OPS-D1); `ops/weekly-routine.md` (OPS-D1); `strategy/portfolio.md` (cadence 5.2, capacity 5, thresholds 6); `personas/sehuan/bible.md` (voice, pillars, disclosure, checklists); `personas/sehuan/photoreal-addendum.md` (the character's look; it supersedes the bible's visual sections); `pipeline/image-pack/sehuan-photoreal.md` (character lock and golden-set prompts); `research/culture.md` (calendar and taboos). Where this file departs from the bible's indicative plan (bible 6.5) the departure is listed in section 3.
 
 ---
 
@@ -18,15 +26,15 @@
 | `UNVERIFIED-OPERATOR-TO-FILL` | A placeholder in a `sources[]` field of `post.json`. It marks a fact whose source the operator must open and record. **A post carrying this placeholder is BLOCKED**: it cannot be approved until the exact page and date replace it. No URL in these files has been invented. |
 | `{待填}` | A fill-in field inside on-screen text. It must be replaced before the image is exported; braces must never appear in a published image. |
 | NO FACTUAL CLAIM / ARITHMETIC ONLY | Prefixes of a `sources[]` entry that makes no external factual claim (a teaching device, a question, or an invented example sum). The pipeline checker allows an empty URL for these only. |
-| Calendar IDs | P01 to P22 are posts in date order. M1 to M11 are masters (one idea feeding one Instagram post and one Threads post). Queue folders are `pipeline/review-queue/sehuan/<date>_<NN>/`. |
+| Calendar IDs | P01 to P22 are posts in date order. M1 to M11 are masters (one idea feeding one Instagram post and one Threads post). Queue folders are `pipeline/review-queue/sehuan/<date>_<NN>/`. **P09, P10, P19 and P20 (masters M5 and M10) are deferred by OPS-D1**: they keep their IDs but are not in the 30 days, have no queue folder and are listed in section 6.1. |
 | Series codes | A = 轉一格 (colour formulas, pillar P1). B1 = 三層順序 and B2 = 三關檢查 (the 三步整理 format: climate P2 and occasion P3). C = 一詞看懂 (read the information, pillar P4). See `series.md`. |
-| Hook IDs | H01 to H40 in `hook-library.md`. |
+| Hook IDs | H01 to H44 in `hook-library.md`. |
 | Flags | **AI-label flag = TRUE on every post** (studio rule, pipeline README). **Sponsorship flag = FALSE, type none, on every post.** |
 | Times | Taiwan time (UTC+8). Days and times are a test, not a finding. |
 | Colour words | Hex values are guidance for whoever builds the graphics (bible 4.4). Colours in image prompts are written as words, never hex. |
 | Terms | 搭配示意 (styling illustration) is the standing label; the captions never say what the character wore or wears. |
 
-The character appears only as **still images** from the golden set. Animation, lip-sync and voice for the photoreal face are outside the addendum (its risk J) and are not used. **No Reel is scheduled in the 30 days**: a Reel would put the still photoreal face inside a video, which the user has not yet accepted (section 1, gate 15), and the platform-audio rule is unchecked (bible G13). `series.md` specifies the Reel templates so they can be switched on later.
+The character appears as **still images** from the golden set. **Decision D6 (2026-10-12)** also lets a still, or a slow pan or zoom of a still, appear inside a Reel or Short, **only with all four conditions**: (1) the platform AI label is on; (2) a persistent on-screen badge 「AI 生成｜虛擬角色」 is on every frame; (3) no animation of the face (no blinking, lip-sync or morphing); (4) no synthetic voice (captions or human-recorded sound only). Face animation, synthetic voice and lip-sync stay barred (addendum risk J, QA checklist section 6) until a separate video addendum and review exist; Claude does not make video. **No Reel is drafted or scheduled in the 30 days.** No 色環 draft was ever on hold only for D6 (none had been written), and under OPS-D1 a Reel would count as one of the 4 approvals a week, taking an Instagram slot rather than adding a third, so a Reel enters the calendar only when a human decides to draft one. The platform-audio rule is also unchecked (bible G13). `series.md` holds the Reel templates, now carrying the D6 conditions, so one can be switched on after a human drafts it into the review queue.
 
 ---
 
@@ -45,39 +53,42 @@ Nothing in this calendar can be published until the launch gates in `personas/se
 | 7 | Wife's reviewer trial and vocabulary sign-off (`HUMAN_TODO.md` 8) | Wife | Open |
 | 8 | Lawyer's launch-gate answers (`research/legal.md` 12: questions 1, 2, 3, 4, 6, 20, 22; photoreal questions in `HUMAN_TODO.md` 37) | User | Open |
 | 9 | Business registration started | Wife (to be confirmed) | Open |
-| 10 | **Lesson Kit v0** (section 7.2) built, or the operator authorises Claude to draw the flats, dress form, wheel and bars as SVG; a Taiwan-glyph font whose commercial licence has been read (bible G9, G14) | Operator | Open |
+| 10 | **Lesson Kit v0** (section 7.2) drawn by Claude as SVG and rendered to PNG (**decision D3, 2026-10-12: authorised**); the operator and the wife review the kit once; a Taiwan-glyph font whose commercial licence has been read and whose file the operator supplies (bible G9, G14) | Claude draws; operator and wife review; operator supplies the font | Open: the kit is **not yet drawn**, the font licence is unread, and the render sandbox has no Noto Sans TC (checked 2026-10-12) |
 | 11 | Colour-theory reference chosen and logged (bible G7) | Operator | Open. Optional for P01 and P05 (both are labelled rules of thumb with no source claim); **required before P17** (adjacent and opposite colours) |
 | 12 | Weather source chosen: the agency's climate-statistics page for Taipei and Kaohsiung (bible G8) | Operator | Open. **Blocks P03** and every later P2 post that shows a number |
 | 13 | One neutral public source for the size-label terms 平量 and 圍度 (bible 6.4 and open item 26) | Operator | Open. **Blocks P07 and P08** |
 | 14 | Polling-day date confirmed with the Central Election Commission (recalled as Sat 2026-11-28, *unverified*; `HUMAN_TODO.md` 17) | Operator | Open |
-| 15 | The user confirms that a still photoreal face inside a Reel or Short is acceptable before the video and voice addendum exists | User | Open. Not needed for these 30 days (no Reel is scheduled) |
+| 15 | A still photoreal face inside a Reel or Short before the video and voice addendum exists | User | **Closed by D6 (2026-10-12) with four conditions** (section 0): AI label on, persistent badge 「AI 生成｜虛擬角色」, no animation of the face, no synthetic voice. No Reel is drafted or scheduled in the 30 days |
 | 16 | Fashion-contact sanity-check route (bible G10) | User | Open. Not needed for P01 to P14; **needed from P15** (occasion posts) |
-| 17 | The user approves the Threads text-only first-line adaptation (bible 8.2 and open item 14) | User | Open. Needed for P04, P12 and P20 |
+| 17 | The user approves the Threads text-only first-line adaptation (bible 8.2 and open item 14) | User | Open. Needed for P04 and P12 (P20 is deferred by OPS-D1) |
 
-**Shift rule.** If a gate slips, move W0 by **whole weeks** so the weekday pattern holds, and shift every date together. Three things do not shift with W0: (a) the no-post day on polling day (recomputed against the confirmed date); (b) the 雙12 note on P20, which is tied to Sat 2026-12-12; (c) the quiet days and the 228 rule later in the year. Re-run the section 4 check after any shift. If the confirmed polling day falls outside the window, the colour-neutral rule for weeks 1 and 2 may be relaxed by the user; it is kept here because the date is unconfirmed.
+**Shift rule.** If a gate slips, move W0 by **whole weeks** so the weekday pattern holds, and shift every date together. Three things do not shift with W0: (a) the no-post day on polling day (recomputed against the confirmed date); (b) the 雙12 rule (no price, discount or sale wording on any post), which is tied to Sat 2026-12-12 and applies to whatever is scheduled near it (P19 and P20 are deferred by OPS-D1; if they are restored they land on 12-11 and 12-12); (c) the quiet days and the 228 rule later in the year. Re-run the section 4 check after any shift. If the confirmed polling day falls outside the window, the colour-neutral rule for weeks 1 and 2 may be relaxed by the user; it is kept here because the date is unconfirmed.
 
-**Approval lead time (assumption).** The weekly rhythm in `portfolio.md` 5.5 is: Monday batch ready, Tuesday operator pre-check, Wednesday wife review, Thursday final approval and scheduling. Allow one full week between the batch being ready and the first post, and **two weeks for the first batch** because the golden set and Lesson Kit v0 must exist first (section 8).
+**Approval lead time (assumption).** The weekly rhythm in `portfolio.md` 5.5 is: Monday batch ready, Tuesday operator pre-check, Wednesday wife review, Thursday final approval and scheduling. Allow one full week between the batch being ready and the first post, and **two weeks for the first batch** because the golden set must exist and Lesson Kit v0 must be drawn and reviewed first (section 8).
 
 ---
 
 ## 2. Cadence, days and times
 
-From `portfolio.md` 5.2 and bible 6: weeks 1 and 2 are the ramp (2 Instagram + 2 Threads a week, from 2 masters); weeks 3 and 4 are 3 + 3 a week (from 3 masters). One master feeds one Instagram post and one Threads post: production counts once and approvals twice (`portfolio.md` 5.1).
+From `portfolio.md` 5.2 and bible 6, **as changed by decision OPS-D1** (`DECISIONS.md` 2026-10-12; `ops/weekly-routine.md`): the pilots are held at **12 approvals a week combined through the first 8 weeks**, which is 2 posts per platform per pilot. 色環 therefore posts **2 Instagram + 2 Threads a week (4 approvals, 2 masters) in every week**; the portfolio's 3 + 3 from week 3 is not used. The step up to 3 + 3 is made only after logged minutes show room (`ops/weekly-routine.md`), and then the deferred masters in section 6.1 are restored first. One master feeds one Instagram post and one Threads post: production counts once and approvals twice (`portfolio.md` 5.1).
 
 | Week | Dates | Instagram (20:30) | Threads (18:00) | Approvals | Masters |
 |---|---|---|---|---|---|
 | W1 | 2026-11-16 to 22 | Wed 11-18, Fri 11-20 | Thu 11-19, Sat 11-21 | 4 | 2 (M1, M2) |
 | W2 | 2026-11-23 to 29 | Mon 11-23, Wed 11-25 | Tue 11-24, Thu 11-26 | 4 | 2 (M3, M4) |
-| W3 | 2026-11-30 to 12-06 | Mon 11-30, Wed 12-02, Fri 12-04 | Tue 12-01, Thu 12-03, Sat 12-05 | 6 | 3 (M5 to M7) |
-| W4 | 2026-12-07 to 13 | Mon 12-07, Wed 12-09, Fri 12-11 | Tue 12-08, Thu 12-10, Sat 12-12 | 6 | 3 (M8 to M10) |
+| W3 | 2026-11-30 to 12-06 | Wed 12-02, Fri 12-04 | Thu 12-03, Sat 12-05 | 4 | 2 (M6, M7) |
+| W4 | 2026-12-07 to 13 | Mon 12-07, Wed 12-09 | Tue 12-08, Thu 12-10 | 4 | 2 (M8, M9) |
 | Days 29 and 30 | 2026-12-14, 12-15 | Mon 12-14 | Tue 12-15 | 2 | 1 (M11) |
+| **Total** | 30 days | 9 | 9 | **18** | **9** |
+
+**Deferred by OPS-D1 (section 6.1):** Mon 11-30 and Tue 12-01 (P09, P10; master M5) and Fri 12-11 and Sat 12-12 (P19, P20; master M10). Before OPS-D1 the table held 6 approvals in each of W3 and W4 and 22 in all (computed: 4 + 4 + 6 + 6 + 2 = 22; now 4 + 4 + 4 + 4 + 2 = 18). The primary platform (Instagram) keeps 2 posts a week in each of W1 to W4, which is the floor.
 
 Design choices (*assumption*; all to be tested, not defended):
 
 - **The first post is Wed 2026-11-18, not Mon 11-16.** W0 is the week the pilots start. 方寸's calendar launches on Instagram on Mon 2026-11-16 and proposes 色環 launches on Wed 2026-11-18; 步驟's calendar launches on Thu 2026-11-19. The studio rule is no coordinated launch on the same day and no two personas posting in the same clock hour (`portfolio.md` 3.3 item 6).
-- **Slots known on 2026-10-12 (read from the sibling calendars, section 2 of each; the three were written in parallel):** 方寸 Instagram Mon and Thu 12:30 (plus Sat 10:30 from W3), YouTube Shorts Tue and Fri 19:30 (plus Sun 19:30 from W3); 步驟 Threads 08:15 and YouTube Shorts 21:00 on Thu and Sun in weeks 1 and 2, and on Tue, Thu and Sun from week 3. 色環 posts Instagram at **20:30** (Mon, Wed, Fri) and Threads at **18:00** (Tue, Thu, Sat). Checked by script for every date in the 30 days (section 10): **no two personas share a clock hour on the same date**; the closest pairs are 60 minutes apart, 方寸's Friday Short at 19:30 and my Instagram post at 20:30 on 11-20, 12-04 and 12-11. 步驟's Thursday launch day shares a date with my Threads post of 11-19 (18:00 against its 08:15 and 21:00); that is not a 色環 launch. **The operator must still reconcile the three calendars** (open item 3), the other two calendars schedule posts inside this calendar's quiet block (方寸's Friday Short on 2026-11-27 and 步驟's Sunday posts on 2026-11-29); those are decisions for their files.
+- **Slots known on 2026-10-12 (read from the sibling calendars, section 2 of each; the three were written in parallel):** 方寸 Instagram Mon and Thu 12:30 (plus Sat 10:30 from W3), YouTube Shorts Tue and Fri 19:30 (plus Sun 19:30 from W3); 步驟 Threads 08:15 and YouTube Shorts 21:00 on Thu and Sun in weeks 1 and 2, and on Tue, Thu and Sun from week 3. 色環 posts Instagram at **20:30** (Mon, Wed, Fri) and Threads at **18:00** (Tue, Thu, Sat). Those were the slots before OPS-D1; the sibling calendars were then updated for OPS-D1 as well, and the check was re-run on the updated working-tree files (section 10, check 11): 方寸 now posts Instagram Mon and Thu 12:30 and YouTube Shorts Tue and Fri 19:30 with no weekend slot, and 步驟 keeps Threads 08:15 and Shorts 21:00 on its own days. **No two personas share a clock hour on the same date** across the 色環 slots that remain; the closest pairs are 60 minutes apart, 方寸's Friday Short at 19:30 and my Instagram post at 20:30 on 11-20 and 12-04 (12-11 left with P19). 步驟's Thursday launch day shares a date with my Threads post of 11-19 (18:00 against its 08:15 and 21:00); that is not a 色環 launch. **The operator must still reconcile the three calendars** (open item 3): the other two calendars schedule posts inside this calendar's quiet block (方寸's Friday Short on 2026-11-27 and 步驟's Sunday posts on 2026-11-29); those are decisions for their files.
 - **Threads follows Instagram by one day** (Wed to Thu, Fri to Sat, Mon to Tue, Wed to Thu), so the Instagram carousel is the master and the Threads post is the short native version. The pair is also the test for hypothesis H2 (Instagram against Threads for the same idea, common metric (shares + comments) per 1,000 views, `portfolio.md` 4.2 and 6.1).
-- **Quiet block Fri 11-27, Sat 11-28, Sun 11-29.** The recalled polling day is Sat 2026-11-28 (*unverified*); the day before is Black Friday and the recalled campaign eve; the day after is likely to carry heated comment threads. Nothing is scheduled on those three days. W2 therefore ends on Thu 11-26.
+- **Quiet block Fri 11-27, Sat 11-28, Sun 11-29.** The recalled polling day is Sat 2026-11-28 (*unverified*); the day before is Black Friday and the recalled campaign eve; the day after is likely to carry heated comment threads. Nothing is scheduled on those three days. W2 therefore ends on Thu 11-26. **Effect of OPS-D1:** Mon 11-30 and Tue 12-01 are also empty (P09 and P10 are deferred), so the account is silent for five days (Fri 11-27 to Tue 12-01) and W3 starts on Wed 12-02, as W1 started on Wed 11-18. That gives the comment threads two more days to settle, at the cost of a longer gap; whether a five-day gap hurts reach is untested (*assumption*). If the operator prefers continuity, P11 and P12 can move to Mon 11-30 and Tue 12-01 (the weekday rules in section 2 still hold), but the queue folders, hooks and the launch schedule then move with them.
 - **Posting is by the platform's own scheduler or by hand**, after the operator's final approval (`portfolio.md` 5.5). No third-party automation (Ground rule 9).
 - **Pause switch** (`portfolio.md` 5.5): a disaster, a typhoon day or a public tragedy unschedules everything.
 - Rest days are not empty: they carry the comment batches (`reply-guidelines.md`), the Friday trend check (`trend-check.md`) and the weekly report.
@@ -86,7 +97,7 @@ Design choices (*assumption*; all to be tested, not defended):
 
 ## 3. The 30 days at a glance
 
-Computed for W0 = Mon 2026-11-16 (weekdays checked by script). Section 5 has P01 to P08 in full; section 6 has the rest.
+Computed for W0 = Mon 2026-11-16 (weekdays checked by script). Section 5 has P01 to P08 in full; section 6 has the rest; section 6.1 has the four posts deferred by OPS-D1 (P09, P10, P19, P20), which are not in the table below.
 
 | Day | Date | Weekday | Week | Posts (ID, platform, format) | Notes |
 |---|---|---|---|---|---|
@@ -104,8 +115,8 @@ Computed for W0 = Mon 2026-11-16 (weekdays checked by script). Section 5 has P01
 | 12 | 2026-11-27 | Fri | W2 | none | Black Friday; recalled campaign eve. Quiet |
 | 13 | 2026-11-28 | Sat | W2 | **none, hard stop** | Recalled polling day (*unverified*). No post, no scheduled post; hide political comments |
 | 14 | 2026-11-29 | Sun | W2 | none | Day after; watch comments |
-| 15 | 2026-11-30 | Mon | W3 | P09 IG carousel | |
-| 16 | 2026-12-01 | Tue | W3 | P10 Threads image | |
+| 15 | 2026-11-30 | Mon | W3 | none | First day after the quiet block. P09 is deferred by OPS-D1. Comment batch |
+| 16 | 2026-12-01 | Tue | W3 | none | P10 is deferred by OPS-D1 |
 | 17 | 2026-12-02 | Wed | W3 | P11 IG carousel | |
 | 18 | 2026-12-03 | Thu | W3 | P12 Threads text | Needs gate 17 |
 | 19 | 2026-12-04 | Fri | W3 | P13 IG carousel | 色差 explainer lands before 雙12 |
@@ -115,13 +126,13 @@ Computed for W0 = Mon 2026-11-16 (weekdays checked by script). Section 5 has P01
 | 23 | 2026-12-08 | Tue | W4 | P16 Threads image | |
 | 24 | 2026-12-09 | Wed | W4 | P17 IG carousel | Needs gate 11 |
 | 25 | 2026-12-10 | Thu | W4 | P18 Threads image | |
-| 26 | 2026-12-11 | Fri | W4 | P19 IG carousel | |
-| 27 | 2026-12-12 | Sat | W4 | P20 Threads text | 雙12: no price, discount or sale wording |
+| 26 | 2026-12-11 | Fri | W4 | none | P19 is deferred by OPS-D1 |
+| 27 | 2026-12-12 | Sat | W4 | none | 雙12 (*computed*). P20 is deferred by OPS-D1; no post, so no price, discount or sale content |
 | 28 | 2026-12-13 | Sun | W4 | none | Weekly report |
 | 29 | 2026-12-14 | Mon | W5 | P21 IG carousel | Needs gate 16 |
 | 30 | 2026-12-15 | Tue | W5 | P22 Threads image | End of the 30 days. 6-week review is Mon 2026-12-28 |
 
-**Totals:** 22 posts (11 Instagram, 11 Threads), 11 masters. Pillar mix of the 11 masters: P1 4 (M1, M3, M5, M9), P2 3 (M2, M6, M10), P3 2 (M8, M11), P4 2 (M4, M7). The bible's target for weeks 3 to 8 is P1 39%, P2 22%, P3 22%, P4 17% (*assumption*); this 30-day slice is 36%, 27%, 18%, 18%, close enough to calibrate against.
+**Totals after OPS-D1:** 18 posts scheduled (9 Instagram, 9 Threads; 8 written in full, 10 outlined) and 4 deferred (P09, P10, P19, P20); 9 masters (M5 and M10 are deferred with them). Posts per week: 4, 4, 4, 4 and 2 on days 29 and 30 (*computed*: 18). Pillar mix of the 9 masters: P1 3 (M1, M3, M9), P2 2 (M2, M6), P3 2 (M8, M11), P4 2 (M4, M7). The bible's target for weeks 3 to 8 is P1 39%, P2 22%, P3 22%, P4 17% (*assumption*); this 30-day slice is 33%, 22%, 22%, 22%, close enough to calibrate against, and weeks 3 and 4 hold exactly one master of each pillar (M6 P2, M7 P4, M8 P3, M9 P1). Before OPS-D1 the slice was 22 posts, 11 masters and 36%, 27%, 18%, 18%.
 
 **Deviations from the bible's indicative plan (bible 6.5), with reasons.**
 
@@ -129,9 +140,9 @@ Computed for W0 = Mon 2026-11-16 (weekdays checked by script). Section 5 has P01
 |---|---|---|
 | W1: P2-1 then P1-1 | M1 = P1-1 (三色口訣), M2 = P2-1 | The launch post carries the identity slide, so it should be the post that is safest in the election window and least dependent on an unfilled source. P1-1 needs no external source; P2-1 needs the weather page |
 | W2: P1-3 (adjacent and opposite) and P4-1 | M3 = **P1-4** (neutrals), M4 = P4-1; P1-3 moves to **P17 (12-09)** | Opposite colours on the wheel invite the very pairs (blue against orange or green, red against green) that read as camps in the election run-up (bible C3). Neutrals are the most colour-neutral lesson in the set |
-| W4: P3-5, P1-4, P2-3 | M8 = P3-5, M9 = P1-3, M10 = **P2-5** | P2-3 is plum-rain colours; plum rain is about May to June (bible 6.5), so it is out of season in December. P2-5 (rainy-day trouser length and shoe colour) fits the damp north in winter |
+| W4: P3-5, P1-4, P2-3 | M8 = P3-5, M9 = P1-3, M10 = **P2-5** (**deferred by OPS-D1**) | P2-3 is plum-rain colours; plum rain is about May to June (bible 6.5), so it is out of season in December. P2-5 (rainy-day trouser length and shoe colour) fits the damp north in winter. M10 is then cut from the 30 days under OPS-D1 (section 6.1) |
 | W5 begins with P3-1 (尾牙) on 12-14 to 12-20 | M11 = P3-1 (尾牙) on 12-14 and 12-15 | 尾牙 is Sat 2027-01-23 (*computed*, `culture.md` 4.2): about five weeks ahead, the bible's "a month ahead" |
-| Three posts a week per platform from W3 | Same | `portfolio.md` 5.2 |
+| Three posts a week per platform from W3 (`portfolio.md` 5.2) | **Two a week per platform in every week** | OPS-D1 (adopted 2026-10-12): 12 approvals a week across the three pilots through week 8. M5 (P09, P10) and M10 (P19, P20) are deferred; section 6.1 gives the reasons and the restore order |
 | (not stated) | W1 starts on Wed, and Fri 11-27 to Sun 11-29 are quiet | Section 2 |
 
 ---
@@ -145,12 +156,12 @@ Dates are *computed* unless marked; the polling day is recalled (*unverified*). 
 | Sat 2026-11-28 | Recalled local-election polling day (*unverified*) | Hard stop: nothing scheduled, no post, comments with political content hidden and never answered. The Fri before and Sun after are also quiet |
 | 2026-11-16 to 11-29 | Election run-up | Colour-neutral content (bible C3): no blue, green, teal or yellow headline or cover, no camp pair (藍綠, 藍白, 綠白) anywhere in a headline, caption lead or cover; the wheel appears only as a muted circular diagram; the persimmon is never a headline colour. The only slides that show the wheel's blue and green segments are P01 slide 5 and P05 slide 3 (muted, circular, numbered, in a neutral diagram), plus the earrings on the character, which carry the same twelve muted segments |
 | Fri 2026-11-27 | Black Friday (*computed*) | No post; no price, discount or sale content any day |
-| Sat 2026-12-12 | 雙12 (*computed*) | P20 is a text question with no price or sale wording; P19 (12-11) says nothing about buying |
+| Sat 2026-12-12 | 雙12 (*computed*) | Nothing is scheduled on Fri 12-11 or Sat 12-12 (P19 and P20 are deferred by OPS-D1). If they are restored, P20 is a text question with no price or sale wording and P19 says nothing about buying. No other post may carry price, discount or sale wording either |
 | 週年慶 (autumn 2026) | Dates not found (`culture.md` 4.4) | "How to read a label" content only; no discount figures; no 週年慶 price content |
 | Tue 2026-12-22 (冬至), Fri 12-25 (聖誕), Thu 12-31 (跨年), Fri 2027-01-01 (元旦) | Outside the 30 days | P15 (12-07) is a planning post for the Christmas and countdown parties; no festive jokes on 冬至; red and green appear only in a neutral layout with no slogan |
 | Sat 2027-01-23 | 尾牙 (*computed*; companies hold them in January and February, *unverified*) | P21 (12-14) is about five weeks ahead |
 | Mourning colours | All-white and all-black outfits | Never in celebration content (P15, P21); every example outfit has a second colour |
-| Gift taboos | Umbrella, shoes, clock, fan, scissors, handkerchief; sets of four | P19 shows trouser length and shoe colour as styling, never as a gift; no set of four in any list (lists are three items; the wheel has twelve) |
+| Gift taboos | Umbrella, shoes, clock, fan, scissors, handkerchief; sets of four | P19 (deferred; if restored) shows trouser length and shoe colour as styling, never as a gift; no set of four in any list (lists are three items; the wheel has twelve) |
 | Politics, religion, ritual dress, Indigenous patterns, rainbow | `culture.md` 5 | None used; no rainbow emoji or six-stripe bar; the wheel is a muted circle (bible C4) |
 | Pride window (probable Sat 2026-10-31, *unverified*) | Before W0 | Nothing in the 30 days |
 | Typhoon or other disaster | Pause switch | Unschedule everything; no promotional tone |
@@ -195,15 +206,15 @@ Screens shift colour; for the real colour, go by the information the brand provi
 
 **Hashtags:** #配色 #穿搭公式 #色彩 #搭配示意 #AI虛擬角色
 
-**Slides (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Slides (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with approved golden-set images placed as supplied files; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
 | 1 | cover | 三色口訣／主色、輔色、點綴色怎麼分／轉一格 #01 | Three-colour rule of thumb / How to tell main, secondary and accent colours apart / Turn-one-step #01 (series chip) | Pale-blush ground (#F2DAD2); title in charcoal (#3A3735) on the upper two-thirds; a persimmon (#CD8B6A) underline under 「三色口訣」 (the only persimmon on the slide, at most one tenth of it); cut-out of A1 lower-left. Badge top-right, inset at least 11% of the height from the top and bottom edges and at least 8% of the width from the sides (so a centred square crop of a 4:5 picture cannot remove it; see pipeline/qa-checklist.md D3). | 「AI 生成｜虛擬角色」 | A1 |
 | 2 | who I am | 我是色環，AI 虛擬角色。／我沒有衣櫃，連這圈色票也是 AI 生成的。／角色造型是設計，不是穿搭示範。 | I'm Sehuan, an AI virtual character. / I have no wardrobe; even this ring of colour chips is AI-generated. / The character's outfit is a design, not an outfit demonstration. | A2 on the right two-fifths (cut-out or framed panel, no shadow trick); a small arrow added in post pointing to the chip ring; text left, three lines, large. J2 line is the photoreal replacement of addendum 12.2; the wife rules on it. | 「AI 生成｜虛擬角色」 | A2 |
 | 3 | the rule | 配色比例的一個口訣（經驗法則）／主色 六成｜輔色 三成｜點綴色 一成／這是經驗法則，不是標準。 | A rule of thumb for colour proportion / Main 60% \| secondary 30% \| accent 10% / This is a rule of thumb, not a standard. | One horizontal bar split 6:3:1 drawn to scale (warm stone #B8AEA2 / cream #F4E8DF / persimmon #CD8B6A), labels under each segment; A3 as a framed panel on the right edge, glancing toward the bar. No second bar, no stripes of six or more colours. | 「AI 生成｜虛擬角色」 | A3 |
-| 4 | three combinations | 三組搭配示意／① 暖灰＋奶油白＋柿子橘／② 炭灰＋暖灰＋灰玫瑰色／③ 奶油白＋炭灰＋灰紫色／主色佔最大面積，點綴色最小 | Three styling illustrations / (1) warm stone + cream + persimmon / (2) charcoal + warm stone + dusty rose / (3) cream + charcoal + soft violet / The main colour takes the largest area, the accent the smallest | Three faceless dress forms (人台) side by side, each dressed in generic human-built garment flats (jacket, top, scarf or tote; no logo, tag, pattern or invented detail), each with the 6:3:1 bar under it. Persimmon, dusty rose (#C27F80) and soft violet (#9F8AAB) each cover at most one tenth of their form. Label 「搭配示意」 on the slide. No character on this slide. | 「AI 生成｜搭配示意」 | none |
-| 5 | turn one step | 轉一格／公式不變，色環轉一格，換個色相再看一次。／點綴色：柿子橘 → 紅橘色 | Turn one step / Same formula; turn the wheel one step; look again in a new hue. / Accent colour: persimmon -> red-orange | The 12-segment muted wheel (built by hand; positions numbered 1 to 12, no colour-pair labels) with positions 3 and 2 highlighted and a curved arrow between them; beside it the slide-4 combination 1 re-coloured with position 2 (#C58479) as the accent. Same bar, same proportions. | 「AI 生成｜搭配示意」 | none |
+| 4 | three combinations | 三組搭配示意／① 暖灰＋奶油白＋柿子橘／② 炭灰＋暖灰＋灰玫瑰色／③ 奶油白＋炭灰＋灰紫色／主色佔最大面積，點綴色最小 | Three styling illustrations / (1) warm stone + cream + persimmon / (2) charcoal + warm stone + dusty rose / (3) cream + charcoal + soft violet / The main colour takes the largest area, the accent the smallest | Three faceless dress forms (人台) side by side, each dressed in generic garment flats drawn as SVG (jacket, top, scarf or tote; no logo, tag, pattern or invented detail), each with the 6:3:1 bar under it. Persimmon, dusty rose (#C27F80) and soft violet (#9F8AAB) each cover at most one tenth of their form. Label 「搭配示意」 on the slide. No character on this slide. | 「AI 生成｜搭配示意」 | none |
+| 5 | turn one step | 轉一格／公式不變，色環轉一格，換個色相再看一次。／點綴色：柿子橘 → 紅橘色 | Turn one step / Same formula; turn the wheel one step; look again in a new hue. / Accent colour: persimmon -> red-orange | The 12-segment muted wheel (drawn as SVG; positions numbered 1 to 12, no colour-pair labels) with positions 3 and 2 highlighted and a curved arrow between them; beside it the slide-4 combination 1 re-coloured with position 2 (#C58479) as the accent. Same bar, same proportions. | 「AI 生成｜搭配示意」 | none |
 | 6 | your turn | 換你填／主色 ＿＿（六成）／輔色 ＿＿（三成）／點綴色 ＿＿（一成）／先收藏起來，之後搭配時可以對照～ | Your turn / Main __ (60%) / Secondary __ (30%) / Accent __ (10%) / Save it and compare when you put outfits together~ | Clean worksheet: the empty 6:3:1 bar with three blank lines; no character panel on this slide. | 「AI 生成」 | none |
 | 7 | footers | 本篇由明說角色工作室創作與營運。／圖像為 AI 生成，並非真人。／這是配色的經驗法則，不是標準，沒有外部出處。／螢幕有色差，實際顏色以品牌提供的資訊為準。 | This post is created and run by Plainspoken Studio. / The images are AI-generated and are not a real person. / This is a colour rule of thumb, not a standard, and has no external source. / Screens shift colour; for the real colour, go by the information the brand provides. | Small centred type on the ground colour; the 「AI 生成」 badge in the same corner as every other slide; no persimmon needed. | 「AI 生成」 | none |
 
@@ -211,7 +222,7 @@ Screens shift colour; for the real colour, go by the information the brand provi
 
 - **A1** `R01_master_v1`: AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Master portrait R01: waist-up, front, outfit A, calm closed-mouth expression, both hands below the frame. Alt text: 「AI 生成的虛擬角色色環，非真人。」 (AI-generated virtual character Sehuan, not a real person.)
 - **A2** `R08b_knees-up_v1`: AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Knees-up, hands inside the trouser pockets, outfit A, chip ring of exactly six blank cards clipped at the left hip (R08b). Alt text: 「AI 生成的虛擬角色色環，非真人。」 (AI-generated virtual character Sehuan, not a real person.)
-- **A3** `R13_glance_v1`: AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Waist-up glance toward the lesson (R13), outfit A; a human adds the arrows. Alt text: 「AI 生成的虛擬角色色環，非真人。」 (AI-generated virtual character Sehuan, not a real person.)
+- **A3** `R13_glance_v1`: AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Waist-up glance toward the lesson (R13), outfit A; the arrows are drawn in the SVG layer. Alt text: 「AI 生成的虛擬角色色環，非真人。」 (AI-generated virtual character Sehuan, not a real person.)
 
 **Sources**
 
@@ -263,7 +274,7 @@ Where would you put the 10% accent? On the jacket, the bag, or the shoes?
 
 **Hashtags:** #配色
 
-**Card (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Card (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with an approved golden-set image placed as a supplied file; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
@@ -322,7 +333,7 @@ The images are styling illustrations, not real products.
 
 **Hashtags:** #疊穿 #濕冷穿搭 #配色 #AI虛擬角色
 
-**Slides (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Slides (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with approved golden-set images placed as supplied files; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
@@ -336,7 +347,7 @@ The images are styling illustrations, not real products.
 
 **AI-generated assets (all PENDING; prompts are in the `shot_prompt` of each media item)**
 
-- **A3** `R13_glance_v1`: AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Waist-up glance toward the lesson (R13), outfit A; a human adds the arrows. Alt text: 「AI 生成的虛擬角色色環，非真人。」 (AI-generated virtual character Sehuan, not a real person.)
+- **A3** `R13_glance_v1`: AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Waist-up glance toward the lesson (R13), outfit A; the arrows are drawn in the SVG layer. Alt text: 「AI 生成的虛擬角色色環，非真人。」 (AI-generated virtual character Sehuan, not a real person.)
 
 **Sources**
 
@@ -439,7 +450,7 @@ Screens shift colour; for the real colour, go by the information the brand provi
 
 **Hashtags:** #配色 #色彩 #中性色 #穿搭公式 #AI虛擬角色
 
-**Slides (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Slides (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with approved golden-set images placed as supplied files; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
@@ -503,7 +514,7 @@ Screens shift colour; the same colour can look different on different screens.
 
 **Hashtags:** none
 
-**Card (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Card (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with an approved golden-set image placed as a supplied file; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
@@ -511,7 +522,7 @@ Screens shift colour; the same colour can look different on different screens.
 
 **Sources**
 
-- NO FACTUAL CLAIM: a question to the audience; the three greys are hand-built swatches (one warm, one near-neutral, one cool) whose lean the operator can read from the hex values.
+- NO FACTUAL CLAIM: a question to the audience; the three greys are swatches drawn as SVG (one warm, one near-neutral, one cool) whose lean the operator can read from the hex values.
 
 **The wife rules on**
 
@@ -557,7 +568,7 @@ The character has not worn anything; for whether something fits, go by the size 
 
 **Hashtags:** #尺寸表 #看懂標示 #穿搭 #AI虛擬角色
 
-**Slides (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Slides (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with approved golden-set images placed as supplied files; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
@@ -621,7 +632,7 @@ At the same position the circumference is roughly twice the flat measurement; fo
 
 **Hashtags:** #尺寸表
 
-**Card (all human-built from Lesson Kit v0 plus golden-set cut-outs; every zh-TW line is a DRAFT)**
+**Card (all drawn by Claude as SVG from Lesson Kit v0 and rendered to PNG, with an approved golden-set image placed as a supplied file; every zh-TW line is a DRAFT; the operator and the wife review every slide)**
 
 | # | Name | On-screen text (zh-TW, DRAFT) | Gloss | Visual build spec | Badge | Assets |
 |---|---|---|---|---|---|---|
@@ -645,26 +656,47 @@ At the same position the circumference is roughly twice the flat measurement; fo
 
 ---
 
-## 6. Weeks 3 and 4, and days 29 and 30: outlined (P09 to P22)
+## 6. Weeks 3 and 4, and days 29 and 30: outlined (P11 to P18, P21, P22)
 
-Each outlined post will be written to the same depth as section 5 after the week-2 review of the first batch's minutes and the wife's first rulings. Source needs are stated now so the operator can open the pages early. Hooks refer to `hook-library.md`.
+This table holds the ten outlined posts that stay in the 30 days. P09, P10, P19 and P20 were outlined here before OPS-D1 and now sit in section 6.1. Each outlined post will be written to the same depth as section 5 after the week-2 review of the first batch's minutes and the wife's first rulings. Source needs are stated now so the operator can open the pages early. Hooks refer to `hook-library.md`.
 
 | ID | Date, time | Platform, format | Master and series | Hook (zh-TW) | Outline | Source needs | Cautions |
 |---|---|---|---|---|---|---|---|
-| P09 | Mon 2026-11-30 20:30 | IG carousel | M5 · A 轉一格 #03 · P1 | H06 同色系怎麼配：只改明暗的三種示意 | Same colour family, only lightness changes: a three-step ladder (light, mid, dark) on the dress form; where the accent goes; turn one step = darken one step; blank worksheet | None beyond the labelled rule of thumb (NO FACTUAL CLAIM) | Two days after the recalled polling day: stay colour-neutral; moderate comments |
-| P10 | Tue 2026-12-01 18:00 | Threads image | M5 · A (Threads) | H41 三種明度，你會把哪一格放在外層？ | Card of the three-step ladder plus a question | None | Question only |
-| P11 | Wed 2026-12-02 20:30 | IG carousel | M6 · B1 三層順序 #02 · P2 | H15 冷氣房外套怎麼選色：辦公室、捷運、電影院 | Pick the colour of a layer by its relation to the base outfit (same lean, or contrast) rather than by the room; three human-built 示意 plates (office, MRT exit, cinema) that never contain her | None for the logic. Plates: Taiwan details per bible 4.8; if any number appears, a weather-agency slip | **No MRT map, station name or line colour.** No warmth, cold or health wording (not 保暖, not 怕冷). Wife checks plate details |
+| P11 | Wed 2026-12-02 20:30 | IG carousel | M6 · B1 三層順序 #02 · P2 | H15 冷氣房外套怎麼選色：辦公室、捷運、電影院 | Pick the colour of a layer by its relation to the base outfit (same lean, or contrast) rather than by the room; three 示意 plates (office, MRT exit, cinema) drawn as SVG that never contain her | None for the logic. Plates: Taiwan details per bible 4.8; if any number appears, a weather-agency slip | **No MRT map, station name or line colour.** No warmth, cold or health wording (not 保暖, not 怕冷). Wife checks plate details |
 | P12 | Thu 2026-12-03 18:00 | Threads text | M6 · B1 (question) | H42 冷氣房裡的外層，你會選同色系還是撞色？ | One question, text only | None | Needs gate 17 |
 | P13 | Fri 2026-12-04 20:30 | IG carousel | M7 · C 一詞看懂 #02 · P4 | H30 色差是什麼：螢幕上的顏色為什麼不同？ | Screens differ; photos depend on light; the colour name and the brand's information prevail; compare on two screens; blank checklist | A named public source on display and lighting differences, or the post stays at "screens differ, go by the brand's information" | No brand, no photo of a real product; no price or discount; lands before 雙12 |
 | P14 | Sat 2026-12-05 18:00 | Threads image | M7 · C (Threads) | H36 色名一樣，螢幕上的顏色一樣嗎？ | Label card: the colour name outranks the screen colour | As P13 | No claim about any device |
 | P15 | Mon 2026-12-07 20:30 | IG carousel | M8 · B2 三關檢查 #01 · P3 | H22 聖誕與跨年派對：亮色點綴的比例 | Three checks: what the invitation says (the host's request prevails), the accent as at most one tenth, the shoe colour joins the outfit; red and green only in a neutral layout; no all-white or all-black example | General etiquette line (一般禮儀整理，請以主辦方的要求為準); a fashion contact sanity-checks (gate 16) | No slogan overlay on red and green; no 開運 or lucky-colour wording; dates 聖誕 Fri 12-25 and 跨年 Thu 12-31 are *computed* |
 | P16 | Tue 2026-12-08 18:00 | Threads image | M8 · B2 (Threads) | H26 派對的亮色點綴，你會放在配件還是外套？ | Card of the three checks plus a question | As P15 | Question only |
-| P17 | Wed 2026-12-09 20:30 | IG carousel | M9 · A 轉一格 #04 · P1 | H07 色環上相鄰與相對：三種關係一次看 | Three relationships on the 12-position wheel (adjacent, one step apart, opposite) shown on garment flats; positions numbered, no colour-pair headline; turn one step | **The colour-theory reference (gate 11)** for the terms 類似色 and 互補色 | First post to show opposite colours: the wife judges the colour read of every pair; no 藍綠, 藍白 or 紅配綠 wording; no verdict on taste |
+| P17 | Wed 2026-12-09 20:30 | IG carousel | M9 · A 轉一格 #03 (chips follow publication order; it was #04 while M5 was in the plan) · P1 | H07 色環上相鄰與相對：三種關係一次看 | Three relationships on the 12-position wheel (adjacent, one step apart, opposite) shown on garment flats; positions numbered, no colour-pair headline; turn one step | **The colour-theory reference (gate 11)** for the terms 類似色 and 互補色 | First post to show opposite colours: the wife judges the colour read of every pair; no 藍綠, 藍白 or 紅配綠 wording; no verdict on taste |
 | P18 | Thu 2026-12-10 18:00 | Threads image | M9 · A (Threads) | H12 兩個顏色，在色環上隔幾格？ | Quiz card with two chips and a numbered wheel | As P17 | Question only |
-| P19 | Fri 2026-12-11 20:30 | IG carousel | M10 · B1 三層順序 #03 · P2 | H16 雨天褲長與鞋色：一張圖看配色比例 | Trouser hem against shoe colour as proportion (a continuous line against an accent); two rain plates (騎樓, bus shelter) built by hand without her | None for the logic; a weather slip only if a number appears | No waterproof or fabric claim; no scooter; right-hand traffic and door side on the bus plate; shoes never framed as a gift; 雙12 is tomorrow: nothing about buying |
-| P20 | Sat 2026-12-12 18:00 | Threads text | M10 · B1 (question) | H43 雨天褲腳，你會選到腳踝還是更長？ | One question, text only | None | **雙12: no price, discount or sale wording.** Needs gate 17 |
 | P21 | Mon 2026-12-14 20:30 | IG carousel | M11 · B2 三關檢查 #02 · P3 | H21 尾牙穿搭，先過三關：場合、顏色、鞋子。 | Occasion (the host's dress note prevails), colour (why all-white and all-black are commonly avoided at celebrations, the wife's wording), shoes; three example outfits each with a second colour | General etiquette line; wife's taboo ruling; fashion-contact sanity check (gate 16). 尾牙 date Sat 2027-01-23 is *computed* | No set of four; no gift framing; no claim that "everyone" does or avoids something; the wife confirms north–south differences (bible 10.2 question 14) |
 | P22 | Tue 2026-12-15 18:00 | Threads image | M11 · B2 (Threads) | H44 尾牙穿搭的三個檢查點 | Card of the three checks | As P21 | Day 30 |
+
+### 6.1 Deferred by OPS-D1 (P09, P10, P19, P20; masters M5 and M10)
+
+**The decision.** OPS-D1, adopted for the user on 2026-10-12 (`DECISIONS.md`; `ops/weekly-routine.md` section 2), holds the three pilots at 12 approvals a week combined through the first 8 weeks, which is 4 a week for 色環 (2 Instagram + 2 Threads). Weeks 3 and 4 therefore lose one master each: 4 of the 22 slots (2 Instagram, 2 Threads). The choice of which masters is Claude's, is reversible, and is for the operator and the wife to overrule. A deferred post is not deleted: its outline stays here, it has no queue folder, its hook row in `hook-library.md` is marked, and nothing about it is scheduled or approved.
+
+**How the two were chosen** (*assumption*; no engagement data exists, so this is judgement, not a finding):
+
+1. **A master is cut whole**, Instagram and Threads together. That keeps the Instagram-against-Threads pair test (H2) intact for every master that stays and saves the whole master's drawing, review and approval, not half of it.
+2. **The primary platform keeps 2 posts a week** in every week (Instagram: W3 Wed and Fri; W4 Mon and Wed), the floor in the decision.
+3. **Weeks 3 and 4 keep one master of each pillar** (M6 P2, M7 P4, M8 P3, M9 P1), so the week-6 comparison of series still has data on all four pillars (`series.md` section 6).
+4. **M5 (P1, 同色系：只改明暗) goes first** because it is the third colour-formula lesson after M1 and M3 and the least distinct: "the formula stays, one thing changes" is the Series A format itself, M1's slide 5 already shows it with the accent hue, and M5 would show it again with lightness. It is also the cheapest, needs no outside source and is safe in any week, which is why it is the first to restore.
+5. **M10 (P2, 雨天褲長與鞋色) goes second** because it carries the most cautions for the least lesson: its Friday and Saturday sit on 雙12 (no buying wording, shoes never framed as a gift), it needs two Taiwan street plates (騎樓, bus shelter) that the wife must check, and a weather slip if any number appears. Its pillar P2 is already covered by M2 and M6.
+
+The alternative that was weighed: cut M7 (色差) instead of M5. It keeps a source-free post and a Monday restart on 11-30, but it removes the only P4 master in weeks 3 and 4 and the only post that lands before 雙12. The pillar shares come out the same distance from the bible target either way (11 percentage points in total, computed from the rounded shares), so the tie was broken on lesson value. Overrule it if the wife or operator reads the value differently.
+
+| ID | Was | Platform, format | Master and series | Hook | Why it goes | Restore |
+|---|---|---|---|---|---|---|
+| P09 | deferred (was Mon 2026-11-30 20:30) | IG carousel | M5 · A 轉一格 #03 · P1 | H06 同色系怎麼配：只改明暗的三種示意 | Third colour-formula lesson in a row and the least distinct; cheap and source-free, so the first to restore | First, when a third weekly slot is allowed |
+| P10 | deferred (was Tue 2026-12-01 18:00) | Threads image | M5 · A (Threads) | H41 三種明度，你會把哪一格放在外層？ | Pair of M5; Threads version of the same ladder | With P09 |
+| P19 | deferred (was Fri 2026-12-11 20:30) | IG carousel | M10 · B1 三層順序 #03 · P2 | H16 雨天褲長與鞋色：一張圖看配色比例 | Most cautions per lesson (the day before 雙12, shoes near gift taboos, two street plates for the wife to check); P2 is covered by M2 and M6 | Second, when a further slot is allowed |
+| P20 | deferred (was Sat 2026-12-12 18:00) | Threads text | M10 · B1 (question) | H43 雨天褲腳，你會選到腳踝還是更長？ | Pair of M10; it would sit on 雙12 itself and needs gate 17 | With P19 |
+
+**Effects.** (1) The 30 days hold 18 posts, not 22 (sections 2 and 3). (2) The account is silent Fri 11-27 to Tue 12-01 (section 2). (3) Nothing is scheduled on 雙12 or the day before. (4) Gate 17 (the text-only first line) is needed for P04 and P12 only. (5) The Series A table in `series.md` loses the "same family by lightness" episode, and M9 becomes 轉一格 #03.
+
+**Restore order**, if logged minutes show room (`ops/weekly-routine.md` ramp rule): **M5 first, M10 second.** A restored post keeps its ID and weekday, takes a queue folder named for its date, is drafted to the depth of section 5 and goes through the same review; nothing here pre-approves it. If it is restored, `verify.py` must be edited so the 30-day table may hold it again.
 
 ---
 
@@ -684,26 +716,29 @@ All AI-generated images of 色環 come from the golden set (addendum 11): **no n
 | (R06) | `R06_headshot_v1` | Headshot, the face lock for the E-series | Reference for A5 | Pack 3.4 |
 | (R12) | `R12_chip-ring_v1` | Object still, no person | Reference for A2 | Pack 4.1 |
 
-Needed later in weeks 3 and 4 (not yet written into drafts): E02 (explaining), E04 (comparing), E07 (careful) and E09 (pleased, light) headshots for Threads cards, and R03 (three-quarter right) as a cover variant. **Not used in the 30 days:** outfits B and C and the season variants V1 to V3 (R09, R10). Reason: a season outfit on a climate post risks reading as "she dressed for the weather" (bible 4.3 and addendum 4.2 forbid that reading); the lessons use human-built flats on a dress form instead. The golden set is generated one pilot per fortnight starting with 方寸 (`HUMAN_TODO.md` 34); 色環's set follows 方寸's and 步驟's, so **the earliest realistic first post depends on that order** (section 8).
+Needed later in weeks 3 and 4 (not yet written into drafts): E02 (explaining), E04 (comparing), E07 (careful) and E09 (pleased, light) headshots for Threads cards, and R03 (three-quarter right) as a cover variant. **Not used in the 30 days:** outfits B and C and the season variants V1 to V3 (R09, R10). Reason: a season outfit on a climate post risks reading as "she dressed for the weather" (bible 4.3 and addendum 4.2 forbid that reading); the lessons use flats on a dress form, drawn as SVG, instead. The golden set is generated one pilot per fortnight starting with 方寸 (`HUMAN_TODO.md` 34); 色環's set follows 方寸's and 步驟's, so **the earliest realistic first post depends on that order** (section 8).
 
-### 7.2 Lesson Kit v0 (the human-built layer)
+### 7.2 Lesson Kit v0 (the diagram layer, drawn by Claude as SVG)
 
-Everything that carries a word, a number, a diagram, a garment drawing or a badge is built by a human in a design tool (or, if the operator authorises it, drawn by Claude as SVG and rendered to PNG; the code-drawn route was used for the superseded 步驟 art, `DECISIONS.md` 2026-10-11). **No image generator is asked for text, numerals, flats, wheels or badges** (bible C9; addendum 7).
+**Route (decision D3, 2026-10-12).** Everything that carries a word, a number, a diagram, a garment drawing or a badge is **drawn by Claude as SVG** (vector code, directed by the operator and the wife, no image model) and **rendered to PNG with headless Chromium** (`/opt/pw-browsers/chromium-1194/chrome-linux/chrome`, present in the sandbox on 2026-10-12). This is the route used for the superseded 步驟 art (`DECISIONS.md` 2026-10-11). It removes the build step from the operator; it removes **no** review step. **The operator and the wife still review and approve every asset; drawing a slide does not approve it.** Claude cannot edit video, so a Reel's cut, timing and sound are a human job. **No image generator is asked for text, numerals, flats, wheels or badges** (bible C9; addendum 7). Because Claude is an AI, these graphics are AI-made: the badge on every lesson slide stays (「AI 生成」, or 「AI 生成｜搭配示意」 and 「AI 生成｜示意圖」 where bible 8.3 requires them), and provenance logs them as Claude-drawn SVG, not as image-model output.
+
+**Status: not yet drawn.** The kit below is a specification. No SVG or PNG exists for any post yet (every media item is PENDING). The first drawing job is the kit itself (about ten flats, the dress form, the 12-position wheel, the proportion bar, the chip ring, the badge pill, the worksheet and footer blocks, the carousel and card templates), followed by the slides of P01 and P02 for review.
 
 | Part | Spec (*assumption* unless marked) |
 |---|---|
 | Canvas | Instagram carousel 4:5 (1080 x 1350 px is the size I recall; *unverified*, check in the app). Threads image 4:5 as well. All slides in a post share one size |
 | Colour tokens | Ground pale blush `#F2DAD2`; cream `#F4E8DF` (garments and light panels); warm stone `#B8AEA2`; charcoal `#3A3735` (type and lines); persimmon `#CD8B6A` (one accent, at most about one tenth of any slide); dusty rose `#C27F80` and soft violet `#9F8AAB` as extra accent fills at the same cap; the 12 wheel hues of bible 4.4. Use the cream, not the mist `#E4D6CB`, for a light panel (the mist is only 4.6 from the ground, bible integration log item 4) |
 | Contrast | Charcoal on the ground 8.85:1 and on cream 9.82:1 (*computed*); cream text on a charcoal badge 9.82:1 (*computed*). **Persimmon on the ground is 2.10:1 (*computed*): fills and underlines only, never text** |
-| Type | A Taiwan-glyph (TC) font such as Noto Sans TC, language tag `zh-TW`; the commercial licence is read before use (bible G14, licence terms *unverified*). Title 72 to 96 px, body at least 44 px, footers at least 32 px (*assumption*; test on a phone). Up to 3 lines per slide and about 14 characters per line (bible 3.1) |
+| Type | A Taiwan-glyph (TC) font such as Noto Sans TC, language tag `zh-TW`; the commercial licence is read before use (bible G14, licence terms *unverified*). **The render sandbox has no Noto Sans TC** (checked 2026-10-12 with `fc-list`: only WenQuanYi Zen Hei and Unifont JP are installed, and neither is a Taiwan-glyph reference). Final slide text is therefore not rendered until the operator supplies the licensed font file; any render before then is a layout preview, and the wife checks glyph shapes by eye. Title 72 to 96 px, body at least 44 px, footers at least 32 px (*assumption*; test on a phone). Up to 3 lines per slide and about 14 characters per line (bible 3.1) |
 | Badge | Solid charcoal pill with cream text; text height at least 3.5% of the image height (47 px on 1350, *computed*); inset at least 8% of the width from the sides (86 px) and 11% of the height from top and bottom (149 px) (*computed*; centred 1:1 crop of 4:5 removes 10% top and bottom); **same corner (top-right) on every slide**. Wording: 「AI 生成｜虛擬角色」 on slides that show her; 「AI 生成」 on lesson slides without her; 「AI 生成｜搭配示意」 and 「AI 生成｜示意圖」 where bible 8.3 requires them. Typeset, never generated; the "first second only" option is not used (addendum 8.2) |
-| Garment flats library v1 (bible G9) | About ten generic flats drawn from scratch (not traced from a brand photo): open blazer, crew-neck knit, tee, collared shirt, sleeveless vest, midi skirt, wide trousers, straight trousers, long open knit coat, scarf, tote. No logo, tag, label, pattern, stripe, check or recognisable branded silhouette; plain buttons; fills recoloured by hex. QA: no invented garment detail (the FAS1 tripwire) |
+| Garment flats library v1 (bible G9) | About ten generic flats drawn from scratch as SVG paths (not traced from a brand photo): open blazer, crew-neck knit, tee, collared shirt, sleeveless vest, midi skirt, wide trousers, straight trousers, long open knit coat, scarf, tote. No logo, tag, label, pattern, stripe, check or recognisable branded silhouette; plain buttons; fills recoloured by hex. QA: no invented garment detail (the FAS1 tripwire) |
 | Dress form (人台) | Faceless, headless, a plain neutral form; never the character; she is never placed on it or in a taught outfit (bible C1) |
 | Wheel diagram | 12 equal wedges, muted hues, **circular**, positions numbered 1 to 12 (position 8 named 青 only if the wife agrees; never the pair 藍綠), saturation never above the persimmon's; no six-stripe horizontal colour bar anywhere (bible C4) |
 | Proportion bar | A horizontal bar drawn to scale (6:3:1 for the formula posts); three segments only |
 | Chip ring | Exactly six blank cards on a charcoal ring; no text, number or code |
-| Character cut-outs | Transparent PNG from the golden set; hair edge checked at 200%; a halo or a hard edge fails; placed lower-left on covers and in a framed panel on lesson slides; never composited into a photoreal scene |
+| Character images | Claude places an approved golden-set file in the SVG **as supplied**: a framed panel (rounded rectangle, no shadow trick) by default, or a transparent cut-out only if a human has made one. A cut-out is a human edit; addendum 11 item 6 does not list it (crop, colour correction, stray mark, badge and text, object-only repair), so the wife and operator decide whether to add it. Claude does not cut out hair edges. Where a slide spec in section 5 says "cut-out", read "supplied cut-out or framed panel". Hair edge checked at 200%; a halo or a hard edge fails; placed lower-left on covers and in a panel on lesson slides; never composited into a photoreal scene |
 | Alt text | A per-slide zh-TW line that starts 「AI 生成的…」 and says 「非真人」 whenever she is in the picture (for example 「AI 生成的虛擬角色色環，非真人；…」); each media description in `post.json` ends with its alt text; the wife reads them |
+| Review and provenance | The operator reviews every rendered PNG (numbers copied from the source slip, bar drawn to scale, persimmon at most one tenth, badge corner and inset, 1:1 crop test, safe zones) and the wife reads every character and the colour reads, before either sets a review field. Claude keeps the SVG source beside the render and logs each render in `assets/provenance.csv` the way the code-drawn 步驟 art was (tool 「Claude (code-drawn SVG, no image model)」, model = the script or file and version). Copyright status of code-authored art in Taiwan is *unverified* (a lawyer question, as the existing row for the 步驟 art says) |
 | Layout checks | Two screens; a nine-tile grid test (the grid must not read as one saturated colour); party-colour, rainbow and mourning reads by the wife; nothing sits where the platform's own controls cover it (safe zones *unverified*) |
 | Election window layouts (weeks 1 and 2) | No blue, green, teal or yellow headline or cover; no camp pair; no slogan layout; no flags, red stars or party symbols |
 
@@ -718,7 +753,9 @@ Everything that carries a word, a number, a diagram, a garment drawing or a badg
 | First line, lesson card without her | 【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖為搭配示意。 | |
 | First line, label card without her | 【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖為示意。 | |
 | First line, text only (needs user approval) | 【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布。 | |
-| Badge | 「AI 生成｜虛擬角色」, 「AI 生成」, 「AI 生成｜搭配示意」, 「AI 生成｜示意圖」 | |
+| Badge | 「AI 生成｜虛擬角色」, 「AI 生成」, 「AI 生成｜搭配示意」, 「AI 生成｜示意圖」 | See the wording note under the table |
+| Badge, Reel with a still of her (D6; none is planned) | 「AI 生成｜虛擬角色」 on every frame for the whole clip | Persistent, typeset, never generated; inset at least as in `pipeline/qa-checklist.md` D3 (11% top and bottom, 8% sides); 9:16 safe zones are *unverified* (QA T7) |
+| First line, Reel with a still of her (D6; none is planned) | The same line as "any post that shows her" | 色環 has no YouTube presence in the pilot (`series.md` section 1), so there is no Short and no 「本影片…」 variant |
 | Colour footer | 螢幕有色差，實際顏色以品牌提供的資訊為準。 | Bible 8.8 says 官方; the pipeline checker treats 官方 as a source-dependent claim, so the wording is 品牌提供. The wife rules |
 | Size and fit footer | 角色未穿著，合不合身請以品牌提供的尺寸表為準。 | Bible 8.8, same change |
 | Etiquette line (P3) | 一般禮儀整理，請以主辦方的要求為準。 | |
@@ -727,6 +764,8 @@ Everything that carries a word, a number, a diagram, a garment drawing or a badg
 | Correction | 【更正】{YYYY/MM/DD}：{內容}已更新為「…」。原說明有誤。 | |
 | Automated reply (none in the first 30 days) | 這是自動回覆訊息。我是 AI 虛擬角色，由明說角色工作室創作與營運。 | |
 | Paid, gifted, affiliate, client lines | Not used in the 30 days. Kept in bible 8.5 to 8.7 | |
+
+**Badge wording note.** Addendum 8.2 and `pipeline/qa-checklist.md` D3 agree on 「AI 生成｜虛擬角色」 for anything that shows her, and that is also the wording decision D6 fixes for a Reel or Short, so D6 changes no string. They differ on diagrams: the QA checklist names 「AI 生成｜示意圖」, while addendum 8.2 and this calendar use 「AI 生成」 on lesson slides without her and keep 「搭配示意」 and 「示意圖」 as in bible 8.3. That difference is older than D6 and is left as it was; the wife rules. In a Reel the one persistent badge 「AI 生成｜虛擬角色」 stays on every frame, including frames with only a diagram, so the badge never changes mid-clip.
 
 Platform label: **ON for every post**, including text posts and flat-only cards (studio rule). Instagram and Threads also get the account-level "AI-generated profile" label if it exists for a Taiwan account (gate 5). Never strip metadata or a tool's visible mark; save downloads untouched (addendum 8.2).
 
@@ -742,14 +781,15 @@ Platform label: **ON for every post**, including text posts and flat-only cards 
 
 1. `queue.py validate` shows no ERROR or FLAG, and every WARN has been read.
 2. `sources[]` has no placeholder; the slip is complete; the image numbers equal the page.
-3. All media generated, logged in `assets/provenance.csv` the same day, and `media[].path` updated to the final file.
+3. All media generated or rendered, logged in `assets/provenance.csv` the same day (a Claude-drawn SVG is logged as such, section 7.2), and `media[].path` updated to the final file.
 4. Inspection at 100% and 200% (hands, earrings, wedges, ears, text); the badge is present, in the same corner, and not croppable; alt text set.
 5. Two-screen colour check and the three colour reads (party, rainbow, mourning) by the wife.
 6. The wife has set `wife_language`; the operator has set `operator_facts`; only then does a human set `approved` (Claude never does).
 7. Not 228, polling day, an active disaster, 清明 or another subdued day; the sponsor ledger shows no sponsor (none in the 30 days).
 8. Schedule with the platform's own tool; switch on the platform AI label by hand; screenshot the four disclosure places (bio, first line, badge, platform label).
 9. After posting: reply only through approved templates; hide political and sexualised comments; count 「是真人嗎」 comments for the week (five or more triggers the stronger label within 48 hours, `portfolio.md` 6.2).
-10. Log operator and wife minutes (section 8).
+10. Log operator and wife minutes (section 8), **including the operator's review minutes per rendered asset**, which are the new unknown after decision D3.
+11. A Reel or Short with a still of her (decision D6; none is planned): check all four conditions on the exported file and on the scheduled preview: platform AI label on; badge 「AI 生成｜虛擬角色」 on every frame for the whole clip; no blinking, lip-sync or morphing of the face (a slow pan or zoom of the still is the only motion); no synthetic voice (captions or human-recorded sound only; platform-library music only after bible G13 is checked). Claude does not edit video, so a human cuts it. Then the usual review.
 
 ### 7.6 Review-queue map
 
@@ -764,7 +804,7 @@ Platform label: **ON for every post**, including text posts and flat-only cards 
 | P07 · sehuan-2026-11-25-01 | `2026-11-25_01/` (`post.json`, `media/.gitkeep`) | Blocked on a source; also media PENDING; review pending / pending / not approved |
 | P08 · sehuan-2026-11-26-01 | `2026-11-26_01/` (`post.json`, `media/.gitkeep`) | Blocked on a source; also media PENDING; review pending / pending / not approved |
 
-All eight validate with no ERROR and no FLAG; the warnings are the placeholders that block approval. Nothing in them is approved. Posts P09 to P22 have no folder yet. **Keeping this file and the drafts in step:** the captions, hooks and slide text in section 5 and in the `post.json` files were generated from one data file and are identical today. After a human edit, `post.json` is the master (the review queue reads it) and this section must be edited to match; since the 2026-10-12 review `python3 content/sehuan/verify.py` prints a WARN when a post.json hook, caption or gloss no longer appears verbatim in this file.
+All eight validate with no ERROR and no FLAG; the warnings are the placeholders that block approval. Nothing in them is approved. Posts P11 to P18, P21 and P22 have no folder yet, and P09, P10, P19 and P20 are deferred by OPS-D1 (section 6.1) and will have none unless they are restored. **Keeping this file and the drafts in step:** the captions, hooks and slide text in section 5 and in the `post.json` files were generated from one data file and are identical today. After a human edit, `post.json` is the master (the review queue reads it) and this section must be edited to match; since the 2026-10-12 review `python3 content/sehuan/verify.py` prints a WARN when a post.json hook, caption or gloss no longer appears verbatim in this file.
 
 ---
 

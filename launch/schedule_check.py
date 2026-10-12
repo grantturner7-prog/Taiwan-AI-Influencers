@@ -6,19 +6,29 @@ Makes NO network call, schedules nothing, publishes nothing and never edits any 
     python3 launch/schedule_check.py --w0 2026-11-30    # shift every slot by whole weeks (W0 must be a Monday)
     python3 launch/schedule_check.py --grid             # print the week-by-week grid (Markdown) used in schedule.md
     python3 launch/schedule_check.py --list             # print every post with its queue status
+    python3 launch/schedule_check.py --with-deferred    # add back the 12 slots deferred by OPS-D1 (the superseded 18-a-week plan)
     python3 launch/schedule_check.py --no-post 2026-12-24 --no-post 2027-01-01   # add dates where nothing may publish
 
 WHERE THE SLOTS COME FROM (read on 2026-10-12, not invented here): section 2 and the at-a-glance table (section 3) of
 content/fangcun/calendar-30d.md, content/buzhou/calendar-30d.md and content/sehuan/calendar-30d.md. The three calendars were
-written in parallel. If a calendar changes, edit SLOTS below and re-run; the check is only as good as this table.
+written in parallel. If a calendar changes, edit ALL_SLOTS and DEFERRED below and re-run; the check is only as good as this table.
+
+OPS-D1 (adopted on the user's behalf 2026-10-12, reversible, DECISIONS.md): the pilots are held at 12 approvals a week combined
+(4 per pilot, 2 per platform) through the first 8 weeks. ALL_SLOTS is the superseded plan (66 slots, 18 approvals a week in weeks 3
+and 4); DEFERRED lists the 12 slots in weeks 3 and 4 that are not scheduled; SLOTS = ALL_SLOTS minus DEFERRED (54 slots). The
+deferred slots keep their calendar ids (nothing is renumbered). A deferred slot returns only if the ramp rule in
+ops/weekly-routine.md 2.4 passes, with whole-week date moves; --with-deferred shows that plan and checks it.
 
 WHAT IT CHECKS
   1. every slot's weekday matches its name (guards against a hand-edit error)
   2. no two personas post within MIN_GAP minutes of each other on the same date (studio rule: no same-hour posts, portfolio.md 3.3 item 6)
   3. nothing falls on a no-post date: the recalled polling day 2026-11-28 (UNVERIFIED), 228 (2027-02-28) and any --no-post date
   4. which posts sit inside 色環's own quiet block (polling day minus 1 to plus 1): decision D5 in launch/README.md
-  5. approvals per week against the planning ceiling of 22 (portfolio.md 5.1), and the operator and wife minutes per week against the
-     324 and 510 minute gates (portfolio.md 5.3 and 5.4), using the same assumption chain as portfolio.md
+  5. approvals per week against the OPS-D1 hold of 12 and the planning ceiling of 22 (portfolio.md 5.1), and the operator and wife
+     minutes per week against the 324 and 510 minute gates (portfolio.md 5.3 and 5.4), using the same assumption chain as portfolio.md.
+     It also prints the operator's all-in figure with the routine's own overhead (ops/weekly-routine.md 2.3, Reading A). Neither figure
+     includes the review of Claude-drawn graphics or the assembly of Reels and Shorts (the graphics decision): those are estimated in each
+     calendar's section 8 and are NOT modelled here.
   6. for each post, the review-queue draft found (if any) and whether it is SCHEDULABLE under the approval gate. Only a human sets
      approval; this script only reads post.json.
 """
@@ -36,6 +46,10 @@ QUEUE = ROOT / "pipeline" / "review-queue"
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 MIN_GAP = 60  # minutes between two personas' posts on one date (studio rule; the three calendars keep at least 60)
 CEILING_APPROVALS = 22  # portfolio.md 5.1
+HELD_APPROVALS = 12  # OPS-D1 (adopted 2026-10-12): approvals a week, three pilots combined, through the first 8 weeks
+# The routine's own weekly overhead in operator minutes (ops/weekly-routine.md 2.2 and 2.3, Reading A; all assumptions):
+OPS_TREND, OPS_STATUS, OPS_LIVE_PER_POST, OPS_MONTHLY_AVG = 10, 10, 2, 21
+OPERATOR_AVAILABLE = 360  # 6 hours a week (DECISIONS.md section 2 answer 2)
 OPERATOR_GATE, WIFE_GATE = 324, 510  # portfolio.md 5.4
 DEFAULT_W0 = dt.date(2026, 11, 16)
 
@@ -55,7 +69,7 @@ DATE_NOTES = {
 }
 QUIET_BLOCK_OWNER = "sehuan"  # 色環's calendar keeps Fri to Sun around the recalled polling day quiet
 
-# (persona, platform, week 0-4, weekday 0=Mon, "HH:MM", calendar id, format hint)
+# (persona, platform, week 0-4, weekday 0=Mon, "HH:MM", calendar id)
 def _fc():
     ig, yt = "instagram", "youtube_shorts"
     return [
@@ -71,7 +85,7 @@ def _fc():
 
 def _bz():
     th, yt = "threads", "youtube_shorts"
-    plan = [(0, 3), (0, 6), (1, 3), (1, 6), (2, 1), (2, 3), (2, 6), (3, 1), (3, 3), (3, 6), (4, 1)]
+    plan = [(0, 3), (0, 6), (1, 3), (1, 6), (2, 1), (2, 3), (2, 6), (3, 1), (3, 3), (3, 6), (4, 1)]  # masters M1..M11
     out = []
     for i, (wk, wd) in enumerate(plan, 1):
         out.append(("buzhou", th, wk, wd, "08:15", f"T{i}"))
@@ -91,7 +105,19 @@ def _sh():
     return [("sehuan", p, wk, wd, "20:30" if p == ig else "18:00", f"P{i:02d}") for i, (wk, wd, p) in enumerate(plan, 1)]
 
 
-SLOTS = _fc() + _bz() + _sh()
+ALL_SLOTS = _fc() + _bz() + _sh()  # the superseded plan: 22 slots per pilot, 66 in all (18 approvals a week in weeks 3 and 4)
+
+# Deferred by OPS-D1 (12 slots, 6 in each of weeks 3 and 4; the third post on each platform of each pilot is the lowest-value first).
+# Read from the three calendars on 2026-10-12; they must agree with this list (see launch/schedule.md section 7).
+#   方寸 (fangcun): the weekend third posts, masters M7 and M10: P13 Sat IG, P14 Sun Short (week 3); P19 Sat IG, P20 Sun Short (week 4)
+#   步驟 (buzhou):  masters M7 (Sun 2026-12-06) and M8 (Tue 2026-12-08): T7, S7, T8, S8 (the ids are not renumbered)
+#   色環 (sehuan):  masters M5 (week 3) and M10 (week 4): P09 Mon IG, P10 Tue Threads; P19 Fri IG, P20 Sat Threads
+DEFERRED = {
+    ("fangcun", "P13"), ("fangcun", "P14"), ("fangcun", "P19"), ("fangcun", "P20"),
+    ("buzhou", "T7"), ("buzhou", "S7"), ("buzhou", "T8"), ("buzhou", "S8"),
+    ("sehuan", "P09"), ("sehuan", "P10"), ("sehuan", "P19"), ("sehuan", "P20"),
+}
+SLOTS = [s for s in ALL_SLOTS if (s[0], s[5]) not in DEFERRED]  # 54 slots, 12 approvals a week
 NAMES = {"fangcun": "方寸", "buzhou": "步驟", "sehuan": "色環"}
 SHORT = {"instagram": "IG", "threads": "Threads", "youtube_shorts": "YT Short"}
 
@@ -173,14 +199,19 @@ def minutes(posts_in_week: list[Post]):
     return approvals, m_total, operator, wife
 
 
-def build(w0: dt.date, extra_no_post: list[dt.date]):
-    posts = [Post(*s, w0) for s in SLOTS]
+def build(w0: dt.date, extra_no_post: list[dt.date], with_deferred: bool = False):
+    posts = [Post(*s, w0) for s in (ALL_SLOTS if with_deferred else SLOTS)]
     posts.sort(key=lambda p: (p.date, p.minute, p.persona))
     attach_drafts(posts)
     return posts
 
 
-def run_checks(posts, w0, extra_no_post, quiet=False):
+def all_in_operator(approvals: int, planned: int) -> int:
+    """Operator minutes with the routine's own overhead (ops/weekly-routine.md 2.3, Reading A: the standup sits inside the admin line)."""
+    return planned + OPS_TREND + OPS_STATUS + OPS_LIVE_PER_POST * approvals + OPS_MONTHLY_AVG
+
+
+def run_checks(posts, w0, extra_no_post, quiet=False, with_deferred=False):
     errors, warns, infos = [], [], []
     if w0.weekday() != 0:
         errors.append(f"W0 {w0} is a {DAYS[w0.weekday()]}, not a Monday")
@@ -228,10 +259,22 @@ def run_checks(posts, w0, extra_no_post, quiet=False):
         load.append((wk, a, m, op, wf))
         if a > CEILING_APPROVALS:
             errors.append(f"week {wk + 1}: {a} approvals is above the planning ceiling of {CEILING_APPROVALS}")
+        if a > HELD_APPROVALS:
+            msg = f"week {wk + 1}: {a} approvals is above the OPS-D1 hold of {HELD_APPROVALS} a week (the hold runs through week 8; a step up needs the ramp rule, ops/weekly-routine.md 2.4)"
+            (warns if with_deferred else errors).append(msg)
         if op > OPERATOR_GATE:
             errors.append(f"week {wk + 1}: operator load {op} min is above the {OPERATOR_GATE} min gate")
         if wf > WIFE_GATE:
             errors.append(f"week {wk + 1}: wife load {wf} min is above the {WIFE_GATE} min gate")
+    groups = {}  # operator all-in minutes -> full weeks with that figure (week 5 is a partial week and is not charged)
+    for wk, a, m, op, wf in load:
+        if wk < 4:
+            groups.setdefault(all_in_operator(a, op), []).append(wk + 1)
+    for total, wks in sorted(groups.items()):
+        names = ", ".join(str(w) for w in wks)
+        line = (f"weeks {names}: operator all-in with the routine's overhead = {total} min of 360 available (ops/weekly-routine.md 2.3, Reading A); "
+                "excludes graphics review and video assembly (graphics decision, each calendar's section 8)")
+        (warns if total > OPERATOR_AVAILABLE else infos).append(("OVER 360: " if total > OPERATOR_AVAILABLE else "") + line)
     # 6. gate state
     states = {}
     for p in posts:
@@ -265,6 +308,7 @@ def main(argv):
     ap.add_argument("--no-post", action="append", default=[], help="extra date with no posting (YYYY-MM-DD)")
     ap.add_argument("--grid", action="store_true", help="print the week-by-week Markdown grid")
     ap.add_argument("--list", action="store_true", help="print every post with its review-queue status")
+    ap.add_argument("--with-deferred", action="store_true", help="add back the 12 slots deferred by OPS-D1 (the superseded plan of 18 approvals a week in weeks 3 and 4)")
     a = ap.parse_args(argv)
     try:
         w0 = dt.date.fromisoformat(a.w0)
@@ -272,7 +316,7 @@ def main(argv):
     except ValueError as e:
         print(f"ERROR bad date (use YYYY-MM-DD): {e}", file=sys.stderr)
         return 2
-    posts = build(w0, extra)
+    posts = build(w0, extra, a.with_deferred)
     if a.grid:
         print_grid(posts, w0)
         return 0
@@ -281,8 +325,9 @@ def main(argv):
         for p in posts:
             print(f"| {p.date} | {DAYS[p.wd]} | {p.hhmm} | {NAMES[p.persona]} | {SHORT[p.platform]} | {p.cid} | {p.approve_by} | {gate_state(p)} |")
         return 0
-    errors, warns, infos, load, states = run_checks(posts, w0, extra)
-    print(f"W0 = {w0} ({DAYS[w0.weekday()]}); {len(posts)} posts from {posts[0].date} to {posts[-1].date}; {len(SLOTS)} slots in SLOTS")
+    errors, warns, infos, load, states = run_checks(posts, w0, extra, with_deferred=a.with_deferred)
+    plan = "superseded plan with the 12 deferred slots" if a.with_deferred else "OPS-D1 hold at 12 approvals a week"
+    print(f"W0 = {w0} ({DAYS[w0.weekday()]}); {len(posts)} posts from {posts[0].date} to {posts[-1].date}; {len(ALL_SLOTS)} slots in ALL_SLOTS, {len(DEFERRED)} deferred, {len(SLOTS)} in SLOTS; checking the {plan}")
     print("\nWeek  approvals  masters  operator min (gate %d)  wife min (gate %d)" % (OPERATOR_GATE, WIFE_GATE))
     for wk, ap_, m, op, wf in load:
         print(f"  {wk + 1}      {ap_:>3}       {m:>3}        {op:>4}                    {wf:>4}")

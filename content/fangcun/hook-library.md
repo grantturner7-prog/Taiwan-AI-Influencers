@@ -44,14 +44,14 @@ Columns: **Chars** is the count of the zh-TW text (computed); **Pattern**: Q que
 | H15 | 「一樣的家具，不一樣的走道」 | The same furniture, a different walkway. | 12 | B 配置對照 | V | Short opener | Any week | P08 |
 | H16 | 「床靠長邊還是短邊？用數字對照」 | Bed along the long side or the short side? Compare with numbers. | 14 | B 配置對照 | V | IG cover | Any week; no verdict | - |
 | H17 | 「玄關鞋櫃兩種擺法，開門空間差多少？」 | Entrance shoe cabinet, two placements: how much does the door space differ? | 17 | B 配置對照 | V | IG cover | Wife checks the entrance details | P11 |
-| H18 | 「書桌放哪裡，動線差多少？」 | Where should the desk go? How much does the path differ? | 12 | B 配置對照 | V | IG cover | Wife rules 動線 | P19 |
+| H18 | 「書桌放哪裡，動線差多少？」 | Where should the desk go? How much does the path differ? | 12 | B 配置對照 | V | IG cover | Wife rules 動線 | P19 (deferred) |
 | H19 | 「數字不會替你選」 | The numbers won't choose for you. | 7 | B 配置對照 | T | Closing line, slide 6 of a comparison | Closing line only | P07, P08 |
 | H20 | 「A 排法和 B 排法，各用掉多少牆面？」 | Layout A and layout B: how much wall does each use up? | 19 | B 配置對照 | V | IG cover | Any week | - |
 | H21 | 「後陽台洗衣機旁，曬衣空間怎麼畫？」 | Beside the rear-balcony washing machine: how do you draw the drying space? | 16 | B 配置對照 | Q | IG cover | Wife checks the balcony details (bible 4.9); no installation advice | - |
 | H22 | 「買收納櫃之前，先確認五件事」 | Before buying a storage cabinet, check five things. | 13 | C 先量再買 | L | Reel opener, IG cover | Any week | P03 |
 | H23 | 「收納櫃下單前，五件事先確認」 | Before you order a storage cabinet, confirm five things first. | 13 | C 先量再買 | L | Short opener | Any week | P04 |
 | H24 | 「網購家具下單前，先填這張尺寸表」 | Before ordering furniture online, fill in this size table first. | 15 | C 先量再買 | L | IG cover | Week of 2026-12-07 pairs with 雙12; no price or sale wording | P15 |
-| H25 | 「看房要記錄哪些尺寸？一張清單」 | Which sizes should you record when viewing a flat? One checklist. | 14 | C 先量再買 | Q+L | IG cover | Dimensions only, no lease items | P13 |
+| H25 | 「看房要記錄哪些尺寸？一張清單」 | Which sizes should you record when viewing a flat? One checklist. | 14 | C 先量再買 | Q+L | IG cover | Dimensions only, no lease items | P13 (deferred) |
 | H26 | 「家具進得了門嗎？門、電梯、轉角」 | Will the furniture get through? Door, lift, corner. | 15 | C 先量再買 | Q+L | IG cover | Any week outside the 2027 ghost month for 'moving' framing | - |
 | H27 | 「搬進新房間前，先記下這五件事」 | Before moving into a new room, write down these five things. | 14 | C 先量再買 | L | IG cover | Not in the 2027 ghost month (2027-08-02 to 08-31) | - |
 | H28 | 「不買也是答案：先量完再決定」 | Not buying is also an answer: measure first, then decide. | 13 | C 先量再買 | T | IG cover, closing line | Any week; states the value that 'do not buy' is valid | - |
@@ -97,7 +97,7 @@ These are common Taiwan short-video hooks that this persona must not use. They a
 
 ## 4. How the hooks are used in the 30-day plan
 
-Weeks 1 and 2 are written in full in `content/fangcun/calendar-30d.md` section 5; weeks 3 and 4 and days 29 and 30 are outlines in section 6. Every hook used there is listed below with its character count (computed). Some posts use a hook that is not in the library table because it is a platform-specific variant of a library hook; the character limit still applies.
+Weeks 1 and 2 are written in full in `content/fangcun/calendar-30d.md` section 5; weeks 3 and 4 and days 29 and 30 are outlines in section 6. Four posts (P13, P14, P19, P20) are deferred by OPS-D1 (calendar section 6.1); their hooks stay in the table, marked deferred. Every hook used there is listed below with its character count (computed). Some posts use a hook that is not in the library table because it is a platform-specific variant of a library hook; the character limit still applies.
 
 | Post | Date | Platform | Hook (zh-TW DRAFT) | Chars | Pattern |
 |---|---|---|---|---|---|
@@ -113,18 +113,18 @@ Weeks 1 and 2 are written in full in `content/fangcun/calendar-30d.md` section 5
 | P10 | 2026-12-01 | YT | 「房門開啟時，門板掃過多大？」 | 13 | Q |
 | P11 | 2026-12-03 | IG | 「玄關鞋櫃兩種擺法，開門空間差多少？」 | 17 | V |
 | P12 | 2026-12-04 | YT | 「鞋櫃換個位置，開門空間差多少？」 | 15 | V |
-| P13 | 2026-12-05 | IG | 「看房要記錄哪些尺寸？一張清單」 | 14 | Q+L |
-| P14 | 2026-12-06 | YT | 「看房當天，要記錄哪些尺寸？」 | 13 | Q |
+| P13 | 2026-12-05 (deferred) | IG | 「看房要記錄哪些尺寸？一張清單」 | 14 | Q+L |
+| P14 | 2026-12-06 (deferred) | YT | 「看房當天，要記錄哪些尺寸？」 | 13 | Q |
 | P15 | 2026-12-07 | IG | 「網購家具下單前，先填這張尺寸表」 | 15 | L |
 | P16 | 2026-12-08 | YT | 「下單前，這張尺寸表先填完」 | 12 | L |
 | P17 | 2026-12-10 | IG | 「櫃子比門還寬，就一定搬不進去嗎？」 | 16 | M |
 | P18 | 2026-12-11 | YT | 「比門寬的櫃子，真的進不去嗎？」 | 14 | M |
-| P19 | 2026-12-12 | IG | 「書桌放哪裡，動線差多少？」 | 12 | V |
-| P20 | 2026-12-13 | YT | 「書桌的三個位置，走法不一樣」 | 13 | V |
+| P19 | 2026-12-12 (deferred) | IG | 「書桌放哪裡，動線差多少？」 | 12 | V |
+| P20 | 2026-12-13 (deferred) | YT | 「書桌的三個位置，走法不一樣」 | 13 | V |
 | P21 | 2026-12-14 | IG | 「寬、深、高，怎麼換算成公升？」 | 14 | Q+F |
 | P22 | 2026-12-15 | YT | 「30 公升是多大？先算體積」 | 13 | Q+F |
 
-**Rotation checks done on this plan (by a one-off script, 2026-10-12; the pattern column above is my own labelling):** no two consecutive posts on the same platform use the same pattern; the method phrase 先算 appears in 3 of the 22 posts (P01, P02, P22), 先量 in 0 and 先看 in 0, under the 1-in-4 limit; every hook is 20 characters or fewer; no hook uses 他 or 她.
+**Rotation checks done on this plan (by a one-off script, 2026-10-12, re-run after the OPS-D1 deferral of P13, P14, P19 and P20; the pattern column above is my own labelling):** no two consecutive posts on the same platform use the same pattern; the method phrase 先算 appears in 3 of the 18 scheduled posts (P01, P02, P22), 先量 in 0 and 先看 in 0, under the 1-in-4 limit; every hook is 20 characters or fewer; no hook uses 他 or 她.
 
 ## 5. Testing hooks without fooling ourselves
 

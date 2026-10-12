@@ -1,6 +1,14 @@
 # 步驟 (buzhou) 30-day content calendar
 
-**Status: DRAFT v0.1, written 2026-10-12 (Phase 5, content).** Pilot persona, slot 2, niche N7 AI tools and productivity. Primary platform YouTube Shorts, secondary Threads. The 30 days run from **W0 = Mon 2026-11-16 (an assumption) to Tue 2026-12-15**, the same window as the 方寸 calendar. **步驟's own first post is Thu 2026-11-19 (day 4)**, on purpose (section 2). Weeks 1 and 2 are fully written; weeks 3 and 4 and day 30 are outlined.
+**Status: DRAFT v0.2, written 2026-10-12 (Phase 5, content); revised the same day to apply three decisions the user adopted by asking for the recommended answers (section 12).** Pilot persona, slot 2, niche N7 AI tools and productivity. Primary platform YouTube Shorts, secondary Threads. The 30 days run from **W0 = Mon 2026-11-16 (an assumption) to Tue 2026-12-15**, the same window as the 方寸 calendar. **步驟's own first post is Thu 2026-11-19 (day 4)**, on purpose (section 2). Weeks 1 and 2 are fully written; weeks 3 and 4 and day 30 are outlined. **Cadence is now 2 masters a week in every week (4 approvals a week, 12 across the three pilots; decision OPS-D1), so the 30 days hold 9 masters and 18 posts, not 11 and 22.**
+
+**Decisions applied on 2026-10-12 (all made for the user from the recommended answers, all reversible, none of them an approval of any post).** Detail and the list of what changed are in section 12.
+
+| Decision | What it does here |
+|---|---|
+| D6 (a still of the photoreal character inside a Short) | Allowed as a still, or a slow pan or zoom of a still, under five conditions (section 7.10). The D6 reason is removed from the HOLD notes of the four queued Shorts. They stay on HOLD for other reasons: gate G7 (vendor terms), unfilled fill-ins and sources, and no recording or still yet |
+| OPS-D1 (hold at 12 approvals a week across the three pilots through week 8) | Masters M7 (Sun 2026-12-06) and M8 (Tue 2026-12-08) are cut, so the 步驟 weeks 3 and 4 hold 2 Shorts and 2 Threads posts each, same as weeks 1 and 2 (section 6) |
+| Graphics layer drawn by Claude as SVG, rendered to PNG | Claude draws the overlay layers and cards; the operator still reviews every layer, the wife still reads every character, and Claude cannot edit video, so the operator still assembles and exports each Short (section 8) |
 
 **What this file is not.**
 
@@ -10,7 +18,7 @@
 - No sponsored, gifted or affiliate content appears anywhere in the 30 days: the business is not registered and the lawyer has not answered.
 - This file contains no engagement data. Anything marked DEMO is format only.
 
-**Reading order.** 0 conventions, 1 gates, 2 cadence and why the launch day is Thursday, 3 the 30 days at a glance, 4 holiday and taboo check, 5 weeks 1 and 2 in full (M1 to M4), 6 weeks 3 and 4 outlined (M5 to M11), 7 shared blocks (layout kit, recording rules, stills, label strings, descriptions, checklist, queue map, sample data), 8 effort and capacity (the main risk), 9 open items for the human, 10 checks run on this file.
+**Reading order.** 0 conventions, 1 gates, 2 cadence and why the launch day is Thursday, 3 the 30 days at a glance, 4 holiday and taboo check, 5 weeks 1 and 2 in full (M1 to M4), 6 weeks 3 and 4 outlined (M5, M6, M9, M10, M11 live; M7 and M8 cut under OPS-D1), 7 shared blocks (layout kit, recording rules, stills, label strings, descriptions, checklist, queue map, sample data, the D6 still-in-video conditions in 7.10), 8 effort and capacity (the main risk), 9 open items for the human, 10 checks run on this file, 11 review log, 12 decisions applied on 2026-10-12.
 
 Sources of authority: `BRIEF.md` section 3 (ground rules) and 5 (language); `DECISIONS.md` (latest entries win, especially 2026-10-11 and 2026-10-12 on photoreal characters); `strategy/portfolio.md` (2C row N7, 5 capacity, 6 thresholds); `personas/buzhou/bible.md` for voice, pillars, disclosure lines and the fact-check slip; `personas/buzhou/photoreal-addendum.md` for the look and the disclosure stack (it supersedes the bible's visual sections); `pipeline/image-pack/buzhou-photoreal.md` for the stills; `research/culture.md` section 4 and 5 for the calendar and taboos.
 
@@ -24,7 +32,7 @@ Sources of authority: `BRIEF.md` section 3 (ground rules) and 5 (language); `DEC
 | `{...}` in a line | A fill-in from the recording day or the source slip (tool, version, plan, date, a quoted limit). **A line with a brace left in it must never be published.** Braces are used instead of guesses because the operator cannot yet know them. |
 | `UNVERIFIED-OPERATOR-TO-FILL` | Placeholder in a `sources[]` field of `post.json`. A post carrying it is **BLOCKED**: it cannot be approved until the exact page URL and the date seen replace it. No URL in these files has been invented. |
 | DEMO | Format example with no real data (used in `trend-check.md`). |
-| IDs | **M1 to M11** are masters (one idea feeding one Short and one Threads post). **S1 to S11** are the Shorts. **T1 to T11** are the Threads posts. Queue folders are `pipeline/review-queue/buzhou/<date>_01/`. |
+| IDs | **M1 to M11** are masters (one idea feeding one Short and one Threads post). **S1 to S11** are the Shorts. **T1 to T11** are the Threads posts. M7, S7 and T7, and M8, S8 and T8, are cut under OPS-D1 and unused (section 6); the IDs are not renumbered. Queue folders are `pipeline/review-queue/buzhou/<date>_01/`. |
 | Pillars | P1 功能三步驟, P2 官方對照表, P3 提示詞範本, P4 用之前先看 (bible section 6). |
 | Series | The three repeatable formats in `series.md`: 「三步驟」 (P1), 「對照表」 (P2), 「範本清單」 (P3 and P4). |
 | Flags | **AI-label flag = TRUE on every post** (a photoreal AI person or an AI-account card appears in every post; the platform AI label is switched on by hand). **Sponsorship flag = FALSE, type none, on every post.** |
@@ -33,7 +41,7 @@ Sources of authority: `BRIEF.md` section 3 (ground rules) and 5 (language); `DEC
 | Declined sponsors and clients | Loan apps and any credit or financial-product promotion; trading, forex, crypto and betting bots; AI fortune-telling; face-swap, voice-clone and other deepfake-capable tools; detector-evasion and ghost-writing tools; "AI side-hustle" courses; anything that asks the character to say it used the product (bible 9.2 and 9.3). None is on the table in the 30 days, and none is answered beyond the fixed line in `reply-guidelines.md` section 8 |
 | Words not used | The 測 family (實測, 親測), 試 as in 試用, 用過 as a claim, 好用, 神器, 最強, 效率, 輕鬆, 一鍵, 推薦, and any income word, in any line a viewer sees. They appear in this file only inside lists of banned words, or negated in an identity line. |
 
-**How the character appears.** As **still images only**, in a small picture-in-picture (PiP) frame beside a real screen recording (photoreal addendum 7, risk 8: no talking, lip-synced or voice-cloned video of the photoreal face). There is no voice. The Shorts carry **captions only**; gate G5 (voice) stays open and captions-only is the default. No music in the 30 days (licence terms *unverified*).
+**How the character appears (decision D6, adopted 2026-10-12).** As a **still image, or a slow pan or zoom of a still**, in a small picture-in-picture (PiP) frame beside a real screen recording, under the five conditions in section 7.10: the platform AI label on; the persistent badge 「AI 生成｜虛擬角色」 on every frame; no animation of the face (no blinking, lip-sync or morphing); no synthetic voice; captions or human-recorded sound only. Face animation, synthetic voice and lip-sync stay barred until a separate video addendum and review exist (photoreal addendum 7, risk 8). The Shorts carry **captions only**: no audio and no music in the 30 days (music licence terms *unverified*). Human-recorded sound is allowed by D6 and is not used here.
 
 ---
 
@@ -44,7 +52,7 @@ Nothing here can be published until the launch gates in `personas/buzhou/bible.m
 | # | Gate | Owner | State (2026-10-12) |
 |---|---|---|---|
 | 1 | The user confirms that "real people" means photoreal AI characters that stay openly AI | User | Recorded in `DECISIONS.md` 2026-10-12 |
-| 2 | The user confirms that using the photoreal character as **still images inside a video** (Shorts) is acceptable before a video and voice addendum exists | User | **Open** (same question as in the 方寸 calendar) |
+| 2 | The user confirms that using the photoreal character as **still images inside a video** (Shorts) is acceptable before a video and voice addendum exists | User | **Decided 2026-10-12 (D6):** yes, as a still or a slow pan or zoom of a still, under the five conditions in section 7.10. Made for the user from the recommended answers and reversible. It lifts the D6 hold only: each Short still needs the wife's and the operator's review, and nothing is approved |
 | 3 | Stills exist and have passed the tests: R01 master, R06 right-facing PiP bust, and the headshot expressions E01, E04, E06, E07 (pack sections 3 to 6; addendum 8) | Operator, wife | Open: no photoreal image exists |
 | 4 | Commercial-use terms of the exact Gemini or ChatGPT plan read and recorded (`HUMAN_TODO.md` 33). Until then every image is internal design material and nothing is published | User | Open |
 | 5 | **G7: for each tool shown, the operator has read the vendor's own terms on public demonstration, logo use and test accounts, and logged the date.** Whether vendors allow showing their interface in a monetised video is *unverified* | Operator | Open; blocks every Short |
@@ -55,34 +63,37 @@ Nothing here can be published until the launch gates in `personas/buzhou/bible.m
 | 10 | Wife's reviewer trial and vocabulary sign-off (`HUMAN_TODO.md` 8) | Wife | Open |
 | 11 | Lawyer's launch-gate answers (`research/legal.md` 12: questions 1, 2, 3, 4, 6, 20, 22; photoreal questions `HUMAN_TODO.md` 37; plus the N7 questions in section 9) | User | Open |
 | 12 | Business registration started | Wife (to be confirmed) | Open |
-| 13 | Voice decision G5 (captions-only is the default used here) | User | Open |
+| 13 | Voice decision G5 (captions-only is the default used here) | User | **Narrowed by D6 (2026-10-12):** no synthetic voice in any Short that shows the character; captions or human-recorded sound only. Captions-only stays the plan. A labelled synthetic voice would need the separate video addendum and review |
 | 14 | Polling-day date confirmed with the Central Election Commission (recalled as Sat 2026-11-28, *unverified*) | Operator | Open |
 | 15 | First four masters written with complete source slips (bible G9) | Claude drafts, operator checks | Drafted below; every slip is still to be filled |
 
 **Shift rule.** If a gate slips, move everything by **whole weeks** so the weekday pattern holds, and shift every date together. Three things do not shift with W0: (a) the no-post rule on polling day (recomputed against the confirmed date); (b) the 雙12 note on M9, tied to Sat 2026-12-12, which is dropped if the post would land on or after that date; (c) the quiet days later in the year (228, 農曆新年). Re-run the section 4 check after any shift, and re-record: a recording more than about a week old when a post goes out is stale by this channel's own rule (section 7.2, rule 12).
 
-**Approval lead time (assumption).** `portfolio.md` 5.5: Monday batch ready, Tuesday operator pre-check and recordings, Wednesday wife review, Thursday final approval and scheduling. For 步驟 the batch for a given week is recorded on the **Tuesday of the week before**: M1 and M2 on Tue 2026-11-10, M3 and M4 on Tue 2026-11-17, M5 to M7 on Tue 2026-11-24, M8 to M10 on Tue 2026-12-01, M11 on Tue 2026-12-08. The first batch needs the stills (gate 3) and the kit (gate 6) by Mon 2026-11-09, which is the tightest date in this file.
+**Approval lead time (assumption).** `portfolio.md` 5.5: Monday batch ready, Tuesday operator pre-check and recordings, Wednesday wife review, Thursday final approval and scheduling. For 步驟 the batch for a given week is recorded on the **Tuesday of the week before**: M1 and M2 on Tue 2026-11-10, M3 and M4 on Tue 2026-11-17, M5 and M6 on Tue 2026-11-24, M9 and M10 on Tue 2026-12-01, M11 on Tue 2026-12-08 (M7 and M8 are cut under OPS-D1, section 6). The first batch needs the stills (gate 3) and the kit (gate 6) by Mon 2026-11-09, which is the tightest date in this file.
 
 ---
 
 ## 2. Cadence, days and times
 
-From `portfolio.md` 5.2 and bible section 6: weeks 1 and 2 are the ramp (2 YouTube Shorts + 2 Threads a week, 2 masters); weeks 3 onward are 3 + 3 a week (3 masters). One master feeds one Short and one Threads post (production counted once, approvals twice).
+From `portfolio.md` 5.2 and bible section 6: weeks 1 and 2 are the ramp (2 YouTube Shorts + 2 Threads a week, 2 masters). `portfolio.md` plans 3 + 3 a week from week 3, but **decision OPS-D1 (adopted 2026-10-12) holds the pilots at 12 approvals a week across the three pilots through week 8**: that is 2 posts per platform per pilot, so 步驟 stays at **2 masters a week, 2 Shorts on its primary platform plus 2 Threads posts, 4 approvals**, in every week. One master feeds one Short and one Threads post (production counted once, approvals twice).
 
 | Period | YouTube Shorts (21:00) | Threads (08:15, same day, before the Short) | Approvals a week | Masters a week |
 |---|---|---|---|---|
 | Weeks 1 and 2 | Thu, Sun | Thu, Sun | 4 | 2 |
-| Weeks 3 and 4 (and day 30) | Tue, Thu, Sun | Tue, Thu, Sun | 6 | 3 |
+| Week 3 | Tue, Thu | Tue, Thu | 4 | 2 |
+| Week 4 | Thu, Sun | Thu, Sun | 4 | 2 |
+| Day 30 (the part of week 5 inside the window) | Tue | Tue | 2 | 1 |
 
 Design choices (*assumption*; all to be tested, not defended):
 
 - **First post Thu 2026-11-19, not Mon 2026-11-16.** Studio rule: no coordinated launches on the same day and no two personas posting in the same clock hour (`portfolio.md` 3.3 item 6). The 方寸 calendar launches on Mon 2026-11-16 and proposes that 色環 launches on Wed 2026-11-18. Thursday is the first day that is neither one of those launch days nor a day on which the 方寸 calendar has a YouTube Short in weeks 1 and 2 (its Shorts are on Tue and Fri). **This is a proposal. The three calendars were written in parallel and the operator must reconcile them** (section 9, item 4). If 色環 also takes Thursday, move 步驟 by whole days and keep the Thu or Sun pattern.
-- **Threads at 08:15, Short at 21:00.** The 方寸 calendar uses 12:30 and 19:30 (and 10:30 on Saturdays), so 步驟 never shares a clock hour with it. In weeks 3 and 4 the 方寸 Shorts go out on Tue, Fri and Sun at 19:30, so on Tue and Sun two persona Shorts appear on the same day, 90 minutes apart, on different channels. That is acceptable under the stated rule, and it is section 9 item 4 if the operator prefers different days.
+- **Threads at 08:15, Short at 21:00.** The 方寸 calendar uses 12:30 and 19:30 (and 10:30 on Saturdays), so 步驟 never shares a clock hour with it. In weeks 3 and 4 the 方寸 Shorts go out on Tue, Fri and Sun at 19:30 (before 方寸's own OPS-D1 trim), so on Tue 2026-12-01, Sun 2026-12-13 and Tue 2026-12-15 two persona Shorts can appear on the same day, 90 minutes apart, on different channels. That is acceptable under the stated rule; re-check the pairs once 方寸's trimmed dates are final, and see section 9 item 4 if the operator prefers different days.
+- **Weeks 3 and 4 after the OPS-D1 cut.** The days kept are Tue 12-01, Thu 12-03, Thu 12-10, Sun 12-13 and Tue 12-15, which leaves a 7-day gap with no 步驟 post (Thu 12-03 to Thu 12-10). The dates were not moved, because the recording days, the re-check dates and the launch schedule hang on them. If an even spread matters more, the operator may move M9 from Thu 12-10 to Tue 12-08 (the freed slot), which also takes it further from the 雙12 run-up; every date that follows it is then rechecked. A test, not a finding.
 - **The Threads post comes first and stands alone.** It carries the three steps as text and says the recorded version **will be published** on the YouTube channel (the channel, not a link to a video, so a slip in the Short does not break the Threads text). It makes no promise about "tonight". It is future tense on purpose (review fix 2026-10-12): the Threads post goes out about 13 hours before the Short, and 「完整錄影在…」 would have said a recording exists that does not yet. If the paired Short is not finished and scheduled when the Threads post is approved, delete the pointer line from the caption (and from the queue file) before approval.
 - **No weekend-only or Saturday post in these weeks.** Saturday 2026-11-28 is the recalled polling day; Saturday 2026-12-12 is 雙12. Nothing is scheduled on either.
 - **Rest days are not empty:** they carry comment batches (`reply-guidelines.md`), the Friday trend check and re-check ledger (`trend-check.md`), the weekly report, and the Tuesday recordings and Wednesday review for the next batch.
 - **Pause switch** (`portfolio.md` 5.5): a disaster, a typhoon day or a public tragedy unschedules everything.
-- **Review date.** `portfolio.md` puts the 6-week review at Mon 2026-12-28. 步驟's first post is three days later than the studio's W0, and the first two weeks are warm-up, so the minimum sample of 8 organic posts per platform inside weeks 3 to 6 (`portfolio.md` 6.1) is likely to push 步驟's review to the week-8 point (about Mon 2027-01-11). Treat 12-28 as a first look, not a decision.
+- **Review date.** `portfolio.md` puts the 6-week review at Mon 2026-12-28. 步驟's first post is three days later than the studio's W0, and the first two weeks are warm-up. At 2 posts a week per platform (OPS-D1), weeks 3 to 6 give exactly the minimum sample of 8 organic posts per platform (`portfolio.md` 6.1), so one skipped or held post pushes 步驟's review to the week-8 point (about Mon 2027-01-11). Treat 12-28 as a first look, not a decision.
 
 ---
 
@@ -100,21 +111,21 @@ Computed for W0 = Mon 2026-11-16. Section 5 has M1 to M4 in full and section 6 h
 | 6 | 2026-11-21 | Sat | W1 | none | Rest day |
 | 7 | 2026-11-22 | Sun | W1 | T2 Threads text 08:15, S2 Short 21:00 | M2. Weekly report |
 | 8 | 2026-11-23 | Mon | W2 | none | Election-window precaution starts (section 4) |
-| 9 | 2026-11-24 | Tue | W2 | none | Recording day for M5 to M7 |
+| 9 | 2026-11-24 | Tue | W2 | none | Recording day for M5 and M6 |
 | 10 | 2026-11-25 | Wed | W2 | none | 統一發票 draw day: no content |
 | 11 | 2026-11-26 | Thu | W2 | T3 Threads text 08:15, S3 Short 21:00 | M3. Day before Black Friday: no sale wording |
 | 12 | 2026-11-27 | Fri | W2 | none | Black Friday: no post |
 | 13 | 2026-11-28 | Sat | W2 | none | **NO POST.** Recalled polling day, *unverified*: confirm the date; hide political comments |
 | 14 | 2026-11-29 | Sun | W2 | T4 Threads image 08:15, S4 Short 21:00 | M4. Day after the recalled polling day: neutral topic, hide drift |
 | 15 | 2026-11-30 | Mon | W3 | none | Weekly report |
-| 16 | 2026-12-01 | Tue | W3 | T5, S5 | M5. Recording day for M8 to M10 |
+| 16 | 2026-12-01 | Tue | W3 | T5, S5 | M5. Recording day for M9 and M10 |
 | 17 | 2026-12-02 | Wed | W3 | none | |
 | 18 | 2026-12-03 | Thu | W3 | T6, S6 | M6 |
 | 19 | 2026-12-04 | Fri | W3 | none | |
 | 20 | 2026-12-05 | Sat | W3 | none | |
-| 21 | 2026-12-06 | Sun | W3 | T7, S7 | M7 |
+| 21 | 2026-12-06 | Sun | W3 | none | M7 cut under OPS-D1 (held in the backlog) |
 | 22 | 2026-12-07 | Mon | W4 | none | |
-| 23 | 2026-12-08 | Tue | W4 | T8, S8 | M8. Recording day for M11 |
+| 23 | 2026-12-08 | Tue | W4 | none | M8 cut under OPS-D1 (held in the backlog). Recording day for M11 |
 | 24 | 2026-12-09 | Wed | W4 | none | |
 | 25 | 2026-12-10 | Thu | W4 | T9, S9 | M9. Run-up to 雙12 |
 | 26 | 2026-12-11 | Fri | W4 | none | |
@@ -123,7 +134,7 @@ Computed for W0 = Mon 2026-11-16. Section 5 has M1 to M4 in full and section 6 h
 | 29 | 2026-12-14 | Mon | W5 | none | |
 | 30 | 2026-12-15 | Tue | W5 | T11, S11 | M11. Day 30. Studio review Mon 2026-12-28 (assumption) |
 
-Totals: 22 posts (11 Shorts, 11 Threads), 11 masters. Written in full: M1 to M4 (8 posts). **Eight drafts are in the review queue**: the four Threads posts (T1 to T4, folders `_01`) and the four Shorts (S1 to S4, folders `_02`, added in the 2026-10-12 review). The Shorts are queued with all media PENDING and a HOLD note, because the recordings, the stills and the user's still-image-in-video answer do not exist yet (section 7.6).
+Totals: 18 posts (9 Shorts, 9 Threads), 9 masters (M1 to M6, M9, M10, M11); M7 and M8 are cut under OPS-D1 (2 masters, 4 posts). Written in full: M1 to M4 (8 posts). **Eight drafts are in the review queue**: the four Threads posts (T1 to T4, folders `_01`) and the four Shorts (S1 to S4, folders `_02`, added in the 2026-10-12 review). The Shorts are queued with all media PENDING and a HOLD note, because gate G7 (vendor terms) is open, the fill-ins and sources are unfilled, and no recording or still exists yet. The user's still-image-in-video question is answered (D6, section 7.10) and is no longer a reason for the hold (section 7.6).
 
 ---
 
@@ -165,7 +176,7 @@ How to read each master: the first table gives the fixed fields; **Recording pla
 
 ### M1 · Thu 2026-11-19 · 範本清單 #01 (checklist) · P4 用之前先看
 
-**Posts:** T1 Threads image, Thu 08:15, queued as `pipeline/review-queue/buzhou/2026-11-19_01/`. S1 YouTube Short, Thu 21:00, queued as `pipeline/review-queue/buzhou/2026-11-19_02/` (HOLD, media PENDING).
+**Posts:** T1 Threads image, Thu 08:15, queued as `pipeline/review-queue/buzhou/2026-11-19_01/`. S1 YouTube Short, Thu 21:00, queued as `pipeline/review-queue/buzhou/2026-11-19_02/` (HOLD on G7 and the fill-ins; the D6 hold is lifted; media PENDING).
 
 | Field | Value |
 |---|---|
@@ -187,7 +198,7 @@ How to read each master: the first table gives the fixed fields; **Recording pla
 | On-screen label | 「AI 生成｜虛擬角色」 badge for the whole video; 錄製條件 strip; 資料來源 label; date stamp (layout kit, section 7.1) |
 | AI-label flag | TRUE. YouTube altered or synthetic content question = **Yes** (a realistic AI person appears); paid promotion = No |
 | Sponsorship flag | FALSE · type none |
-| Voice | None. Captions only (gate G5 open) |
+| Voice | None. Captions only (D6: no synthetic voice; section 7.10) |
 
 **Recording plan (operator, about 20 minutes plus the edit)**
 
@@ -221,10 +232,10 @@ Must not appear: account name or avatar, history list, other tabs, bookmarks bar
 | # | File | Notes |
 |---|---|---|
 | 1 | `S1_rec_raw_01.mp4` (screen recording, no audio) | Takes 1 to 5 in one go, at least 1440 px wide, untouched. Log it as a human-made asset in `assets/provenance.csv` (tool: the recorder's name and version; prompt: "none, screen recording by the operator") |
-| 2 | Stills: `R06_pr_pip_right_v1`, `R03_pr_E01_v1`, `E04`, `E06` (headshots cropped square) | From the approved golden set (section 7.3). Crops are logged edits |
-| 3 | Overlay graphics: badge, 錄製條件 strip, 資料來源 label, date stamp, step numeral, outline boxes, PiP frame | Typeset in an editor; Taiwan-glyph font (for example Noto Sans TC, language zh-TW); the wife checks every character |
-| 4 | Captions burned in from the scene table (and an `.srt` copy for the log) | Timings are *assumption*; adjust to the recording |
-| 5 | `S1_export_v1.mp4`, 1080 x 1920, under 60 s | Save the project file too (the human-authored layer) |
+| 2 | Stills: `R06_pr_pip_right_v1`, `R03_pr_E01_v1`, `E04`, `E06` (headshots cropped square) | From the approved golden set (section 7.3). Crops are logged edits. Static in the frame, or at most a slow pan or zoom of the still (D6, section 7.10) |
+| 3 | Overlay graphics: badge, 錄製條件 strip, 資料來源 label, date stamp, step numeral, outline boxes, PiP frame | Drawn by Claude as vector SVG from the approved strings and rendered to transparent PNG (headless Chromium), or typeset by the operator in an editor; Taiwan-glyph font (for example Noto Sans TC, language zh-TW); the operator reviews each layer and the wife checks every character (section 8) |
+| 4 | Captions burned in from the scene table (and an `.srt` copy for the log) | Timings are *assumption*; adjust to the recording. Claude can supply the `.srt` text file from the scene table; burning it in is part of the operator's edit |
+| 5 | `S1_export_v1.mp4`, 1080 x 1920, under 60 s | Assembled and exported by the operator (Claude cannot edit video). Save the project file too (the human-authored layer) |
 | 6 | Description and pinned comment filled from section 7.5 | |
 | 7 | Time log: recording minutes, claims-check minutes, edit minutes | Feeds section 8 |
 
@@ -326,7 +337,7 @@ I'm Buzhou, created and run by Plainspoken Studio. I have not used any tool; the
 
 ### M2 · Sun 2026-11-22 · 三步驟 #01 · P1 功能三步驟
 
-**Posts:** T2 Threads text, Sun 08:15, queued as `pipeline/review-queue/buzhou/2026-11-22_01/`. S2 Short, Sun 21:00, queued as `pipeline/review-queue/buzhou/2026-11-22_02/` (HOLD, media PENDING).
+**Posts:** T2 Threads text, Sun 08:15, queued as `pipeline/review-queue/buzhou/2026-11-22_01/`. S2 Short, Sun 21:00, queued as `pipeline/review-queue/buzhou/2026-11-22_02/` (HOLD on G7 and the fill-ins; the D6 hold is lifted; media PENDING).
 
 | Field | Value |
 |---|---|
@@ -345,7 +356,7 @@ I'm Buzhou, created and run by Plainspoken Studio. I have not used any tool; the
 | Platform and format | YouTube Shorts, `short`, 9:16, target 48 s |
 | Title (DRAFT) | 【3 步驟】長 PDF 先抓重點：{工具} 的檔案上限在哪看（2026/11 版） |
 | Title gloss | [3 steps] Pull key points from a long PDF: where to see {tool}'s file limits (Nov 2026 version) |
-| Flags | AI-label TRUE (YouTube altered or synthetic content = Yes); sponsorship FALSE, type none; captions only |
+| Flags | AI-label TRUE (YouTube altered or synthetic content = Yes); sponsorship FALSE, type none; captions only; D6 still-in-video conditions apply (section 7.10) |
 
 **Recording plan (operator)**
 
@@ -464,7 +475,7 @@ The recorded version will be published on the YouTube channel "Buzhou".
 
 ### M3 · Thu 2026-11-26 · 範本清單 #02 (template) · P3 提示詞範本
 
-**Posts:** T3 Threads text, Thu 08:15, queued as `pipeline/review-queue/buzhou/2026-11-26_01/`. S3 Short, Thu 21:00, queued as `pipeline/review-queue/buzhou/2026-11-26_02/` (HOLD, media PENDING).
+**Posts:** T3 Threads text, Thu 08:15, queued as `pipeline/review-queue/buzhou/2026-11-26_01/`. S3 Short, Thu 21:00, queued as `pipeline/review-queue/buzhou/2026-11-26_02/` (HOLD on G7 and the fill-ins; the D6 hold is lifted; media PENDING).
 
 | Field | Value |
 |---|---|
@@ -483,7 +494,7 @@ The recorded version will be published on the YouTube channel "Buzhou".
 | Platform and format | YouTube Shorts, `short`, 9:16, target 54 s |
 | Title (DRAFT) | 【範本】把一封長信整理成三行重點（通用範本，2026/11 版） |
 | Title gloss | [Template] Turn a long letter into three key lines (general template, Nov 2026 version) |
-| Flags | AI-label TRUE (YouTube altered or synthetic content = Yes); sponsorship FALSE, type none; captions only |
+| Flags | AI-label TRUE (YouTube altered or synthetic content = Yes); sponsorship FALSE, type none; captions only; D6 still-in-video conditions apply (section 7.10) |
 
 **Recording plan (operator)**
 
@@ -608,7 +619,7 @@ The recorded version will be published on the YouTube channel "Buzhou".
 
 ### M4 · Sun 2026-11-29 · 對照表 #01 · P2 官方對照表
 
-**Posts:** T4 Threads image (a typeset card, no person), Sun 08:15, queued as `pipeline/review-queue/buzhou/2026-11-29_01/`. S4 Short, Sun 21:00, queued as `pipeline/review-queue/buzhou/2026-11-29_02/` (HOLD, media PENDING).
+**Posts:** T4 Threads image (a typeset card, no person), Sun 08:15, queued as `pipeline/review-queue/buzhou/2026-11-29_01/`. S4 Short, Sun 21:00, queued as `pipeline/review-queue/buzhou/2026-11-29_02/` (HOLD on G7 and the fill-ins; the D6 hold is lifted; media PENDING).
 
 | Field | Value |
 |---|---|
@@ -627,7 +638,7 @@ The recorded version will be published on the YouTube channel "Buzhou".
 | Platform and format | YouTube Shorts, `short`, 9:16, target 50 s |
 | Title (DRAFT) | 【對照】訂閱價格頁怎麼看：幣別、計費週期、稅金說明（{工具}，2026/11 版） |
 | Title gloss | [Table] How to read a subscription price page: currency, billing period, tax statement ({tool}, Nov 2026 version) |
-| Flags | AI-label TRUE (YouTube altered or synthetic content = Yes); sponsorship FALSE, type none; captions only |
+| Flags | AI-label TRUE (YouTube altered or synthetic content = Yes); sponsorship FALSE, type none; captions only; D6 still-in-video conditions apply (section 7.10) |
 
 **Recording plan (operator)**
 
@@ -746,21 +757,27 @@ The matching video will use {tool}'s price page as the example; data date: {date
 
 ---
 
-## 6. Weeks 3 and 4, and day 30: outlined (M5 to M11)
+## 6. Weeks 3 and 4, and day 30: outlined (M5, M6, M9, M10, M11 live; M7 and M8 cut)
 
 Each outline gives the working title (DRAFT, with gloss), the three steps, what the operator records, what must be sourced, the Threads form, the hook (IDs are in `hook-library.md`) and the main risk. Every one of them follows the same rules as M1 to M4: recording by the studio's human on a test account, 錄製條件 and 資料來源 labels, 示範輸出 label, no opinion, no recommendation, no income framing, no personal data. Full scripts, slips and queue files for these are written after the first week's minutes have been measured (section 8).
 
-Mix over weeks 3 and 4 (bible section 6: one P1, one P2, one P3 a week; P4 replaces P3 once in three weeks): W3 = P1, P3, P2; W4 = P1, P2, P4; day 30 = P1.
+Mix over weeks 3 and 4 (bible section 6: one P1, one P2, one P3 a week; P4 replaces P3 once in three weeks). With 2 masters a week the mix is two of the three series (`series.md` 1): W3 = P1, P3; W4 = P2, P4; day 30 = P1.
 
-| Master | Date | Series and pillar | Working title (DRAFT) and gloss | Hook |
-|---|---|---|---|---|
-| M5 | Tue 2026-12-01 | 三步驟 #02 · P1 | 【3 步驟】{工具} 的對話紀錄怎麼匯出？設定位置整理（2026/12 版）<br>[3 steps] How to export chat history in {tool}? Where the settings are | H20 |
-| M6 | Thu 2026-12-03 | 範本清單 #02 · P3 | 【範本】會議紀錄的固定整理格式（通用範本，2026/12 版）<br>[Template] A fixed format for meeting notes (general template) | H24 |
-| M7 | Sun 2026-12-06 | 對照表 #02 · P2 | 【對照】換工具之前：資料匯出與刪除，官方說明怎麼寫（2026/12 版）<br>[Table] Before switching tools: what the official pages say about data export and deletion | H35 |
-| M8 | Tue 2026-12-08 | 三步驟 #03 · P1 | 【3 步驟】從會議摘要到待辦清單：複製、貼上、排進行事曆<br>[3 steps] From a meeting summary to a to-do list: copy, paste, put it in the calendar | H40 |
-| M9 | Thu 2026-12-10 | 對照表 #03 · P2 | 【對照】訂閱方案怎麼看：用量上限與取消方式（{工具}，2026/12 版）<br>[Table] How to read a subscription plan: usage limit and cancellation ({tool}) | H16 |
-| M10 | Sun 2026-12-13 | 範本清單 #03 · P4 | 【3 步驟】安裝 AI 擴充功能之前，先看權限的 3 個地方<br>[3 steps] Before installing an AI browser extension: 3 places to check its permissions | H36 |
-| M11 | Tue 2026-12-15 | 三步驟 #04 · P1 | 【3 步驟】把回答語言設成臺灣慣用的繁體中文：設定位置整理（2026/12 版）<br>[3 steps] Setting the answer language to the Traditional Chinese used in Taiwan: where the settings are | H19 |
+**OPS-D1 cut (2026-10-12).** Decision OPS-D1 holds the pilots at 12 approvals a week across the three pilots through week 8, so 步驟 keeps 2 masters a week (2 Shorts on its primary platform plus 2 Threads posts) instead of 3, and one master a week is cut in weeks 3 and 4 (2 masters, 4 posts in all). The lowest-value master goes first. The criteria, in order: (1) does it test hypothesis H4 (search-led demo demand) with a dated, sourced, documentation-led recording; (2) does it repeat a topic already in the same or the adjacent week; (3) what it costs to record and edit; (4) does it wait on an unanswered legal or sensitivity question.
+
+- **Week 3: M7 is cut.** It repeats M5's topic (data export) in the same week, it waits on the unanswered comparative-advertising question (section 9 item 8; its own fallback is a one-vendor reading), and it carries the legal-reading risk of two vendors side by side.
+- **Week 4: M8 is cut.** It needs two apps, so it is the most expensive recording and edit of the six outlines (30 minutes of recording, section 8), and it carries a real-calendar and time-zone risk.
+- **Kept:** M5 (P1), M6 (P3), M9 (P2), M10 (P4) and M11 (P1). All four pillars still appear, no series appears in two consecutive masters, and every week keeps 2 Shorts on the primary platform. M7 and M8 stay below as backlog outlines with their hooks (H35, H40) reserved; they are not queued, not scheduled and no recording is planned. If a ramp is decided later (`ops/weekly-routine.md` 2.4), bring M7 back only after the lawyer has answered. The series numbers in the headings (#02, #03, #04) are labels and are not renumbered after the cut.
+
+| Master | Date | Series and pillar | Working title (DRAFT) and gloss | Hook | Status (OPS-D1) |
+|---|---|---|---|---|---|
+| M5 | Tue 2026-12-01 | 三步驟 #02 · P1 | 【3 步驟】{工具} 的對話紀錄怎麼匯出？設定位置整理（2026/12 版）<br>[3 steps] How to export chat history in {tool}? Where the settings are | H20 | Live |
+| M6 | Thu 2026-12-03 | 範本清單 #02 · P3 | 【範本】會議紀錄的固定整理格式（通用範本，2026/12 版）<br>[Template] A fixed format for meeting notes (general template) | H24 | Live |
+| M7 | Sun 2026-12-06 | 對照表 #02 · P2 | 【對照】換工具之前：資料匯出與刪除，官方說明怎麼寫（2026/12 版）<br>[Table] Before switching tools: what the official pages say about data export and deletion | H35 | **CUT**, backlog |
+| M8 | Tue 2026-12-08 | 三步驟 #03 · P1 | 【3 步驟】從會議摘要到待辦清單：複製、貼上、排進行事曆<br>[3 steps] From a meeting summary to a to-do list: copy, paste, put it in the calendar | H40 | **CUT**, backlog |
+| M9 | Thu 2026-12-10 | 對照表 #03 · P2 | 【對照】訂閱方案怎麼看：用量上限與取消方式（{工具}，2026/12 版）<br>[Table] How to read a subscription plan: usage limit and cancellation ({tool}) | H16 | Live |
+| M10 | Sun 2026-12-13 | 範本清單 #03 · P4 | 【3 步驟】安裝 AI 擴充功能之前，先看權限的 3 個地方<br>[3 steps] Before installing an AI browser extension: 3 places to check its permissions | H36 | Live |
+| M11 | Tue 2026-12-15 | 三步驟 #04 · P1 | 【3 步驟】把回答語言設成臺灣慣用的繁體中文：設定位置整理（2026/12 版）<br>[3 steps] Setting the answer language to the Traditional Chinese used in Taiwan: where the settings are | H19 | Live |
 
 ### M5 · Tue 2026-12-01 · 三步驟 #02 · export chat history
 
@@ -778,7 +795,9 @@ Mix over weeks 3 and 4 (bible section 6: one P1, one P2, one P3 a week; P4 repla
 - **Threads:** text (the template).
 - **Risk:** the wife reads the output on screen (register of 待辦 and 期限, Simplified characters). The template is the studio's own text.
 
-### M7 · Sun 2026-12-06 · 對照表 #02 · export and deletion statements
+### M7 · Sun 2026-12-06 · 對照表 #02 · export and deletion statements · CUT under OPS-D1 (backlog)
+
+*Not queued, not scheduled, no recording planned. Kept as an outline only.*
 
 - **Three steps:** 1) find each vendor's own help page on export and on deletion; 2) quote one line from each, unchanged, no rating; 3) put date and source under each line.
 - **Record:** two vendors' help pages, scroll and zoom on the quoted lines. No account needed.
@@ -786,7 +805,9 @@ Mix over weeks 3 and 4 (bible section 6: one P1, one P2, one P3 a week; P4 repla
 - **Threads:** text (a dated list of the quotes).
 - **Risk:** two vendors side by side. Comparative-advertising limits are *unverified* (bible 7.2 item 13): quote only, no verdict such as "safer", no legal reading of what deletion means. This is a lawyer question (section 9). **Fallback:** one vendor, two statements. Hold the post if the lawyer or the wife objects.
 
-### M8 · Tue 2026-12-08 · 三步驟 #03 · summary to to-do list to calendar
+### M8 · Tue 2026-12-08 · 三步驟 #03 · summary to to-do list to calendar · CUT under OPS-D1 (backlog)
+
+*Not queued, not scheduled, no recording planned. Kept as an outline only.*
 
 - **Three steps:** 1) ask for only who, what and which day; 2) check every date against the original; 3) paste the checked items into a test calendar and confirm the date and time zone shown.
 - **Record:** an AI chat (sample minutes, kit item B) and a calendar on a studio test account. Two apps: allow 30 minutes (section 8).
@@ -824,19 +845,21 @@ Mix over weeks 3 and 4 (bible section 6: one P1, one P2, one P3 a week; P4 repla
 
 ### 7.1 Shorts layout kit v0 (all numbers are *assumption*; platform safe zones are *unverified*)
 
-Canvas 1080 x 1920 (9:16). Bone `#EEECE7` ground, charcoal `#2B3038` text, ink slate `#3B4A5C` only for step numerals and the title text. No other colour: no red, green, yellow or saturated blue (palette rule, addendum 3; election-window precaution, section 4). Everything below is typeset in an editor, never generated.
+Canvas 1080 x 1920 (9:16). Bone `#EEECE7` ground, charcoal `#2B3038` text, ink slate `#3B4A5C` only for step numerals and the title text. No other colour: no red, green, yellow or saturated blue (palette rule, addendum 3; election-window precaution, section 4). Everything below is typeset as vector text and shapes (drawn by Claude as SVG and rendered to PNG, or built by the operator in an editor), never produced by an image model.
 
 | Zone | Pixels (x from left, y from top) | Content |
 |---|---|---|
-| A. Top margin | y 0 to 153 | Empty (about 8% of the height, which also meets the badge inset rule of addendum 7.1) |
-| B. Badge | x 88 to 760, y 154 to 254 | 「AI 生成｜虛擬角色」, text height about 67 px (3.5% of the frame height), bone fill, charcoal letters, thin charcoal outline. **On every frame**, because the character appears in every frame |
-| C. Label strip | x 86 to 900, y 264 to 394 | Three lines at about 34 px: 「錄製條件：{工具}｜{版本}｜{方案}｜{YYYY/MM/DD}」, 「由工作室真人操作錄製」, 「資料日期：{YYYY/MM/DD}」. This is the date the captions point to ("畫面上方") |
-| D. Recording window | x 86 to 900, y 404 to 1114 (814 x 710) | The real recording, cropped and zoomed, never altered inside. The 資料來源 label sits across its bottom edge (y 1064 to 1114) |
+| A. Top margin | y 0 to 211 | Empty (11% of the height, the badge inset rule of `pipeline/qa-checklist.md` D3 and addendum 7.1) |
+| B. Badge | x 88 to 760, y 212 to 312 | 「AI 生成｜虛擬角色」, text height about 67 px (3.5% of the frame height), bone fill, charcoal letters, thin charcoal outline. **On every frame**, because the character appears in every frame |
+| C. Label strip | x 86 to 900, y 322 to 452 | Three lines at about 34 px: 「錄製條件：{工具}｜{版本}｜{方案}｜{YYYY/MM/DD}」, 「由工作室真人操作錄製」, 「資料日期：{YYYY/MM/DD}」. This is the date the captions point to ("畫面上方") |
+| D. Recording window | x 86 to 900, y 462 to 1114 (814 x 652) | The real recording, cropped and zoomed, never altered inside. The 資料來源 label sits across its bottom edge (y 1064 to 1114) |
 | E. PiP frame | x 86 to 346, y 1124 to 1384 (260 x 260) | Rounded-square bone frame holding a still of the character, turned toward the recording |
 | F. Step block | x 366 to 900, y 1124 to 1384 | The step numeral or 「第 0 步」 in ink slate on bone, nothing else |
 | G. Captions | x 86 to 900, y 1394 to 1514 | Two lines at about 48 px, about 16 characters per line |
 | H. Bottom margin | y 1515 to 1920 | Empty (platform title, channel name and buttons; *unverified*) |
 | I. Right margin | x 901 to 1080 | Empty (platform buttons; *unverified*) |
+
+**Badge inset (reconciled 2026-10-12).** The first version of this kit started the badge at y 154 (8% of the height), from an older "8% from every edge" sentence. `pipeline/qa-checklist.md` D3 and addendum 7.1 say at least 11% of the height from the top and bottom edges and 8% of the width from the sides, so the badge now starts at y 212 and zone D lost 58 px of height (710 to 652); zones E to I did not move. The wording 「AI 生成｜虛擬角色」 is the same in the addendum, the QA checklist and decision D6, so nothing differs there. The QA checklist's D4 (the badge survives a centred 1:1 crop) is not met by a top-corner badge on a 9:16 frame and is not claimed for Shorts: the operator checks on the live channel page whether YouTube crops a Short to a square anywhere (*unverified*) and, if it does, adds a second badge inside the central band.
 
 The bible suggests a PiP of about one sixth of the width (180 px). On a vertical canvas that is too small for a face to read as an adult at phone size, so 260 px (24%) is proposed. Test 180 px and 260 px on a phone in the first edit and keep the size at which the wife can read the face as clearly adult (addendum 8.1); either way the badge and the strip stay.
 
@@ -849,7 +872,7 @@ The bible suggests a PiP of about one sixth of the width (180 px). On a vertical
 | 1 | **Studio test accounts only**, with a neutral display name and an empty history, never a personal account. Whether a vendor allows a second account for a business, and whether its terms allow public demonstration and logo display in a monetised video, is *unverified*: read the terms for each tool and log the date (gate G7) before recording |
 | 2 | Clean browser profile, no extensions visible, bookmarks bar hidden, no personal tabs, operating-system notifications off, system clock hidden. Sample data only (section 7.7). No real name, email, phone, key, token, QR code or account ID in any frame |
 | 3 | **Interface language: 繁體中文 (zh-TW) is recommended** because the audience is in Taiwan and the wife reads every on-screen label in the cut; the operator rehearses the path once in the language he reads, then records in zh-TW. If the app has no zh-TW interface, record in English and add Traditional Chinese callouts. State the language in the slip. Open item 3 asks the operator and wife to choose |
-| 4 | Record the window or region at 1440 px wide or more, no audio. Crop to zone D (814 x 710) and punch in during steps. A punch-in is a zoom of the real recording, not a new shot |
+| 4 | Record the window or region at 1440 px wide or more, no audio. Crop to zone D (814 x 652) and punch in during steps. A punch-in is a zoom of the real recording, not a new shot |
 | 5 | **Allowed edits:** crop, zoom, dim, cut waiting time (the cut is labelled 「已剪去等待時間」), speed up typing (labelled 「已加速」). **Not allowed:** changing anything inside the page, adding text inside the page, speeding up or hiding an output, or reordering takes so that a different cause is implied. Callouts live on separate layers |
 | 6 | The 錄製條件 strip shows what the **app** reports (tool, version or build, plan), read at recording time. Never a guess, never the version of a different app |
 | 7 | One tool per master. A second vendor appears only where the master is a stated two-vendor quote (M7) |
@@ -861,7 +884,7 @@ The bible suggests a PiP of about one sixth of the width (180 px). On a vertical
 
 ### 7.3 Stills used in the Shorts and Threads posts (all from the golden set; no new generation)
 
-Every still comes from the approved photoreal golden set (pack `pipeline/image-pack/buzhou-photoreal.md`). None exists yet. Rules: expression changes in a Short are **cuts between stills**, never animation; each crop to a square is made on a copy and logged with its parent file; never flip a still (the patch and the parting would move); never mix in any 方寸 or 色環 image.
+Every still comes from the approved photoreal golden set (pack `pipeline/image-pack/buzhou-photoreal.md`). None exists yet. Rules: expression changes in a Short are **hard cuts between separate approved stills** at scene boundaries, never animation, never a dissolve or morph between two faces (decision D6, section 7.10); a slow pan or zoom of one still is allowed but the default is static; each crop to a square is made on a copy and logged with its parent file; never flip a still (the patch and the parting would move); never mix in any 方寸 or 色環 image.
 
 | Role in a Short | Golden-set item | File name (pack 3.3) | Pack section |
 |---|---|---|---|
@@ -884,7 +907,7 @@ E04 and E06 look off-camera by design (the pack warns that off-camera gaze is wh
 | First line, Threads post with an image | 「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布，圖像為 AI 生成，並非真人。」 | Photoreal v2 line (addendum 7.1) |
 | First line, Threads post with no image | 「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布。」 | Text-only adaptation (bible 8.2 and bible 11 item 7). A card with no person adds 「（附圖是工作室製作的圖卡，圖上沒有人物。）」 |
 | First line, YouTube description | 「【AI 虛擬角色】本影片由 AI 生成的虛擬角色「步驟」說明，畫面中的角色為 AI 生成，並非真人；螢幕錄影由工作室真人操作。資料日期：{YYYY/MM/DD}。」 | Replaces the pipeline scaffold's 「畫面為 AI 生成」, which would call a real recording AI-generated. The wife rules |
-| On-screen badge | 「AI 生成｜虛擬角色」; 「AI 生成｜示意圖」 on a card with no person | Every frame in which he appears; typeset in post; at least about 3.5% of the frame height and 8% inset |
+| On-screen badge | 「AI 生成｜虛擬角色」; 「AI 生成｜示意圖」 on a card with no person | Every frame in which he appears, from the first to the last (persistent, decision D6); typeset in post; text height at least about 3.5% of the frame height, at least 11% of the height from the top and bottom edges and 8% of the width from the sides (`pipeline/qa-checklist.md` D3; section 7.1). The wording is identical in addendum 7.1, the QA checklist and D6 |
 | Recording label | 「錄製條件：{工具}｜{版本}｜{方案}｜{YYYY/MM/DD}　由工作室真人操作錄製」 | 「測試條件」 only if the wife and operator choose it (G8), and never in the character's own captions |
 | Source label | 「資料來源：{官方頁面名稱}｜{YYYY/MM/DD}」 | Near the recording, clear of platform controls |
 | Output label | 「示範輸出，不代表每次相同」 (with 「第 N 次，共 M 次」 where re-runs apply) | On every AI output shown |
@@ -916,13 +939,14 @@ Correction line (bible 8.8): 「【更正】{YYYY/MM/DD}：{內容}已更新為�
 | T2 Threads text, Sun 2026-11-22 | `.../2026-11-22_01/` | Queued; BLOCKED on source row 1 |
 | T3 Threads text, Thu 2026-11-26 | `.../2026-11-26_01/` | Queued; BLOCKED on source row 1 (optional hardening, see slip) |
 | T4 Threads image (card), Sun 2026-11-29 | `.../2026-11-29_01/` | Queued; card PENDING; BLOCKED on source row 1 |
-| S1 Short, Thu 2026-11-19 | `.../2026-11-19_02/` | Queued (review fix 2026-10-12); HOLD; media PENDING (recording, stills, export) |
-| S2 Short, Sun 2026-11-22 | `.../2026-11-22_02/` | Queued; HOLD; media PENDING; BLOCKED on source rows 1 and 2 |
-| S3 Short, Thu 2026-11-26 | `.../2026-11-26_02/` | Queued; HOLD; media PENDING |
-| S4 Short, Sun 2026-11-29 | `.../2026-11-29_02/` | Queued; HOLD; media PENDING; BLOCKED on the price-page source |
-| T5 to T11, S5 to S11 | not queued | Outlined in section 6 |
+| S1 Short, Thu 2026-11-19 | `.../2026-11-19_02/` | Queued (review fix 2026-10-12); HOLD on G7 and the fill-ins, D6 hold lifted 2026-10-12; media PENDING (recording, stills, export) |
+| S2 Short, Sun 2026-11-22 | `.../2026-11-22_02/` | Queued; HOLD on G7 and the fill-ins, D6 hold lifted; media PENDING; BLOCKED on source rows 1 and 2 |
+| S3 Short, Thu 2026-11-26 | `.../2026-11-26_02/` | Queued; HOLD on G7 and the fill-ins, D6 hold lifted; media PENDING |
+| S4 Short, Sun 2026-11-29 | `.../2026-11-29_02/` | Queued; HOLD on G7 and the fill-ins, D6 hold lifted; media PENDING; BLOCKED on the price-page source |
+| T5, T6, T9, T10, T11 and S5, S6, S9, S10, S11 | not queued | Outlined in section 6 |
+| T7, T8, S7, S8 | not queued, cut | OPS-D1 (section 6); backlog only |
 
-The Short drafts hold the YouTube description (with an English gloss, added in the review because the operator cannot read the Chinese), the sources and the media list; the title is in the media export entry and in `review.notes`. The scene tables in section 5 remain the review artefact for the on-screen captions. When a recording exists, replace the PENDING paths with the real files (and keep the HOLD note until the user answers open item 1). Nothing in the queue is approved: `approved` is false, and `wife_language` and `operator_facts` are `pending`.
+The Short drafts hold the YouTube description (with an English gloss, added in the review because the operator cannot read the Chinese), the sources and the media list; the title is in the media export entry and in `review.notes`. The scene tables in section 5 remain the review artefact for the on-screen captions. When a recording exists, replace the PENDING paths with the real files (and keep the HOLD note until gate G7 is closed and the fill-ins and sources are filled; open item 1 is answered by D6). Each Short's `review.notes` carries the five D6 conditions (section 7.10). Nothing in the queue is approved: `approved` is false, and `wife_language` and `operator_facts` are `pending`.
 
 ### 7.7 Sample kit v0 (the files the operator uses in every demo; all invented, all zh-TW DRAFT for the wife)
 
@@ -1010,41 +1034,78 @@ Digits to check: 12 月 1 日, 12 月 3 日, 12 月 9 日, 12 月 4 日, 12 月 
 |---|---|---|---|---|
 | 1 | The photoreal golden-set stills: R01, R06 right, E01, E04, E06, E07, each through the pack's checks and the age, look-alike, uncanny and eye-line tests | Every post | Operator, wife | None exists. This is the slowest item on the critical path |
 | 2 | Studio test accounts, the recording hygiene kit and the sample files (section 7.7) as real files | Every Short | Operator | Gates G6 and G7 |
-| 3 | One screen recording per Short, following its take list, raw and untouched, no audio | S1 to S11 | Operator | Tuesday sittings (section 1) |
-| 4 | The editor project built to the layout kit (section 7.1) and reused | S1 to S11 | Operator (or Claude's inputs, section 8) | M1 pays for the build |
-| 5 | Overlay graphics and captions typeset in a Taiwan-glyph font, every character read by the wife | S1 to S11, T4 | Operator, wife | Never generated |
-| 6 | Crops of the stills into square PiP frames, logged | S1 to S11 | Operator | On copies |
-| 7 | The exported Short (1080 x 1920, under 60 s), its description and pinned comment | S1 to S11 | Operator | Section 7.5 |
-| 8 | The T4 card (and later cards) as an image file | T4, M9 | Operator or Claude (typeset) | No person on it |
+| 3 | One screen recording per Short, following its take list, raw and untouched, no audio | S1 to S6, S9 to S11 | Operator | Tuesday sittings (section 1) |
+| 4 | One reusable editor project to the layout kit (section 7.1): the operator imports Claude's overlay layers, the stills and the `.srt`, then assembles each cut. Claude cannot edit video | S1 to S6, S9 to S11 | Operator | Minutes in section 8 |
+| 5 | Overlay graphics (badge, strip, source label, date stamp, step numerals, outline boxes, PiP frame) drawn by Claude as SVG from the approved strings and rendered to transparent PNG; every layer reviewed by the operator, every character read by the wife | S1 to S6, S9 to S11, T4 | Claude draws; operator reviews; wife reads | Vector, not an image-model output. Keep the `.svg` sources and log each in `assets/provenance.csv` |
+| 6 | Crops of the stills into square PiP frames, logged | S1 to S6, S9 to S11 | Operator | On copies |
+| 7 | The exported Short (1080 x 1920, under 60 s), its description and pinned comment | S1 to S6, S9 to S11 | Operator | Section 7.5 |
+| 8 | The T4 card (and later cards) as an image file | T4, M9 | Claude draws as SVG and renders to PNG; operator reviews | No person on it; badge 「AI 生成｜示意圖」 |
 | 9 | The source slip for each master, filled from the live pages, with screenshots | Every post | Operator | Replaces every `UNVERIFIED-OPERATOR-TO-FILL` |
 | 10 | Provenance rows for every still, crop, recording and export | Every asset | Operator | `assets/provenance.csv`; recordings are human-made |
 | 11 | The platform AI label switched on, the four-places screenshot, the minutes log | Every post | Operator | Section 7.8 |
+
+### 7.10 Still-in-video conditions (decision D6, adopted 2026-10-12)
+
+Source: `DECISIONS.md`, the 2026-10-12 entry "User asked for the recommended answers", item 1. A photoreal character may appear as a still image, or a slow pan or zoom of a still, inside a Reel or Short only if all of the conditions below hold. This is a decision made for the user from the recommended answers. It is reversible, it lifts only the hold that the question caused, and it approves nothing.
+
+| # (queue note) | Condition | How the 步驟 Shorts meet it | Checked by |
+|---|---|---|---|
+| a | The platform AI label is on | YouTube altered or synthetic content = Yes on every Short, set by hand; paid promotion unchecked | Operator, screenshot kept (7.8 items 3 and 9) |
+| b | A persistent on-screen badge 「AI 生成｜虛擬角色」 | Zone B of the layout kit on every frame from the first to the last, typeset and not generated; inset as in 7.1 | Operator scrubs the first frame, the last frame and every cut; the wife reads the characters |
+| c | The character is a still, or a slow pan or zoom of a still | A static still in the PiP frame by default; an optional slow pan or zoom of one still (one direction inside a scene, no speed ramp). The recording itself is a real screen recording and is not part of this rule | Operator on the export at phone size |
+| d | No animation of the face | No blinking, lip-sync or morphing; also no dissolve between two face stills, no frame interpolation, no "live portrait" or other face-driving tool. An expression change is a hard cut between two separate approved stills (7.3) at a scene boundary | Operator and wife on the export |
+| e | No synthetic voice; captions or human-recorded sound only | No voice of any kind in the 30 days: the recording is silent, the captions are burned in, no music. Human-recorded sound is allowed by D6 and is not used | Operator (the export has no audio, or a silent track) |
+
+Still barred, as before: any talking, lip-synced, animated or voice-cloned video of the photoreal face, until a separate video addendum and review exist (photoreal addendum 7, risk 8). A Short found live with the badge missing on any frame, with face animation, or with a voice, is a disclosure failure: fix or take it down within 24 hours and log it (addendum 7.2).
+
+**Points D6 leaves open (the wife and the operator rule; the default this calendar uses is stated in each point).**
+
+1. Whether a hard cut between two different expression stills reads as "animation of the face". This calendar treats it as allowed, because each frame is a separate still and nothing is interpolated. If the wife thinks the cuts read as a blink or a mouth change, hold the PiP to one still for the whole Short (R06 right) and drop the expression column from the scene tables.
+2. What "slow" means for a pan or zoom. The default is no movement at all. Any movement is the wife's call, made on the first export.
+3. Whether the operator should ever read the captions aloud as a human voice. D6 allows human-recorded sound, but a human voice speaking the character's 「我」 lines raises a question D6 does not answer (whose voice the viewer thinks it is, and the bible's voice rules). Not used; it would need its own decision.
 
 ---
 
 ## 8. Effort and capacity (the main risk in this calendar)
 
-`portfolio.md` 5.1 gives 步驟 one extra figure: 20 minutes per master for the recording and the claims check. It does **not** count the time to edit a Short. For 步驟 the edit is a layered video (layout kit, overlays, captions, stills, label strips), so:
+`portfolio.md` 5.1 gives 步驟 one extra figure: 20 minutes per master for the recording and the claims check. It does **not** count the time to edit a Short. For 步驟 the edit is a layered video (layout kit, overlays, captions, stills, label strips). Two decisions of 2026-10-12 change the arithmetic. OPS-D1 holds 步驟 at 2 masters and 4 approvals a week in every week. The graphics decision has Claude draw the overlay layers and cards as SVG, rendered to PNG; **Claude cannot edit video**, so the operator still assembles and exports every Short.
 
-| Master | Recording and claims check (portfolio figure) | Edit (*assumption*, minutes; M1 includes building the reusable project) | Total |
-|---|---|---|---|
-| M1 | 20 | 90 to 120 | 110 to 140 |
-| M2 | 20 | 40 to 60 | 60 to 80 |
-| M3 | 20 | 40 to 60 | 60 to 80 |
-| M4 | 20 | 35 to 50 | 55 to 70 |
-| **Weeks 1 and 2** | **80** | **205 to 290** | **285 to 370 (about 143 to 185 a week)** |
+**Assumptions behind the new edit column (all *assumption*; the logged minutes replace them).**
 
-The operator's planned load for the three pilots in weeks 1 and 2 is 250 of 360 minutes, which leaves **110 minutes** a week (`portfolio.md` 5.3), and that planned load already includes the 20 minutes per master. The edit minutes alone (103 to 145 a week) would use 93% to 132% of the reserve of **all three pilots**, before 方寸's diagram work or 色環's. **If the operator edits every Short by hand, 步驟 alone can use the whole reserve.** Options, in order of preference:
+1. Claude supplies, for each Short, the badge, 錄製條件 strip, 資料來源 label, date stamp, step numerals, outline boxes and PiP frame as transparent PNG layers drawn from SVG, and the `.srt` text file from the scene table; for T4 and any later card, the card itself. Claude does not assemble or export video.
+2. Typesetting those strings was about 15 minutes of each master's old edit estimate. It now costs the operator no build time.
+3. The M1 premium in the old table (90 to 120 against 40 to 60 for a steady master) was building the reusable project. With Claude's layers it falls to a one-off 15 minutes for the first import and template set-up.
+4. **The operator's review of each Claude-drawn asset remains: 5 minutes per asset** (one overlay set per Short, one card per card). The operator checks every string against the approved strings and the source slip, every digit and date, the badge size and inset, and that nothing is cut off. It is on top of the portfolio's 5 minutes per approval, because that covers the finished post, not the layers. The wife's reading of every character is already in her 3 minutes of output reading and her one-off 15 minutes for the overlay kit (below); it is not charged again per asset.
+5. The assembly (import the recording, crop and punch in, place the stills and layers, load the captions, check the timings, export) is unchanged and stays with the operator.
 
-1. **Claude prepares the editing inputs** (caption timing files from the scene tables, the overlay graphics as images with the approved strings, and a scripted assembly of recording, stills and overlays) so the operator only records, checks and exports. This needs the operator's go-ahead, an installed video tool (ffmpeg was present in this session), and a Taiwan-glyph font for the overlay text (none was installed in this session, so the overlays could not be rendered or tested here). Nothing of this has been built.
-2. **One reusable editor project** after M1: from M2 on, replace the clip, the strings and the stills only. The M2 to M4 edit figures above assume this.
-3. Run **one master a week** in weeks 1 and 2 (T and S of M1 in week 1, M2 moved to week 3), and shift the rest.
-4. Keep three masters a week only after real minutes have been measured.
-5. Keep the Threads posts as text (no card, no still) where the master is a template, which saves the card build.
+So the edit now is the old steady-state edit, minus 15 for the layers, plus 5 for the review of the overlay set (plus 5 for a card, M4 only, and plus the one-off 15 on M1).
 
-The wife's load for 步驟 in weeks 1 and 2: 4 masters x (10 minutes review + 3 minutes for the second platform + 3 minutes reading the on-screen output) = 64 minutes over two weeks, plus about 15 minutes once for the overlay kit and label characters. This is within plan (*computed from the portfolio assumptions*; the 3 minutes of output reading is new and an assumption).
+| Master | Recording and claims check (portfolio figure) | Old edit (*assumption*, before 2026-10-12) | Edit now (*assumption*, minutes) | Total now |
+|---|---|---|---|---|
+| M1 | 20 | 90 to 120 | 45 to 65 | 65 to 85 |
+| M2 | 20 | 40 to 60 | 30 to 50 | 50 to 70 |
+| M3 | 20 | 40 to 60 | 30 to 50 | 50 to 70 |
+| M4 | 20 | 35 to 50 | 30 to 45 | 50 to 65 |
+| **Weeks 1 and 2** | **80** | **205 to 290** | **135 to 210** | **215 to 290 (about 108 to 145 a week)** |
 
-**Time the operator saves by not editing is time the operator must still spend recording on the right day.** The recording days (section 1) are fixed by the batch rhythm; a missed Tuesday moves the next post.
+The operator's planned load for the three pilots is 250 of 360 minutes a week, which leaves **110 minutes** (`portfolio.md` 5.3). That 250 is the weeks 1 and 2 column, and under OPS-D1 it is also the weeks 3 to 8 figure (12 approvals at 5 minutes is 60, and two 步驟 masters at 20 is 40), not the 300 the portfolio planned for 18 approvals. The planned load already includes the 20 minutes per master. The edit minutes alone are now **68 to 105 a week** (down from 103 to 145), which is **61% to 95%** of the 110-minute reserve of all three pilots, before 方寸's and 色環's own assembly and review minutes.
+
+**Weeks 3 to 8 at 2 masters a week.** The edit is 2 masters x 30 to 50 = **60 to 100 minutes a week**. The plan before the decisions was 3 masters x 40 to 60 = 120 to 180, so the two decisions together save **60 to 80 minutes a week** in 步驟 weeks 3 and 4. A week with a card (M9 may have one) adds 5.
+
+**Does it fit? Not on paper.** The reserve is not 110 in practice. `ops/weekly-routine.md` 2.3 charges the routine's own overhead (trend session 10, account-status look 10, live checks 24, monthly bundle 21, together 65) against it at 12 approvals, which leaves **45 minutes** a week of slack (Reading A; 15 under Reading B), and the 36-minute rework reserve sits inside those 45. 步驟's edit alone (68 to 105 in weeks 1 and 2; 60 to 100 after) is more than 45 even at the low end, by 15 to 60 minutes, before 方寸 or 色環 or any rework. The three decisions remove the largest term (building the layers) but not the assembly, which only the operator can do. Nothing here proves the assumed minutes are right; they are the first guess to replace with logged minutes. Levers, in order:
+
+1. **Done in this revision:** Claude draws the layers, cards and `.srt` (the edit column above); OPS-D1 holds 2 masters a week.
+2. **One reusable editor project** after M1: from M2 on, replace the clip, the strings and the stills only. The M2 to M4 figures above assume this.
+3. **Static stills, no pan or zoom** (the D6 default): the cheapest assembly. Add movement only if the wife asks.
+4. **Threads posts as text** (no card, no still) where the master is a template, which saves the card review.
+5. **Do not go below 2 posts a week on the primary platform:** `portfolio.md` 5.4 treats 2 a week as the account-health floor, so "one master a week" (the old option) is off the table. If the logged minutes stay over the slack, apply the cut order in `ops/weekly-routine.md` section 12 (rows 5 to 9), not this calendar.
+6. **Measure for four weeks** and re-plan. Do not ramp back to 3 masters a week (OPS-D1's ramp rule) until the logged all-in total allows it.
+
+Taiwan-glyph font: Noto Sans TC (language zh-TW) is the plan. `fc-list` on 2026-10-12 showed WenQuanYi Zen Hei installed in this environment and no Noto Sans TC. Nothing has been rendered with either, and its glyph forms for zh-TW have not been checked, so the first layer set is proofing only; the wife approves the font and every character before any layer is used.
+
+The wife's load for 步驟 in weeks 1 and 2: 4 masters x (10 minutes review + 3 minutes for the second platform + 3 minutes reading the on-screen output) = 64 minutes over two weeks, plus about 15 minutes once for the overlay kit and label characters. At 2 masters a week that is **32 minutes a week** in every week, down from 48 at 3 masters. This is within plan (*computed from the portfolio assumptions*; the 3 minutes of output reading is new and an assumption).
+
+**Time the operator saves by not building layers is time the operator must still spend recording on the right day.** The recording days (section 1) are fixed by the batch rhythm; a missed Tuesday moves the next post.
 
 ---
 
@@ -1052,25 +1113,26 @@ The wife's load for 步驟 in weeks 1 and 2: 4 masters x (10 minutes review + 3 
 
 | # | Item | Owner | Blocks |
 |---|---|---|---|
-| 1 | Confirm that still images of the photoreal character inside Shorts are acceptable before a video and voice addendum exists (addendum 7 risk 8). If not, drop the PiP from the Shorts and keep the badge and the strip | User | S1 to S11 |
+| 1 | **Answered 2026-10-12 (D6, recommended answer adopted for the user, reversible).** Stills of the photoreal character inside Shorts are allowed under the five conditions in section 7.10. If the user reverses it, drop the PiP from the Shorts and keep the badge and the strip. The three points D6 leaves open (hard cuts between stills, what "slow" means, a human voice) are in 7.10 for the wife and the operator | User (done); wife, operator (7.10 points) | S1 to S6, S9 to S11 (no longer blocked by this item) |
 | 2 | For each tool to be shown: read the vendor's terms on public demonstration, logo display and test accounts, and log the date (G7). This is *unverified* for all of them | Operator, lawyer if unclear | Every Short |
 | 3 | Decide the interface language for recordings (zh-TW recommended) and who reads the on-screen labels; decide whether the first recording sitting is done together with the wife | Operator, wife | S1 onward |
 | 4 | Reconcile launch day and posting hours with the 方寸 and 色環 calendars (this calendar launches Thu 2026-11-19; Threads 08:15 and Shorts 21:00) | Operator | Scheduling |
-| 5 | Decide how the editing is done (section 8): by hand, with a reusable project, or with Claude preparing the inputs; measure real minutes for four weeks | Operator | Cadence from week 3 |
+| 5 | Editing: decided 2026-10-12 that Claude draws the overlay layers, cards and `.srt` and the operator assembles and exports (Claude cannot edit video). Still to do: say whether the operator accepts Claude's first layer set, approve the font, and measure real minutes for four weeks (section 8: on paper the edit alone does not fit the 45 minutes of slack) | Operator, wife | Cadence from week 5 |
 | 6 | Produce and pass the stills in section 7.3 (R01, R06 right, E01, E04, E06, E07) including the age-guess, look-alike, uncanny and eye-line checks. None exists | Operator, wife | Everything |
 | 7 | Wife's rulings (full list in `hook-library.md` section 6 and the flags under each master): 第 0 步 or 第零步; 錄製條件 or 測試條件; 範本清單 as a series name; 轉貼, 核對, 出處, 原始資料, 上限, 圖卡; the YouTube first line; the card wording 「圖上沒有人物」; whether 「AI 生成｜示意圖」 fits a card; the 保存期限 joke; every hook flagged in the hook library | Wife | All |
 | 8 | Lawyer questions to add to `research/legal.md` 12 (all *unverified*): is a studio human's recording shown beside an AI character an "endorsement" or an advertisement when unpaid; do vendors' terms matter for showing their interface and logos; comparative advertising when two named vendors' quoted statements appear side by side (M7); whether quoting a vendor's data-handling or deletion statement could be read as legal advice; PDPA exposure of a recording that shows an export or a mailbox | User | M7, all Shorts |
 | 9 | Confirm the polling date (recalled 2026-11-28) with the Central Election Commission and the official holiday calendar for the window | Operator | Scheduling |
 | 10 | Choose which tools go first and whether to say in the channel description that the studio also uses some of these tools in its own production (a transparency choice, bible 11 item 10). Rotation proposed: M1 to M4 each a different tool | User | S1 to S4 |
 | 11 | Platform facts to check in the apps: Shorts maximum length and safe zones, caption fold, Threads post length and hashtag count, bio and name limits, pin limits, names of the AI-disclosure controls | Operator | Publishing |
-| 12 | Voice (G5): stay captions-only, or run a labelled synthetic zh-TW voice test later. The calendar assumes captions-only | User | None in the 30 days |
+| 12 | Voice (G5): narrowed by D6 to no synthetic voice in any Short that shows the character; captions or human-recorded sound only. The calendar stays captions-only. A labelled synthetic voice would need the separate video addendum and review first | User | None in the 30 days |
 | 13 | Music: none is used. Decide later and read the licence terms of any library track | Operator | None in the 30 days |
 | 14 | Build the recording hygiene kit and the studio test accounts; write down the real minutes for the first four masters | Operator | S1 onward |
 | 15 | Pricing display: the region and language of the price page, and whether tax is included (*unverified*): say only what the page says | Operator | M4, M9 |
 | 16 | Government or organisation restrictions on mainland-origin AI tools: not covered in the 30 days (recall *unverified*); hide political drift | User | Policy |
 | 17 | Studio-level link page (for the "other characters" reply and the bios); not yet built | User | Replies |
 | 18 | M10 needs a harmless studio-made sample extension; say yes if Claude should write the manifest file | Operator | M10 |
-| 19 | Replace the PENDING media paths of the four Short drafts (`_02` folders) with the real recording, stills and export once they exist; remove the HOLD note only after item 1 is answered | Operator | Wife's review of the cuts |
+| 19 | Replace the PENDING media paths of the four Short drafts (`_02` folders) with the real recording, stills and export once they exist; remove the HOLD note only after gate G7 is closed and the fill-ins and sources are filled (item 1 is no longer a reason) | Operator | Wife's review of the cuts |
+| 20 | OPS-D1 follow-through for other files: `launch/schedule_check.py` (the `_bz` plan lists 11 masters), `launch/schedule.md` section 7 and `HUMAN_TODO.md` 46 still show the cut slots M7 and M8 (S7, T7, S8, T8); this stream does not edit those files. Also `personas/buzhou/photoreal-addendum.md` 7 risk 8 and the bible still talk about G5 and "stills only" and should be read together with D6 | Owner of those files | Schedule checker, launch schedule |
 
 ---
 
@@ -1080,17 +1142,17 @@ Re-run `python3 content/buzhou/verify.py` from the repository root after any edi
 
 | Check | Result |
 |---|---|
-| Dates and weekdays (`verify.py`): the day table has 30 rows, W0 is a Monday, day 30 is Tue 2026-12-15, every weekday matches the date; the 11 masters fall on Thu and Sun (weeks 1 and 2), Tue, Thu and Sun (weeks 3 and 4) and Tue (day 30); masters per ISO week are 2, 2, 3, 3, 1; nothing falls on Fri 2026-11-27, Sat 2026-11-28, Sat 2026-12-12 or Sun 2027-02-28 | Pass |
+| Dates and weekdays (`verify.py`): the day table has 30 rows, W0 is a Monday, day 30 is Tue 2026-12-15, every weekday matches the date; after the OPS-D1 cut the 9 live masters fall on Thu and Sun (weeks 1 and 2), Tue and Thu (week 3), Thu and Sun (week 4) and Tue (day 30); live masters per week are 2, 2, 2, 2, 1; the day table lists 18 posts and none of T7, S7, T8, S8; M7 and M8 are marked CUT in the outline table and their headings; nothing falls on Fri 2026-11-27, Sat 2026-11-28, Sat 2026-12-12 or Sun 2027-02-28 | Pass (re-run 2026-10-12 after the edits) |
 | Sample-kit weekdays (12/1 Tue, 12/2 Wed, 12/4 Fri, 12/7 Mon, 12/8 Tue, 12/9 Wed, all 2026) and every weekday written inside the kit | Pass (*computed*) |
 | 90-day re-check dates in `trend-check.md`: 2027-02-17 (Wed), 2027-02-20 (Sat, moved to Fri 02-19), 2027-02-24 (Wed), 2027-02-27 (Sat, moved to Fri 02-26) | Pass (*computed*) |
 | Scene tables: 4 tables, 38 rows, times contiguous and ending at 49, 48, 54 and 50 seconds; no caption has more than two lines; the longest caption line is 16 characters | Pass |
-| Hooks: 41 in the library, all 20 characters or fewer (longest 17), unique, end in 。 or ？, no brace; the 11 hooks the calendar uses exist and match; the 先看 hooks are M2 and M6 and no four consecutive masters hold more than one | Pass |
+| Hooks: 41 in the library, all 20 characters or fewer (longest 17), unique, end in 。 or ？, no brace; the 11 hooks the calendar names exist and match (9 live, H35 and H40 reserved for the cut M7 and M8); the 先看 hooks are M2 and M6 and no four consecutive live masters hold more than one | Pass |
 | Queue drafts: 8 folders (4 Threads `_01`, 4 Shorts `_02`), `post.json` and `media/.gitkeep`; all required fields and enumerations; folder name equals id; first caption or description line is the AI disclosure line (the Shorts use the corrected YouTube line, never 「畫面為 AI 生成」); `ai_label_flag` true; sponsorship none; review `pending / pending / false`; media paths all PENDING; Threads captions 256, 184, 238 and 198 characters including the final newline (under the recalled 500 limit, *unverified*; recounted in the review after the pointer-line fix), Short descriptions 326 to 340 characters (under the recalled 5,000 limit, *unverified*); captions and glosses equal the blocks in this file | Pass |
 | `queue.py validate` on the four drafts | 0 ERROR, 0 FLAG. WARN only: unfilled `{...}` fields in captions and `UNVERIFIED-OPERATOR-TO-FILL` in sources, which is the intended gate. INFO: media PENDING |
 | Keyword scan: `ground_rules.py` plus extra lists (mainland vocabulary, experience, hype, income, urgency, pronouns 他 and 她) over every fenced block, every scene caption, every hook, every reply and every queue string | No ERROR or FLAG apart from three deliberate sentences: 「我沒有用過任何工具」 (identity line, T1 and S1), 「我沒有實際用過任何工具」 (reply RP02) and 「我不提供賺錢或收入相關的建議」 (reply RP06). One soft word is left for the wife: 保存 in 保存期限 (joke J4, the food-packaging sense) |
 | Simplified characters | None found by the pipeline's hand-made list (incomplete by nature). OpenCC was not installed, so the round-trip check was skipped. The wife reads every character |
 | Twelve sample replies with gloss (`reply-guidelines.md`), and the bible wording reused for RP01, RP04, RP06, RP08 | Pass |
-| Arithmetic in this file | Capacity table totals (285 to 370 minutes; 143 to 185 a week; 93% to 132% of the 110-minute reserve) and the wife's 64 minutes recomputed by hand and by script |
+| Arithmetic in this file | Section 8 recomputed by script from its stated assumptions (layers 15, overlay-set review 5, card review 5, one-off first import 15): edit column 135 to 210; totals 215 to 290 (108 to 145 a week); edit alone 68 to 105 a week, 61% to 95% of the 110-minute reserve; weeks 3 to 8 edit 60 to 100 against 120 to 180 before the decisions (saving 60 to 80); slack 45 after the routine's 65 minutes of overhead; the wife's 64 minutes over weeks 1 and 2 and 32 a week at 2 masters. The pre-decision figures are recorded in section 12 |
 
 **Not checked, because no source could be reached or no human has yet looked:** every vendor fact (any limit, price, tax statement, menu path, help-article text, release); that any tool allows its interface to be shown in a monetised video; the recalled polling date; platform limits (Shorts length, Threads length, hashtag counts, safe zones, control names); that each tool has the feature on the plan used; the naturalness of any zh-TW sentence; whether the stills will pass the age, look-alike and uncanny tests; the PiP size on a phone; the 16-character caption limit against the real fonts; the editing minutes.
 
@@ -1119,3 +1181,40 @@ Reviewer: a second Claude pass that did not write this stream. Read every file o
 - The editing minutes remain the main schedule risk (section 8). Nothing here shortens them.
 - Every vendor fact, platform limit, control name and the polling date are still unverified; the queue is blocked on `UNVERIFIED-OPERATOR-TO-FILL` by design. Naturalness of all zh-TW is unreviewed by a native reader.
 - Shared files (`HUMAN_TODO.md`, `DECISIONS.md`, `research/legal.md`) were not edited by this review either; the author's list of suggested additions (lawyer questions, G8, the stills dependency, the editing-capacity finding) still needs a human or the orchestrator to carry it over.
+
+---
+
+## 12. Decisions applied on 2026-10-12 (what changed, and what did not)
+
+The user asked for the recommended answers, and Claude adopted them for the user (`DECISIONS.md`, the 2026-10-12 entry "User asked for the recommended answers"). All three are reversible. None approves any post: every review field is still `pending / pending / false`.
+
+### 12.1 D6: a still of the character inside a Short
+
+- **Before:** gate 2 (section 1) and open item 1 (section 9) were open. Each of the four queued Shorts (`_02` folders) carried a HOLD note with four reasons, one of which was this question. The calendar said "still images only".
+- **Now:** gate 2 and item 1 are closed. Section 7.10 holds the five conditions (platform AI label on; persistent badge 「AI 生成｜虛擬角色」 on every frame; a still or a slow pan or zoom of a still; no animation of the face; no synthetic voice, captions or human-recorded sound only). The `review.notes` of S1 to S4 now say "D6 HOLD LIFTED", list the five conditions, and keep a HOLD for what remains. The stills and export media entries cite D6.
+- **Result for the four Shorts:** none moves to "ready for review". Each is still held for gate G7 (the operator has not read the vendors' terms on public demonstration, logos and test accounts), for the unfilled fill-ins and sources (S2 also on source rows 1 and 2, S4 on the price-page source), and because no recording, still or export exists. D6 is no longer a reason. The wife can read the scene tables and descriptions for language now, because her review does not depend on the recording. The operator's fact review and any approval wait for the holds above.
+- **Badge wording check:** the wording 「AI 生成｜虛擬角色」 is the same in the photoreal addendum 7.1, in `pipeline/qa-checklist.md` D3 and in D6, so nothing differs there. What differed was the inset: this calendar's layout kit started the badge at 8% of the height, against 11% top and bottom and 8% at the sides in D3 and the addendum. Section 7.1 now follows D3 (badge from y 212; the recording window is 58 px shorter, 814 x 652).
+- **Interpretation to confirm:** D6 does not say whether a hard cut between two different expression stills counts as animating the face. This calendar allows it (nothing is interpolated) and offers a one-still fallback if the wife disagrees (section 7.10, point 1).
+- **Not touched:** every zh-TW caption, description, hook and scene caption (no new Chinese string was written, so the wife's review list did not grow), the persona files, the pipeline documents.
+
+### 12.2 OPS-D1: hold at 12 approvals a week across the three pilots
+
+- **Before:** 11 masters and 22 posts in the 30 days, 2, 2, 3, 3 and 1 masters a week (6 approvals a week in weeks 3 and 4).
+- **Now:** 9 masters and 18 posts, 2 masters a week in every week (2 Shorts and 2 Threads posts, 4 approvals). **Cut: M7 (Sun 2026-12-06: T7, S7) and M8 (Tue 2026-12-08: T8, S8)**, 4 slots, chosen as the lowest-value masters by the criteria in section 6. M7 and M8 stay as backlog outlines. Each kept week has 2 Shorts on the primary platform, so the floor of 2 a week holds. Nothing was queued for the cut masters, so no queue folder was removed.
+- **Edited here:** this calendar (sections 2, 3, 6, 7.6, 7.9, 8, 9, 10), `hook-library.md` (4 and 5), `series.md` (1, 3, 4, 6, 7, 9), `trend-check.md`, `verify.py`.
+- **Not edited here (other owners):** `launch/schedule_check.py` (its `_bz` plan still lists 11 masters; the cut is to drop the entries (2, 6) and (3, 1)), `launch/schedule.md` section 7, `HUMAN_TODO.md` 46, and the 方寸 and 色環 calendars' own cuts. The same-day pairs with 方寸 (section 2) should be re-checked once 方寸's trimmed dates are final.
+
+### 12.3 The graphics layer: Claude draws it, the operator and the wife still approve it
+
+- **Before:** the overlay layers, cards and captions were typeset by the operator; section 8 offered Claude's help as an option and described a scripted assembly of the video.
+- **Now:** Claude draws the overlay layers and cards as SVG, rendered to PNG with headless Chromium, and can supply the `.srt` text from the scene tables. **Claude cannot edit video**, so the operator imports the layers, assembles each cut and exports. The operator reviews every Claude-drawn asset (assumed 5 minutes per asset), and the wife reads every character. Section 8 holds the assumptions and the recomputed minutes.
+- **Not built in this pass:** no layer, card, `.srt` or SVG file was drawn. The font is not settled (section 8).
+- **Capacity result:** the edit load falls (68 to 105 minutes a week in weeks 1 and 2, 60 to 100 after) but does not fit the 45 minutes of slack that remain once the routine's own overhead is counted. That is a finding to measure, not a plan that works (section 8).
+
+### 12.4 Figures before the decisions (for the record)
+
+11 masters and 22 posts; masters per week 2, 2, 3, 3, 1; old edit minutes 205 to 290 for M1 to M4; totals 285 to 370 (about 143 to 185 a week); the edit alone 103 to 145 a week, which was 93% to 132% of the 110-minute reserve; the wife's 48 minutes a week at 3 masters (64 over weeks 1 and 2 stands).
+
+### 12.5 What still blocks the four Shorts
+
+Gate G7 (vendor terms), gate G6 (recording hygiene kit and studio test accounts), the golden-set stills and their tests (gate 3), the fill-ins and source rows in each slip, the name, handle and registration gates (9, 12), the wife's reviewer trial and the lawyer's answers (10, 11). See section 1.

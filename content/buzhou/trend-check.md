@@ -80,7 +80,7 @@ Opening rows (computed from the calendar; the due dates that land on a Saturday 
 | M3 (S3, T3) | Thu 2026-11-26 | Wed 2027-02-24 | Wed 2027-02-24 | Operator | not yet due |
 | M4 (S4, T4) | Sun 2026-11-29 | Sat 2027-02-27 | Fri 2027-02-26 | Operator | not yet due |
 
-Rows for M5 to M11 are added when each is published. Any vendor release that touches a cited page makes the row due early. A comment saying the video is out of date (reply R-STALE in `reply-guidelines.md`) also makes it due early.
+Rows for M5, M6, M9, M10 and M11 are added when each is published (M7 and M8 are cut under OPS-D1; if either is brought back, add its row then). Any vendor release that touches a cited page makes the row due early. A comment saying the video is out of date (reply R-STALE in `reply-guidelines.md`) also makes it due early.
 
 ## 7. The trend note (template)
 

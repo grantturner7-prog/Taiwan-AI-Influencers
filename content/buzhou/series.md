@@ -7,7 +7,7 @@
 - **What repeats:** the structure, the label system (錄製條件, 資料來源, 示範輸出, the badge), the corner picture, the 第 0 步 date line and the closing line. These are what a viewer learns to read, and they are the same checks the operator makes every time.
 - **What never repeats:** the script, the recording, the quoted lines and the source. YouTube's "inauthentic content" rule targets mass-produced, templated content with bulk automated voiceover (`research/platforms.md` 4.3, secondary and unverified). 步驟 has no voice, and each video is its own dated recording and its own text, so a repeated structure is not a repeated video. The operator still keeps this check: if two Shorts could swap their recordings and nobody would notice, one of them should not exist.
 - **Three formats, four pillars.** 「三步驟」 carries P1 功能三步驟. 「對照表」 carries P2 官方對照表. 「範本清單」 carries P3 提示詞範本 and P4 用之前先看 (a template card and a checklist card are built the same way). Pillar names are the bible's (section 6).
-- **Weekly mix** (bible section 6): in a 3-master week, one P1, one P2, one P3; P4 replaces the P3 once in three weeks. In a 2-master week, two of the three series.
+- **Weekly mix** (bible section 6): in a 3-master week, one P1, one P2, one P3; P4 replaces the P3 once in three weeks. In a 2-master week, two of the three series. **Every week of the 30 days is a 2-master week** (decision OPS-D1, 2026-10-12: 12 approvals a week across the three pilots), so the 3-master mix is the plan only if a ramp is decided later (`ops/weekly-routine.md` 2.4).
 - **Names to confirm with the wife:** 「三步驟」 (clear), 「對照表」 (clear), 「範本清單」 (is 清單 natural beside 範本, and does the name read as a mere list?). 「小抄」 was rejected because it also means exam crib notes (cheating), which this channel must never suggest.
 
 ## 2. The shared example world: 示範小組
@@ -26,7 +26,7 @@ Rules for adding to the kit:
 ## 3. Series 1: 三步驟 (Feature in three steps), pillar P1
 
 - **Promise to the viewer (no result):** "Here is where one official feature is, in three steps, with the page and the date it comes from."
-- **Used in the 30 days:** M2 (S2/T2), M5, M8, M11. Backlog in section 9.
+- **Used in the 30 days:** M2 (S2/T2), M5, M11. M8 was cut under OPS-D1 and sits in the backlog (section 9). Backlog in section 9.
 - **Who it serves (hypothesis):** a working adult or student searching for how to find one setting. The format is search-led (title carries the tool, the feature and the month).
 
 **Structure of the Short (target 48 to 52 seconds; times are *assumption*)**
@@ -50,8 +50,8 @@ Rules for adding to the kit:
 ## 4. Series 2: 對照表 (Official comparison table), pillar P2
 
 - **Promise to the viewer (no result):** "Here is what each official page says, side by side or field by field, with its date. I do not pick one for you."
-- **Used in the 30 days:** M4 (single-page reading variant), M7, M9. Backlog in section 9.
-- **Two variants.** (a) **Reading variant**: one vendor page read by its fields (M4, M9). (b) **Quote variant**: two vendors' pages, one quoted line each, same topic (M7). The quote variant is held until the lawyer has answered the comparative-advertising question (calendar section 9, item 8); its fallback is the reading variant with one vendor.
+- **Used in the 30 days:** M4 (single-page reading variant) and M9. M7 (the quote variant) was cut under OPS-D1 and sits in the backlog (section 9). Backlog in section 9.
+- **Two variants.** (a) **Reading variant**: one vendor page read by its fields (M4, M9). (b) **Quote variant**: two vendors' pages, one quoted line each, same topic (M7, cut for now). The quote variant is held until the lawyer has answered the comparative-advertising question (calendar section 9, item 8); its fallback is the reading variant with one vendor.
 
 **Structure of the Short (target 46 to 52 seconds)**
 
@@ -113,21 +113,21 @@ Rules for adding to the kit:
 |---|---|---|---|
 | W1 (Thu, Sun) | M1, M2 | 範本清單, 三步驟 | P4, P1 |
 | W2 (Thu, Sun) | M3, M4 | 範本清單, 對照表 | P3, P2 |
-| W3 (Tue, Thu, Sun) | M5, M6, M7 | 三步驟, 範本清單, 對照表 | P1, P3, P2 |
-| W4 (Tue, Thu, Sun) | M8, M9, M10 | 三步驟, 對照表, 範本清單 | P1, P2, P4 |
+| W3 (Tue, Thu) | M5, M6 | 三步驟, 範本清單 | P1, P3 |
+| W4 (Thu, Sun) | M9, M10 | 對照表, 範本清單 | P2, P4 |
 | Day 30 (Tue) | M11 | 三步驟 | P1 |
 
-Each series appears at least once in each two-week stretch, and no series appears in two consecutive masters (*computed* from the table above).
+Each series appears at least once in each two-week stretch, and no series appears in two consecutive masters (*computed* from the table above, in posting order: M1 範本清單, M2 三步驟, M3 範本清單, M4 對照表, M5 三步驟, M6 範本清單, M9 對照表, M10 範本清單, M11 三步驟). M7 (對照表) and M8 (三步驟) were cut under OPS-D1 and are backlog.
 
 ## 7. Production time per episode (*assumption*, to be measured in the first 30 days)
 
-| Series | Recording and claims check (portfolio figure) | Edit once the editor project exists | Wife (review plus on-screen output) | Notes |
+| Series | Recording and claims check (portfolio figure) | Edit once the editor project exists and Claude's overlay layers are supplied (calendar section 8; includes 5 minutes to review the layer set) | Wife (review plus on-screen output) | Notes |
 |---|---|---|---|---|
-| 三步驟 | 20 min | 40 to 60 min | 10 + 3 + 3 min | The feature must be found on the recording day |
-| 對照表 | 20 min | 35 to 50 min | 10 + 3 + 3 min | Page reading is quick; the card for Threads adds build time |
-| 範本清單 | 20 min | 40 to 60 min | 10 + 3 + 3 min | Two runs add a minute or two of recording |
+| 三步驟 | 20 min | 30 to 50 min | 10 + 3 + 3 min | The feature must be found on the recording day |
+| 對照表 | 20 min | 30 to 45 min (includes 5 minutes to review the Threads card) | 10 + 3 + 3 min | Page reading is quick; the card for Threads adds build time |
+| 範本清單 | 20 min | 30 to 50 min | 10 + 3 + 3 min | Two runs add a minute or two of recording |
 
-The first Short (M1) also builds the reusable editor project and costs more (calendar section 8). If a series sits over 30 minutes of recording and claims check after one redesign, it is Keep-at-risk; over 40 it goes to retire-review (`portfolio.md` 6.1).
+The first Short (M1) also needs a one-off 15 minutes for the first import and the editor template (calendar section 8). Claude draws the overlay layers and cards as SVG rendered to PNG; Claude cannot edit video, so the operator assembles every Short. If a series sits over 30 minutes of recording and claims check after one redesign, it is Keep-at-risk; over 40 it goes to retire-review (`portfolio.md` 6.1).
 
 ## 8. When a series changes or stops
 
@@ -140,18 +140,18 @@ The first Short (M1) also builds the reusable editor project and costs more (cal
 
 **三步驟 (P1)**
 
-1. 把錄音檔轉成逐字稿 (needs a voice sample; the wife's voice is her personal data, so use a studio-written script read by a text-to-speech test only if the voice decision G5 allows, otherwise hold)
+1. 把錄音檔轉成逐字稿 (needs a voice sample; the wife's voice is her personal data, and decision D6 bars a synthetic voice in any Short that shows the character, so a text-to-speech sample is out until a separate video addendum exists: hold)
 2. 長 PDF 先抓重點 (M2) and its follow-up: the file formats a tool accepts
 3. 對話紀錄匯出 (M5)
 4. 把回答語言設成臺灣慣用的繁體中文 (M11; where the language or custom-instruction setting is)
-5. 把對話整理成待辦並排進行事曆 (M8)
+5. 把對話整理成待辦並排進行事曆 (M8, cut under OPS-D1; bring back only if a ramp is decided)
 6. 語音輸入打字: where the setting is on a phone and a computer (needs a studio test device)
 
 **對照表 (P2)**
 
 1. 價格頁的三個欄位 (M4)
 2. 訂閱方案: 用量上限與取消方式 (M9)
-3. 換工具之前: 資料匯出與刪除 (M7)
+3. 換工具之前: 資料匯出與刪除 (M7, cut under OPS-D1; bring back only after the lawyer has answered the comparative-advertising question)
 4. 免費版和付費版的限制, 一個工具一頁 (two-vendor version only after the lawyer)
 5. 「AI 摘要」的功能說明, 各家官方怎麼寫 (heavy; quote variant)
 6. 帳單看不懂: 幣別、稅金與計費週期 (extends M4 with a billing page, only from a help page, never a real account)

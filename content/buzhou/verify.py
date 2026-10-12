@@ -16,9 +16,13 @@ What it checks
   4. Subtitle lines in the scene tables are 16 characters or fewer, two lines at most, and the scene times are
      contiguous and end within 60 seconds.
   5. Hooks in hook-library.md: 20 characters or fewer, unique, end with 。 or ？, no brace; the hooks the calendar uses
-     exist and match; no window of four consecutive masters holds more than one 先看-pattern hook.
-  6. Dates and weekdays: the day table, the master headings, the cadence, no post on the recalled polling day, 雙12,
-     Black Friday or 228; the 90-day re-check dates in trend-check.md.
+     exist and match; no window of four consecutive LIVE masters holds more than one 先看-pattern hook.
+  6. Dates and weekdays: the day table, the master headings, the cadence (2 masters a week in every week under OPS-D1,
+     masters M7 and M8 cut), no post on the recalled polling day, 雙12, Black Friday or 228; the 90-day re-check dates
+     in trend-check.md.
+  9. Decision D6 (still image of the character inside a Short): each queued Short carries the five production
+     conditions in review.notes and still carries a HOLD note for the reasons that remain; the calendar has the
+     section 7.10 conditions. Decision OPS-D1: 18 posts in the day table, none of T7, S7, T8, S8.
   7. Twelve sample replies in reply-guidelines.md.
   8. `queue.py validate` on the drafts (via subprocess; the pipeline validator is the authority on the post format).
 
@@ -45,6 +49,15 @@ SERIES = ROOT / "content/buzhou/series.md"
 QDIR = ROOT / "pipeline/review-queue/buzhou"
 
 errors, warnings = [], []
+
+# The 30-day plan after decision OPS-D1 (2026-10-12): hold at 12 approvals a week across the three pilots, so 步驟 posts
+# 2 masters a week in every week. Masters M7 and M8 are cut (backlog outlines only); their IDs are not reused.
+PLAN = {"M1": "2026-11-19", "M2": "2026-11-22", "M3": "2026-11-26", "M4": "2026-11-29", "M5": "2026-12-01",
+        "M6": "2026-12-03", "M7": "2026-12-06", "M8": "2026-12-08", "M9": "2026-12-10", "M10": "2026-12-13",
+        "M11": "2026-12-15"}
+CUT = {"M7", "M8"}
+LIVE = [m for m in PLAN if m not in CUT]
+LIVE_DATES = [PLAN[m] for m in LIVE]
 
 
 def err(msg):
@@ -185,8 +198,22 @@ def check_queue():
             if "畫面為 AI 生成" in first:
                 err(f"{label}: first line calls the real screen recording AI-generated")
             rv0 = d.get("review", {})
-            if "HOLD" not in str(rv0.get("notes", "")):
-                err(f"{label}: a Short with no recording yet must carry a HOLD note")
+            notes = str(rv0.get("notes", ""))
+            if "HOLD" not in notes:
+                err(f"{label}: a Short with no recording yet must carry a HOLD note (gate G7 and the fill-ins remain)")
+            # decision D6 (2026-10-12): the conditions are written into the production notes; D6 is no longer a hold reason
+            for frag in ("D6 HOLD LIFTED", "D6 PRODUCTION CONDITIONS", "YouTube altered-or-synthetic-content = Yes",
+                         "「AI 生成｜虛擬角色」 on every frame", "slow pan or zoom of a still", "no animation of the face",
+                         "no synthetic or cloned voice"):
+                if frag not in notes:
+                    err(f"{label}: review.notes lacks the D6 condition text {frag!r}")
+            if "has not confirmed" in notes or "(2) the user" in notes:
+                err(f"{label}: review.notes still treats the D6 question as open")
+            if "G7" not in notes:
+                err(f"{label}: review.notes must keep the remaining G7 hold")
+            med = d.get("media", [])
+            if len(med) != 3 or "decision D6" not in str(med[1].get("description", "")):
+                err(f"{label}: the stills media entry must cite decision D6")
         elif not cap.startswith("【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布"):
             err(f"{label}: first caption line is not the disclosure line")
         if d.get("format") == "image" and "圖像為 AI 生成，並非真人" not in cap.split("\n")[0] and "圖上沒有人物" not in cap.split("\n")[0]:
@@ -258,23 +285,29 @@ def check_calendar():
             err(f"day table: {date} is {d.strftime('%a')}, table says {wd}")
         if not posts.startswith("none"):
             posts_by_date[date] = posts
-    expected = ["2026-11-19", "2026-11-22", "2026-11-26", "2026-11-29", "2026-12-01", "2026-12-03", "2026-12-06",
-                "2026-12-08", "2026-12-10", "2026-12-13", "2026-12-15"]
+    expected = LIVE_DATES
     if sorted(posts_by_date) != expected:
         err(f"posting days differ from the plan: {sorted(posts_by_date)}")
+    # OPS-D1: the cut masters have no post in the day table; 18 posts in all
+    ids = re.findall(r"\b([ST]\d+)\b", " ".join(posts_by_date.values()))
+    if len(ids) != 18 or any(i in ids for i in ("S7", "T7", "S8", "T8")):
+        err(f"day table lists {len(ids)} post ids ({sorted(ids)}); expected 18 and none of S7, T7, S8, T8")
+    for cut_date in (PLAN["M7"], PLAN["M8"]):
+        if cut_date in posts_by_date:
+            err(f"{cut_date} is a cut master's date (OPS-D1) but the day table has a post")
     if dt.date(2026, 11, 28).isoformat() in posts_by_date or "2026-12-12" in posts_by_date or "2026-11-27" in posts_by_date:
         err("a post is scheduled on the recalled polling day, 雙12 or Black Friday")
     if "2027-02-28" in posts_by_date:
         err("a post on 228")
-    # cadence: weeks 1 and 2 two masters, weeks 3 and 4 three
+    # cadence: two masters in every week (OPS-D1: 12 approvals a week across the three pilots, held through week 8)
     per_week = {}
     for date in expected:
         d = dt.date.fromisoformat(date)
         wk = (d - w0).days // 7 + 1
         per_week[wk] = per_week.get(wk, 0) + 1
-    if per_week != {1: 2, 2: 2, 3: 3, 4: 3, 5: 1}:
+    if per_week != {1: 2, 2: 2, 3: 2, 4: 2, 5: 1}:
         err(f"cadence by week is {per_week}")
-    # weekdays allowed: weeks 1-2 Thu/Sun; 3-4 Tue/Thu/Sun; day 30 Tue
+    # weekdays allowed: weeks 1-2 Thu/Sun; 3-4 Tue/Thu/Sun (two of them are kept per week); day 30 Tue
     for date in expected:
         wd = dt.date.fromisoformat(date).strftime("%a")
         wk = (dt.date.fromisoformat(date) - w0).days // 7 + 1
@@ -293,10 +326,25 @@ def check_calendar():
     for mid, wd, date in ms:
         if dt.date.fromisoformat(date).strftime("%a") != wd:
             err(f"{mid}: outline weekday wrong for {date}")
-    all_dates = {f"M{i+1}": expected[i] for i in range(11)}
     for mid, wd, date in ms:
-        if all_dates.get(mid) != date:
+        if PLAN.get(mid) != date:
             err(f"{mid}: outline date {date} differs from the plan")
+    # OPS-D1 status column: M7 and M8 are cut, the other outlines are live
+    status = dict(re.findall(r"^\| (M\d+) \| \w{3} 2026-\d\d-\d\d \|.*\| ([^|]+?) \|$", cal, re.M))
+    for mid, _, _ in ms:
+        want_cut = mid in CUT
+        got = status.get(mid, "")
+        if want_cut != ("CUT" in got) or (not want_cut and "Live" not in got):
+            err(f"{mid}: OPS-D1 status column reads {got!r}")
+    for mid in CUT:
+        if not re.search(r"^### " + mid + r" · .*CUT under OPS-D1", cal, re.M):
+            err(f"{mid}: heading does not say CUT under OPS-D1")
+    # decision D6: the conditions section exists and the gate is closed
+    if "### 7.10 Still-in-video conditions (decision D6" not in cal:
+        err("calendar lacks section 7.10 (the D6 conditions)")
+    for frag in ("**Decided 2026-10-12 (D6)", "**Answered 2026-10-12 (D6"):
+        if frag not in cal:
+            err(f"calendar still treats the D6 question as open: lacks {frag!r}")
 
     # scene tables: continuity and subtitle line length
     for tbl in re.finditer(r"\| Time \| Caption on screen.*?\n((?:\|.*\n)+)", cal):
@@ -393,12 +441,15 @@ def check_hooks(cal):
         d = json.loads(p.read_text(encoding="utf-8"))
         if d["hook_zh"] not in texts.values():
             err(f"{p.parent.name}: hook_zh is not in the hook library")
-    # 先看 window rule
-    order = [used[f"M{i}"] for i in range(1, 12)]
+    # 先看 window rule, over the LIVE masters in posting order (M7 and M8 are cut under OPS-D1)
+    order = [used[m] for m in LIVE]
     flags = ["先看" in texts[h] for h in order]
     for i in range(len(flags) - 3):
         if sum(flags[i:i + 4]) > 1:
-            err(f"先看 hooks: more than one in masters M{i + 1} to M{i + 4}")
+            err(f"先看 hooks: more than one in the live masters {LIVE[i]} to {LIVE[i + 3]}")
+    for mid in CUT:
+        if not re.search(r"\| " + mid + r" \| .*?\| " + used[mid] + r" \| .*cut", md, re.I):
+            err(f"hook-library section 4 does not mark {mid} as cut")
     # the calendar's hook table in hook-library section 4 lists the same ids
     for mid, hid in used.items():
         if not re.search(r"\| " + mid + r" \| .*? \| " + hid + r" \|", md):
@@ -452,28 +503,61 @@ def check_trend():
 
 
 def check_arithmetic():
-    """Recompute the capacity figures quoted in calendar-30d.md section 8 and section 10."""
+    """Recompute the capacity figures quoted in calendar-30d.md section 8 and section 10.
+
+    The edit column is the old steady-state edit (M2/M3 40-60, M4 35-50, M1 90-120 with the project build) minus 15 minutes
+    of layers that Claude now draws, plus 5 minutes for the operator's review of each Claude-drawn asset (one overlay set per
+    Short, one card for M4), plus a one-off 15 minutes on M1 for the first import and template. All are assumptions."""
     def round(x):  # half up, as the file does (Python's round() is banker's rounding)
         return int(x + 0.5)
 
-    edit_lo, edit_hi = 90 + 40 + 40 + 35, 120 + 60 + 60 + 50
+    layers, review_set, review_card, first_import = 15, 5, 5, 15
+    old = {"M1": (90, 120), "M2": (40, 60), "M3": (40, 60), "M4": (35, 50)}
+    steady = (40, 60)
+    new = {
+        "M1": (steady[0] - layers + review_set + first_import, steady[1] - layers + review_set + first_import),
+        "M2": (old["M2"][0] - layers + review_set, old["M2"][1] - layers + review_set),
+        "M3": (old["M3"][0] - layers + review_set, old["M3"][1] - layers + review_set),
+        "M4": (old["M4"][0] - layers + review_set + review_card, old["M4"][1] - layers + review_set + review_card),
+    }
+    old_lo, old_hi = sum(v[0] for v in old.values()), sum(v[1] for v in old.values())
+    edit_lo, edit_hi = sum(v[0] for v in new.values()), sum(v[1] for v in new.values())
     rec = 4 * 20
+    reserve = 360 - 250
+    overhead = 10 + 10 + 24 + 21   # ops/weekly-routine.md 2.3: trend, status look, live checks at 12 approvals, monthly bundle
+    slack = reserve - overhead
+    wk_lo, wk_hi = round(edit_lo / 2), round(edit_hi / 2)
     checks = [
-        ((edit_lo, edit_hi), (205, 290)),
-        ((edit_lo + rec, edit_hi + rec), (285, 370)),
-        ((round((edit_lo + rec) / 2), round((edit_hi + rec) / 2)), (143, 185)),
-        ((round(edit_lo / 2), round(edit_hi / 2)), (103, 145)),
-        ((round(edit_lo / 2 / 110 * 100), round(edit_hi / 2 / 110 * 100)), (93, 132)),
-        (360 - 250, 110),
+        ((old_lo, old_hi), (205, 290)),
+        (new, {"M1": (45, 65), "M2": (30, 50), "M3": (30, 50), "M4": (30, 45)}),
+        ((edit_lo, edit_hi), (135, 210)),
+        ((edit_lo + rec, edit_hi + rec), (215, 290)),
+        ((round((edit_lo + rec) / 2), round((edit_hi + rec) / 2)), (108, 145)),
+        ((wk_lo, wk_hi), (68, 105)),
+        ((round(edit_lo / 2 / reserve * 100), round(edit_hi / 2 / reserve * 100)), (61, 95)),
+        (reserve, 110),
+        (12 * 5 + 30 + 60 + 60 + 2 * 20 + 0, 250),            # OPS-D1: 12 approvals x 5, 2 masters x 20, admin 60, analytics 30, comments 60
+        ((2 * new["M2"][0], 2 * new["M2"][1]), (60, 100)),   # weeks 3 to 8: 2 steady masters a week
+        ((3 * steady[0], 3 * steady[1]), (120, 180)),        # the plan before the decisions: 3 masters at the old steady edit
+        ((3 * steady[0] - 2 * new["M2"][0], 3 * steady[1] - 2 * new["M2"][1]), (60, 80)),
+        (slack, 45),
+        ((min(wk_lo, 60) - slack, wk_hi - slack), (15, 60)),
         (4 * (10 + 3 + 3), 64),
+        (2 * (10 + 3 + 3), 32),
+        (3 * (10 + 3 + 3), 48),
     ]
     for got, want in checks:  # explicit errors instead of assert, so `python -O` cannot skip them
         if got != want:
             err(f"capacity arithmetic: computed {got}, the file quotes {want}")
     cal = CAL.read_text(encoding="utf-8")
-    for frag in ("285 to 370", "143 to 185", "93% to 132%", "64 minutes", "205 to 290"):
+    for frag in ("215 to 290", "108 to 145", "61% to 95%", "64 minutes", "205 to 290", "135 to 210", "68 to 105",
+                 "60 to 100", "120 to 180", "60 to 80 minutes", "45 minutes", "32 minutes a week",
+                 "15 to 60 minutes"):
         if frag not in cal:
             err(f"calendar lacks the figure {frag!r}")
+    for stale in ("285 to 370", "143 to 185", "93% to 132%", "103 to 145"):
+        if stale in cal.split("## 11. Review log")[0].replace("(down from 103 to 145)", ""):
+            err(f"calendar still quotes the pre-decision figure {stale!r} outside the review log")
 
 
 def check_misc():

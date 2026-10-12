@@ -56,12 +56,12 @@ Legend: P1 功能三步驟, P2 官方對照表, P3 提示詞範本, P4 用之前
 | H32 | P1 | YT | 說明中心這一行，先看。 | This line in the help centre: look at it first. | 11 | 先看 pattern |
 | H33 | P4 | YT | 隱私說明，只看這三處。 | In a privacy statement, look at just these three places. | 11 | P4 |
 | H34 | P4 | YT | 資料會被拿去訓練嗎？先看這頁。 | Will your data be used for training? Look at this page first. | 15 | High care: the video quotes the page in the page's own words and answers nothing itself. Wife and lawyer flag; 先看 pattern |
-| H35 | P2 | YT | 換工具之前，先備份資料。 | Before switching tools, back up your data. | 12 | Used on M7. Generic advice, no product named |
+| H35 | P2 | YT | 換工具之前，先備份資料。 | Before switching tools, back up your data. | 12 | Reserved for M7, which is cut under OPS-D1 (backlog). Generic advice, no product named |
 | H36 | P4 | YT | 安裝擴充功能前，看這三處。 | Before installing an extension, look at these three places. | 13 | Used on M10 |
 | H37 | P4 | YT | 公司或學校有規定嗎？先確認。 | Does your company or school have a rule? Confirm first. | 14 | Points to the viewer's own organisation; states no rule |
 | H38 | P1 | YT or TH | 這支影片的步驟，已經過期了。 | This video's steps are out of date. | 14 | Re-record or correction notice only |
 | H39 | P1 | YT or TH | 工具更新了，這個步驟換位置了。 | The tool updated, and this step has moved. | 15 | Re-record notice; the update is a vendor fact and needs its page |
-| H40 | P1 | YT | 年底整理行事曆，三步驟。 | Tidying the calendar at year end: three steps. | 12 | Used on M8; seasonal; promises no gain in productivity |
+| H40 | P1 | YT | 年底整理行事曆，三步驟。 | Tidying the calendar at year end: three steps. | 12 | Reserved for M8, which is cut under OPS-D1 (backlog). Seasonal; promises no gain in productivity |
 | H41 | P2 | YT | 雙12 前後，價格頁怎麼看。 | Around 雙12, how to read a price page. | 14 | P2 only; no deal words. Drop it if the wife reads it as pushing shopping |
 
 ## 3. Hook patterns banned for 步驟, with the reason
@@ -94,19 +94,19 @@ Legend: P1 功能三步驟, P2 官方對照表, P3 提示詞範本, P4 用之前
 | M4 | Sun 2026-11-29 | H18 | three boxes |
 | M5 | Tue 2026-12-01 | H20 | three steps |
 | M6 | Thu 2026-12-03 | H24 | 先看 pattern (4 masters after M2) |
-| M7 | Sun 2026-12-06 | H35 | back up first |
-| M8 | Tue 2026-12-08 | H40 | seasonal |
+| M7 | Sun 2026-12-06 | H35 | back up first (cut under OPS-D1; backlog) |
+| M8 | Tue 2026-12-08 | H40 | seasonal (cut under OPS-D1; backlog) |
 | M9 | Thu 2026-12-10 | H16 | where is the page |
 | M10 | Sun 2026-12-13 | H36 | three places |
 | M11 | Tue 2026-12-15 | H19 | three steps, settings |
 
-Check against rule 6: the 先看 hooks are M2 and M6, and no window of four consecutive masters holds more than one (*computed*). The identity hooks H25 and H26 are not used as hooks in the 30 days; their content sits in M1's intro scene and in T1.
+Check against rule 6: the 先看 hooks are M2 and M6, and no window of four consecutive live masters (M1 to M6, M9, M10, M11, in posting order; M7 and M8 are cut under OPS-D1) holds more than one (*computed*). The identity hooks H25 and H26 are not used as hooks in the 30 days; their content sits in M1's intro scene and in T1.
 
 Reserve hooks for posts that are not planned: H38 and H39 only when a published step has gone stale (they go on a re-record or a correction post); H30 as an occasional Threads question; H28 and H29 as Threads questions in weeks with no template post; H41 on M9 if the wife is comfortable with a 雙12 hook.
 
 ## 5. Testing hooks without fooling ourselves
 
-1. **One variable at a time.** Change the hook only; keep pillar, length, thumbnail frame and posting slot. With 2 to 3 posts a week per platform there is no statistical power in 30 days: treat any comparison as a prompt for the week-8 review, not a finding.
+1. **One variable at a time.** Change the hook only; keep pillar, length, thumbnail frame and posting slot. With 2 posts a week per platform (OPS-D1) there is no statistical power in 30 days: treat any comparison as a prompt for the week-8 review, not a finding.
 2. **Compare like with like.** A Short is compared with Shorts, a Threads post with Threads posts. Platforms are not compared with each other, except with the common metric in `portfolio.md` 6.1.
 3. **No seeded engagement** (Ground rule 7): no likes, comments or shares from the operator's or wife's personal accounts, no pods, no bought views, to rescue a hook.
 4. **Read the comments before the numbers.** A hook that draws 是真人嗎 questions, confusion about what the video is, or a request for personal help is a weaker hook whatever the view count.
