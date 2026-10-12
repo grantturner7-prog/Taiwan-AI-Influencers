@@ -21,7 +21,7 @@
   "sponsorship_type": "none",
   "sources": [
     {
-      "claim": "NO FACTUAL CLAIM: warm and cool lean of a neutral is described as a design convention, by comparing the neutral swatches with the wheel in the editor file; it is about garments and swatches only, never about skin. Hue positions are read from the hex values by the operator in the editor. If the operator logs a colour-theory reference (gate G7) that defines warm and cool colours, add it here and on slide 7.",
+      "claim": "NO FACTUAL CLAIM: warm and cool lean of a neutral is described as a design convention, by comparing the neutral swatches with the wheel in the SVG source file; it is about garments and swatches only, never about skin. Hue positions are read from the hex values by the operator in the editor. If the operator logs a colour-theory reference (gate G7) that defines warm and cool colours, add it here and on slide 7.",
       "url": "",
       "date": ""
     }

@@ -31,6 +31,6 @@
     "wife_language": "pending",
     "operator_facts": "pending",
     "approved": false,
-    "notes": "CLAUDE DRAFT NOTE 2026-10-12: Threads version of M3 with no character on the card, so the first line uses the 圖為搭配示意 pattern. Wife to rule on the question wording. Operator to keep the hex values of A, B, C in the editor file. UPDATE 2026-10-12 (D3): the diagram and lesson-slide layer is drawn by Claude as SVG and rendered to PNG; the operator reviews every rendered slide and the wife reads every character; drawing a slide does not approve it. This draft stays inside the 30 days under OPS-D1 (no change to its date). Nothing here is approved."
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: Threads version of M3 with no character on the card, so the first line uses the 圖為搭配示意 pattern. Wife to rule on the question wording. Operator to keep the hex values of A, B, C in the SVG source file. UPDATE 2026-10-12 (D3): the diagram and lesson-slide layer is drawn by Claude as SVG and rendered to PNG; the operator reviews every rendered slide and the wife reads every character; drawing a slide does not approve it. This draft stays inside the 30 days under OPS-D1 (no change to its date). Nothing here is approved."
   }
 }

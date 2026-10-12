@@ -8,6 +8,13 @@ content files and `queue.py validate` apply the same net. This script is a first
 NOT a replacement for the wife's review: it cannot judge tone, naturalness or Taiwan vocabulary beyond the word lists, and it
 does not check any fact against a source.
 
+Update of 2026-10-12 (decisions D6, OPS-D1 and D3 in DECISIONS.md "recommended answers adopted"): the capacity arithmetic of
+calendar section 8 is asserted; the 30-day table in calendar section 3 must respect the OPS-D1 cadence (at most 2 Instagram and
+2 Threads posts a week, at least 2 Instagram posts in each of weeks 1 to 4, 18 posts in all, none of the deferred P09, P10, P19,
+P20 scheduled; section 6.1 must list exactly those four); a Reel or Short draft (none exists) must carry the four D6 conditions in
+review.notes; a lesson-graphic item must name its route (drawn by Claude as SVG) and no section-5 text may still say human-built.
+None of this approves anything.
+
 Exit code 0 = no errors; 1 = at least one error. Warnings are printed but do not fail the run.
 """
 import datetime as dt
@@ -69,8 +76,30 @@ def check_arithmetic():
     expect(round(0.035 * 1350) == 47 and round(0.08 * 1080) == 86 and round(0.08 * 1350) == 108, "badge sizes")
     expect(2 * 60 + 2 * 15 == 150 and 150 + 4 * 5 == 170 and round(170 / 360 * 100) == 47, "weekly build minutes")
     expect(2 * 10 + 2 * 3 == 26 and 26 + 2 * 7 == 40, "wife minutes")
-    expect(sum((4, 3, 2, 2)) == 11, "pillar mix total")
-    expect([round(x / 11 * 100) for x in (4, 3, 2, 2)] == [36, 27, 18, 18], "pillar mix percentages")
+    expect(sum((4, 3, 2, 2)) == 11, "pillar mix total (v0.1, before OPS-D1)")
+    expect([round(x / 11 * 100) for x in (4, 3, 2, 2)] == [36, 27, 18, 18], "pillar mix percentages (v0.1)")
+    # OPS-D1: 9 masters left after M5 and M10 are deferred
+    expect(sum((3, 2, 2, 2)) == 9 and 11 - 2 == 9, "pillar mix total after OPS-D1")
+    expect([round(x / 9 * 100) for x in (3, 2, 2, 2)] == [33, 22, 22, 22], "pillar mix percentages after OPS-D1")
+    expect(abs(33 - 39) + abs(22 - 22) + abs(22 - 22) + abs(22 - 17) == 11 and abs(44 - 39) + 0 + 0 + abs(11 - 17) == 11,
+           "section 6.1: both candidate cuts are 11 points from the bible mix")
+    expect(4 + 4 + 4 + 4 + 2 == 18 and 4 + 4 + 6 + 6 + 2 == 22 and 22 - 4 == 18 and 3 * 4 == 12 and 3 * 6 == 18,
+           "posts per week before and after OPS-D1")
+    # capacity, calendar section 8 (assumptions: 20 min per carousel review, 5 per card; low case 10 and 3)
+    expect(2 * 60 + 2 * 15 == 150 and 150 + 4 * 5 == 170 and 3 * 60 + 3 * 15 == 225 and 225 + 6 * 5 == 255, "v0.1 build load")
+    expect(round(255 / 360 * 100) == 71, "v0.1 weeks 3 and 4 share")
+    expect(3 * 20 + 3 * 5 == 75 and 75 + 30 == 105 and round(105 / 360 * 100) == 29, "D3 only, 3 + 3")
+    expect(2 * 20 + 2 * 5 == 50 and 50 + 4 * 5 == 70 and round(70 / 360 * 100) == 19, "now, planning case")
+    expect(2 * 10 + 2 * 3 == 26 and 26 + 20 == 46 and round(46 / 360 * 100) == 13, "now, low case")
+    expect(255 - 105 == 150 and 105 - 70 == 35 and 255 - 70 == 185 and 170 - 70 == 100, "savings by decision")
+    expect(20 + 5 + 2 * 5 == 35 and 4 * 70 + 35 == 315 and 2 * 170 + 2 * 255 + (60 + 15 + 2 * 5) == 935, "30-day totals")
+    expect(round(935 / 60, 1) == 15.6 and 315 / 60 == 5.25 and 5 * 60 - 60 == 240, "hours")
+    expect(70 / 4 == 17.5 and 46 / 4 == 11.5, "all-in minutes per approval")
+    expect(round(50 / 110 * 100) == 45 and 110 - 50 == 60 and 60 - 36 == 24, "share of the 110 minutes of slack")
+    expect(3 * 50 == 150 and 150 > 110 and 3 * 26 == 78 and 78 < 110 and 110 - 36 == 74 and 78 > 74, "three pilots against the slack")
+    expect(3 * 10 + 3 * 3 == 39 and 3 * 7 == 21 and 39 + 21 == 60 and 2 * 10 + 2 * 3 == 26 and 2 * 7 == 14 and 26 + 14 == 40,
+           "wife minutes, 3 + 3 against 2 + 2")
+    expect(round(20 * 5 / 7) == 14 and 20 - round(20 * 5 / 7) == 6 and round(2 / 7 * 100) == 29, "five-slide carousel")
     w0 = dt.date(2026, 11, 16)
     expect(w0.strftime("%a") == "Mon" and dt.date(2026, 11, 28).strftime("%a") == "Sat", "W0 Mon / polling day Sat")
     expect(dt.date(2026, 12, 12).strftime("%a") == "Sat" and (w0 + dt.timedelta(days=29)).isoformat() == "2026-12-15", "day 30")
@@ -116,8 +145,14 @@ def check_json():
             err("%s: persona/platform" % label)
         if d.get("format") not in ("carousel", "reel", "short", "text", "image"):
             err("%s: bad format" % label)
-        if d.get("format") == "reel":
-            err("%s: a Reel is not scheduled in the 30 days (calendar gate 15)" % label)
+        if d.get("format") in ("reel", "short"):
+            # decision D6: a still of her may appear in a Reel or Short only with four conditions, written into the production notes
+            notes_l = d.get("review", {}).get("notes", "") if isinstance(d.get("review"), dict) else ""
+            for mk in ("D6", "AI label", "persistent", "no animation of the face", "no synthetic voice"):
+                if mk not in notes_l:
+                    err("%s: a Reel or Short must carry the D6 condition %r in review.notes" % (label, mk))
+            if d.get("platform") != "instagram":
+                err("%s: 色環 has no YouTube presence in the pilot (series.md section 1); a Reel is Instagram only" % label)
         if d.get("ai_label_flag") is not True:
             err("%s: ai_label_flag must be true" % label)
         if d.get("sponsorship_flag") is not False or d.get("sponsorship_type") != "none":
@@ -211,6 +246,10 @@ def check_json():
                 err("%s.media[%d]: alt text must say AI 生成的" % (label, i))
             # no hex or Chinese in AI image prompts; human-built items carry the standard line
             sp = m["shot_prompt"]
+            if sp.startswith("NOT AI-GENERATED") and "DRAWN BY CLAUDE AS SVG" not in sp:
+                err("%s.media[%d]: a lesson graphic must name its route: DRAWN BY CLAUDE AS SVG (decision D3)" % (label, i))
+            if re.search(r"human-built|hand-built|built by hand", sp + " " + m["description"], re.I):
+                err("%s.media[%d]: stale human-built wording after decision D3" % (label, i))
             if not sp.startswith("NOT AI-GENERATED"):
                 if re.search(r"#[0-9A-Fa-f]{6}", sp):
                     err("%s.media[%d]: hex code in an AI prompt" % (label, i))
@@ -254,9 +293,57 @@ def check_calendar():
     ids = set(re.findall(r"^### (P\d\d) ·", t, re.M))
     if ids != {"P%02d" % i for i in range(1, 9)}:
         err("section 5 must hold P01 to P08, found %s" % sorted(ids))
+    deferred = {"P09", "P10", "P19", "P20"}
     outl = set(re.findall(r"^\| (P\d\d) \| (?:Mon|Tue|Wed|Thu|Fri|Sat|Sun) ", t, re.M))
-    if outl != {"P%02d" % i for i in range(9, 23)}:
-        err("section 6 must hold P09 to P22, found %s" % sorted(outl))
+    want = {"P%02d" % i for i in range(9, 23)} - deferred
+    if outl != want:
+        err("section 6 must hold the ten scheduled outlines %s, found %s" % (sorted(want), sorted(outl)))
+    ded = set(re.findall(r"^\| (P\d\d) \| deferred \(was ", t, re.M))
+    if ded != deferred:
+        err("section 6.1 must list exactly the deferred posts %s, found %s" % (sorted(deferred), sorted(ded)))
+    # weekday and platform of every outlined post (Instagram Mon/Wed/Fri, Threads Tue/Thu/Sat)
+    for (pid, wd, date, plat) in re.findall(r"^\| (P\d\d) \| (\w{3}) (\d{4}-\d{2}-\d{2}) \d\d:\d\d \| (IG|Threads)", t, re.M):
+        if dt.date.fromisoformat(date).strftime("%a") != wd:
+            err("calendar outline %s: %s is not a %s" % (pid, date, wd))
+        if (plat == "IG" and wd not in ("Mon", "Wed", "Fri")) or (plat == "Threads" and wd not in ("Tue", "Thu", "Sat")):
+            err("calendar outline %s: %s on a %s breaks the section 2 weekday pattern" % (pid, plat, wd))
+    # OPS-D1: the section 3 table
+    sec = re.search(r"^## 3\. The 30 days at a glance.*?(?=^## 4\.)", t, re.S | re.M)
+    if not sec:
+        err("calendar section 3 not found")
+    else:
+        weeks, ids = {}, []
+        for m in re.finditer(r"^\| (\d+) \| (\d{4}-\d{2}-\d{2}) \| (\w{3}) \| (W\d) \| (.*?) \|(.*)\|$", sec.group(0), re.M):
+            _day, date, wd, wk, posts, _notes = m.groups()
+            for pm in re.finditer(r"(P\d\d) (IG|Threads)", posts):
+                pid, plat = pm.groups()
+                ids.append(pid)
+                weeks.setdefault(wk, {"IG": [], "Threads": []})[plat].append(pid)
+        for pid in sorted(deferred & set(ids)):
+            err("%s is deferred by OPS-D1 but is scheduled in the section 3 table" % pid)
+        for wk, v in sorted(weeks.items()):
+            if len(v["IG"]) > 2 or len(v["Threads"]) > 2:
+                err("%s: more than 2 Instagram or 2 Threads posts (OPS-D1 holds 4 approvals a week)" % wk)
+        for wk in ("W1", "W2", "W3", "W4"):
+            if len(weeks.get(wk, {}).get("IG", [])) < 2:
+                err("%s: fewer than 2 posts on the primary platform (Instagram)" % wk)
+        if len(ids) != len(set(ids)) or len(ids) != 18:
+            err("section 3 should schedule 18 distinct posts after OPS-D1, found %d" % len(ids))
+        if sorted(ids) != sorted("P%02d" % i for i in range(1, 23) if "P%02d" % i not in deferred):
+            err("section 3 post IDs differ from P01 to P22 minus the deferred four: %s" % sorted(ids))
+    # D3: no stale human-built wording in sections 5 and 6 (section 8.1 and section 11 may name the v0.1 route)
+    for name, pat in (("5", r"^## 5\..*?(?=^## 6\.)"), ("6", r"^## 6\..*?(?=^## 7\.)")):
+        mm = re.search(pat, t, re.S | re.M)
+        if mm and re.search(r"human-built|hand-built|built by hand", mm.group(0), re.I):
+            err("calendar section %s still says human-built after decision D3" % name)
+    # section 8 and this script must agree on the headline capacity numbers
+    s8 = re.search(r"^## 8\..*?(?=^## 9\.)", t, re.S | re.M)
+    if s8:
+        for needle in ("**70**", "17.5", "11.5", "315 minutes", "935 minutes", "45% of the 110", "**40 a week**", "**60 a week**"):
+            if needle not in s8.group(0):
+                err("calendar section 8 no longer contains %r (script and text disagree)" % needle)
+    if "gate 15" in t and not re.search(r"\| 15 \|[^\n]*Closed by D6", t):
+        err("gate 15 should read Closed by D6")
     if "{{" in t:
         err("calendar still contains a template marker")
     # hook ids mentioned in the calendar exist in the library

@@ -21,7 +21,7 @@
   "sponsorship_type": "none",
   "sources": [
     {
-      "claim": "NO FACTUAL CLAIM: the 60/30/10 split is presented as a rule of thumb (口訣, 經驗法則) that the studio teaches, not as a cited standard and not as something 'commonly cited'. The three proportions are drawn to scale in the editor file (6:3:1 = 60%, 30%, 10%). If the operator logs a colour-theory reference (gate G7) that contains the rule, add it here and on slide 7; if not, leave this entry as it is.",
+      "claim": "NO FACTUAL CLAIM: the 60/30/10 split is presented as a rule of thumb (口訣, 經驗法則) that the studio teaches, not as a cited standard and not as something 'commonly cited'. The three proportions are drawn to scale in the SVG source file (6:3:1 = 60%, 30%, 10%). If the operator logs a colour-theory reference (gate G7) that contains the rule, add it here and on slide 7; if not, leave this entry as it is.",
       "url": "",
       "date": ""
     }
@@ -82,6 +82,6 @@
     "wife_language": "pending",
     "operator_facts": "pending",
     "approved": false,
-    "notes": "CLAUDE DRAFT NOTE 2026-10-12: wife to rule on the J2 photoreal line, the colour names (灰玫瑰色, 灰紫色, 紅橘色, 柿子橘), 六成 versus 60%, the closing ～, and 官方 versus 品牌提供 in the colour footer. Operator to check the 6:3:1 bar is to scale, persimmon stays at most one tenth, hex fills come from the editor file, A2 shows six blank cards with no hands, and the Instagram AI-label test (HUMAN_TODO 38) is done. First 色環 post: pin it if the app allows. UPDATE 2026-10-12 (D3): the diagram and lesson-slide layer is drawn by Claude as SVG and rendered to PNG; the operator reviews every rendered slide and the wife reads every character; drawing a slide does not approve it. This draft stays inside the 30 days under OPS-D1 (no change to its date). Nothing here is approved."
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: wife to rule on the J2 photoreal line, the colour names (灰玫瑰色, 灰紫色, 紅橘色, 柿子橘), 六成 versus 60%, the closing ～, and 官方 versus 品牌提供 in the colour footer. Operator to check the 6:3:1 bar is to scale, persimmon stays at most one tenth, hex fills come from the SVG source file, A2 shows six blank cards with no hands, and the Instagram AI-label test (HUMAN_TODO 38) is done. First 色環 post: pin it if the app allows. UPDATE 2026-10-12 (D3): the diagram and lesson-slide layer is drawn by Claude as SVG and rendered to PNG; the operator reviews every rendered slide and the wife reads every character; drawing a slide does not approve it. This draft stays inside the 30 days under OPS-D1 (no change to its date). Nothing here is approved."
   }
 }

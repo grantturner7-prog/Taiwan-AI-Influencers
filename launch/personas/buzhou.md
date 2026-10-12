@@ -86,7 +86,7 @@ English gloss: [AI virtual character] 步驟 is an AI-generated virtual characte
 
 * **Link in bio (YouTube About, Threads, and the Instagram prerequisite if it exists):** the 步驟 link page, `<LINK-PAGE-HOST>/buzhou/` (URL **not chosen**). Do not put the link in until `check_pages.py --final` passes.
 * **Pinned post (Threads):** the first Threads post, `pipeline/review-queue/buzhou/2026-11-19_01` (T1), if the app allows pinning (limit unverified). Draft only; not reviewed.
-* **YouTube Shorts:** four Short drafts are in the review queue (`2026-11-19_02`, `2026-11-22_02`, `2026-11-26_02`, `2026-11-29_02`); none has a recording (media PENDING) and every Short is **on HOLD** until the user confirms that still images of the photoreal character inside a video are acceptable (`calendar-30d.md` section 9 item 1). Captions only, no synthetic voice (gate G5 open).
+* **YouTube Shorts:** four Short drafts are in the review queue (`2026-11-19_02`, `2026-11-22_02`, `2026-11-26_02`, `2026-11-29_02`); none has a recording (media PENDING) and every Short stays **on HOLD**, but no longer for the still-image question: decision D6 (adopted 2026-10-12 on the user's behalf, reversible) allows a still, or a slow pan or zoom of a still, with the platform AI label, a persistent badge, no face animation and no synthetic voice. The remaining holds are the vendor terms (gate G7), unfilled fields and sources, and the missing recordings and stills (queue notes). Captions or human-recorded sound only, no synthetic voice (`pipeline/qa-checklist.md` 6.1).
 * **Highlights, Stories:** none.
 
 ## 5. Profile image (PENDING)
@@ -158,8 +158,8 @@ Finish in a design tool, never with the generator: crop the headshot to a square
 | A12 | Wife's reviewer trial on about 10 sample posts passed (`HUMAN_TODO.md` 8) | Wife | First post | OPEN |
 | A13 | STOP 3: sample posts approved (`BRIEF.md` section 6) | User | First post | OPEN |
 | A14 | First batch approved in `pipeline/review-queue/` for the first two weeks (`schedule.md` section 2) | Wife, operator | Scheduling | OPEN, 0 of 8 drafts approved (4 Threads, 4 Shorts) |
-| A15 | The user confirms still images of the photoreal character inside Shorts are acceptable (calendar section 9 item 1) | User | First Short | OPEN, every Short is on HOLD for it |
-| A16 | Decide captions-only against a labelled synthetic voice (gate G5) | User | First Short | OPEN, calendar assumes captions only |
+| A15 | Still images of the photoreal character inside Shorts (decision D6: adopted 2026-10-12 on the user's behalf, reversible, four conditions) | User | First Short | ADOPTED; the Shorts stay on HOLD for other reasons (vendor terms G7, unfilled fields, no recording yet) |
+| A16 | Captions-only against a labelled synthetic voice (gate G5) | User | First Short | Settled by D6 condition 4 for the pilot weeks: no synthetic voice, captions or human-recorded sound only |
 
 An account may be created only when A1 to A7 are all closed. A first post needs every row closed. Closing a row means a date, who closed it and where the evidence is (`evidence-log.csv`).
 

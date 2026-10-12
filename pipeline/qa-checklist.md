@@ -2,6 +2,8 @@
 
 Written 2026-10-12 (Phase 4). It merges `research/culture.md` 7.6 (Taiwan-ness list) and 8 (reviewer brief), the 31-row image checklist and tests in `pipeline/image-pack/*-photoreal.md`, the disclosure rules of the three photoreal addenda, `strategy/portfolio.md` 1.4, 3.3 and 6.2, and `BRIEF.md` section 3. Every zh-TW string is an AI draft for the wife. Nothing here has been run on a real image yet.
 
+**Updated 2026-10-12 after the recommended answers were adopted on the user's behalf** (`DECISIONS.md`, entry "User asked for the recommended answers"; each reversible, nothing approved): **D6** (section 6.1: a still of the photoreal character, or a slow pan or zoom of a still, may appear inside a Reel or Short under four conditions; face animation, synthetic voice and lip-sync stay barred) and **the graphics decision** (section 5, T9: Claude draws the diagram, lesson-graphic and overlay layers as SVG, rendered to PNG; the operator and the wife still approve every asset; Claude cannot edit video).
+
 ## 0. How to use it
 
 * **One run per draft**, before `review.wife_language` and `review.operator_facts` are set. The draft is the folder `pipeline/review-queue/<persona>/<date>_<NN>/`.
@@ -23,7 +25,7 @@ Four places on every post: bio, first caption line, on-screen badge, platform la
 |---|---|---|---|
 | D1 | Bio names 「AI 虛擬角色」 and 「明說角色工作室」 (studio name provisional) | Yes, on every platform account | O |
 | D2 | First caption line is the AI line, before any hook or tag: 「【AI 虛擬角色】本篇由 AI 生成的虛擬角色「{名}」發布，圖像為 AI 生成，並非真人。」 (YouTube: 「本影片…畫面為 AI 生成，並非真人」) | Verbatim pattern, name correct | O+W |
-| D3 | On-screen badge on **every** image and every video frame: 「AI 生成｜虛擬角色」 on images that show the character, 「AI 生成｜示意圖」 on diagrams or empty sets | Present, typeset in post (never generated), text at least about 3.5% of image height (assumption). **Inset: at least 11% of the image height from the top and bottom edges and at least 8% of the width from the sides.** A centred square crop of a 4:5 picture removes 10% of the height at the top and again at the bottom (1,350 px tall becomes 1,080 px: computed), so the packs' and addenda's "8% from every edge" is not enough vertically (review fix, 2026-10-12; the packs still say 8%) | O+W |
+| D3 | On-screen badge on **every** image and every video frame: 「AI 生成｜虛擬角色」 on images that show the character, 「AI 生成｜示意圖」 on diagrams or empty sets. In a Reel or Short that shows the character the badge is **persistent**, first frame to last, and the wording follows the frame (D6 names 「AI 生成｜虛擬角色」; the two-wording rule above is the existing rule and the pilots' calendars follow it; the wife may rule that a whole video carries 「AI 生成｜虛擬角色」 once the character appears) | Present, typeset in post (never generated), text at least about 3.5% of image height (assumption). **Inset: at least 11% of the image height from the top and bottom edges and at least 8% of the width from the sides.** A centred square crop of a 4:5 picture removes 10% of the height at the top and again at the bottom (1,350 px tall becomes 1,080 px: computed), so the packs' and addenda's "8% from every edge" is not enough vertically (review fix, 2026-10-12; the packs still say 8%) | O+W |
 | D4 | Badge survives a centred 1:1 crop and the profile-grid crop (the grid crop ratio is recalled, unverified: check it on the live profile); not hidden behind platform buttons. Test it: crop a copy to 1:1 and look | Yes | O |
 | D5 | Platform AI label switched on **by hand** (Instagram content-level disclosure and the account's AI-generated profile label; YouTube altered or synthetic content box plus description line) | On, and a screenshot of the post kept | O |
 | D6 | Sponsored, client, gifted or affiliate content: tag directly under the AI line (【業配】 or 【合作內容】, 【廠商提供】, 【含分潤連結】), the "character has not used this product" sentence, the platform paid-partnership tool and the AI-disclosure control | All present; `sponsorship_flag` and `sponsorship_type` match | O+W |
@@ -67,7 +69,7 @@ Run the pilot's own 31-row (方寸, 色環) or 29-row (步驟) table in `pipelin
 
 ## 5. Text on images: garbled, Simplified or wrong (BRIEF section 5)
 
-Generators garble Chinese or output Simplified forms, so **no generated text at all**; every character is added in post.
+Generators garble Chinese or output Simplified forms, so **no generated text at all**; every character is added in post (typeset in SVG by Claude or in a design tool by the operator), never by an image generator.
 
 | # | Check | Pass | Who |
 |---|---|---|---|
@@ -79,20 +81,36 @@ Generators garble Chinese or output Simplified forms, so **no generated text at 
 | T6 | Punctuation is full-width in Chinese lines; no stray ASCII quotes or bracket emoji such as [微笑] (mainland chat style) | Clean | W |
 | T7 | Text is not cut off by the crop, the badge or the platform's UI | Clean at 4:5, 1:1 and 9:16 | O |
 | T8 | Text on screen recordings (步驟): the recording is a dated, human-run capture; tool, version and plan are visible; no personal data on screen | Yes | O |
+| T9 | **A Claude-drawn asset** (the graphics decision: diagram, lesson graphic, badge, overlay layer or card drawn as SVG and rendered to PNG). The SVG source is kept; the font is a Taiwan-glyph TC font (Noto Sans TC planned; not yet installed in the render environment on 2026-10-12, so the first renders are proofing only); the PNG matches the SVG; every string equals the approved string and every number the source slip; the asset has a row in `assets/provenance.csv` (method: code-drawn by Claude, no image model; copyright status of code-authored art in Taiwan unverified); **the operator and the wife have each approved the asset itself**, not only the post that uses it | All true | O+W |
 
-## 6. Motion and eyes (for any video or animation; none is produced yet)
+## 6. Motion, eyes and voice
 
-Video, voice and lip-sync for a photoreal face are barred until a separate addendum exists. This section is here so it is not forgotten.
+**What is allowed and what stays barred (decision D6, adopted 2026-10-12 on the user's behalf, reversible).** A **still image** of a photoreal character, or a **slow pan or zoom of a still**, may appear inside a Reel or Short, on the four conditions in 6.1. **Barred until a separate video addendum and review exist:** any animation of the face (blinking, gaze change, mouth or lip movement, morphing, "make the photo move" effects), lip-sync, and any synthetic voice. This replaces the earlier blanket bar on video of a photoreal face; it does not relax anything about the face itself. Rows M1 to M7 below were written for real motion; under D6 they are read as shown in the last column.
 
-| # | Check | Pass |
-|---|---|---|
-| M1 | Blink rate and gaze look human; eyes never drift or cross; no dead stare | W+O |
-| M2 | No face morphing, melting, flicker or identity drift between frames; same person as R01 on every frame | O |
-| M3 | Lips match any audio; teeth stay stable; no "uncanny" mouth | W |
-| M4 | Hands out of frame or fully hidden for the whole clip | O |
-| M5 | Hair, glasses and jewellery stay put; locked features never change | O |
-| M6 | Voice is labelled 「AI 生成語音」, passes the wife's Taiwan-accent listen, and is not a clone of a real person | W |
-| M7 | Badge on every frame; platform label on | O |
+| # | Check | Who | Under D6 (a still in a Reel or Short) |
+|---|---|---|---|
+| M1 | Blink rate and gaze look human; eyes never drift or cross; no dead stare | W+O | **Barred.** The eyes must not move at all: any blink, gaze shift or flicker in the face region fails the video |
+| M2 | No face morphing, melting, flicker or identity drift between frames; same person as R01 on every frame | O | **Applies in full:** the face must be the same still on every frame, changed only by the whole-picture pan, zoom or crop |
+| M3 | Lips match any audio; teeth stay stable; no "uncanny" mouth | W | **Barred.** No lip-sync and no mouth movement; there is no character voice to match |
+| M4 | Hands out of frame or fully hidden for the whole clip | O | **Applies in full** |
+| M5 | Hair, glasses and jewellery stay put; locked features never change | O | **Applies in full** |
+| M6 | Voice is labelled 「AI 生成語音」, passes the wife's Taiwan-accent listen, and is not a clone of a real person | W | **Barred.** No synthetic voice: captions, or human-recorded sound only (a music track's licence terms are unverified; read them) |
+| M7 | Badge on every frame; platform label on | O | **Applies in full** (persistent, 6.1 row S2) |
+
+### 6.1 A still inside a Reel or Short: the four D6 conditions, run on the exported video file
+
+The graphics are drawn by Claude as SVG and rendered to PNG; **Claude cannot edit video**, so the operator assembles and exports the video. Both reviewers approve the **exported file**, not only the PNG frames. Run this for every Reel and Short that shows the character, in addition to sections 2 to 5 and 7 to 11. A video of diagrams only (no character) skips S3 and S4 but keeps S1, S2, S5 and S6.
+
+| # | Check | Pass | Who |
+|---|---|---|---|
+| S1 | **Condition 1, platform AI label on.** Switched on by hand in the post flow (Instagram content-level disclosure; YouTube's altered or synthetic content answer and the description line; control names unverified); a screenshot of the scheduled or live post is kept | On | O |
+| S2 | **Condition 2, persistent badge.** The badge is on screen from the **first frame to the last**, not only on a title card; it sits inside the safe margin (11% of the height from the top and bottom, 8% of the width from the sides; this margin was worked out for the square crop of a 4:5 picture, and the 9:16 safe zones of Reels and Shorts are recalled and unverified, HUMAN_TODO 25), is not covered by the platform's buttons, caption or progress bar at 9:16, and survives the export. Wording follows the frame (see D3 above) unless the wife has ruled otherwise. Scrub the exported file at slow speed and look at the first and last frames and every cut | Present on every frame | O+W |
+| S3 | **Condition 3, no animation of the face.** The character is one of the approved stills, moved only by a slow, uniform pan, zoom or crop of the **whole picture**. Scrub the exported file at quarter speed with the face enlarged: no blink, no gaze change, no mouth or jaw movement, no breathing sway, no flicker, no warp at the edges of the face, no eye or skin "enhance"; no automatic effect, transition or filter that touches the face (check the editing app's effect list; a face or beauty effect is a fail) | The face is pixel-identical apart from uniform scaling and cropping | O+W |
+| S4 | **Condition 4, no synthetic voice.** The sound is silence, captions only, or human-recorded sound (for example a platform-library music track with its terms read and recorded); no text-to-speech, no voice clone, no AI-generated voice, nothing that sounds like the character speaking. A human voice-over is within D6's wording but must be a narrator and never presented as the character's voice, and the wife rules on it first (a real person's voice as the character's would conflict with Ground rule 2) | None | O+W |
+| S5 | **Assembly and files.** The video was assembled from reviewed Claude-drawn PNG frames and approved stills; every frame has its provenance row; the untouched original stills are kept; the export has no leftover placeholder (`{待填}`, PENDING) | Yes | O |
+| S6 | **Both approvals on the exported file.** The operator and the wife each watched the exported file end to end (with sound on and off) and recorded the verdict in `review.notes`; a re-export after any change resets both approvals to `pending` | Yes | O+W |
+
+If any row fails: **do not repair a face by editing**; drop the character panel from that video (the badge becomes 「AI 生成｜示意圖」) or regenerate the still, then re-export. A published video that breaks S1 to S4 is a disclosure or likeness-class incident: take it down within 24 hours, log it, and a repeat in the same quarter pauses the persona (`portfolio.md` 6.2). Reversing D6 means every video post drops its character panels.
 
 ## 7. Captions, hooks and voice (zh-TW): W, with O on facts
 
@@ -170,8 +188,8 @@ The character has never eaten, worn, used, tested or visited anything. It presen
 ## 12. Sign-off and incidents
 
 1. C: `validate` shows no ERROR and no FLAG for the draft.
-2. O: sections 2 to 5, 7 (V8, V11), 8 (L3, L5, L7), 9, 10 (X2, X3) and the file checks done; the operator sets `review.operator_facts` to `approved` or `changes`.
-3. W: sections 2 (D2, D3, D6, D8), 3, 5, 7, 8, 9 (O4, O5), 10 and 11 done; she sets `review.wife_language` to `approved` or `changes` with reason codes in `review.notes`.
+2. O: sections 2 to 5 (T9 for every Claude-drawn asset), 6.1 for any Reel or Short that shows the character, 7 (V8, V11), 8 (L3, L5, L7), 9, 10 (X2, X3) and the file checks done; the operator sets `review.operator_facts` to `approved` or `changes`.
+3. W: sections 2 (D2, D3, D6, D8), 3, 5 (T9), 6.1 (S2 to S4 and S6) where it applies, 7, 8, 9 (O4, O5), 10 and 11 done; she sets `review.wife_language` to `approved` or `changes` with reason codes in `review.notes`.
 4. Both set: media generated and logged (no PENDING left), badges on, platform labels on, screenshots kept. Then **a human** sets `review.approved` to true by editing `post.json`. Run `queue.py approve <folder>` to see what still blocks it. This holds for every post for at least the first 30 days.
 5. After publishing: screenshot the four disclosure places; log minutes spent by each person (it feeds the capacity gates in `portfolio.md` 5 and 6).
 

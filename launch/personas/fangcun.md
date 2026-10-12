@@ -80,7 +80,7 @@ English gloss: 方寸 is an AI virtual character, created and run by 明說角�
 
 * **Link in bio (Instagram) and in the YouTube About section:** the 方寸 link page, `<LINK-PAGE-HOST>/fangcun/` (URL **not chosen**, see `link-pages/README.md`). Do not put the link in until `check_pages.py --final` passes. Use only this one link on each platform.
 * **Pinned post (Instagram):** the first post, `pipeline/review-queue/fangcun/2026-11-16_01` (P01, the identity post), if the app allows pinning (limit unverified). It is a draft: not reviewed, no media.
-* **YouTube:** the first Short, `fangcun-2026-11-17-01`, is **on HOLD** until the user confirms that still images of the photoreal character inside a video are acceptable (queue note; `content/fangcun/calendar-30d.md` section 9 item 1).
+* **YouTube:** the first Short, `fangcun-2026-11-17-01`, is **ready for review** (not approved) now that decision D6 is adopted: a still, or a slow pan or zoom of a still, inside a Short with the platform AI label on, a persistent 「AI 生成｜虛擬角色」 badge, no animation of the face and no synthetic voice (`launch/README.md` section 5; `content/fangcun/calendar-30d.md` section 7.2; `pipeline/qa-checklist.md` 6.1).
 * **Highlights, Stories, Reels covers:** none at launch (`portfolio.md` 5.2 posting plan has no Stories).
 
 ## 5. Profile image (PENDING)
@@ -146,7 +146,7 @@ Finish in a design tool, never with the generator: crop the headshot to a square
 | A12 | Wife's reviewer trial on about 10 sample posts passed (`HUMAN_TODO.md` 8) | Wife | First post | OPEN |
 | A13 | STOP 3: sample posts approved (`BRIEF.md` section 6) | User | First post | OPEN |
 | A14 | First batch approved in `pipeline/review-queue/` for the first two weeks (`schedule.md` section 2) | Wife, operator | Scheduling | OPEN, 0 of 5 drafts approved |
-| A15 | The user confirms still images of the photoreal character inside Reels and Shorts are acceptable (calendar section 9 item 1) | User | First Reel or Short | OPEN, 3 of the 5 queued drafts are on HOLD for it |
+| A15 | Still images of the photoreal character inside Reels and Shorts (decision D6: adopted 2026-10-12 on the user's behalf, reversible, under four conditions: platform label, persistent badge, no face animation, no synthetic voice) | User | First Reel or Short | ADOPTED; the 3 queued drafts that were held for it are ready for review. Each video still needs `pipeline/qa-checklist.md` 6.1 on the exported file |
 
 An account may be created only when A1 to A7 are all closed. A first post needs every row closed. Closing a row means a date, who closed it and where the evidence is (`evidence-log.csv`).
 

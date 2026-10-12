@@ -1,6 +1,6 @@
 # 色環 (sehuan) weekly trend-check routine
 
-**Status: DRAFT v0.1, written 2026-10-12 (Phase 5).** A 30-minute weekly routine that uses only public pages read by hand. Nothing here has been run; no page named below was opened in this session (web access was limited), so every statement about what a page shows or requires is *unverified* until the operator tries it. Every zh-TW string is an AI draft for the wife; the operator reads the English gloss. Evidence labels: *assumption* = a planning figure to calibrate; *unverified* = not checked against a primary source; *computed* = calculated in this session; DEMO = format only, no real data.
+**Status: DRAFT v0.1, written 2026-10-12 (Phase 5); graphics wording updated the same day for decision D3.** A 30-minute weekly routine that uses only public pages read by hand. Nothing here has been run; no page named below was opened in this session (web access was limited), so every statement about what a page shows or requires is *unverified* until the operator tries it. Every zh-TW string is an AI draft for the wife; the operator reads the English gloss. Evidence labels: *assumption* = a planning figure to calibrate; *unverified* = not checked against a primary source; *computed* = calculated in this session; DEMO = format only, no real data.
 
 ## 1. What the routine is for, and what it is not for
 
@@ -19,7 +19,7 @@
 | 5 | **No personal data in the note.** Names, handles and photos of private individuals are not recorded; a commenter's words are paraphrased, never pasted with a handle. |
 | 6 | **Evidence rule.** Every item carries the page name and the access date. If it cannot be checked, write "unverified". Never write an invented number. |
 | 7 | **No fake popularity.** Nothing from the check is ever used to buy, arrange or seed engagement (Ground rule 7). |
-| 8 | **Fashion-specific: no brand imagery.** A public show page, lookbook or press release may be **cited in words**; its photographs, logos and product shots are not copied, cropped, traced or used as a reference for any generated image. The studio's lesson graphics are human-built swatches and generic flats. |
+| 8 | **Fashion-specific: no brand imagery.** A public show page, lookbook or press release may be **cited in words**; its photographs, logos and product shots are not copied, cropped, traced or used as a reference for any generated image. The studio's lesson graphics are swatches and generic flats drawn as SVG by Claude (decision D3, 2026-10-12). |
 | 9 | **Fashion-specific: no prediction.** The persona reports what a named source says (「報導指出」), never what will be popular (「會流行」). |
 | 10 | **Fashion-specific: no named brand in the persona's posts** in weeks 1 to 8 (bible C5). A source page may be named in the footer as a source only after the lawyer and the operator agree that naming it implies no endorsement; until then the footer says 「某國際時尚週公開秀場頁面」-style generic wording and the full citation lives in the source slip. (*Assumption*; open item below.) |
 
@@ -82,7 +82,7 @@ Series C variant, at most once a month, first possible in January 2027 after fou
 |---|---|---|---|
 | 1 Pick | Operator | Choose **one** public page: a published show page, a lookbook page, or a trend-forecast press release that opens without a login | Not a paywalled report; not a social post; not a page that shows only photographs with no text |
 | 2 Record | Operator | In the source slip: page title, publisher, URL, the date on the page, the date read, and the one sentence that names the colours | Never invent a source, a date or a quote. If the page cannot be opened, the post is not made |
-| 3 Map | Operator | Place the colours the sentence names on the wheel as hand-built swatches (the operator chooses the hex; label them 示意色，非品牌色票) | No crop, trace or colour-pick from the source's photographs; no brand logo; no product image |
+| 3 Map | Operator | Place the colours the sentence names on the wheel as swatches drawn as SVG (the operator chooses the hex and checks the render, Claude draws it; label them 示意色，非品牌色票) | No crop, trace or colour-pick from the source's photographs; no brand logo; no product image |
 | 4 Word it | Claude drafts | 「{來源名稱}（{YYYY/MM/DD}）報導指出，本季{季節}的色彩包含{色名}。」 followed by a plain "how to read it" slide and the blank wheel | Say 報導指出; never 會流行, 必備, 今年一定; no price; no brand product |
 | 5 Sanity check | Fashion contact (gate G10) | Is the sentence a fair reading of the page? Is the colour naming reasonable? | A sanity check, never an approval; the outcome is logged |
 | 6 Language | Wife | Taiwan wording; colour names; no mainland-leaning trend vocabulary | |

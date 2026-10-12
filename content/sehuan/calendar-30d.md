@@ -226,7 +226,7 @@ Screens shift colour; for the real colour, go by the information the brand provi
 
 **Sources**
 
-- NO FACTUAL CLAIM: the 60/30/10 split is presented as a rule of thumb (口訣, 經驗法則) that the studio teaches, not as a cited standard and not as something 'commonly cited'. The three proportions are drawn to scale in the editor file (6:3:1 = 60%, 30%, 10%). If the operator logs a colour-theory reference (gate G7) that contains the rule, add it here and on slide 7; if not, leave this entry as it is.
+- NO FACTUAL CLAIM: the 60/30/10 split is presented as a rule of thumb (口訣, 經驗法則) that the studio teaches, not as a cited standard and not as something 'commonly cited'. The three proportions are drawn to scale in the SVG source file (6:3:1 = 60%, 30%, 10%). If the operator logs a colour-theory reference (gate G7) that contains the rule, add it here and on slide 7; if not, leave this entry as it is.
 
 **The wife rules on**
 
@@ -468,7 +468,7 @@ Screens shift colour; for the real colour, go by the information the brand provi
 
 **Sources**
 
-- NO FACTUAL CLAIM: warm and cool lean of a neutral is described as a design convention, by comparing the neutral swatches with the wheel in the editor file; it is about garments and swatches only, never about skin. Hue positions are read from the hex values by the operator in the editor. If the operator logs a colour-theory reference (gate G7) that defines warm and cool colours, add it here and on slide 7.
+- NO FACTUAL CLAIM: warm and cool lean of a neutral is described as a design convention, by comparing the neutral swatches with the wheel in the SVG source file; it is about garments and swatches only, never about skin. Hue positions are read from the hex values by the operator in the editor. If the operator logs a colour-theory reference (gate G7) that defines warm and cool colours, add it here and on slide 7.
 
 **The wife rules on**
 
@@ -479,7 +479,7 @@ Screens shift colour; for the real colour, go by the information the brand provi
 
 **The operator checks**
 
-- Hue positions of the four chips read from the editor file; the cool grey is a low-chroma slate grey, not a saturated blue.
+- Hue positions of the four chips read from the SVG source file; the cool grey is a low-chroma slate grey, not a saturated blue.
 - No skin, face or body reference anywhere; no colour held against the character (C2).
 - A4 shows the tucked ear and the earring with the correct wedge count (inspect at 200%).
 - Alt text; platform AI label ON.
@@ -530,7 +530,7 @@ Screens shift colour; the same colour can look different on different screens.
 
 **The operator checks**
 
-- Record the hex values of A, B, C in the editor file so the answer is checkable if a viewer asks.
+- Record the hex values of A, B, C in the SVG source file so the answer is checkable if a viewer asks.
 - No reply in the thread gives a verdict on anyone's screen; the reply template is R9 in reply-guidelines.md.
 - Platform AI label ON.
 
@@ -810,72 +810,99 @@ All eight validate with no ERROR and no FLAG; the warnings are the placeholders 
 
 ## 8. Effort and capacity (the main risk in this calendar)
 
-`portfolio.md` 5.1 to 5.3 budgets 5 minutes of operator time per approval and 10 minutes of the wife's time per master. It has **no line for building the lesson graphics** (that was a Claude-drawn or illustrated step in the earlier plan). In the photoreal plan the carousels are built from flats, a dress form, a wheel and typeset text, so the build time lands on the operator unless the kit is drawn by Claude. The figures below are *assumptions*, none measured.
+`portfolio.md` 5.1 to 5.3 budgets 5 minutes of operator time per approval and 10 minutes of the wife's time per master. It has **no line for the lesson graphics**. In v0.1 of this file that gap was filled by operator build time (a human drawing flats, a dress form and a wheel in a design tool). **Decision D3 (2026-10-12) moves the drawing to Claude** (SVG rendered to PNG, section 7.2), so the operator's build minutes fall to zero; **the operator's review minutes per asset do not**, and become the new unknown. **Decision OPS-D1** holds 色環 at 4 approvals a week. The figures below are *assumptions*, none measured; the sums are *computed*.
 
-| Item | Figure | Basis |
-|---|---|---|
-| Lesson Kit v0, one time | 5 h (range 3 to 8) | Ten flats, dress form, wheel, bar, ring, badge templates, templates for carousel and card |
-| Golden set for 色環, one time | 7 to 9 h hands-on, spread over three sittings | Pack 0 and addendum 12.3 item 7 |
-| One 7-slide carousel from the kit | 60 min (range 40 to 90) | Recolour flats, set text, export, alt text |
-| One Threads card from the kit | 15 min | One slide |
-| Operator approval | 5 min per post | `portfolio.md` 5.1 |
-| Wife review | 10 min per master plus 3 min for the second platform; plus about 1 min per slide of on-image text read by eye | `portfolio.md` 5.1; the per-slide figure is new |
+### 8.1 Assumptions
 
-**Weekly load for 色環 alone, weeks 1 and 2 (computed from the assumptions):** build 2 x 60 + 2 x 15 = 150 min; approvals 4 x 5 = 20 min; total about 170 min a week, which is 47% of the operator's 360 minutes. `portfolio.md` 5.3 plans 250 minutes for all three pilots in weeks 1 and 2 and leaves 110 minutes of slack; **色環's build time alone is larger than the whole slack**. The wife's side: 2 x 10 + 2 x 3 = 26 min of draft review plus about 14 min reading slides (2 carousels x 7 slides) = 40 min a week, plus the shared lines (moderation 90, image QA 45, correspondence 60, registrant 60, sync 30 across the pilots); on top of the 363 minutes planned for all three pilots in weeks 1 and 2 (`portfolio.md` 5.3) that stays far inside her 510-minute gate.
+| Item | v0.1 (human-built, 3 + 3 from week 3) | Now (D3 and OPS-D1) | Basis |
+|---|---|---|---|
+| Lesson Kit v0, one time, operator | 5 h build (range 3 to 8) | **0 min build; 60 min review** (range 30 to 90) | Claude draws the kit; the operator checks it once against section 7.2. The review time is an assumption |
+| Lesson Kit v0, one time, wife | none counted | **30 min** (range 15 to 45) | The wheel's colour reads, the badge, the template text. Assumption |
+| Golden set for 色環, one time | 7 to 9 h hands-on over three sittings | **unchanged** | Photoreal images are made by hand in Gemini or ChatGPT (Claude cannot make them); pack 0 and addendum 12.3 item 7 |
+| One 7-slide carousel, operator | 60 min build (40 to 90) | **0 build; 20 min review** (low case 10) | Open 7 PNGs at phone size and on a desktop screen, check numbers against the slip, the bar to scale, the badge corner and inset, the 1:1 crop test, request redraws. 20 is the top of the v0.1 "15 to 20" range for import, check and export; the low case is about 1.5 min a slide |
+| One Threads card, operator | 15 min build | **0 build; 5 min review** (low case 3) | One image, same checks. A text-only Threads post has no asset to review |
+| Operator approval | 5 min per post | 5 min per post | `portfolio.md` 5.1. It already contains some media checking, so booking the asset review on top of it is **conservative** |
+| Redraw rounds | inside the 36-minute rework reserve | inside the 36-minute rework reserve | A change request costs Claude a redraw and the operator one re-check, not a build |
+| Wife review | 10 min per master + 3 min for the second platform + about 1 min per slide | unchanged | `portfolio.md` 5.1; per-slide figure from v0.1. She still reads every character; the sandbox renders with a non-Taiwan-glyph font until the operator supplies one (section 7.2), so she also checks glyph shapes |
 
-**What would make it fit (the operator decides):**
+### 8.2 Weekly load for 色環 alone (operator, minutes)
 
-1. **Claude draws Lesson Kit v0 as SVG** and renders the slides (the route used for the superseded 步驟 art, `DECISIONS.md` 2026-10-11). The operator's per-carousel time falls to import, check and export (*assumption*: 15 to 20 min). Needs the operator's authorisation and the font licence (gate 10).
-2. **Shorten the carousels to 5 slides** (cover with identity folded in, rule, examples, your turn, footers). Saves about a quarter of the build time.
-3. **Reuse one dress-form layout** for every post; change only the flats' fill colours.
-4. **Cut the Threads cards** to text questions in weeks 1 and 2 (the portfolio floor is 2 posts a week per live persona, `portfolio.md` 5.4).
-5. **Start later.** If the golden set, the kit and the sources are not ready, move W0 by whole weeks (section 1). A late start is cheaper than a rushed first post.
+Worst case per week: 2 carousels and 2 cards (a week with a text-only Threads post is 5 minutes lighter).
 
-**Measure before trusting any of this:** log operator build minutes, approval minutes and the wife's minutes for the first ten masters (`HUMAN_TODO.md`, bible open item 25). If the all-in operator minutes per approval exceed 12 (`portfolio.md` 6.1 Keep level), apply the cuts in `portfolio.md` 5.6.
+| Case | Asset time | Approvals | Total | Share of 360 |
+|---|---|---|---|---|
+| v0.1, weeks 1 and 2 (4 approvals): 2 x 60 + 2 x 15 build | 150 | 4 x 5 = 20 | **170** | 47% |
+| v0.1, weeks 3 and 4 at 3 + 3 (6 approvals): 3 x 60 + 3 x 15 build | 225 | 6 x 5 = 30 | **255** | 71% |
+| D3 only, weeks 3 and 4 at 3 + 3: 3 x 20 + 3 x 5 review | 75 | 30 | **105** | 29% |
+| **Now, every week (D3 and OPS-D1), planning case**: 2 x 20 + 2 x 5 review | **50** | 20 | **70** | **19%** |
+| Now, low case: 2 x 10 + 2 x 3 review | 26 | 20 | **46** | 13% |
+
+What each decision saves in weeks 3 and 4: D3 saves 255 - 105 = 150 minutes and OPS-D1 saves 105 - 70 = 35 (one carousel review 20, one card review 5 and two approvals 10), 185 in all. In weeks 1 and 2 only D3 applies: 170 - 70 = 100 minutes. Over the 30 days (4 full weeks plus the 2 posts of days 29 and 30) the planning case is 4 x 70 + (20 + 5 + 2 x 5) = **315 minutes (5.25 h)**, against 2 x 170 + 2 x 255 + (60 + 15 + 2 x 5) = 935 minutes (15.6 h) in v0.1, which is the build time the operator no longer carries; the one-time kit falls from 5 h of building to 1 h of review.
+
+**All-in operator minutes per approval** (`portfolio.md` 6.1 effort row: 8 or less Scale-eligible, 12 or less Keep, over 12 to 15 Fix, over 15 after one redesign Retire-review, which is the effort breach of 6.3): planning case 70 / 4 = **17.5**, low case 46 / 4 = **11.5**. The planning case is above the breach line and the low case is just inside Keep, so **which figure is true decides whether 色環 alone fits**; the wife's minutes are not in this number, and rework is outside it. This is the reason to log review minutes from the first post.
+
+### 8.3 Against the shared plan
+
+`portfolio.md` 5.3 plans 250 operator minutes for weeks 1 and 2 (12 approvals) with 110 minutes of reserve and slack, of which 36 is the rework reserve; its weeks 3 to 8 column (18 approvals, 300 planned, 60 slack) is **not used** under OPS-D1, which keeps the three pilots on the 250 / 110 column. 色環's asset review (50 minutes, planning case) is not in the 250, because the portfolio has no graphics line, and takes **45% of the 110** (50 / 110), leaving 60, or 24 after the rework reserve. If the other two pilots needed asset review of the same size (not known; their calendars hold their own figures), three pilots would need 3 x 50 = 150 minutes, more than the 110 minutes of slack; at the low case, 3 x 26 = 78 fits in 110 but not in the 74 left after the reserve. **Review time, not build time, is therefore the operator's binding graphics constraint**, and the portfolio's cut list (`portfolio.md` 5.6) stays the fallback. For the wife, OPS-D1 returns the three pilots to the 363-minute column (147 minutes of headroom to her 510 gate) instead of the 402-minute column (108 minutes). Her own load for 色環 in weeks 3 and 4 is 2 x 10 + 2 x 3 = 26 minutes of draft review plus 2 x 7 = 14 minutes reading slides, **40 a week**, against 3 x 10 + 3 x 3 = 39 plus 3 x 7 = 21, **60 a week**, at 3 + 3.
+
+### 8.4 What would make it fit (the operator decides)
+
+1. **Claude draws Lesson Kit v0 as SVG and renders the slides: adopted (D3).** It needs the operator's font file and licence read (gate 10) and one kit review.
+2. **Hold at 4 approvals a week: adopted (OPS-D1).** M5 and M10 are deferred (section 6.1) and come back first if minutes show room.
+3. **Shorten the carousels to 5 slides** (cover with identity folded in, rule, examples, your turn, footers): not adopted. It now saves review and the wife's reading time rather than build time; if review scales with slides, 20 x 5 / 7 = about 14 minutes, a saving of about 6 minutes (29% fewer slides) per carousel.
+4. **Reuse one dress-form layout** for every post and change only the flats' fill colours: built into the SVG kit by design (`series.md` section 2), which also makes each review quicker.
+5. **Cut the Threads cards to text questions** in a given week: still available; saves 5 minutes of review per card (the portfolio floor is 2 posts a week per live persona, `portfolio.md` 5.4).
+6. **Start later.** If the golden set, the kit and the sources are not ready, move W0 by whole weeks (section 1). A late start is cheaper than a rushed first post.
+
+**Measure before trusting any of this:** log the operator's **review minutes per rendered asset**, the approval minutes and the wife's minutes for the first nine masters of the 30 days (ten if M5 is restored) (`HUMAN_TODO.md`, bible open item 25). If the all-in operator minutes per approval exceed 12 (`portfolio.md` 6.1 Keep level), apply the cuts in `portfolio.md` 5.6.
 
 ---
 
 ## 9. Open items for the human
 
-1. **Gates 3, 10, 12, 13, 14.** The golden set, Lesson Kit v0, the weather source, the size-term source and the polling-day date decide when P01 to P08 can be approved. P03, P07 and P08 are blocked by design until their sources are recorded.
-2. **Authorise Claude to draw Lesson Kit v0 as SVG, or commit the operator's build time** (section 8). This is the largest unbudgeted cost in the plan.
-3. **Reconcile the three pilot calendars.** The three were written in parallel. This calendar's slots were checked against the other two as they stood on 2026-10-12 (no shared clock hour; section 2). Confirm the first-post days (方寸 Mon 11-16, 色環 Wed 11-18, 步驟 Thu 11-19) and decide whether 方寸's Friday Short on 11-27 and 步驟's Sunday posts on 11-29 should move out of the election-eve and day-after quiet days that this calendar keeps.
-4. **Approve the text-only first line** for Threads text posts (P04, P12, P20) or ask for a different wording (bible open item 14).
+1. **Gates 3, 10, 12, 13, 14.** The golden set, Lesson Kit v0 (now Claude's to draw, the operator's and wife's to review), the weather source, the size-term source and the polling-day date decide when P01 to P08 can be approved. P03, P07 and P08 are blocked by design until their sources are recorded.
+2. **Supply a Taiwan-glyph font file whose licence has been read** so that Claude can render final slide text (section 7.2, gate 10), and **book the operator's review time** for the kit and every rendered asset (section 8). Authorising Claude to draw the kit is settled by D3; the review minutes (planning case 20 per carousel, 5 per card) are the largest remaining unknown in the operator's hours.
+3. **Reconcile the three pilot calendars.** The three were written in parallel. This calendar's slots were checked against the other two as they stood on 2026-10-12 after each had been updated for OPS-D1 (no shared clock hour; section 2 and check 11 in section 10). Confirm the first-post days (方寸 Mon 11-16, 色環 Wed 11-18, 步驟 Thu 11-19) and decide whether 方寸's Friday Short on 11-27 and 步驟's Sunday posts on 11-29 should move out of the election-eve and day-after quiet days that this calendar keeps.
+4. **Approve the text-only first line** for Threads text posts (P04 and P12; P20 is deferred) or ask for a different wording (bible open item 14).
 5. **Confirm the quiet block Fri 11-27 to Sun 11-29** and the hard stop on Sat 11-28 once the Central Election Commission date is read.
 6. **Wife's rulings** (each post's notes list the specifics): colour names (柿子橘, 灰玫瑰色, 灰紫色, 紅橘色, 冷灰, 暖灰, 駝色, 中性色, 彩度 against 飽和度); 平量, 圍度, 胸寬, 胸圍; the J2 line; 六成 against 60%; the closing ～ in captions; 品牌提供 against 官方; 疊穿 against 洋蔥式穿搭; 濕冷 and 東北季風天; the bible's pillar title P3-4 (面試穿搭的顏色選擇) hides the banned substring 試穿, so the hook library uses 面試場合的顏色選擇; whether the half-wheel in P05 reads as a rainbow; whether the cool-grey swatch reads as a party colour.
 7. **Choose the colour-theory reference** before P17 (gate 11), and the **weather page** before P03 (gate 12).
 8. **Name the fashion contact(s)** who will sanity-check occasion and trend posts from P15 (gate 16). A sanity check is not an approval.
 9. **Hold all B2B and client work out of the persona account in the 30 days.** Any free sample for a contact is shared privately (`b2b-pitch.md`); publishing it would make it a 【合作內容】 post and open the lawyer's unanswered advertisement question.
-10. **Decide the still-face-in-video question** (gate 15) before any Reel is scheduled; `series.md` has the Reel templates ready.
-11. Add the items above that are not yet in `HUMAN_TODO.md` (this stream did not edit the shared tracking files).
+10. **Gate 15 is closed by D6**; no action. If a Reel is wanted, a human drafts it into the review queue with the four D6 conditions in its production notes, and it takes one of the 4 weekly approvals (OPS-D1); `series.md` has the Reel templates ready. Face animation, synthetic voice and lip-sync still need a separate video addendum.
+11. **Overrule or confirm the OPS-D1 cut** (section 6.1): M5 and M10 are Claude's choice of the two lowest-value masters; the wife and operator may swap them, for example for M7. Also decide whether the five-day silence Fri 11-27 to Tue 12-01 is acceptable (section 2).
+12. **Decide how character images enter the slides**: framed panel by default, or add a transparent cut-out to the allowed human edits of addendum 11 item 6 (section 7.2).
+13. Add the items above that are not yet in `HUMAN_TODO.md` (this stream did not edit the shared tracking files).
 
 ---
 
 ## 10. Checks run on this file (2026-10-12)
 
-All commands were run from the repository root on 2026-10-12 after the last edit. Nothing was committed.
+All commands were run from the repository root on 2026-10-12 after the last edit. Nothing was committed. Checks 1 to 13 were first run at v0.1; **they were all run again after the v0.2 update** (decisions D6, OPS-D1 and D3), and the counts below are the v0.2 results unless a row says otherwise.
 
 | # | Check | Result |
 |---|---|---|
 | 1 | `python3 pipeline/scripts/queue.py validate pipeline/review-queue/sehuan` | 8 drafts, **0 ERROR, 0 FLAG**. 4 WARN, all `PLACEHOLDER` on the three blocked drafts (P03 two entries, P07 one, P08 one); INFO `MEDIA_PENDING` on every draft with media. A clean run is not approval |
-| 2 | `python3 content/sehuan/verify.py` (this folder's script; reuses the pipeline word scanner) | **0 errors**, 5 warnings (the three BLOCKED drafts, the RP05 quoted-denial note and a note about OpenCC; the author's summary said 4). It checks: required fields and types, id and folder agree, `ai_label_flag` true, sponsorship none, review fields pending, no draft on 2026-11-27 to 11-29, Instagram days Mon, Wed, Fri and Threads days Tue, Thu, Sat, hook at most 20 characters, caption starts with the disclosure line and names 「色環」, caption length, hashtag counts and banned hashtags, media items all PENDING with a prompt, no hex or Chinese in an AI prompt, the word scanner on hooks, captions, labels, hashtags and every slide's on-screen text, the 30 weekday rows of section 3, the weekday of every heading and outline row, P01 to P22 present, all hook IDs in the calendar exist, 44 hooks scanned, 12 replies scanned, Simplified-only characters in every file, and the arithmetic in this file |
-| 3 | `gen_image.check_prompt` on all 38 `shot_prompt` values (7 AI-image prompts, 31 human-built build notes) | 0 blocked terms, 0 warnings. The blocklist is a keyword check, not look-alike clearance |
+| 2 | `python3 content/sehuan/verify.py` (this folder's script; reuses the pipeline word scanner) | **0 errors**, 5 warnings (the three BLOCKED drafts, the RP05 quoted-denial note and a note about OpenCC; the author's summary said 4). It checks: required fields and types, id and folder agree, `ai_label_flag` true, sponsorship none, review fields pending, no draft on 2026-11-27 to 11-29, Instagram days Mon, Wed, Fri and Threads days Tue, Thu, Sat, hook at most 20 characters, caption starts with the disclosure line and names 「色環」, caption length, hashtag counts and banned hashtags, media items all PENDING with a prompt, no hex or Chinese in an AI prompt, the word scanner on hooks, captions, labels, hashtags and every slide's on-screen text, the 30 weekday rows of section 3, the weekday of every heading and outline row, P01 to P22 present, all hook IDs in the calendar exist, 44 hooks scanned, 12 replies scanned, Simplified-only characters in every file, and the arithmetic in this file. **Added at v0.2:** the section 3 table must schedule exactly 18 posts, never a deferred one, at most 2 Instagram and 2 Threads a week and at least 2 Instagram in each of weeks 1 to 4; section 6 must hold the ten scheduled outlines and section 6.1 exactly P09, P10, P19 and P20; every outline's weekday must fit its platform; gate 15 must read Closed by D6; a Reel or Short draft (none exists) must carry the four D6 conditions in `review.notes` and be Instagram only; every lesson graphic must say DRAWN BY CLAUDE AS SVG and no stale human-built wording may remain in the `post.json` files or in sections 5 and 6; the headline section 8 numbers must appear in the text. Negative tests on temporary copies (a deferred post put back in the table, a third Instagram post in a week, gate 15 reopened, a changed capacity number, old wording in section 6, a Reel without D6 notes, an old route in a prompt) each produced the expected ERROR |
+| 3 | `gen_image.check_prompt` on all 38 `shot_prompt` values (7 AI-image prompts, 31 notes for Claude-drawn SVG graphics) | 0 blocked terms, 0 warnings. The blocklist is a keyword check, not look-alike clearance |
 | 4 | Word scanner on the 44 hooks | All `clean`. Three problems were caught and fixed during drafting: 面試穿搭 hides the banned substring 試穿 (hook H25 and the bible's pillar title P3-4); three hooks ran over 20 characters; one hook used 先看 as an instruction |
 | 5 | Word scanner on the 12 sample replies | 11 `clean`; RP05 shows one INFO (the refused topic 顯瘦 is quoted inside a denial) |
 | 6 | Word scanner on slide text | One catch fixed: 統計項目 used the mainland word 項目 (now 統計種類). The scanner does not read `media[].description`, so `verify.py` extracts the slide text and scans it |
 | 7 | Source-dependent wording | The scanner treats 官方 as a claim that needs a real source. The colour and size footers therefore say 品牌提供 (the wife may restore 官方); no caption uses 資料日期 or 出處 unless its post carries a real or placeholder source |
-| 8 | OpenCC `s2t` over every new text file and all eight `post.json` | The only changes proposed are 台 to 臺 in five files, a variant that is acceptable in Taiwan and that the project already writes as 台灣. No Simplified character found |
+| 8 | OpenCC `s2t` over every new text file and all eight `post.json` | The only changes proposed are 台 to 臺 in five files (re-run at v0.2 over the six text files and the eight `post.json`: the same five), a variant that is acceptable in Taiwan and that the project already writes as 台灣. No Simplified character found |
 | 9 | Weekdays and dates recomputed by script | W0 Mon 2026-11-16; Day 30 Tue 2026-12-15; Sat 2026-11-28; Sat 2026-12-12; Sat 2027-01-23; Mon 2026-12-28; every row of section 3 and every post heading |
-| 10 | Arithmetic and colour numbers recomputed | 60 + 30 + 10 = 100; 50 x 2 = 100; badge 3.5% of 1350 = 47 px, 8% of 1080 = 86 px, 8% of 1350 = 108 px; build 2 x 60 + 2 x 15 = 150 min, 150 + 20 = 170, 170 / 360 = 47%; pillar mix 4, 3, 2, 2 of 11 = 36%, 27%, 18%, 18%; contrast charcoal on ground 8.85:1, on cream 9.82:1, persimmon on ground 2.10:1; CIE76 distance from the persimmon to wheel position 2 is 12.1 (visibly different) |
-| 11 | Cross-calendar slot check (`方寸` and `步驟` slots read from their section 2 and day tables; this calendar's 22 slots; a one-off script kept in the session scratchpad, not in the repository) | **No two personas share a clock hour on any date.** Closest pairs: 60 minutes (方寸 Short Fri 19:30 against 色環 Instagram Fri 20:30 on 11-20, 12-04, 12-11). Both other calendars hold posts inside this calendar's quiet block (方寸 Short Fri 2026-11-27; 步驟 Sun 2026-11-29): flagged in section 9, not changed |
+| 10 | Arithmetic and colour numbers recomputed | 60 + 30 + 10 = 100; 50 x 2 = 100; badge 3.5% of 1350 = 47 px, 8% of 1080 = 86 px, 8% of 1350 = 108 px; build 2 x 60 + 2 x 15 = 150 min, 150 + 20 = 170, 170 / 360 = 47%; pillar mix 4, 3, 2, 2 of 11 = 36%, 27%, 18%, 18% (v0.1) and 3, 2, 2, 2 of 9 = 33%, 22%, 22%, 22% (v0.2); posts 4 + 4 + 4 + 4 + 2 = 18 against 4 + 4 + 6 + 6 + 2 = 22; section 8: 2 x 20 + 2 x 5 = 50, 50 + 20 = 70 = 19% of 360, low case 26 + 20 = 46 = 13%, v0.1 weeks 3 and 4 3 x 60 + 3 x 15 + 6 x 5 = 255 = 71%, D3 only 75 + 30 = 105, savings 150 + 35 = 185, 30-day totals 315 against 935 minutes, 70 / 4 = 17.5 and 46 / 4 = 11.5 minutes per approval, 50 / 110 = 45%, 3 x 50 = 150 and 3 x 26 = 78 against 110 and 74, wife 40 against 60 a week; contrast charcoal on ground 8.85:1, on cream 9.82:1, persimmon on ground 2.10:1; CIE76 distance from the persimmon to wheel position 2 is 12.1 (visibly different) |
+| 11 | Cross-calendar slot check, **re-run at v0.2** on the working-tree files after 方寸 and 步驟 were also updated for OPS-D1 (their section 3 day tables; 18 slots each, 54 in all; a one-off script kept in the session scratchpad, not in the repository) | **No two personas share a clock hour on any date.** Closest pairs: 60 minutes (方寸 Short Fri 19:30 against 色環 Instagram Fri 20:30 on 11-20 and 12-04; 12-11 left with P19). Pairs 90 minutes apart: 方寸 Short Tue 19:30 against 色環 Threads 18:00 on 11-24, 12-08 and 12-15. Both other calendars still hold posts inside this calendar's quiet block (方寸 Short Fri 2026-11-27; 步驟 Sun 2026-11-29, two posts): flagged in section 9, not changed. The siblings' files may still change, so the operator re-runs this when the three calendars are reconciled |
 | 12 | Golden-set prompts | The R01, R08b, R13, R02 and E05 prompt bodies were copied by script from `pipeline/image-pack/sehuan-photoreal.md` with start-of-text assertions, not retyped |
-| 13 | Existing pipeline test suite | 119 tests, OK at authoring time (the shared scripts were not edited); 130 tests, OK at the independent review (the suite had grown) |
+| 13 | Existing pipeline test suite | 119 tests, OK at authoring time (the shared scripts were not edited); 130 tests, OK at the independent review (the suite had grown); 130 tests, OK again at v0.2 (`python3 -m unittest discover -s pipeline/scripts`; the shared scripts were not edited) |
 
-**Not checked, and why.** The naturalness, tone and Taiwan vocabulary of any zh-TW line (the wife's job). Every fact against a source (the operator's job; the sources are placeholders where they depend on a page). That any image can be generated to the described standard (no image exists and none was generated). Platform limits for captions, hashtags, slides and image size (recalled, *unverified*). That the lesson graphics can be built in the time assumed (section 8). The election date, the weather-agency name and the size-term definitions (all recalled or unverified).
+**Not checked, and why.** The naturalness, tone and Taiwan vocabulary of any zh-TW line (the wife's job). Every fact against a source (the operator's job; the sources are placeholders where they depend on a page). That any image can be generated to the described standard (no image exists and none was generated). Platform limits for captions, hashtags, slides and image size (recalled, *unverified*). That any lesson graphic exists or renders correctly: none has been drawn, and the sandbox has no Taiwan-glyph font (section 7.2). That the operator's review minutes are as assumed (section 8): they are the largest unmeasured number. That the OPS-D1 choice of M5 and M10 is the best pair: it is judgement without engagement data (section 6.1). The election date, the weather-agency name and the size-term definitions (all recalled or unverified).
 
 ---
 
 ## 11. Review log (independent skeptical review, 2026-10-12)
+
+*This log reviewed v0.1. Its counts (22 posts, 11 masters, 8 drafts) and its capacity figures are v0.1 figures; section 12 records what v0.2 changed and section 8 holds the current arithmetic.*
 
 Reviewer read every file of the stream (this calendar, hook library, series, trend check, reply guidelines, B2B page, `verify.py`, the eight `post.json`) against `BRIEF.md` section 3 and 5, `DECISIONS.md`, `portfolio.md`, the 色環 bible and photoreal addendum, and the two sibling calendars. Nothing was approved, published or committed.
 
@@ -897,3 +924,15 @@ Reviewer read every file of the stream (this calendar, hook library, series, tre
 - The P03 weather panel compares Taipei with Kaohsiung during the election run-up. It is a data table with no verdict, but the wife should confirm the pairing does not read as a political contrast.
 - The wife-minutes comparison in section 8 adds 40 minutes on top of the portfolio's 363 (an overcount, since 色環's drafts are already in the 363): the conclusion (inside the 510 gate) stands, but "far inside" is generous (about 107 minutes of headroom). The operator-minutes comparison adds 20 minutes of approvals that the portfolio's 250 already contains; build time alone (150) still exceeds the 110 minutes of slack.
 - All platform limits, image sizes, the election date, the agency names, the 尾牙 date and the size-term definitions remain recalled or unverified, as the author labelled them.
+
+---
+
+## 12. Update log: decisions D6, OPS-D1 and D3 (v0.2, 2026-10-12)
+
+Source: `DECISIONS.md`, the 2026-10-12 entry "User asked for the recommended answers; Claude's recommended choices adopted on the user's behalf (reversible)". Each decision below was applied, not re-decided. Nothing was approved, scheduled, published or committed.
+
+| Decision | What was applied here | What was left alone, and why |
+|---|---|---|
+| **D6** a still, or a slow pan or zoom of a still, in a Reel or Short with four conditions | Gate 15 closed (section 1). The four conditions are written into sections 0, 7.3, 7.5 and 9, into the Reel templates of `series.md` and the hook rules, and `verify.py` now requires them in `review.notes` of any Reel or Short draft. The badge wording 「AI 生成｜虛擬角色」 matches addendum 8.2 and `pipeline/qa-checklist.md` D3, so no string changed; the one older difference (diagram badge 「AI 生成」 or 「搭配示意」 against the checklist's 「AI 生成｜示意圖」) is noted in section 7.3 | **No 色環 post was on hold only for D6, so no post changed status.** The eight drafts are Instagram carousels and Threads images or text; no Reel or Short was ever drafted, and none was invented. The three blocked drafts (P03, P07, P08: unfilled sources) and P04 (gate 17, the user's text-only first line) stay held for their own reasons. The addendum's "not covered" line and QA checklist section 6 still say video is barred until a separate addendum exists, which is right for face animation, voice and lip-sync and is not edited here (other folders) |
+| **OPS-D1** 12 approvals a week across the three pilots through week 8 | W3 and W4 cut from 6 to 4 approvals; M5 (P09, P10) and M10 (P19, P20) deferred (section 6.1, with the reasons, the alternative weighed and the restore order); cadence statements in sections 2 and 3, the totals (18 posts, 9 masters), the deviations table, the 雙12 and gate 17 notes, the weeks 3 and 4 capacity arithmetic (section 8), `series.md` episode tables and rotation, `hook-library.md` rows H06, H16, H41, H43 | The IDs P01 to P22, the dates and the queue folders of the remaining posts did not move. The primary platform (Instagram) keeps 2 posts a week in each of W1 to W4. The other files that hold 色環 slots (`launch/schedule.md`, `launch/schedule_check.py`, `ops/`, `analytics/`, `strategy/portfolio.md`) are outside this stream and still show the 22-slot plan: see the hand-over note in the stream summary |
+| **D3** Claude draws the diagram, lesson-graphic and edit-asset layer as SVG, rendered to PNG; the operator and the wife still approve every asset | Section 7.2 rewritten (route, status, font, character images, review and provenance); the 31 non-AI `shot_prompt` values and the build-spec wording in all eight `post.json` files and in sections 5 and 6 changed from human-built to DRAWN BY CLAUDE AS SVG; a D3 note appended to the seven `review.notes` that have media; section 8 rewritten with the review-time assumption (20 minutes per carousel, 5 per card, low case 10 and 3), the weekly loads before and after, the all-in minutes per approval and the comparison with the shared slack | **No SVG or PNG was drawn in this update**; the kit is a specification and the first drawing job is stated in section 7.2. No Taiwan-glyph font is installed in the sandbox (`fc-list`, 2026-10-12), so final text cannot yet be rendered. Claude cannot edit video. `hex` guidance, slide copy, captions and hooks were not changed |

@@ -1,6 +1,6 @@
 # Disclosed virtual-model lookbook creative: a short pitch page for the operator's fashion contacts
 
-**Status: DRAFT v0.1, written 2026-10-12 (Phase 5). Docs only. Not to be sent, posted or published.** Part A is for the operator and is removed before anything is shared. Part B is the page the operator's fashion contacts would read, once the gates in Part A are met. Part C is a zh-TW draft for the wife. Every zh-TW string is an AI draft for the wife; the operator reads the English gloss. Evidence labels: *assumption* = a planning figure to calibrate; *unverified* = not checked against a primary source.
+**Status: DRAFT v0.1, written 2026-10-12 (Phase 5); graphics wording updated the same day for decision D3. Docs only. Not to be sent, posted or published.** Part A is for the operator and is removed before anything is shared. Part B is the page the operator's fashion contacts would read, once the gates in Part A are met. Part C is a zh-TW draft for the wife. Every zh-TW string is an AI draft for the wife; the operator reads the English gloss. Evidence labels: *assumption* = a planning figure to calibrate; *unverified* = not checked against a primary source.
 
 **This page names no client, quotes no price and claims no result.** No client exists, no sample has been made, no image of the character exists yet (`personas/sehuan/photoreal-addendum.md` 12.3: licence terms unread; the golden set is not generated), and no Taiwan price or demand data for this service was found (`research/SUMMARY.md` section ii). Anything in Part B that sounds like a capability is a **plan to test with a first free sample**, not a record of work done.
 
@@ -34,7 +34,7 @@ Privately and in person only: the studio is exploring disclosed virtual-presente
 
 | Option | What it is | Needs the character's face? | Gates |
 |---|---|---|---|
-| 1 Colour-story board | A board that sets the brand's own product photos beside a colour wheel and a 6:3:1 proportion bar, labelled 搭配示意, built by hand | No | 4 (to invoice); a usage licence for the photos |
+| 1 Colour-story board | A board that sets the brand's own product photos beside a colour wheel and a 6:3:1 proportion bar, labelled 搭配示意; the wheel and the bar are drawn as SVG by Claude (decision D3), the brand's photos are placed as supplied | No | 4 (to invoice); a usage licence for the photos |
 | 2 Flat-lay or dress-form lookbook layout | The brand's product-only photos laid out as a lookbook page with captions in the studio's voice | No | As above |
 | 3 Labelled virtual-model stills (虛擬試穿示意) | The character shown in the brand's garment, built from the brand's product-only photos | Yes | **All of 1 to 7** |
 
