@@ -1,0 +1,45 @@
+{
+  "id": "buzhou-2026-11-29-01",
+  "persona": "buzhou",
+  "platform": "threads",
+  "format": "image",
+  "scheduled_date": "2026-11-29",
+  "pillar": "P2 官方對照表（對照表）",
+  "hook_zh": "價格頁這三格，別漏看。",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布。（附圖是工作室製作的圖卡，圖上沒有人物。）\n價格頁這三格，別漏看。\n1. 幣別：標價用什麼貨幣\n2. 計費週期：月繳或年繳；年繳價有沒有換算成每月\n3. 稅金說明：含稅、未稅，或頁面沒寫\n對應的影片會以 {工具} 的價格頁為例，資料日期：{YYYY/MM/DD}。我不判斷哪個方案值得，只整理頁面寫了什麼；價格以官方頁面當天顯示為準。\n",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Buzhou\". (The attached picture is a card made by the studio; there is no person on it.)\nThese three boxes on a price page, don't miss them.\n1. Currency: which currency the price is in\n2. Billing period: monthly or yearly; whether the yearly price has been converted to a monthly figure\n3. Tax statement: included, excluded, or the page does not say\nThe matching video will use {tool}'s price page as the example; data date: {date}. I don't judge which plan is worth it, I only organise what the page says; prices follow what the official page shows that day.",
+  "hashtags": [
+    "#訂閱",
+    "#AI工具",
+    "#價格頁"
+  ],
+  "on_screen_label_zh": "AI 生成｜示意圖（圖卡角標，後製加上；圖上沒有人物）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "The public pricing page of the tool used as the example in the Short S4: the currency, billing period and tax statement as the page shows them on the date seen. The card itself states only the three field names and carries no vendor figure. The operator pastes the page URL and the date and time seen. Whether Taiwan prices include tax is unverified: say only what the page says.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    },
+    {
+      "claim": "NO FACTUAL CLAIM: the three fields (currency, billing period, tax statement) are the studio's own reading method.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "CARD (typeset, no person, no AI image): 4:5, bone ground, ink-slate title 「價格頁的 3 個欄位」, three numbered rows (幣別 / 計費週期 / 稅金說明) each with its one-line question from the caption, footer 「以官方頁面當天顯示為準｜資料日期 {YYYY/MM/DD}」, badge 「AI 生成｜示意圖」 top-left inset at least 8 percent. Typeset in a Taiwan-glyph font (for example Noto Sans TC, language zh-TW); the wife checks every character. No logo, no price number, no vendor name on the card. Alt text: 工作室製作的圖卡，列出價格頁的三個欄位：幣別、計費週期、稅金說明。圖上沒有人物。",
+      "shot_prompt": "NO GENERATION PROMPT: this card is typeset by a human or built as vector artwork from the layout in the description; no image generator is used and no provider adapter is called. If a generator were ever used for the background it would need its own logged prompt first."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": ""
+  }
+}

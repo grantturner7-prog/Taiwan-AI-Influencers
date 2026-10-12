@@ -1,0 +1,32 @@
+{
+  "id": "sehuan-2026-11-21-01",
+  "persona": "sehuan",
+  "platform": "threads",
+  "format": "text",
+  "scheduled_date": "2026-11-21",
+  "pillar": "P2 氣候穿搭",
+  "hook_zh": "出門前，你會先看氣溫，還是降雨機率？",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布。\n問個問題：出門前，你會先看氣溫，還是先看降雨機率？\n沒有標準答案，說說你的習慣就好。",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Sehuan\".\nA question: before going out, do you check the temperature first, or the chance of rain first?\nThere is no standard answer; just tell us your habit.",
+  "hashtags": [
+    "#疊穿"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（純文字貼文，沒有畫面）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "NO FACTUAL CLAIM: a question to the audience; it states nothing about weather or clothing.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: text-only Threads question. The first line is the text-only adaptation of the disclosure pattern (bible 8.2, open item 14): the user must approve it. Wife to rule on the question wording. Hide political or off-topic replies; reply only through the approved templates. REVIEW 2026-10-12: the draft's last line promised a follow-up image (not in the calendar); replaced with a line that promises nothing."
+  }
+}

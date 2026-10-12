@@ -189,3 +189,30 @@ Master source table, consolidated and de-duplicated from the six Phase 1 researc
 5. LINE OA Manager (billing unit per broadcast) and the LINE Biz price notice; LINE Creators Market terms.
 6. NCC report PDF; MIC release id=744 and the Aug 2026 video survey.
 7. YouTube Studio Earn tab; YPP announcement of 2026-08-10.
+
+## G. Phase 4 pipeline tools (added 2026-10-12, from pipeline/tools.md)
+
+All rows were read as web-search result summaries on 2026-10-12 (the page-fetch tool failed with DNS errors for ai.google.dev and developers.openai.com). **No page was opened.** Prices are list prices reported by the source, not checked against an invoice; model names and prices change often. Currency US$ unless stated. Date accessed: 2026-10-12.
+
+| ID | File(s) and local ids | Claim | URL | Confidence |
+|---|---|---|---|---|
+| PT1 | tools.md PT1 | Gemini 2.5 Flash Image uses 1,290 tokens per image | https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/2-5-flash-image | medium |
+| PT2 | tools.md PT2 | Flash Image list price about US$0.039 to 0.04 | https://anotherwrapper.com/tools/llm-pricing/image-models/gemini-25-flash-image-nano-banana ; https://www.getmaxim.ai/bifrost/llm-cost-calculator/provider/gemini/model/gemini-2.5-flash-image | low (aggregators) |
+| PT3 | tools.md PT3 | Nano Banana Pro US$0.134 (1K/2K), 0.24 (4K); Nano Banana 2 tiers; reference input charge | https://benchlm.ai/md/media-pricing/nano-banana.md (says it read Google's pricing page 2026-09-11) ; https://www.myarchitectai.com/blog/nano-banana-api-pricing | low to medium |
+| PT4 | tools.md PT4 | Gemini image docs: reference-image limits, SynthID statement, preview-model deprecation (conflicting pages) | https://ai.google.dev/gemini-api/docs/image-generation ; https://ai.google.dev/gemini-api/docs/changelog | medium (summary) |
+| PT5 | tools.md PT5 | Gemini API Additional Terms: no ownership claim over generated content | https://ai.google.dev/gemini-api/terms | medium (summary) |
+| PT6 | tools.md PT6 | Paid tier data not used to improve products; free tier may be | https://ai.google.dev/gemini-api/docs/billing ; https://ai.google.dev/gemini-api/docs/pricing | medium (summary) |
+| PT7 | tools.md PT7 | gpt-image-1.5 per-image prices and token rates | https://developers.openai.com/api/docs/models/gpt-image-1.5 | medium (summary) |
+| PT8 | tools.md PT8 | gpt-image-2 release date and conflicting prices | https://pricepertoken.com/image/model/openai-gpt-image-2 ; https://aireiter.com/blog/gpt-image-2-api-pricing | low |
+| PT9 | tools.md PT9 | gpt-image-1 retirement 2026-10-23; gpt-image-1.5 and -mini listed | https://pricepertoken.com/gpt-image-pricing | low (one site) |
+| PT10 | tools.md PT10 | C2PA and SynthID in images from ChatGPT, Codex and the API (announced 2026-05-19) | https://help.openai.com/en/articles/8912793-c2pa-in-chatgpt | medium (summary) |
+| PT11 | tools.md PT11 | OpenAI output ownership and commercial use, as summarised by third parties | https://terms.law/ai-output-rights/chatgpt/ | low |
+| PT12 | tools.md PT12 | FLUX.2 per-megapixel prices; [dev] licence conflict | https://help.bfl.ai/articles/7686530342-flux-2-pricing-guide | medium (price), low (licence) |
+| PT13 | tools.md PT13 | Imagen 4 tier prices | https://blog.laozhang.ai/en/posts/ai-image-api-pricing-comparison | low (reseller) |
+| PT14 | tools.md PT14 | No official Midjourney API; plan range; terms bar automation | https://unifically.com/blogs/midjourney-api | low (vendor) |
+| PT15 | tools.md PT15 | Azure Speech billed per character; zh-TW voice names | https://azure.microsoft.com/zh-tw/pricing/details/speech/ ; https://json2video.com/ai-voices/azure/voices/zh-tw-hsiaochenneural/ | low to medium |
+| PT16 | tools.md PT16 | ElevenLabs Taiwan Mandarin voice listing; plan prices | https://www.famulor.io/voices/elevenlabs/languages/zh/accents/taiwan-mandarin ; https://www.aiworthit.com/blog/elevenlabs-review/ | low |
+| PT17 | tools.md PT17 | Video API per-second prices | https://rangy.ai/blog/veo-vs-kling-vs-runway ; https://modelslab.com/blog/api/veo-3-1-vs-kling-3-sora-2-ai-video-api-cost-2026 | low |
+| PT18 | tools.md PT18 | Lip-sync and avatar tool prices | https://dupple.com/learn/best-ai-lip-sync-tools ; https://creatify.ai/blog/heygen-vs-synthesia-(2026)-pricing-avatars-and-which-one-fits-your-team | low |
+| PT19 | tools.md PT19 | How to allow network hosts and add secrets in the cloud environment | https://code.claude.com/docs/en/cloud-environments#network-access | medium (given by the environment documentation) |
+

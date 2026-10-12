@@ -1,0 +1,413 @@
+/*
+  linkpage.css: shared stylesheet for the four static link-in-bio pages
+  (studio, fangcun, buzhou, sehuan). DRAFT v0.1, 2026-10-12.
+
+  Rules this file is built to keep (check with ../check_pages.py):
+  - No web fonts, no @import, no url() to another host. Only the system font stack.
+  - No script of any kind is needed or allowed by the pages.
+  - Mobile first: one column, 16px base text, tap targets at least 48px high.
+  - Colours are tokens (custom properties). Each theme defines the same token names so
+    check_pages.py can compute WCAG contrast for the pairs that carry text.
+  - Persona accents (sage, fog, persimmon) are decoration only and never carry text.
+
+  Theme token names (all required by the checker):
+    --bg --card --text --muted --line --btn-bg --btn-text --chip-bg --chip-text
+    --accent --focus --todo-bg --todo-text --todo-line --banner-bg --banner-text
+*/
+
+/* ---------- tokens: studio (neutral, default) ---------- */
+:root,
+.theme-studio {
+  --bg: #F4F1EC;
+  --card: #FFFFFF;
+  --text: #26231F;
+  --muted: #5A544C;
+  --line: #CFC8BC;
+  --btn-bg: #2F2B26;
+  --btn-text: #FAF7F2;
+  --chip-bg: #2F2B26;
+  --chip-text: #FAF7F2;
+  --accent: #8A8277;
+  --focus: #26231F;
+  --todo-bg: #FFF1BF;
+  --todo-text: #4A3A00;
+  --todo-line: #A67C00;
+  --banner-bg: #FFE08A;
+  --banner-text: #3D2F00;
+}
+
+/* ---------- tokens: 方寸 (oat, sage, walnut; backdrop #F5F0E6) ---------- */
+.theme-fangcun {
+  --bg: #F5F0E6;
+  --card: #FBF8F1;
+  --text: #3B3631;
+  --muted: #5E554B;
+  --line: #D3CAB7;
+  --btn-bg: #6E5440;
+  --btn-text: #FBF8F1;
+  --chip-bg: #3B3631;
+  --chip-text: #F5F0E6;
+  --accent: #A9B5A0;
+  --focus: #3B3631;
+}
+
+/* ---------- tokens: 步驟 (bone, ink slate, fog; picture frame ground #EEECE7) ---------- */
+.theme-buzhou {
+  --bg: #EEECE7;
+  --card: #F7F6F3;
+  --text: #2B3038;
+  --muted: #4F5661;
+  --line: #CAC8C1;
+  --btn-bg: #3B4A5C;
+  --btn-text: #F7F6F3;
+  --chip-bg: #EEECE7;
+  --chip-text: #2B3038;
+  --accent: #C9D1DA;
+  --focus: #2B3038;
+}
+
+/* ---------- tokens: 色環 (blush ground #F2DAD2, cream, charcoal, persimmon) ---------- */
+.theme-sehuan {
+  --bg: #F2DAD2;
+  --card: #FBF1EC;
+  --text: #3A3735;
+  --muted: #5B5450;
+  --line: #DDBBAF;
+  --btn-bg: #3A3735;
+  --btn-text: #F4E8DF;
+  --chip-bg: #3A3735;
+  --chip-text: #F4E8DF;
+  --accent: #CD8B6A;
+  --focus: #3A3735;
+}
+
+/* ---------- base ---------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Heiti TC",
+    "WenQuanYi Zen Hei", "Source Han Sans TC", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: 0.02em;
+  overflow-wrap: anywhere;
+}
+
+a { color: inherit; }
+
+.page {
+  width: 100%;
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+}
+
+/* ---------- draft banner (remove before publishing) ---------- */
+.draft-banner {
+  background: var(--banner-bg);
+  color: var(--banner-text);
+  border-bottom: 2px solid var(--todo-line);
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.draft-banner strong { font-weight: 700; }
+
+/* ---------- header ---------- */
+.hero {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.avatar {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar__pending {
+  margin: 0;
+  padding: 0 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+  border-radius: 50%;
+}
+.avatar__pending span { display: block; letter-spacing: 0.06em; }
+/* The AI chip sits INSIDE the circular crop (platforms crop avatars to a circle). */
+.avatar__chip {
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+  min-width: 2.25rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--chip-text);
+  border: 1.5px solid var(--text);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wordmark {
+  margin: 0 auto 1rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.875rem;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-wrap: balance;
+}
+.tagline {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  text-wrap: balance;
+}
+.tagline [lang="en"] { letter-spacing: 0.02em; }
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+p { margin: 0 0 0.75rem; }
+p:last-child { margin-bottom: 0; }
+
+/* ---------- cards ---------- */
+.card {
+  margin-top: 1rem;
+  padding: 1rem 1.125rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+/* The disclosure is the most prominent block on every page. */
+.disclosure-card {
+  margin-top: 1.25rem;
+  padding: 1rem 1.125rem;
+  background: var(--card);
+  border: 2px solid var(--text);
+  border-radius: 1rem;
+  text-align: center;
+}
+.disclosure {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+}
+/* Keep "由 明說角色工作室 創作與營運" together on one line, or wrap as one block, and never split the studio name. */
+.disclosure .seg { display: inline-block; }
+.disclosure .nobr { white-space: nowrap; }
+.disclosure strong {
+  display: inline-block;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1.5px solid var(--btn-bg);
+  font-weight: 700;
+}
+.disclosure-card p:not(.disclosure) {
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+/* ---------- links ---------- */
+.links {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.125rem;
+  min-height: 3.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.875rem;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-bg);
+  text-decoration: none;
+}
+a.link:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+.link__label { font-weight: 700; font-size: 1.0625rem; line-height: 1.4; }
+.link__sub { font-size: 0.875rem; line-height: 1.5; opacity: 1; }
+
+/* A link that is not filled in yet: clearly NOT a working button. */
+.link--todo {
+  background: var(--todo-bg);
+  color: var(--todo-text);
+  border: 2px dashed var(--todo-line);
+}
+
+/* A neutral secondary link (studio). */
+.link--quiet {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--text);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+/* ---------- placeholders ---------- */
+.todo {
+  display: inline-block;
+  padding: 0 0.375rem;
+  background: var(--todo-bg);
+  color: var(--todo-text);
+  border: 1.5px dashed var(--todo-line);
+  border-radius: 0.375rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.card--todo {
+  background: var(--todo-bg);
+  color: var(--todo-text);
+  border: 2px dashed var(--todo-line);
+}
+.card--todo .todo {
+  background: transparent;
+  border-color: var(--todo-text);
+}
+
+/* ---------- directory (studio page) ---------- */
+.directory {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.directory li {
+  border-top: 1px solid var(--line);
+  padding-top: 0.5rem;
+}
+.directory li:first-child { border-top: 0; padding-top: 0; }
+.directory a {
+  display: block;
+  min-height: 3rem;
+  padding: 0.25rem 0;
+  text-underline-offset: 0.25em;
+}
+.directory + p { margin-top: 0.75rem; }
+.directory__name { font-weight: 700; }
+.directory__what { display: block; color: var(--muted); font-size: 0.9375rem; }
+
+/* Heading kept for screen readers and document outline, not shown. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+.card--todo .fine { color: inherit; }
+
+ul.plain {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+ul.plain li { margin-bottom: 0.375rem; }
+ul.plain li:last-child { margin-bottom: 0; }
+
+.fine {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---------- wider screens ---------- */
+@media (min-width: 40rem) {
+  .page { padding-top: 2rem; }
+  h1 { font-size: 2.25rem; }
+  .link { min-height: 4rem; }
+}
+
+/* very narrow phones (320 px): keep "由 明說角色工作室 創作與營運" on one line */
+@media (max-width: 22.5rem) {
+  .page { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .card, .disclosure-card { padding-left: 0.875rem; padding-right: 0.875rem; }
+  .disclosure { font-size: 0.9375rem; letter-spacing: 0.02em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+@media (forced-colors: active) {
+  .link, .card, .disclosure-card, .todo, .avatar__chip { border: 2px solid CanvasText; }
+  .link--todo, .card--todo, .todo { border-style: dashed; }
+}
+
+@media print {
+  .draft-banner { border: 2px solid #000; }
+}

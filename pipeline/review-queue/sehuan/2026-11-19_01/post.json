@@ -1,0 +1,43 @@
+{
+  "id": "sehuan-2026-11-19-01",
+  "persona": "sehuan",
+  "platform": "threads",
+  "format": "image",
+  "scheduled_date": "2026-11-19",
+  "pillar": "P1 配色公式",
+  "hook_zh": "點綴色最多一成，你會放在哪裡？",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖像為 AI 生成，並非真人。\n三色口訣（經驗法則）：主色六成、輔色三成、點綴色一成。\n你會把一成的點綴色放在哪裡？外套、包包，還是鞋子？",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Sehuan\"; the image is AI-generated and is not a real person.\nThree-colour rule of thumb: main colour 60%, secondary 30%, accent 10%.\nWhere would you put the 10% accent? On the jacket, the bag, or the shoes?",
+  "hashtags": [
+    "#配色"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "NO FACTUAL CLAIM: same rule of thumb as sehuan-2026-11-18-01 (a labelled teaching device, not a cited standard); the closing line is a question to the audience.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "ASSET A5 (golden set EXP_E05_*_v1). AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Mild-smile headshot (E05), 1:1, shown as a small framed panel. Alt text: 「AI 生成的虛擬角色色環，非真人。」",
+      "shot_prompt": "PREFER REUSE: if the approved golden-set file EXP_E05_*_v1 exists (assets/sehuan/photoreal/), use it and do not generate a new image; a crop or colour correction is a logged human edit. Open a NEW chat in the tool that made R01. ATTACH R01_master_v1 (Image 1) and R06_headshot_v1 (Image 2). PASTE the Character Lock (pipeline/image-pack/sehuan-photoreal.md section 2.7, verbatim), a blank line, then the prompt below. Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert).\n---\nImage 2 is the headshot; use it for the face only.\nCHANGE only: the expression (E05, mild smile): a soft closed-mouth smile with small smile lines at the corners of the eyes. No teeth. Headshot, head and shoulders, front view, no hands in the picture. Nothing else changes.\nOUTPUT: 1:1 square; plain dusty-blush seamless studio background; same soft studio light; one image."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 1 (formula card) [4:5, 1 slide]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 三色口訣（經驗法則）／主色 六成｜輔色 三成｜點綴色 一成／點綴色，你會放在哪裡？ | GLOSS: Three-colour rule of thumb / Main 60% | secondary 30% | accent 10% / Where would you put the accent? | VISUAL: One card, ground #F2DAD2, charcoal type. The 6:3:1 bar drawn to scale across the middle (same fills as P01 slide 3). A5 as a small framed square panel in the top-left corner (about one fifth of the card width). A persimmon underline under the question only. Badge top-right, inset at least 11% of the height from the top and bottom edges and at least 8% of the width from the sides (so a centred square crop of a 4:5 picture cannot remove it; see pipeline/qa-checklist.md D3). | USES: A5. Alt text: 「AI 生成的搭配示意圖：三色口訣的比例條與提問；角落是虛擬角色色環的小頭像，非真人。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: Threads version of M1, posted the day after the Instagram carousel. Wife to rule on the question wording and 一成. Operator to check the card matches the Instagram bar and the headshot passes the face checks."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "buzhou-2026-11-19-01",
+  "persona": "buzhou",
+  "platform": "threads",
+  "format": "image",
+  "scheduled_date": "2026-11-19",
+  "pillar": "P4 用之前先看（範本清單）",
+  "hook_zh": "AI 回答完，先別轉貼。",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布，圖像為 AI 生成，並非真人。\nAI 回答完，先別轉貼。\n第 0 步，先看日期。再用 3 步驟核對：\n1. 標出能查證的句子：人名、數字、日期、規定\n2. 要求列出出處，再自己打開出處看看\n3. 對照原始資料，對不上就以原始資料為準\n{工具}的介面也寫了提醒：回答可能有錯（{YYYY/MM/DD}）。\n我是步驟，由明說角色工作室創作與營運。我沒有用過任何工具，影片裡的操作由工作室真人錄製，我負責說明。錄影版會發布在 YouTube 頻道「步驟」。\n",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Buzhou\"; the image is AI-generated and is not a real person.\nAfter the AI answers, don't repost it yet.\nStep zero: check the date. Then check in 3 steps:\n1. Mark the sentences that can be checked: names, numbers, dates, rules\n2. Ask it to list its sources, then open the sources yourself\n3. Compare with the original material; if they differ, go by the original material\n{tool}'s interface also carries a notice: answers may be wrong ({date}).\nI'm Buzhou, created and run by Plainspoken Studio. I have not used any tool; the operations in the videos are recorded by a real person at the studio, and I explain. The recorded version will be published on the YouTube channel \"Buzhou\".",
+  "hashtags": [
+    "#AI虛擬角色",
+    "#AI工具",
+    "#核對"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（圖上角標，後製加上，不由生成工具繪製）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "The tool's own interface or help text says its answers can be wrong (the T1 line 「{工具}的介面也寫了提醒：回答可能有錯（{YYYY/MM/DD}）」). The operator pastes the vendor help-centre page URL, or, if the notice exists only in the interface, names the screenshot file and the date seen in this field. Recalled help-centre domains, unverified: help.openai.com, support.anthropic.com, support.google.com/gemini.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    },
+    {
+      "claim": "NO FACTUAL CLAIM about any vendor: the three-step check (mark the checkable sentences, ask for the sources and open them, compare with the original material) is the studio's own method.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "R01 master portrait of the openly-AI character 步驟 (waist-up, Outfit A, no hands visible, grey studio backdrop). AI-generated photoreal image; the badge 「AI 生成｜虛擬角色」 is typeset in post and never generated. Identity post for the launch day. Alt text: AI 生成的虛擬角色步驟，示意圖，非真人。",
+      "shot_prompt": "PREFER REUSE: if the approved golden-set file R01_pr_master_v1 exists (assets/buzhou/photoreal/), use it and do not generate a new image; a crop or colour correction is a logged human edit. If it is not yet approved, generate it with the R01 prompt in pipeline/image-pack/buzhou-photoreal.md section 2.2 (Gemini) or 2.3 (ChatGPT); the prompt is not repeated here so the pack stays the single source of truth. Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert)."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": ""
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "sehuan-2026-11-25-01",
+  "persona": "sehuan",
+  "platform": "instagram",
+  "format": "carousel",
+  "scheduled_date": "2026-11-25",
+  "pillar": "P4 看懂標示與趨勢",
+  "hook_zh": "尺寸表看不懂？先搞懂「平量」兩個字。",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖像為 AI 生成，並非真人。\n尺寸表看不懂？先搞懂「平量」和「圍度」兩個詞。\n平量是把衣服攤平量出來的寬度，圍度是繞一圈的長度；胸、腰、下擺這類位置，圍度大約是平量的兩倍。\n這篇附上空白量法表，數字請填你自己衣服的尺寸，也請看品牌尺寸表旁邊的量法說明。\n角色未穿著，合不合身請以品牌提供的尺寸表為準。",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Sehuan\"; the images are AI-generated and are not a real person.\nCan't read the size chart? Start with two words: 平量 (flat measurement) and 圍度 (circumference).\nFlat measurement is the width you get when the garment is laid flat; circumference is the length all the way round. For positions such as chest, waist and hem, the circumference is roughly twice the flat measurement.\nThis post includes a blank measuring sheet. Fill in the sizes of your own garment, and also read the measuring note next to the brand's size chart.\nThe character has not worn anything; for whether something fits, go by the size chart the brand provides.",
+  "hashtags": [
+    "#尺寸表",
+    "#看懂標示",
+    "#穿搭",
+    "#AI虛擬角色"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（有色環的頁面）／AI 生成（純圖解的頁面）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "ARITHMETIC ONLY: 50 x 2 = 100. An invented example (flat measurement 50 cm giving a circumference of about 100 cm for an un-stretched loop at a chest, waist or hem position), tagged 範例數字，非真實商品 on screen. Ignores stretch, ease and seams. Recomputed by Claude 2026-10-12; the operator recomputes.",
+      "url": "",
+      "date": ""
+    },
+    {
+      "claim": "The definitions of 平量 and 圍度 and how garment size charts are commonly labelled in Taiwan: recalled, unverified. The operator opens one neutral public source (a national standard or consumer-labelling guidance page; which one applies in Taiwan is unverified) and records its title, URL and the date read; the slide-7 source line is then filled.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "ASSET A1 (golden set R01_master_v1). AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Master portrait R01: waist-up, front, outfit A, calm closed-mouth expression, both hands below the frame. Alt text: 「AI 生成的虛擬角色色環，非真人。」",
+      "shot_prompt": "PREFER REUSE: use the approved golden-set file R01_master_v1 (assets/sehuan/photoreal/); do not generate a new image. This is the same asset as asset A1 of sehuan-2026-11-18-01, whose shot_prompt carries the full R01 prompt (verbatim from pipeline/image-pack/sehuan-photoreal.md section 2.1). A crop or colour correction is a logged human edit. Never upload a photograph of any real person; adapters stay inert."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 1 (cover) [4:5, 7 slides]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 尺寸表看不懂？／先搞懂「平量」兩個字／一詞看懂 #01 | GLOSS: Can't read the size chart? / Start with the two words 「平量」 / One-word explainer #01 | VISUAL: Pale-blush ground; large title; persimmon underline under 「平量」; A1 cut-out lower-left; badge top-right. | USES: A1. Alt text: 「AI 生成的虛擬角色色環，非真人；標題：尺寸表看不懂，先搞懂平量。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 2 (two words) [4:5, 7 slides]. BADGE: 「AI 生成｜搭配示意」. TEXT zh-TW (DRAFT): 平量＝把衣服攤平，量出來的寬度／圍度＝繞一圈的長度 | GLOSS: Flat measurement = the width when the garment is laid flat / Circumference = the length all the way round | VISUAL: A generic shirt flat (no logo, tag or pattern) with a straight dimension line across the chest labelled 胸寬 (平量), and the same chest drawn as a loop with a curved arrow labelled 胸圍 (圍度). Terms 胸寬／胸圍／肩寬／衣長／袖長 are the wife's to confirm. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：襯衫平面圖，標出平量的胸寬與圍度的胸圍。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 3 (the relation) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 胸、腰、下擺這類位置：圍度 ≒ 平量 × 2／範例：平量 50 → 圍度約 100／範例數字，非真實商品 | GLOSS: At positions such as chest, waist and hem: circumference ≈ flat measurement x 2 / Example: flat 50 -> circumference about 100 / Example numbers, not a real product | VISUAL: Two bars, one half the length of the other, labelled 50 and 100 (units 公分). The tag 「範例數字，非真實商品」 on the slide. No character. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：平量 50 與圍度約 100 的長度對照，範例數字，非真實商品。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 4 (blank measuring sheet) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 空白量法表／胸寬 ＿ 公分｜肩寬 ＿ 公分／衣長 ＿ 公分｜袖長 ＿ 公分／填你自己衣服的尺寸，和品牌尺寸表旁邊的量法說明比一比 | GLOSS: Blank measuring sheet / Chest width __ cm | shoulder width __ cm / Length __ cm | sleeve length __ cm / Fill in your own garment's sizes and compare with the measuring note next to the brand's size chart | VISUAL: The flat from slide 2 with four blank dimension lines; no example numbers; no character panel. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：空白量法表。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 5 (what to check on a chart) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 看尺寸表，先確認三件事／① 標題寫平量還是圍度／② 單位是公分還是吋／③ 量法說明（每個品牌可能不同） | GLOSS: On a size chart, check three things first / (1) does the heading say flat measurement or circumference / (2) is the unit centimetres or inches / (3) the measuring note (each brand may differ) | VISUAL: Three numbered rows with plain icons (a ruler, a unit mark, a note); no chart of a real brand; no brand name. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：看尺寸表先確認的三件事。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 6 (your steps) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 你的流程／① 把衣服攤平／② 量同一個位置／③ 和尺寸表上的數字比一比（只比數字） | GLOSS: Your steps / (1) lay the garment flat / (2) measure the same position / (3) compare with the numbers on the chart (numbers only) | VISUAL: Three-step strip; no body, no measuring of a person, no tape measure on a body (the tape measure motif belongs to another character); a plain ruler only. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：自己衣服的三步量法。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 7 (footers) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 角色未穿著，合不合身請以品牌提供的尺寸表為準。／範例數字，非真實商品。／資料來源：{頁面名稱}｜{YYYY/MM/DD}（定義）／本篇由明說角色工作室創作與營運。圖像為 AI 生成，並非真人。 | GLOSS: The character has not worn anything; for whether something fits, go by the size chart the brand provides. / Example numbers, not a real product. / Source: {page name} | {date} (definitions) / Created and run by Plainspoken Studio. The images are AI-generated and not a real person. | VISUAL: Small centred type; the source line is filled from the operator's slip and must not contain braces when exported. | USES: no character panel. Alt text: 「AI 生成的頁面：尺寸提醒、範例數字聲明與資料來源。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: BLOCKED until the operator records one neutral public definition source (sources[] placeholder). Wife to rule on 平量／圍度／胸寬／胸圍 and whether readers under 30 know 平量. The only number is the invented example 50 to 100, tagged 範例數字，非真實商品. No fit or comfort claim; 合不合身 appears only as a declined topic."
+  }
+}

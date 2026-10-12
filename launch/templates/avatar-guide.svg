@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  avatar-guide.svg: a LAYOUT GUIDE for the three pilot avatars (1080 x 1080). It is not an avatar and it contains no character.
+  DRAFT v0.1, 2026-10-12. All positions are assumptions to confirm by eye in each platform's live crop preview.
+
+  How to use: open it beside the cropped headshot in a design tool, put the headshot on the layer below, and check:
+    1. Circle crop (dashed, radius 540): every platform shows an avatar as a circle (recalled, unverified), so anything outside is lost.
+    2. Safe disc (dotted, radius 378 = central 70%): keep the whole face inside it.
+    3. Face-centre mark: eyes about 45% down the image; head about 60 to 70% of the image height (pack 4.5).
+    4. AI chip (the pill): Latin letters "AI", typeset in the design tool (never generated), INSIDE the circle crop, on the
+       shoulder side, not over the chin or mouth. Reference size 220 x 128 on 1080 (about 20% of the width). At a 110 px avatar that is
+       about 22 x 13 px, so check it at 110 px and at 40 px before saving.
+  Chip styles per persona (hex values from the personas' own palettes; check them again on the real photograph):
+    方寸  fill #3B3631, letters #F5F0E6, thin outline #3B3631
+    步驟  fill #EEECE7, letters #2B3038, outline #2B3038 (bone fill is the addendum's style; it stays readable on a grey backdrop)
+    色環  fill #3A3735, letters #F4E8DF, thin outline #3A3735
+  The guide shapes are neutral grey; only the sample chip uses the 方寸 style. Do not export this file as an avatar.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" role="img" aria-labelledby="t d">
+  <title id="t">Avatar layout guide</title>
+  <desc id="d">A 1080 by 1080 square with a dashed circular crop, a dotted safe disc, a face-centre mark and a sample AI chip placed inside the circle on the lower right.</desc>
+  <rect width="1080" height="1080" fill="#E9E9E9"/>
+  <!-- circular crop -->
+  <circle cx="540" cy="540" r="540" fill="#F7F7F7" stroke="#555555" stroke-width="4" stroke-dasharray="24 14"/>
+  <!-- safe disc: central 70% -->
+  <circle cx="540" cy="540" r="378" fill="none" stroke="#777777" stroke-width="3" stroke-dasharray="4 10"/>
+  <!-- head height guides: 65% of the image height, eyes line at 45% -->
+  <line x1="120" y1="136" x2="960" y2="136" stroke="#999999" stroke-width="2" stroke-dasharray="10 10"/>
+  <line x1="120" y1="836" x2="960" y2="836" stroke="#999999" stroke-width="2" stroke-dasharray="10 10"/>
+  <line x1="120" y1="486" x2="960" y2="486" stroke="#999999" stroke-width="2"/>
+  <line x1="540" y1="60" x2="540" y2="1020" stroke="#999999" stroke-width="2"/>
+  <circle cx="540" cy="486" r="14" fill="none" stroke="#333333" stroke-width="4"/>
+  <!-- sample AI chip: centre (745, 850), 220 x 128. Farthest corner is about 479 from the centre, inside the 540 radius with a margin of about 61 -->
+  <rect x="635" y="786" width="220" height="128" rx="64" fill="#3B3631" stroke="#F5F0E6" stroke-width="6"/>
+  <text x="745" y="850" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="700" letter-spacing="4" fill="#F5F0E6">AI</text>
+  <!-- labels (guide only) -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#333333">
+    <text x="150" y="124">top of head about 13% down</text>
+    <text x="150" y="826" dy="-12">chin about 77% down</text>
+    <text x="560" y="480" dy="-20">eyes about 45% down</text>
+    <text x="330" y="1000" font-size="26">dashed: circle crop, dotted: safe disc</text>
+  </g>
+</svg>

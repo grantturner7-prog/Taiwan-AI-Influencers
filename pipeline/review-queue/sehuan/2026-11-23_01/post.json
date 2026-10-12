@@ -1,0 +1,77 @@
+{
+  "id": "sehuan-2026-11-23-01",
+  "persona": "sehuan",
+  "platform": "instagram",
+  "format": "carousel",
+  "scheduled_date": "2026-11-23",
+  "pillar": "P1 配色公式",
+  "hook_zh": "中性色也有冷暖：灰、米、駝放上色環",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖像為 AI 生成，並非真人。\n灰、米、駝色看起來都很「中性」，放上色環就會發現：有的偏暖，有的偏冷。\n這篇用三組搭配示意圖比較冷暖並置的差別，只談顏色之間的對比，不談誰適合。\n先收藏起來，搭配時可以對照～\n螢幕有色差，實際顏色以品牌提供的資訊為準。",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Sehuan\"; the images are AI-generated and are not a real person.\nGrey, beige and camel all look \"neutral\", but placed on the colour wheel you see that some lean warm and some lean cool.\nThis post compares warm and cool neutrals side by side in three styling illustrations. It only discusses contrast between colours, not who something suits.\nSave it and compare when you put outfits together~\nScreens shift colour; for the real colour, go by the information the brand provides.",
+  "hashtags": [
+    "#配色",
+    "#色彩",
+    "#中性色",
+    "#穿搭公式",
+    "#AI虛擬角色"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（有色環的頁面）／AI 生成（純圖解的頁面）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "NO FACTUAL CLAIM: warm and cool lean of a neutral is described as a design convention, by comparing the neutral swatches with the wheel in the editor file; it is about garments and swatches only, never about skin. Hue positions are read from the hex values by the operator in the editor. If the operator logs a colour-theory reference (gate G7) that defines warm and cool colours, add it here and on slide 7.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "ASSET A4 (golden set R02_three-quarter-left_v1). AI-generated photoreal image of the openly-AI character 色環; label added in post, never generated. Three-quarter view toward the viewer's left (R02), waist-up, outfit A; shows the tucked ear and the colour-wheel earring. Alt text: 「AI 生成的虛擬角色色環，非真人。」",
+      "shot_prompt": "PREFER REUSE: if the approved golden-set file R02_three-quarter-left_v1 exists (assets/sehuan/photoreal/), use it and do not generate a new image; a crop or colour correction is a logged human edit. Open a NEW chat in the tool that made R01. ATTACH R01_master_v1. PASTE the Character Lock (pipeline/image-pack/sehuan-photoreal.md section 2.7, verbatim), a blank line, then the prompt below. Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert).\n---\nCHANGE only: the angle. Show the same woman in a three-quarter view, her body and head turned about 40 degrees toward the viewer's left, eyes still looking at the camera. The tucked ear and its colour-wheel earring are clearly visible. Waist-up: the frame ends at the waist and both hands are outside the picture below the frame, arms relaxed. Same outfit (A), same hair, same calm closed-mouth expression.\nOUTPUT: 4:5 portrait; plain dusty-blush seamless studio background; same soft studio light from the front right; one image."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 1 (cover) [4:5, 7 slides]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 中性色也有冷暖／灰、米、駝，放上色環看看／轉一格 #02 | GLOSS: Neutrals have a warm and a cool side too / Grey, beige and camel, placed on the wheel / Turn-one-step #02 | VISUAL: Pale-blush ground; large title; persimmon underline under 「冷暖」; A4 (three-quarter left) cut-out lower-right so the earring shows; badge top-right. | USES: A4. Alt text: 「AI 生成的虛擬角色色環，非真人；標題：中性色也有冷暖。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 2 (what a neutral is) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 什麼是中性色？／灰、米、駝、炭灰這類彩度低的顏色／彩度低，就是顏色不鮮豔 | GLOSS: What is a neutral? / Colours such as grey, beige, camel and charcoal that have low chroma / Low chroma means the colour is not vivid | VISUAL: A strip of seven muted swatches from the persimmon down to grey, with the four neutrals bracketed. 彩度 (wife rules 彩度 against 飽和度) defined in one plain line. No character. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：從鮮豔到灰的色條，標出灰、米、駝、炭灰四個中性色。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 3 (on the wheel) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 放上色環，看它偏哪一邊／偏黃橘那一側＝偏暖／偏藍紫那一側＝偏冷 | GLOSS: Place it on the wheel and see which side it leans toward / The yellow-orange side = leans warm / The blue-violet side = leans cool | VISUAL: A half-wheel (the warm half in full, the cool half in full, muted, circular, numbered positions) with four chips placed by lean: 暖灰, 冷灰, 駝色, 米色. The wheel is a neutral diagram: no headline or label pairs blue with green or blue with white. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：中性色放在色環上，偏暖與偏冷兩側。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 4 (same lean) [4:5, 7 slides]. BADGE: 「AI 生成｜搭配示意」. TEXT zh-TW (DRAFT): 同一邊的中性色：對比小／暖灰＋駝色＋奶油白 | GLOSS: Neutrals from the same side: low contrast / warm stone + camel + cream | VISUAL: One dress form in generic flats (stone jacket, camel trousers, cream top) with a small persimmon scarf (at most one tenth). Label 「搭配示意」. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：同一側中性色的搭配。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 5 (mixed lean) [4:5, 7 slides]. BADGE: 「AI 生成｜搭配示意」. TEXT zh-TW (DRAFT): 冷暖並置：對比比較明顯／冷灰＋駝色＋奶油白／轉一格：把暖灰換成冷灰 | GLOSS: Warm and cool side by side: the contrast is more visible / cool grey + camel + cream / Turn one step: swap the warm stone for a cool grey | VISUAL: The same dress form and the same accent; only the jacket changes from warm stone to cool grey (#9A9EA3, a low-chroma slate grey, not a saturated blue). The two forms side by side. Label 「搭配示意」. No verdict words. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：暖灰換成冷灰的兩組對照。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 6 (your turn) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 換你填／手邊的中性色，你覺得偏暖還是偏冷？／放在一起比一比 | GLOSS: Your turn / Do the neutrals you have lean warm or cool? / Put them side by side and compare | VISUAL: Worksheet: three blank swatch squares with 偏暖／偏冷 tick boxes. No request for photos; no character. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：空白的冷暖比較表。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Slide 7 (footers) [4:5, 7 slides]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 本篇由明說角色工作室創作與營運。／圖像為 AI 生成，並非真人。／冷暖是配色的說法，這篇只比較顏色，不談誰適合。／螢幕有色差，實際顏色以品牌提供的資訊為準。 | GLOSS: Created and run by Plainspoken Studio. / The images are AI-generated and are not a real person. / Warm and cool is a colour-design convention; this post only compares colours and says nothing about who they suit. / Screens shift colour; for the real colour, go by the information the brand provides. | VISUAL: Small centred type; no new content. | USES: no character panel. Alt text: 「AI 生成的頁面：創作單位、AI 聲明與色差提醒。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: replaces the bible's indicative P1-3 (adjacent and opposite) in week 2 with P1-4 (neutrals) to keep election week colour-neutral; P1-3 moves to P17 (2026-12-09). Wife to rule on 彩度, 中性色, 偏暖/偏冷 and the half-wheel colour read. Operator to check the chips' positions and A4's earring."
+  }
+}

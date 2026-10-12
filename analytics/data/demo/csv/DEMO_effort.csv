@@ -1,0 +1,278 @@
+ref,log_date,persona,post_id,master_id,role,task,minutes,notes
+DEMO-eff-op-DEMO-buzhou-2026-11-16-01,2026-11-13,buzhou,DEMO-buzhou-2026-11-16-01,DEMO-M-buzhou-w1-s0,operator,approval,6.5,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-16-01,2026-11-13,buzhou,DEMO-buzhou-2026-11-16-01,DEMO-M-buzhou-w1-s0,wife,master_review,7.4,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-11-16-01,2026-11-13,fangcun,DEMO-fangcun-2026-11-16-01,DEMO-M-fangcun-w1-s0,operator,approval,6.3,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-16-01,2026-11-13,fangcun,DEMO-fangcun-2026-11-16-01,DEMO-M-fangcun-w1-s0,wife,master_review,7.5,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-16-01,2026-11-13,sehuan,DEMO-sehuan-2026-11-16-01,DEMO-M-sehuan-w1-s0,operator,approval,7.9,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-16-01,2026-11-13,sehuan,DEMO-sehuan-2026-11-16-01,DEMO-M-sehuan-w1-s0,wife,master_review,10.5,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-17-01,2026-11-14,buzhou,DEMO-buzhou-2026-11-17-01,DEMO-M-buzhou-w1-s0,operator,approval,6.2,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-17-01,2026-11-14,buzhou,DEMO-buzhou-2026-11-17-01,DEMO-M-buzhou-w1-s0,wife,master_review,3.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-11-17-01,2026-11-14,buzhou,DEMO-buzhou-2026-11-17-01,DEMO-M-buzhou-w1-s0,operator,n7_recording,13.9,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-11-17-01,2026-11-14,fangcun,DEMO-fangcun-2026-11-17-01,DEMO-M-fangcun-w1-s0,operator,approval,4.1,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-17-01,2026-11-14,fangcun,DEMO-fangcun-2026-11-17-01,DEMO-M-fangcun-w1-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-17-01,2026-11-14,sehuan,DEMO-sehuan-2026-11-17-01,DEMO-M-sehuan-w1-s0,operator,approval,8.3,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-17-01,2026-11-14,sehuan,DEMO-sehuan-2026-11-17-01,DEMO-M-sehuan-w1-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-11-20-01,2026-11-17,fangcun,DEMO-fangcun-2026-11-20-01,DEMO-M-fangcun-w1-s2,operator,approval,4.0,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-20-01,2026-11-17,fangcun,DEMO-fangcun-2026-11-20-01,DEMO-M-fangcun-w1-s2,wife,master_review,7.1,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-20-01,2026-11-17,sehuan,DEMO-sehuan-2026-11-20-01,DEMO-M-sehuan-w1-s2,operator,approval,6.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-20-01,2026-11-17,sehuan,DEMO-sehuan-2026-11-20-01,DEMO-M-sehuan-w1-s2,wife,master_review,12.4,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-21-01,2026-11-18,buzhou,DEMO-buzhou-2026-11-21-01,DEMO-M-buzhou-w1-s2,operator,approval,5.0,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-21-01,2026-11-18,buzhou,DEMO-buzhou-2026-11-21-01,DEMO-M-buzhou-w1-s2,wife,master_review,10.2,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-11-21-01,2026-11-18,buzhou,DEMO-buzhou-2026-11-21-01,DEMO-M-buzhou-w1-s2,operator,n7_recording,31.9,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-11-21-01,2026-11-18,fangcun,DEMO-fangcun-2026-11-21-01,DEMO-M-fangcun-w1-s2,operator,approval,4.3,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-21-01,2026-11-18,fangcun,DEMO-fangcun-2026-11-21-01,DEMO-M-fangcun-w1-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-22-01,2026-11-19,buzhou,DEMO-buzhou-2026-11-22-01,DEMO-M-buzhou-w1-s2,operator,approval,3.9,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-22-01,2026-11-19,buzhou,DEMO-buzhou-2026-11-22-01,DEMO-M-buzhou-w1-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-22-01,2026-11-19,sehuan,DEMO-sehuan-2026-11-22-01,DEMO-M-sehuan-w1-s2,operator,approval,8.9,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-22-01,2026-11-19,sehuan,DEMO-sehuan-2026-11-22-01,DEMO-M-sehuan-w1-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-23-01,2026-11-20,buzhou,DEMO-buzhou-2026-11-23-01,DEMO-M-buzhou-w2-s0,operator,approval,6.2,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-23-01,2026-11-20,buzhou,DEMO-buzhou-2026-11-23-01,DEMO-M-buzhou-w2-s0,wife,master_review,7.6,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-11-23-01,2026-11-20,fangcun,DEMO-fangcun-2026-11-23-01,DEMO-M-fangcun-w2-s0,operator,approval,4.8,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-23-01,2026-11-20,fangcun,DEMO-fangcun-2026-11-23-01,DEMO-M-fangcun-w2-s0,wife,master_review,6.2,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-23-01,2026-11-20,sehuan,DEMO-sehuan-2026-11-23-01,DEMO-M-sehuan-w2-s0,operator,approval,4.2,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-23-01,2026-11-20,sehuan,DEMO-sehuan-2026-11-23-01,DEMO-M-sehuan-w2-s0,wife,master_review,11.4,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-24-01,2026-11-21,buzhou,DEMO-buzhou-2026-11-24-01,DEMO-M-buzhou-w2-s0,operator,approval,3.7,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-24-01,2026-11-21,buzhou,DEMO-buzhou-2026-11-24-01,DEMO-M-buzhou-w2-s0,wife,master_review,3.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-11-24-01,2026-11-21,buzhou,DEMO-buzhou-2026-11-24-01,DEMO-M-buzhou-w2-s0,operator,n7_recording,22.4,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-11-24-01,2026-11-21,fangcun,DEMO-fangcun-2026-11-24-01,DEMO-M-fangcun-w2-s0,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-24-01,2026-11-21,fangcun,DEMO-fangcun-2026-11-24-01,DEMO-M-fangcun-w2-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-24-01,2026-11-21,sehuan,DEMO-sehuan-2026-11-24-01,DEMO-M-sehuan-w2-s0,operator,approval,8.1,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-24-01,2026-11-21,sehuan,DEMO-sehuan-2026-11-24-01,DEMO-M-sehuan-w2-s0,wife,master_review,3.5,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-11-27-01,2026-11-24,fangcun,DEMO-fangcun-2026-11-27-01,DEMO-M-fangcun-w2-s2,operator,approval,4.4,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-27-01,2026-11-24,fangcun,DEMO-fangcun-2026-11-27-01,DEMO-M-fangcun-w2-s2,wife,master_review,5.2,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-27-01,2026-11-24,sehuan,DEMO-sehuan-2026-11-27-01,DEMO-M-sehuan-w2-s2,operator,approval,5.9,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-27-01,2026-11-24,sehuan,DEMO-sehuan-2026-11-27-01,DEMO-M-sehuan-w2-s2,wife,master_review,11.2,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-28-01,2026-11-25,buzhou,DEMO-buzhou-2026-11-28-01,DEMO-M-buzhou-w2-s2,operator,approval,4.7,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-28-01,2026-11-25,buzhou,DEMO-buzhou-2026-11-28-01,DEMO-M-buzhou-w2-s2,wife,master_review,9.8,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-11-28-01,2026-11-25,buzhou,DEMO-buzhou-2026-11-28-01,DEMO-M-buzhou-w2-s2,operator,n7_recording,33.7,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-11-28-01,2026-11-25,fangcun,DEMO-fangcun-2026-11-28-01,DEMO-M-fangcun-w2-s2,operator,approval,7.1,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-28-01,2026-11-25,fangcun,DEMO-fangcun-2026-11-28-01,DEMO-M-fangcun-w2-s2,wife,master_review,3.1,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-29-01,2026-11-26,buzhou,DEMO-buzhou-2026-11-29-01,DEMO-M-buzhou-w2-s2,operator,approval,6.6,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-29-01,2026-11-26,buzhou,DEMO-buzhou-2026-11-29-01,DEMO-M-buzhou-w2-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-29-01,2026-11-26,sehuan,DEMO-sehuan-2026-11-29-01,DEMO-M-sehuan-w2-s2,operator,approval,5.4,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-29-01,2026-11-26,sehuan,DEMO-sehuan-2026-11-29-01,DEMO-M-sehuan-w2-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-11-30-01,2026-11-27,buzhou,DEMO-buzhou-2026-11-30-01,DEMO-M-buzhou-w3-s0,operator,approval,4.4,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-11-30-01,2026-11-27,buzhou,DEMO-buzhou-2026-11-30-01,DEMO-M-buzhou-w3-s0,wife,master_review,9.1,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-11-30-01,2026-11-27,fangcun,DEMO-fangcun-2026-11-30-01,DEMO-M-fangcun-w3-s0,operator,approval,4.7,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-11-30-01,2026-11-27,fangcun,DEMO-fangcun-2026-11-30-01,DEMO-M-fangcun-w3-s0,wife,master_review,4.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-11-30-01,2026-11-27,sehuan,DEMO-sehuan-2026-11-30-01,DEMO-M-sehuan-w3-s0,operator,approval,6.8,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-11-30-01,2026-11-27,sehuan,DEMO-sehuan-2026-11-30-01,DEMO-M-sehuan-w3-s0,wife,master_review,12.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-01-01,2026-11-28,buzhou,DEMO-buzhou-2026-12-01-01,DEMO-M-buzhou-w3-s0,operator,approval,6.4,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-01-01,2026-11-28,buzhou,DEMO-buzhou-2026-12-01-01,DEMO-M-buzhou-w3-s0,wife,master_review,3.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-01-01,2026-11-28,buzhou,DEMO-buzhou-2026-12-01-01,DEMO-M-buzhou-w3-s0,operator,n7_recording,30.2,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-01-01,2026-11-28,fangcun,DEMO-fangcun-2026-12-01-01,DEMO-M-fangcun-w3-s0,operator,approval,6.7,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-01-01,2026-11-28,fangcun,DEMO-fangcun-2026-12-01-01,DEMO-M-fangcun-w3-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-01-01,2026-11-28,sehuan,DEMO-sehuan-2026-12-01-01,DEMO-M-sehuan-w3-s0,operator,approval,6.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-01-01,2026-11-28,sehuan,DEMO-sehuan-2026-12-01-01,DEMO-M-sehuan-w3-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-02-01,2026-11-29,fangcun,DEMO-fangcun-2026-12-02-01,DEMO-M-fangcun-w3-s1,operator,approval,2.6,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-02-01,2026-11-29,fangcun,DEMO-fangcun-2026-12-02-01,DEMO-M-fangcun-w3-s1,wife,master_review,7.7,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-02-01,2026-11-29,sehuan,DEMO-sehuan-2026-12-02-01,DEMO-M-sehuan-w3-s1,operator,approval,4.2,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-02-01,2026-11-29,sehuan,DEMO-sehuan-2026-12-02-01,DEMO-M-sehuan-w3-s1,wife,master_review,10.4,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-03-01,2026-11-30,buzhou,DEMO-buzhou-2026-12-03-01,DEMO-M-buzhou-w3-s1,operator,approval,4.2,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-03-01,2026-11-30,buzhou,DEMO-buzhou-2026-12-03-01,DEMO-M-buzhou-w3-s1,wife,master_review,8.5,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-03-01,2026-11-30,buzhou,DEMO-buzhou-2026-12-03-01,DEMO-M-buzhou-w3-s1,operator,n7_recording,27.7,DEMO recording + claims check
+DEMO-eff-op-DEMO-buzhou-2026-12-03-02,2026-11-30,buzhou,DEMO-buzhou-2026-12-03-02,DEMO-M-buzhou-w3-s1,operator,approval,3.9,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-03-02,2026-11-30,buzhou,DEMO-buzhou-2026-12-03-02,DEMO-M-buzhou-w3-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-03-01,2026-11-30,fangcun,DEMO-fangcun-2026-12-03-01,DEMO-M-fangcun-w3-s1,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-03-01,2026-11-30,fangcun,DEMO-fangcun-2026-12-03-01,DEMO-M-fangcun-w3-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-04-01,2026-12-01,fangcun,DEMO-fangcun-2026-12-04-01,DEMO-M-fangcun-w3-s2,operator,approval,5.9,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-04-01,2026-12-01,fangcun,DEMO-fangcun-2026-12-04-01,DEMO-M-fangcun-w3-s2,wife,master_review,7.6,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-04-01,2026-12-01,sehuan,DEMO-sehuan-2026-12-04-01,DEMO-M-sehuan-w3-s2,operator,approval,6.7,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-04-01,2026-12-01,sehuan,DEMO-sehuan-2026-12-04-01,DEMO-M-sehuan-w3-s2,wife,master_review,11.7,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-04-02,2026-12-01,sehuan,DEMO-sehuan-2026-12-04-02,DEMO-M-sehuan-w3-s1,operator,approval,7.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-04-02,2026-12-01,sehuan,DEMO-sehuan-2026-12-04-02,DEMO-M-sehuan-w3-s1,wife,master_review,3.8,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-05-01,2026-12-02,buzhou,DEMO-buzhou-2026-12-05-01,DEMO-M-buzhou-w3-s2,operator,approval,5.5,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-05-01,2026-12-02,buzhou,DEMO-buzhou-2026-12-05-01,DEMO-M-buzhou-w3-s2,wife,master_review,8.3,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-05-01,2026-12-02,buzhou,DEMO-buzhou-2026-12-05-01,DEMO-M-buzhou-w3-s2,operator,n7_recording,32.4,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-05-01,2026-12-02,fangcun,DEMO-fangcun-2026-12-05-01,DEMO-M-fangcun-w3-s2,operator,approval,5.5,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-05-01,2026-12-02,fangcun,DEMO-fangcun-2026-12-05-01,DEMO-M-fangcun-w3-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-06-01,2026-12-03,buzhou,DEMO-buzhou-2026-12-06-01,DEMO-M-buzhou-w3-s2,operator,approval,6.0,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-06-01,2026-12-03,buzhou,DEMO-buzhou-2026-12-06-01,DEMO-M-buzhou-w3-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-06-01,2026-12-03,sehuan,DEMO-sehuan-2026-12-06-01,DEMO-M-sehuan-w3-s2,operator,approval,8.0,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-06-01,2026-12-03,sehuan,DEMO-sehuan-2026-12-06-01,DEMO-M-sehuan-w3-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-07-01,2026-12-04,fangcun,DEMO-fangcun-2026-12-07-01,DEMO-M-fangcun-w4-s0,operator,approval,4.9,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-07-01,2026-12-04,fangcun,DEMO-fangcun-2026-12-07-01,DEMO-M-fangcun-w4-s0,wife,master_review,9.5,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-07-01,2026-12-04,sehuan,DEMO-sehuan-2026-12-07-01,DEMO-M-sehuan-w4-s0,operator,approval,9.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-07-01,2026-12-04,sehuan,DEMO-sehuan-2026-12-07-01,DEMO-M-sehuan-w4-s0,wife,master_review,12.8,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-08-01,2026-12-05,buzhou,DEMO-buzhou-2026-12-08-01,DEMO-M-buzhou-w4-s0,operator,approval,2.8,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-08-01,2026-12-05,buzhou,DEMO-buzhou-2026-12-08-01,DEMO-M-buzhou-w4-s0,wife,master_review,10.7,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-08-01,2026-12-05,buzhou,DEMO-buzhou-2026-12-08-01,DEMO-M-buzhou-w4-s0,operator,n7_recording,23.0,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-08-01,2026-12-05,fangcun,DEMO-fangcun-2026-12-08-01,DEMO-M-fangcun-w4-s0,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-08-01,2026-12-05,fangcun,DEMO-fangcun-2026-12-08-01,DEMO-M-fangcun-w4-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-08-01,2026-12-05,sehuan,DEMO-sehuan-2026-12-08-01,DEMO-M-sehuan-w4-s0,operator,approval,8.0,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-08-01,2026-12-05,sehuan,DEMO-sehuan-2026-12-08-01,DEMO-M-sehuan-w4-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-09-01,2026-12-06,fangcun,DEMO-fangcun-2026-12-09-01,DEMO-M-fangcun-w4-s1,operator,approval,4.4,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-09-01,2026-12-06,fangcun,DEMO-fangcun-2026-12-09-01,DEMO-M-fangcun-w4-s1,wife,master_review,6.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-09-01,2026-12-06,sehuan,DEMO-sehuan-2026-12-09-01,DEMO-M-sehuan-w4-s1,operator,approval,8.2,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-09-01,2026-12-06,sehuan,DEMO-sehuan-2026-12-09-01,DEMO-M-sehuan-w4-s1,wife,master_review,11.2,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-10-01,2026-12-07,buzhou,DEMO-buzhou-2026-12-10-01,DEMO-M-buzhou-w4-s1,operator,approval,5.3,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-10-01,2026-12-07,buzhou,DEMO-buzhou-2026-12-10-01,DEMO-M-buzhou-w4-s1,wife,master_review,8.7,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-10-01,2026-12-07,buzhou,DEMO-buzhou-2026-12-10-01,DEMO-M-buzhou-w4-s1,operator,n7_recording,31.7,DEMO recording + claims check
+DEMO-eff-op-DEMO-buzhou-2026-12-10-02,2026-12-07,buzhou,DEMO-buzhou-2026-12-10-02,DEMO-M-buzhou-w4-s1,operator,approval,5.5,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-10-02,2026-12-07,buzhou,DEMO-buzhou-2026-12-10-02,DEMO-M-buzhou-w4-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-10-01,2026-12-07,fangcun,DEMO-fangcun-2026-12-10-01,DEMO-M-fangcun-w4-s1,operator,approval,4.4,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-10-01,2026-12-07,fangcun,DEMO-fangcun-2026-12-10-01,DEMO-M-fangcun-w4-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-11-01,2026-12-08,fangcun,DEMO-fangcun-2026-12-11-01,DEMO-M-fangcun-w4-s2,operator,approval,6.0,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-11-01,2026-12-08,fangcun,DEMO-fangcun-2026-12-11-01,DEMO-M-fangcun-w4-s2,wife,master_review,7.2,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-11-01,2026-12-08,sehuan,DEMO-sehuan-2026-12-11-01,DEMO-M-sehuan-w4-s2,operator,approval,7.8,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-11-01,2026-12-08,sehuan,DEMO-sehuan-2026-12-11-01,DEMO-M-sehuan-w4-s2,wife,master_review,12.6,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-11-02,2026-12-08,sehuan,DEMO-sehuan-2026-12-11-02,DEMO-M-sehuan-w4-s1,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-11-02,2026-12-08,sehuan,DEMO-sehuan-2026-12-11-02,DEMO-M-sehuan-w4-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-12-01,2026-12-09,buzhou,DEMO-buzhou-2026-12-12-01,DEMO-M-buzhou-w4-s2,operator,approval,4.5,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-12-01,2026-12-09,buzhou,DEMO-buzhou-2026-12-12-01,DEMO-M-buzhou-w4-s2,wife,master_review,10.1,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-12-01,2026-12-09,buzhou,DEMO-buzhou-2026-12-12-01,DEMO-M-buzhou-w4-s2,operator,n7_recording,30.0,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-12-01,2026-12-09,fangcun,DEMO-fangcun-2026-12-12-01,DEMO-M-fangcun-w4-s2,operator,approval,5.8,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-12-01,2026-12-09,fangcun,DEMO-fangcun-2026-12-12-01,DEMO-M-fangcun-w4-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-13-01,2026-12-10,sehuan,DEMO-sehuan-2026-12-13-01,DEMO-M-sehuan-w4-s2,operator,approval,7.7,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-13-01,2026-12-10,sehuan,DEMO-sehuan-2026-12-13-01,DEMO-M-sehuan-w4-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-14-01,2026-12-11,fangcun,DEMO-fangcun-2026-12-14-01,DEMO-M-fangcun-w5-s0,operator,approval,2.0,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-14-01,2026-12-11,fangcun,DEMO-fangcun-2026-12-14-01,DEMO-M-fangcun-w5-s0,wife,master_review,6.1,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-14-01,2026-12-11,sehuan,DEMO-sehuan-2026-12-14-01,DEMO-M-sehuan-w5-s0,operator,approval,6.6,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-14-01,2026-12-11,sehuan,DEMO-sehuan-2026-12-14-01,DEMO-M-sehuan-w5-s0,wife,master_review,11.1,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-15-01,2026-12-12,buzhou,DEMO-buzhou-2026-12-15-01,DEMO-M-buzhou-w5-s0,operator,approval,2.7,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-15-01,2026-12-12,buzhou,DEMO-buzhou-2026-12-15-01,DEMO-M-buzhou-w5-s0,wife,master_review,9.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-15-01,2026-12-12,buzhou,DEMO-buzhou-2026-12-15-01,DEMO-M-buzhou-w5-s0,operator,n7_recording,21.6,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-15-01,2026-12-12,fangcun,DEMO-fangcun-2026-12-15-01,DEMO-M-fangcun-w5-s0,operator,approval,7.7,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-15-01,2026-12-12,fangcun,DEMO-fangcun-2026-12-15-01,DEMO-M-fangcun-w5-s0,wife,master_review,3.3,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-15-01,2026-12-12,sehuan,DEMO-sehuan-2026-12-15-01,DEMO-M-sehuan-w5-s0,operator,approval,10.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-15-01,2026-12-12,sehuan,DEMO-sehuan-2026-12-15-01,DEMO-M-sehuan-w5-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-16-01,2026-12-13,fangcun,DEMO-fangcun-2026-12-16-01,DEMO-M-fangcun-w5-s1,operator,approval,4.3,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-16-01,2026-12-13,fangcun,DEMO-fangcun-2026-12-16-01,DEMO-M-fangcun-w5-s1,wife,master_review,4.3,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-16-01,2026-12-13,sehuan,DEMO-sehuan-2026-12-16-01,DEMO-M-sehuan-w5-s1,operator,approval,7.3,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-16-01,2026-12-13,sehuan,DEMO-sehuan-2026-12-16-01,DEMO-M-sehuan-w5-s1,wife,master_review,11.8,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-17-01,2026-12-14,buzhou,DEMO-buzhou-2026-12-17-01,DEMO-M-buzhou-w5-s1,operator,approval,6.7,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-17-01,2026-12-14,buzhou,DEMO-buzhou-2026-12-17-01,DEMO-M-buzhou-w5-s1,wife,master_review,7.3,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-17-01,2026-12-14,buzhou,DEMO-buzhou-2026-12-17-01,DEMO-M-buzhou-w5-s1,operator,n7_recording,31.7,DEMO recording + claims check
+DEMO-eff-op-DEMO-buzhou-2026-12-17-02,2026-12-14,buzhou,DEMO-buzhou-2026-12-17-02,DEMO-M-buzhou-w5-s1,operator,approval,7.3,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-17-02,2026-12-14,buzhou,DEMO-buzhou-2026-12-17-02,DEMO-M-buzhou-w5-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-17-01,2026-12-14,fangcun,DEMO-fangcun-2026-12-17-01,DEMO-M-fangcun-w5-s1,operator,approval,4.2,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-17-01,2026-12-14,fangcun,DEMO-fangcun-2026-12-17-01,DEMO-M-fangcun-w5-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-18-01,2026-12-15,fangcun,DEMO-fangcun-2026-12-18-01,DEMO-M-fangcun-w5-s2,operator,approval,2.0,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-18-01,2026-12-15,fangcun,DEMO-fangcun-2026-12-18-01,DEMO-M-fangcun-w5-s2,wife,master_review,5.7,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-18-01,2026-12-15,sehuan,DEMO-sehuan-2026-12-18-01,DEMO-M-sehuan-w5-s2,operator,approval,7.9,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-18-01,2026-12-15,sehuan,DEMO-sehuan-2026-12-18-01,DEMO-M-sehuan-w5-s2,wife,master_review,12.9,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-18-02,2026-12-15,sehuan,DEMO-sehuan-2026-12-18-02,DEMO-M-sehuan-w5-s1,operator,approval,8.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-18-02,2026-12-15,sehuan,DEMO-sehuan-2026-12-18-02,DEMO-M-sehuan-w5-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-19-01,2026-12-16,buzhou,DEMO-buzhou-2026-12-19-01,DEMO-M-buzhou-w5-s2,operator,approval,3.9,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-19-01,2026-12-16,buzhou,DEMO-buzhou-2026-12-19-01,DEMO-M-buzhou-w5-s2,wife,master_review,10.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-19-01,2026-12-16,buzhou,DEMO-buzhou-2026-12-19-01,DEMO-M-buzhou-w5-s2,operator,n7_recording,25.5,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-19-01,2026-12-16,fangcun,DEMO-fangcun-2026-12-19-01,DEMO-M-fangcun-w5-s2,operator,approval,5.5,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-19-01,2026-12-16,fangcun,DEMO-fangcun-2026-12-19-01,DEMO-M-fangcun-w5-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-20-01,2026-12-17,sehuan,DEMO-sehuan-2026-12-20-01,DEMO-M-sehuan-w5-s2,operator,approval,4.7,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-20-01,2026-12-17,sehuan,DEMO-sehuan-2026-12-20-01,DEMO-M-sehuan-w5-s2,wife,master_review,3.1,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-21-01,2026-12-18,fangcun,DEMO-fangcun-2026-12-21-01,DEMO-M-fangcun-w6-s0,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-21-01,2026-12-18,fangcun,DEMO-fangcun-2026-12-21-01,DEMO-M-fangcun-w6-s0,wife,master_review,4.8,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-21-01,2026-12-18,sehuan,DEMO-sehuan-2026-12-21-01,DEMO-M-sehuan-w6-s0,operator,approval,6.6,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-21-01,2026-12-18,sehuan,DEMO-sehuan-2026-12-21-01,DEMO-M-sehuan-w6-s0,wife,master_review,12.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-22-01,2026-12-19,buzhou,DEMO-buzhou-2026-12-22-01,DEMO-M-buzhou-w6-s0,operator,approval,7.4,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-22-01,2026-12-19,buzhou,DEMO-buzhou-2026-12-22-01,DEMO-M-buzhou-w6-s0,wife,master_review,7.9,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-22-01,2026-12-19,buzhou,DEMO-buzhou-2026-12-22-01,DEMO-M-buzhou-w6-s0,operator,n7_recording,29.3,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-22-01,2026-12-19,fangcun,DEMO-fangcun-2026-12-22-01,DEMO-M-fangcun-w6-s0,operator,approval,4.9,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-22-01,2026-12-19,fangcun,DEMO-fangcun-2026-12-22-01,DEMO-M-fangcun-w6-s0,wife,master_review,3.7,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-22-01,2026-12-19,sehuan,DEMO-sehuan-2026-12-22-01,DEMO-M-sehuan-w6-s0,operator,approval,7.1,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-22-01,2026-12-19,sehuan,DEMO-sehuan-2026-12-22-01,DEMO-M-sehuan-w6-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-23-01,2026-12-20,fangcun,DEMO-fangcun-2026-12-23-01,DEMO-M-fangcun-w6-s1,operator,approval,5.0,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-23-01,2026-12-20,fangcun,DEMO-fangcun-2026-12-23-01,DEMO-M-fangcun-w6-s1,wife,master_review,6.9,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-23-01,2026-12-20,sehuan,DEMO-sehuan-2026-12-23-01,DEMO-M-sehuan-w6-s1,operator,approval,7.7,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-23-01,2026-12-20,sehuan,DEMO-sehuan-2026-12-23-01,DEMO-M-sehuan-w6-s1,wife,master_review,11.7,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-24-01,2026-12-21,buzhou,DEMO-buzhou-2026-12-24-01,DEMO-M-buzhou-w6-s1,operator,approval,6.5,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-24-01,2026-12-21,buzhou,DEMO-buzhou-2026-12-24-01,DEMO-M-buzhou-w6-s1,wife,master_review,10.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-24-01,2026-12-21,buzhou,DEMO-buzhou-2026-12-24-01,DEMO-M-buzhou-w6-s1,operator,n7_recording,29.5,DEMO recording + claims check
+DEMO-eff-op-DEMO-buzhou-2026-12-24-02,2026-12-21,buzhou,DEMO-buzhou-2026-12-24-02,DEMO-M-buzhou-w6-s1,operator,approval,7.1,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-24-02,2026-12-21,buzhou,DEMO-buzhou-2026-12-24-02,DEMO-M-buzhou-w6-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-24-01,2026-12-21,fangcun,DEMO-fangcun-2026-12-24-01,DEMO-M-fangcun-w6-s1,operator,approval,4.6,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-24-01,2026-12-21,fangcun,DEMO-fangcun-2026-12-24-01,DEMO-M-fangcun-w6-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-25-01,2026-12-22,fangcun,DEMO-fangcun-2026-12-25-01,DEMO-M-fangcun-w6-s2,operator,approval,5.4,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-25-01,2026-12-22,fangcun,DEMO-fangcun-2026-12-25-01,DEMO-M-fangcun-w6-s2,wife,master_review,7.3,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-25-01,2026-12-22,sehuan,DEMO-sehuan-2026-12-25-01,DEMO-M-sehuan-w6-s2,operator,approval,7.7,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-25-01,2026-12-22,sehuan,DEMO-sehuan-2026-12-25-01,DEMO-M-sehuan-w6-s2,wife,master_review,13.8,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-25-02,2026-12-22,sehuan,DEMO-sehuan-2026-12-25-02,DEMO-M-sehuan-w6-s1,operator,approval,5.4,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-25-02,2026-12-22,sehuan,DEMO-sehuan-2026-12-25-02,DEMO-M-sehuan-w6-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-26-01,2026-12-23,buzhou,DEMO-buzhou-2026-12-26-01,DEMO-M-buzhou-w6-s2,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-26-01,2026-12-23,buzhou,DEMO-buzhou-2026-12-26-01,DEMO-M-buzhou-w6-s2,wife,master_review,9.3,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-26-01,2026-12-23,buzhou,DEMO-buzhou-2026-12-26-01,DEMO-M-buzhou-w6-s2,operator,n7_recording,25.2,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-26-01,2026-12-23,fangcun,DEMO-fangcun-2026-12-26-01,DEMO-M-fangcun-w6-s2,operator,approval,5.7,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-26-01,2026-12-23,fangcun,DEMO-fangcun-2026-12-26-01,DEMO-M-fangcun-w6-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-27-01,2026-12-24,sehuan,DEMO-sehuan-2026-12-27-01,DEMO-M-sehuan-w6-s2,operator,approval,7.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-27-01,2026-12-24,sehuan,DEMO-sehuan-2026-12-27-01,DEMO-M-sehuan-w6-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-28-01,2026-12-25,buzhou,DEMO-buzhou-2026-12-28-01,DEMO-M-buzhou-w7-s0,operator,approval,3.8,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-28-01,2026-12-25,buzhou,DEMO-buzhou-2026-12-28-01,DEMO-M-buzhou-w7-s0,wife,master_review,7.7,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-28-01,2026-12-25,fangcun,DEMO-fangcun-2026-12-28-01,DEMO-M-fangcun-w7-s0,operator,approval,5.9,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-28-01,2026-12-25,fangcun,DEMO-fangcun-2026-12-28-01,DEMO-M-fangcun-w7-s0,wife,master_review,6.9,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-28-01,2026-12-25,sehuan,DEMO-sehuan-2026-12-28-01,DEMO-M-sehuan-w7-s0,operator,approval,10.7,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-28-01,2026-12-25,sehuan,DEMO-sehuan-2026-12-28-01,DEMO-M-sehuan-w7-s0,wife,master_review,10.9,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-29-01,2026-12-26,buzhou,DEMO-buzhou-2026-12-29-01,DEMO-M-buzhou-w7-s0,operator,approval,7.4,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-29-01,2026-12-26,buzhou,DEMO-buzhou-2026-12-29-01,DEMO-M-buzhou-w7-s0,wife,master_review,3.0,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-29-01,2026-12-26,buzhou,DEMO-buzhou-2026-12-29-01,DEMO-M-buzhou-w7-s0,operator,n7_recording,23.4,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2026-12-29-01,2026-12-26,fangcun,DEMO-fangcun-2026-12-29-01,DEMO-M-fangcun-w7-s0,operator,approval,4.5,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-29-01,2026-12-26,fangcun,DEMO-fangcun-2026-12-29-01,DEMO-M-fangcun-w7-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-29-01,2026-12-26,sehuan,DEMO-sehuan-2026-12-29-01,DEMO-M-sehuan-w7-s0,operator,approval,7.0,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-29-01,2026-12-26,sehuan,DEMO-sehuan-2026-12-29-01,DEMO-M-sehuan-w7-s0,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-30-01,2026-12-27,fangcun,DEMO-fangcun-2026-12-30-01,DEMO-M-fangcun-w7-s1,operator,approval,7.3,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-30-01,2026-12-27,fangcun,DEMO-fangcun-2026-12-30-01,DEMO-M-fangcun-w7-s1,wife,master_review,6.3,DEMO
+DEMO-eff-op-DEMO-sehuan-2026-12-30-01,2026-12-27,sehuan,DEMO-sehuan-2026-12-30-01,DEMO-M-sehuan-w7-s1,operator,approval,6.6,DEMO
+DEMO-eff-wf-DEMO-sehuan-2026-12-30-01,2026-12-27,sehuan,DEMO-sehuan-2026-12-30-01,DEMO-M-sehuan-w7-s1,wife,master_review,12.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2026-12-31-01,2026-12-28,buzhou,DEMO-buzhou-2026-12-31-01,DEMO-M-buzhou-w7-s1,operator,approval,5.6,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-31-01,2026-12-28,buzhou,DEMO-buzhou-2026-12-31-01,DEMO-M-buzhou-w7-s1,wife,master_review,9.6,DEMO
+DEMO-eff-n7-DEMO-buzhou-2026-12-31-01,2026-12-28,buzhou,DEMO-buzhou-2026-12-31-01,DEMO-M-buzhou-w7-s1,operator,n7_recording,36.8,DEMO recording + claims check
+DEMO-eff-op-DEMO-buzhou-2026-12-31-02,2026-12-28,buzhou,DEMO-buzhou-2026-12-31-02,DEMO-M-buzhou-w7-s1,operator,approval,10.4,DEMO
+DEMO-eff-wf-DEMO-buzhou-2026-12-31-02,2026-12-28,buzhou,DEMO-buzhou-2026-12-31-02,DEMO-M-buzhou-w7-s1,wife,master_review,3.2,DEMO
+DEMO-eff-op-DEMO-fangcun-2026-12-31-01,2026-12-28,fangcun,DEMO-fangcun-2026-12-31-01,DEMO-M-fangcun-w7-s1,operator,approval,4.2,DEMO
+DEMO-eff-wf-DEMO-fangcun-2026-12-31-01,2026-12-28,fangcun,DEMO-fangcun-2026-12-31-01,DEMO-M-fangcun-w7-s1,wife,master_review,3.3,DEMO
+DEMO-eff-op-DEMO-fangcun-2027-01-01-01,2026-12-29,fangcun,DEMO-fangcun-2027-01-01-01,DEMO-M-fangcun-w7-s2,operator,approval,5.4,DEMO
+DEMO-eff-wf-DEMO-fangcun-2027-01-01-01,2026-12-29,fangcun,DEMO-fangcun-2027-01-01-01,DEMO-M-fangcun-w7-s2,wife,master_review,6.1,DEMO
+DEMO-eff-op-DEMO-sehuan-2027-01-01-01,2026-12-29,sehuan,DEMO-sehuan-2027-01-01-01,DEMO-M-sehuan-w7-s2,operator,approval,5.2,DEMO
+DEMO-eff-wf-DEMO-sehuan-2027-01-01-01,2026-12-29,sehuan,DEMO-sehuan-2027-01-01-01,DEMO-M-sehuan-w7-s2,wife,master_review,11.5,DEMO
+DEMO-eff-op-DEMO-sehuan-2027-01-01-02,2026-12-29,sehuan,DEMO-sehuan-2027-01-01-02,DEMO-M-sehuan-w7-s1,operator,approval,7.5,DEMO
+DEMO-eff-wf-DEMO-sehuan-2027-01-01-02,2026-12-29,sehuan,DEMO-sehuan-2027-01-01-02,DEMO-M-sehuan-w7-s1,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2027-01-02-01,2026-12-30,buzhou,DEMO-buzhou-2027-01-02-01,DEMO-M-buzhou-w7-s2,operator,approval,6.6,DEMO
+DEMO-eff-wf-DEMO-buzhou-2027-01-02-01,2026-12-30,buzhou,DEMO-buzhou-2027-01-02-01,DEMO-M-buzhou-w7-s2,wife,master_review,10.1,DEMO
+DEMO-eff-n7-DEMO-buzhou-2027-01-02-01,2026-12-30,buzhou,DEMO-buzhou-2027-01-02-01,DEMO-M-buzhou-w7-s2,operator,n7_recording,27.4,DEMO recording + claims check
+DEMO-eff-op-DEMO-fangcun-2027-01-02-01,2026-12-30,fangcun,DEMO-fangcun-2027-01-02-01,DEMO-M-fangcun-w7-s2,operator,approval,5.1,DEMO
+DEMO-eff-wf-DEMO-fangcun-2027-01-02-01,2026-12-30,fangcun,DEMO-fangcun-2027-01-02-01,DEMO-M-fangcun-w7-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-buzhou-2027-01-03-01,2026-12-31,buzhou,DEMO-buzhou-2027-01-03-01,DEMO-M-buzhou-w7-s2,operator,approval,7.6,DEMO
+DEMO-eff-wf-DEMO-buzhou-2027-01-03-01,2026-12-31,buzhou,DEMO-buzhou-2027-01-03-01,DEMO-M-buzhou-w7-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-DEMO-sehuan-2027-01-03-01,2026-12-31,sehuan,DEMO-sehuan-2027-01-03-01,DEMO-M-sehuan-w7-s2,operator,approval,4.9,DEMO
+DEMO-eff-wf-DEMO-sehuan-2027-01-03-01,2026-12-31,sehuan,DEMO-sehuan-2027-01-03-01,DEMO-M-sehuan-w7-s2,wife,master_review,3.0,DEMO
+DEMO-eff-op-admin-w1,2026-11-16,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w1,2026-11-16,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w1,2026-11-16,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w1,2026-11-16,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w1,2026-11-16,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w1,2026-11-16,,,,wife,other,75,DEMO weekly fixed time
+DEMO-eff-op-admin-w2,2026-11-23,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w2,2026-11-23,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w2,2026-11-23,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w2,2026-11-23,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w2,2026-11-23,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w2,2026-11-23,,,,wife,other,75,DEMO weekly fixed time
+DEMO-eff-op-admin-w3,2026-11-30,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w3,2026-11-30,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w3,2026-11-30,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w3,2026-11-30,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w3,2026-11-30,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w3,2026-11-30,,,,wife,other,75,DEMO weekly fixed time
+DEMO-eff-op-admin-w4,2026-12-07,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w4,2026-12-07,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w4,2026-12-07,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w4,2026-12-07,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w4,2026-12-07,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w4,2026-12-07,,,,wife,other,75,DEMO weekly fixed time
+DEMO-eff-op-admin-w5,2026-12-14,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w5,2026-12-14,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w5,2026-12-14,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w5,2026-12-14,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w5,2026-12-14,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w5,2026-12-14,,,,wife,other,75,DEMO weekly fixed time
+DEMO-eff-op-admin-w6,2026-12-21,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w6,2026-12-21,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w6,2026-12-21,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w6,2026-12-21,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w6,2026-12-21,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w6,2026-12-21,,,,wife,other,75,DEMO weekly fixed time
+DEMO-eff-op-admin-w7,2026-12-28,,,,operator,admin,60,DEMO weekly fixed time
+DEMO-eff-op-analytics-w7,2026-12-28,,,,operator,analytics,30,DEMO weekly fixed time
+DEMO-eff-op-moderation-w7,2026-12-28,,,,operator,moderation,60,DEMO weekly fixed time
+DEMO-eff-wf-moderation-w7,2026-12-28,,,,wife,moderation,90,DEMO weekly fixed time
+DEMO-eff-wf-admin-w7,2026-12-28,,,,wife,admin,60,DEMO weekly fixed time
+DEMO-eff-wf-other-w7,2026-12-28,,,,wife,other,75,DEMO weekly fixed time

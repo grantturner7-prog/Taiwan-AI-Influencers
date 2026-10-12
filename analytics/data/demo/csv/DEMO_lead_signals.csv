@@ -1,0 +1,11 @@
+ref,signal_date,persona,kind,notes
+DEMO-lead-s0,2026-12-02,sehuan,outreach_sent,DEMO
+DEMO-lead-s1,2026-12-04,sehuan,outreach_sent,DEMO
+DEMO-lead-s2,2026-12-08,sehuan,outreach_sent,DEMO
+DEMO-lead-s3,2026-12-10,sehuan,outreach_sent,DEMO
+DEMO-lead-s4,2026-12-15,sehuan,outreach_sent,DEMO
+DEMO-lead-s5,2026-12-20,sehuan,accepted_free_sample,DEMO
+DEMO-lead-f0,2026-12-03,fangcun,outreach_sent,DEMO
+DEMO-lead-f1,2026-12-09,fangcun,outreach_sent,DEMO
+DEMO-lead-f2,2026-12-17,fangcun,outreach_sent,DEMO
+DEMO-lead-f3,2027-01-02,fangcun,written_enquiry,DEMO

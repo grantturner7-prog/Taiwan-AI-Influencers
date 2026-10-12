@@ -1,0 +1,39 @@
+{
+  "id": "buzhou-2026-11-22-01",
+  "persona": "buzhou",
+  "platform": "threads",
+  "format": "text",
+  "scheduled_date": "2026-11-22",
+  "pillar": "P1 功能三步驟（三步驟）",
+  "hook_zh": "長 PDF 先抓重點？先看上限。",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布。\n長 PDF 先抓重點？先看上限。\n1. 看上限：{工具}官方頁面寫的檔案上限是「{上限}」（{YYYY/MM/DD}），各工具與方案不同\n2. 上傳之前，確認檔案裡沒有個資\n3. 請它列出重點，再回原文對照日期和數字\n輸出可能有錯，示範輸出不代表每次相同。\n錄影版會發布在 YouTube 頻道「步驟」。\n",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Buzhou\".\nPulling key points from a long PDF? Check the limits first.\n1. Check the limits: the file limit on {tool}'s official page is \"{limit}\" ({date}); it differs by tool and plan\n2. Before uploading, make sure the file holds no personal data\n3. Ask it to list the key points, then compare the dates and numbers with the original\nThe output may contain mistakes; demonstration output is not the same every time.\nThe recorded version will be published on the YouTube channel \"Buzhou\".",
+  "hashtags": [
+    "#AI工具",
+    "#PDF",
+    "#提示詞"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（純文字貼文：無畫面，無角標；揭露靠首行、簡介與平台 AI 標示）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "The vendor's own help page states the file upload limit quoted in line 1 (「{上限}」) for the plan used, with its units, and the limits differ by tool and plan. The operator pastes the exact line, the URL and the date seen. If the page does not state limits per plan, soften the line to 「上限以官方頁面為準」.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    },
+    {
+      "claim": "NO FACTUAL CLAIM: steps 2 and 3 are the studio's own method; the demonstration uses a fictional sample file (sample kit item B), never a real document.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": ""
+  }
+}

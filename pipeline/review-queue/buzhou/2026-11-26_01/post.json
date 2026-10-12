@@ -1,0 +1,39 @@
+{
+  "id": "buzhou-2026-11-26-01",
+  "persona": "buzhou",
+  "platform": "threads",
+  "format": "text",
+  "scheduled_date": "2026-11-26",
+  "pillar": "P3 提示詞範本（範本清單）",
+  "hook_zh": "同一個提示詞，每次輸出可能不一樣。",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「步驟」發布。\n同一個提示詞，每次輸出可能不一樣。\n提示詞範本（通用）：把一封長信整理成三行重點\n〔貼上之前，先確認文字裡沒有個資〕\n請把下面這封信整理成三行重點，使用臺灣慣用的繁體中文。\n每行不超過 20 個字，保留所有日期與數字，不要新增原文沒有的內容。\n不確定的地方，請在最後另起一行標示。\n〔在這裡貼上信件內容〕\n標示不確定，不代表內容正確；整理完請回原文對照日期和數字。\n錄影版會發布在 YouTube 頻道「步驟」。\n",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Buzhou\".\nThe same prompt, the output may differ each time.\nPrompt template (general): turn a long letter into three key lines\n[Before pasting, make sure the text holds no personal data]\nPlease turn the letter below into three key lines, in the Traditional Chinese commonly used in Taiwan.\nNo more than 20 characters per line; keep all dates and numbers; do not add anything the original does not say.\nWhere you are unsure, mark it on a separate last line.\n[Paste the letter here]\nMarking something uncertain does not make the content correct; after it is done, compare the dates and numbers with the original.\nThe recorded version will be published on the YouTube channel \"Buzhou\".",
+  "hashtags": [
+    "#提示詞",
+    "#AI工具",
+    "#範本"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（純文字貼文：無畫面，無角標；揭露靠首行、簡介與平台 AI 標示）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "Hedged general statement 「同一個提示詞，每次輸出可能不一樣」: a vendor help or documentation page stating that outputs can vary between runs (URL by the operator). Without it the line stays hedged with 可能 and rests on the S3 recording of two runs, which cannot prove it if the runs match.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    },
+    {
+      "claim": "NO FACTUAL CLAIM: the template text is original, written by the studio (sample kit item C); no result, speed or quality claim is made for it.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": ""
+  }
+}

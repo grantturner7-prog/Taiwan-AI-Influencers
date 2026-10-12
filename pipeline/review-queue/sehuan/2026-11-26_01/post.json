@@ -1,0 +1,43 @@
+{
+  "id": "sehuan-2026-11-26-01",
+  "persona": "sehuan",
+  "platform": "threads",
+  "format": "image",
+  "scheduled_date": "2026-11-26",
+  "pillar": "P4 看懂標示與趨勢",
+  "hook_zh": "平量和圍度，差在哪？",
+  "caption_zh": "【AI 虛擬角色】本篇由 AI 生成的虛擬角色「色環」發布，圖為示意。\n尺寸表上寫「平量」，數字是攤平量出來的寬度，不是繞一圈的長度。\n同一個位置，圍度大約是平量的兩倍；量法請看品牌尺寸表旁邊的說明。",
+  "caption_gloss_en": "[AI virtual character] This post is published by the AI-generated virtual character \"Sehuan\"; the picture is an illustration.\nWhen a size chart says 「平量」, the number is the width measured with the garment laid flat, not the length all the way round.\nAt the same position the circumference is roughly twice the flat measurement; for the measuring method, read the note next to the brand's size chart.",
+  "hashtags": [
+    "#尺寸表"
+  ],
+  "on_screen_label_zh": "AI 生成｜示意圖",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "ARITHMETIC ONLY: 50 x 2 = 100, an invented example tagged 範例數字，非真實商品 on the card (same as sehuan-2026-11-25-01).",
+      "url": "",
+      "date": ""
+    },
+    {
+      "claim": "Definitions of 平量 and 圍度: same neutral public source as sehuan-2026-11-25-01; the operator records it once and reuses the slip.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "Slide 1 (label card) [4:5, 1 slide]. BADGE: 「AI 生成」. TEXT zh-TW (DRAFT): 一詞看懂：平量／平量＝攤平量的寬度／圍度＝繞一圈的長度／圍度 ≒ 平量 × 2（範例：50 → 100，範例數字，非真實商品） | GLOSS: One-word explainer: 平量 / Flat measurement = the width laid flat / Circumference = the length all the way round / circumference ≈ flat x 2 (example: 50 -> 100, example numbers, not a real product) | VISUAL: One card on the ground colour: the shirt flat of P07 slide 2 small on the left with the two dimension marks; the three text lines right; persimmon underline under 「平量」. No character panel (so the first line uses 圖為示意). Badge top-right. | USES: no character panel. Alt text: 「AI 生成的搭配示意圖：一詞看懂卡片，說明平量與圍度。」",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Lesson Kit v0 (content/sehuan/calendar-30d.md section 7.2). No image generator for any text, number, diagram, flat, wheel or badge. Typeface Noto Sans TC (licence to be read, gate G14) with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "CLAUDE DRAFT NOTE 2026-10-12: Threads version of M4; BLOCKED until the definition source is recorded (shared with sehuan-2026-11-25-01). Card has no character, so the first line uses 圖為示意."
+  }
+}

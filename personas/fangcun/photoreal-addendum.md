@@ -285,7 +285,7 @@ Everything in bible 4.10 stays, plus:
 ### 8.2 Disclosure additions (on top of bible section 8)
 
 - **Four places stay:** bio, first caption line, on-screen label, platform label.
-- **On-screen badge on every published image and every video frame.** Two wordings, wife rules (12 item 7): `AI 生成｜示意圖` for diagram and room slides; `AI 生成｜虛擬角色` for slides that show her. Solid charcoal pill with off-white text, text height at least about 3.5% of the image height (*assumption*, from 4.11), inset at least 8% from every edge so a square crop cannot remove it. The "first second only" option is not used.
+- **On-screen badge on every published image and every video frame.** Two wordings, wife rules (12 item 7): `AI 生成｜示意圖` for diagram and room slides; `AI 生成｜虛擬角色` for slides that show her. Solid charcoal pill with off-white text, text height at least about 3.5% of the image height (*assumption*, from 4.11), inset at least 11% of the height from the top and bottom edges and at least 8% of the width from the sides (so a centred square crop of a 4:5 picture cannot remove it; see pipeline/qa-checklist.md D3). The "first second only" option is not used.
 - **Avatar:** 110 px cannot carry Chinese text. A small corner chip reading **`AI`** (Latin letters, added in post) plus the name field 「方寸｜AI 虛擬角色」 and the account-level label. Wife rules.
 - **Alt text** on every image (draft): 「AI 生成的虛擬角色方寸，示意圖，非真人。」
 - **Instagram:** use the AI-generated profile label from the first day, and the content-level AI disclosure on every post. **YouTube:** the altered or synthetic content disclosure on every Short, plus the description line. TikTok is not used.

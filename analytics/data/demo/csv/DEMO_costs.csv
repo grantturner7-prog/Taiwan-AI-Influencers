@@ -1,0 +1,8 @@
+ref,cost_date,persona,cost_kind,category,description,amount_twd,notes
+DEMO-cost-01,2026-10-28,,one_time,registration,DEMO: business registration fee (invented amount),1500,DEMO
+DEMO-cost-02,2026-11-05,,tool,image_api,"DEMO: image API usage, November",1450,DEMO
+DEMO-cost-03,2026-11-06,,tool,design_tool,DEMO: design tool,450,DEMO
+DEMO-cost-04,2026-11-10,,tool,domain,DEMO: link page domain,300,DEMO
+DEMO-cost-05,2026-12-05,,tool,image_api,"DEMO: image API usage, December",1900,DEMO
+DEMO-cost-06,2026-12-06,,tool,design_tool,DEMO: design tool,450,DEMO
+DEMO-cost-07,2027-01-03,,tool,image_api,"DEMO: image API usage, January so far",600,DEMO

@@ -1,0 +1,11 @@
+# Extra names that gen_image.py and queue.py must refuse inside image prompts (one per line).
+# Lines starting with # are ignored. Case does not matter for Latin letters.
+#
+# Add: Taiwanese presenters, actors, singers, models, influencers, politicians and virtual characters the
+# wife knows of (the list built into gen_image.py is a small seed, not a database), and any name that a
+# look-alike check ever turned up. Names listed here are only used to REFUSE a prompt, so keeping this
+# file private is fine; do not commit a list of private individuals.
+#
+# Example lines (delete the leading # to use):
+# Some Presenter Name
+# 某某主播

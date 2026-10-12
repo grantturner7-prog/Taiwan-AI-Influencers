@@ -1,0 +1,60 @@
+{
+  "id": "buzhou-2026-11-22-02",
+  "persona": "buzhou",
+  "platform": "youtube_shorts",
+  "format": "short",
+  "scheduled_date": "2026-11-22",
+  "pillar": "P1 功能三步驟（三步驟）",
+  "hook_zh": "長 PDF 先抓重點？先看上限。",
+  "caption_zh": "【AI 虛擬角色】本影片由 AI 生成的虛擬角色「步驟」說明，畫面中的角色為 AI 生成，並非真人；螢幕錄影由工作室真人操作。資料日期：{YYYY/MM/DD}。\n錄製條件：{工具}｜{版本}｜{方案}｜{YYYY/MM/DD}　由工作室真人操作錄製\n資料來源：{說明中心頁面名稱}（{YYYY/MM/DD}）{網址}\n長 PDF 先抓重點，3 步驟：\n1. 看上限：檔案格式、大小、頁數，各工具與方案不同\n2. 上傳範例檔（工作室自製，內容虛構）；真正的文件上傳前先確認沒有個資\n3. 請它列出重點，再回原文對照日期和數字\n示範輸出，不代表每次相同。上限可能已變動，請以官方頁面為準。\n本頻道與影片中提到的工具廠商無隸屬或合作關係。\n#AI工具 #PDF #提示詞\n",
+  "caption_gloss_en": "[AI virtual character] This video is explained by the AI-generated virtual character \"Buzhou\"; the character on screen is AI-generated and is not a real person; the screen recording is operated by a real person at the studio. Data date: {date}.\nRecording conditions: {tool} | {version} | {plan} | {date}  operated and recorded by a real person at the studio\nSources: {help-centre page name} ({date}) {URL}\nPulling key points from a long PDF, 3 steps:\n1. Check the limits: file format, size, pages; they differ by tool and plan\n2. Upload the sample file (made by the studio, content fictional); with a real document, first make sure it holds no personal data\n3. Ask it to list the key points, then compare the dates and numbers with the original\nDemonstration output; it is not the same every time. Limits may have changed; go by the official page.\nThis channel has no affiliation or partnership with the tool vendors mentioned in the video.\n#AI工具 #PDF #提示詞",
+  "hashtags": [
+    "#AI工具",
+    "#PDF",
+    "#提示詞"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（每一影格都有；後製加上，不由生成工具繪製）。另有「錄製條件」「資料來源」標籤，內容見行事曆",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "The vendor's own help-centre article states the file upload limits quoted in scene 4 (「{上限}」) for the plan used, with its units; the operator pastes the exact line, URL and date seen. If the page does not list limits per plan, soften scene 4 and the line 「上限依工具與方案而不同」 to 「上限以官方頁面為準」.",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    },
+    {
+      "claim": "Recording conditions on the strip are read from the app's own about or account screen at recording time (frame grab).",
+      "url": "UNVERIFIED-OPERATOR-TO-FILL",
+      "date": "UNVERIFIED-OPERATOR-TO-FILL"
+    },
+    {
+      "claim": "NO FACTUAL CLAIM about any vendor: every date and number in the shown output is checked against the fictional sample PDF (sample kit item B, digits listed in calendar-30d.md section 7.7); steps 2 and 3 are the studio's own method.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "HUMAN SCREEN RECORDING (no generation tool): S2_rec_raw_01.mp4, Takes 1 to 4 of calendar-30d.md section 5 M2 (the vendor limits page, upload the fictional sample PDF 範例會議紀錄.pdf, ask for three key points, compare dates and numbers), no audio, untouched. Plus the help-page screenshot S2_limits_01.png.",
+      "shot_prompt": "NO GENERATION PROMPT: this is a human screen recording made by the studio's operator, not an AI-generated video. Recording plan: calendar-30d.md section 5, M2 'Recording plan'. Log it in assets/provenance.csv as a human-made asset (tool: the recorder and its version; prompt: 'none, screen recording by the operator')."
+    },
+    {
+      "path": "PENDING",
+      "description": "Stills of the openly-AI character for the corner picture-in-picture, from the approved photoreal golden set: E04, E06, E01, E07 and R06 right (pack pipeline/image-pack/buzhou-photoreal.md sections 4.1 and 4.4). STILL IMAGES ONLY: no animation, no lip-sync, no voice (photoreal addendum 7, risk 8). Square crops are made on copies and logged with their parent file; never flipped. Alt text for any still posted alone: AI 生成的虛擬角色步驟，示意圖，非真人。",
+      "shot_prompt": "PREFER REUSE of the approved golden-set files (R06_pr_pip_right_v1, R03_pr_E01_v1, E04, E06, E07 as listed); do not generate new images for this Short. If a file is missing or not approved, generate it with its own prompt in pipeline/image-pack/buzhou-photoreal.md (section 4.1 for E01 to E10, section 4.4 for R06); the prompt is not repeated here so the pack stays the single source of truth. Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert)."
+    },
+    {
+      "path": "PENDING",
+      "description": "EDITED EXPORT S2_export_v1.mp4, 1080 x 1920, under 60 s, captions only, no voice, no music. Layers typeset in an editor (never generated) from the layout kit in calendar-30d.md section 7.1: badge 「AI 生成｜虛擬角色」 on every frame, 錄製條件 strip, 資料來源 label, date stamp, step numerals, outline callouts, PiP frame, burned-in captions from the M2 scene table. The wife reads every on-screen character. Upload title (DRAFT): 【3 步驟】長 PDF 先抓重點：{工具} 的檔案上限在哪看（2026/11 版） | Gloss: [3 steps] Pull key points from a long PDF: where to see {tool}'s file limits (Nov 2026 version)",
+      "shot_prompt": "NO GENERATION PROMPT: assembled by a human in a video editor from the raw recording, the golden-set stills and typeset overlays; no image or video generator is used. Keep the editor project file (the human-authored layer) and log the export in assets/provenance.csv."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "HOLD / BLOCKED: (1) no recording, still or export exists (all media PENDING); (2) the user has not confirmed that still images of the photoreal character inside a video are acceptable (calendar-30d.md section 9 item 1; launch/README.md decision D6); (3) gate G7 (vendor terms on public demonstration, logos and test accounts) is open; (4) every {…} fill-in and every UNVERIFIED-OPERATOR-TO-FILL field is still unfilled. Upload title (DRAFT, wife reviews): 【3 步驟】長 PDF 先抓重點：{工具} 的檔案上限在哪看（2026/11 版）  |  Gloss: [3 steps] Pull key points from a long PDF: where to see {tool}'s file limits (Nov 2026 version). Pair: the Threads post 2026-11-22_01. Set the YouTube altered-or-synthetic-content answer to Yes and leave the paid-promotion box unchecked."
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "id": "fangcun-2026-11-17-01",
+  "persona": "fangcun",
+  "platform": "youtube_shorts",
+  "format": "short",
+  "scheduled_date": "2026-11-17",
+  "pillar": "A 尺寸算給你看",
+  "hook_zh": "小套房家具放不下？先算這三個數字",
+  "caption_zh": "【AI 虛擬角色】本影片由 AI 生成的虛擬角色「方寸」發布，畫面中的角色為 AI 生成，並非真人。\n資料來源：本影片的數字都是示意數字，只用加減法，沒有外部出處。\n圖為 AI 生成示意，標示「示意數字」的數字僅供示範。\n請以現場丈量為準。",
+  "caption_gloss_en": "[AI virtual character] This video is published by the AI-generated virtual character \"Fangcun\"; the character on screen is AI-generated and is not a real person.\nSource: all numbers in this video are illustrative and use only addition and subtraction; there is no external source.\nImages are AI-generated illustrations; numbers tagged 'illustrative number' are for demonstration only.\nPlease go by on-site measurement.",
+  "hashtags": [
+    "#小宅收納",
+    "#尺寸",
+    "#AI虛擬角色"
+  ],
+  "on_screen_label_zh": "AI 生成｜虛擬角色（有方寸的頁面或畫面）／AI 生成｜示意圖（純圖解的頁面或畫面）",
+  "ai_label_flag": true,
+  "sponsorship_flag": false,
+  "sponsorship_type": "none",
+  "sources": [
+    {
+      "claim": "ARITHMETIC ONLY, no external source and no factual claim about Taiwan: 300 - 150 - 55 = 95; 95 - 60 = 35; 300 - 120 - 55 = 125; 125 - 60 = 65. Every input is an invented example value tagged 示意數字 on screen. Recomputed by Claude 2026-10-12; the operator recomputes independently.",
+      "url": "",
+      "date": ""
+    }
+  ],
+  "media": [
+    {
+      "path": "PENDING",
+      "description": "ASSET A1 (golden set R01). AI-generated photoreal image of the openly-AI character 方寸; label added in post, never generated. 方寸 master portrait R01 as a still framed panel at the top of scenes 1 to 3. STILL IMAGE ONLY: no animation, no lip-sync, no voice (photoreal addendum 7 and risk K). Same file as the P01 cover. Alt text: AI 生成的虛擬角色方寸，示意圖，非真人。",
+      "shot_prompt": "PREFER REUSE: if the approved golden-set file R01_master_v1 exists (assets/fangcun/photoreal/), use it and do not generate a new image; a crop or colour correction is a logged human edit. If it is not yet approved, generate R01 with the prompt below, copied verbatim from pipeline/image-pack/fangcun-photoreal.md section 2.1 (Gemini; section 2.2 carries the same description in labelled blocks for ChatGPT). Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert).\n---\nCreate a photorealistic image from this brief.\n\nGenerate a fictional person. She is an original character with no real-world counterpart and must not resemble any real individual.\n\nSUBJECT: an adult woman in her early thirties (she looks about 32 to 35), East Asian, with ordinary, natural, unexaggerated features, not an idol or model look. Softly squared face with a rounded chin and moderate cheeks. Medium-sized dark-brown eyes with a natural eyelid line and a calm level gaze. Straight dark-brown eyebrows of natural thickness. Medium-width nose with a soft tip. Natural medium lips in a muted rose-brown, closed in a very slight calm smile, no teeth showing. Light-to-medium, slightly warm, even skin tone with natural skin texture: fine pores visible, faint fine lines at the outer corners of the eyes and faint lines from nose to mouth at rest, soft natural under-eye shadow. Minimal natural makeup, no gloss, no glow.\n\nHAIR: dark brown-black, straight, side parting, pulled back into a neat low ponytail at the nape with a plain thin dark-brown hair tie, a few natural flyaways, no fringe over the forehead, both ears partly visible.\n\nGLASSES: thin matte walnut-brown softly rounded-rectangle frames with clear lenses, no logo, no glare or reflection on the lenses, both eyes fully visible.\n\nOUTFIT (O1 Everyday): a plain oat-coloured fine-knit crew-neck top with long sleeves, tucked in; over it an open, hip-length sleeveless vest in muted sage; straight walnut-brown trousers. At the waist, a cream woven fabric belt with fine charcoal tick marks along its edge like a tape measure (tick marks only, no numbers or letters) and a small walnut-brown buckle, worn loosely at the waist and not cinched. Relaxed modest fit, the neckline covers the collarbone. No logos, text or patterns on any clothing. No jewellery.\n\nPOSE AND FRAMING: waist-up portrait. The frame ends at the belt line, so both hands are outside the picture, below the frame. Arms relaxed at her sides, shoulders level and relaxed, upright calm posture. Body and head facing the camera, calm direct gaze at the lens. Eye-level camera.\n\nSTYLE: a polished studio character-reference portrait, not a phone snapshot and not a candid photo. 85 mm lens look, no wide-angle distortion. One large soft diffused light from the front left at about 45 degrees with gentle fill from the right, neutral-warm colour balance, soft natural shadows, matte skin without shine, one soft window-shaped catchlight in each eye. Muted, low-saturation colour grade. Plain warm off-white seamless studio background, evenly lit, no gradient. No filters, no film grain, no beauty retouching.\n\nOUTPUT: 4:5 portrait, one image.\n\nPlease avoid: hands or fingers anywhere in the picture; any resemblance to a real person; an idol, model or beauty-filter look; airbrushed, plastic, waxy or over-smooth skin; glowing or glossy skin; enlarged doll-like eyes; heavy eye makeup, eyeliner wings, glossy lipstick; teeth showing; laughing or an open mouth; tears; a baby-faced or teenage look; a fringe over the forehead; hair worn down; earrings, necklaces, rings, watches or any jewellery; text, letters, numerals, hex codes, logos, brand marks, watermarks, signage; a selfie, phone-camera or candid snapshot look; a mirror; other people, children, pets; real places or landmarks; a tape measure held, pulled out or wrapped around the body; revealing, tight, sheer, low-cut or sleeveless-only clothing; a sexualised or glamour pose; a uniform, apron, lab coat, hard hat or high-visibility vest; a school uniform; saturated red, blue, green or yellow clothing; an all-black or all-white outfit; sunglasses, tinted lenses or glare on the lenses; asymmetrical or warped glasses; mismatched eyes or ears; extra or missing fingers."
+    },
+    {
+      "path": "PENDING",
+      "description": "ASSET A2 (golden set R13). AI-generated photoreal image of the openly-AI character 方寸; label added in post, never generated. R13 glance still, framed panel beside the diagram in scenes 4 to 6. Same file as P01 slides 4 to 7. Alt text: AI 生成的虛擬角色方寸，示意圖，非真人。",
+      "shot_prompt": "PREFER REUSE: if the approved golden-set file R13_glance_v1 exists (assets/fangcun/photoreal/), use it and do not generate a new image; a crop or colour correction is a logged human edit. Open a NEW chat in the tool that made R01. ATTACH R01_master_v1. PASTE the Character Lock (pipeline/image-pack/fangcun-photoreal.md section 3.1, verbatim), a blank line, then the prompt below. Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert).\n---\nCHANGE only: the head position and gaze. Waist-up, the head turned about 20 degrees and the eyes directed to an empty space at the viewer's left, as if looking at something just outside the picture; calm closed-mouth expression. The frame ends at the belt line and both hands are outside the picture. Outfit O1, same face, hair and glasses.\nOUTPUT: 4:5 portrait; plain warm off-white seamless studio background; same soft studio light; one image."
+    },
+    {
+      "path": "PENDING",
+      "description": "ASSET A4 (golden set E10). AI-generated photoreal image of the openly-AI character 方寸; label added in post, never generated. E10 calm-nod headshot, framed still in the end card. Same file as P01 slide 9. Alt text: AI 生成的虛擬角色方寸，示意圖，非真人。",
+      "shot_prompt": "PREFER REUSE: if the approved golden-set file EXP_E10_*_v1 exists (assets/fangcun/photoreal/), use it and do not generate a new image; a crop or colour correction is a logged human edit. Open a NEW chat in the tool that made R01. ATTACH R01_master_v1 (Image 1) and R06_headshot_v1 (Image 2). PASTE the Character Lock (pipeline/image-pack/fangcun-photoreal.md section 3.1, verbatim), a blank line, then the prompt below. Never upload a photograph of any real person. No provider adapter is called by this file; generation is manual until the operator supplies an image-API key (pipeline adapters stay inert).\n---\nImage 2 is the headshot; use it for the face only.\nCHANGE only: the expression and head position (E10, calm nod): head tilted down about 5 to 10 degrees, eyes still toward the camera, a slight closed-mouth smile. Headshot, head and shoulders, no hands in the picture. Nothing else changes.\nOUTPUT: 1:1 square; plain warm off-white seamless studio background; same soft studio light; one image."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 1  0:00-0:03 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 小套房家具放不下？先算這三個數字 | GLOSS: Can't fit the furniture in a small studio? Work out these three numbers first. | VISUAL: Hook card, large type; A1 still at the top. Persistent badge from the first frame. | USES: A1.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 2  0:03-0:08 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 我是方寸，AI 虛擬角色。 / 手不入鏡，所以用箭頭指。 | GLOSS: I'm Fangcun, an AI virtual character. / Hands stay out of frame, so I point with arrows. | VISUAL: Two caption lines, one beat each. | USES: A1.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 3  0:08-0:12 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 我沒住過任何房子， / 所以只整理尺寸和公開資料。 | GLOSS: I have never lived in a home, / so I only organise sizes and public information. | VISUAL: Two caption lines (this is the S09 replacement line split over two scenes). | USES: A1.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 4  0:12-0:16 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 這間示意房間：寬 300 公分、深 400 公分 / （示意數字） | GLOSS: This illustrative room: 300 cm wide, 400 cm deep / (illustrative numbers) | VISUAL: The P01 plan animates in (human-built motion): bed, wardrobe and door-leaf arc appear with labels 1, 2, 3. | USES: A2.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 5  0:16-0:21 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 走道 ＝ 房間寬 − 床寬 − 衣櫃深 / 300 − 150 − 55 ＝ 95 公分 | GLOSS: walkway = room width - bed width - wardrobe depth / 300 - 150 - 55 = 95 cm | VISUAL: Numbers appear one by one; the gap highlights. | USES: A2.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 6  0:21-0:26 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 打開衣櫃門之後 / 95 − 60 ＝ 35 公分 | GLOSS: Once the wardrobe door is open / 95 - 60 = 35 cm | VISUAL: The 60 cm leaf swings open (plan animation, not the character); the gap shrinks to 35. | USES: A2.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 7  0:26-0:31 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜示意圖」. TEXT zh-TW (DRAFT): 以上是示意數字。 / 你的房間尺寸，請用捲尺量過再算。 / 請以現場丈量為準 | GLOSS: The numbers above are illustrative. / For your own room, measure with a tape measure and then calculate. / Please go by on-site measurement. | VISUAL: Closing caption (S08). | USES: no character panel.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    },
+    {
+      "path": "PENDING",
+      "description": "Scene 8  0:31-0:34 [9:16, about 34 s, captions only, no voice]. BADGE: 「AI 生成｜虛擬角色」. TEXT zh-TW (DRAFT): 收藏起來，下次照著填 / 出處章：示意數字・沒有外部出處 | GLOSS: Save it and fill it in next time / Source stamp: illustrative numbers, no external source | VISUAL: End card with the stamp graphic and A4 still. Audio: none in the draft; the operator may add a platform-library track (licence terms unverified). | USES: A4.",
+      "shot_prompt": "NOT AI-GENERATED. HUMAN-BUILT in a design tool following Diagram Kit v0 (content/fangcun/calendar-30d.md section 7.2). No image generator for any text, number, diagram or badge. Typeface Noto Sans TC with language tag zh-TW; the wife reads every character by eye. Build spec: see the VISUAL field of this item's description (it is not an image prompt)."
+    }
+  ],
+  "review": {
+    "wife_language": "pending",
+    "operator_facts": "pending",
+    "approved": false,
+    "notes": "HOLD until the user confirms that still images of the photoreal character inside a video are acceptable (calendar-30d.md section 9 item 1; qa-checklist section 6 bars video of a photoreal face until its own addendum). If the answer is no, keep the scenes and drop the character panels; the badge becomes 「AI 生成｜示意圖」. CLAUDE DRAFT NOTE 2026-10-12: still-image-only use of the photoreal character in video needs the user's confirmation (addendum 7 and 8.1 row K). Wife to check caption timing (22 characters in 5 s) and the title. YOUTUBE TITLE FIELD (paste into the title field, NOT into the description; review fix 2026-10-12): 【一分鐘搞懂】床和衣櫃之間，走道還剩幾公分？ REVIEW FIX 2026-10-12 (independent reviewer): R01 prompt; badge; title moved. Nothing approved."
+  }
+}

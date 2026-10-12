@@ -1,0 +1,4 @@
+# Real business numbers stay out of git by default. Delete this file if you want to track the database.
+*
+!.gitkeep
+!.gitignore
